@@ -1,46 +1,54 @@
 import Link from "next/link";
+import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
-import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
-import { TrendBadge } from "@/components/charts/TrendBadge";
 import { isVolatile, latestPoint } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { formatIndicatorValue } from "@/lib/format";
+import { toPlainLanguageQuestion } from "@/lib/data/questionify";
 import type { Indicator } from "@/lib/data/types";
+import { AccountabilitySummary } from "./AccountabilitySummary";
+import { IndicatorResearchNote } from "./IndicatorResearchNote";
+import { VolatileNotice } from "./VolatileNotice";
 
 export function IndicatorCard({ indicator }: { indicator: Indicator }) {
   const latest = latestPoint(indicator.series);
   const note = getIndicatorNote(indicator.id);
   const volatile = isVolatile(indicator.series);
+  const question = toPlainLanguageQuestion(indicator);
 
   return (
-    <Link
-      href={`/indicators/${indicator.id}`}
-      className="flex items-center justify-between gap-4 rounded-xl border-2 p-4 transition-colors hover:bg-black/[0.02] dark:hover:bg-white/[0.03]"
+    <details
+      className="group rounded-xl border-2 p-4"
       style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}
     >
-      <div className="min-w-0 flex-1">
-        <p className="truncate font-medium" style={{ color: "var(--text-primary)" }}>
-          {indicator.name}
-        </p>
-        <p className="mt-0.5 text-sm" style={{ color: "var(--text-secondary)" }}>
-          {formatIndicatorValue(latest?.value ?? null, indicator.measurementType)}
-        </p>
-        {note ? (
-          <p className="mt-2 text-xs font-semibold" style={{ color: "var(--accent-heading)" }}>
-            Researched note available
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+        <div className="min-w-0 flex-1">
+          <p className="font-medium" style={{ color: "var(--text-primary)" }}>
+            {question}
           </p>
-        ) : volatile ? (
-          <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
-            Large swings in this window — see chart
+          <p className="mt-0.5 text-sm" style={{ color: "var(--text-secondary)" }}>
+            {formatIndicatorValue(latest?.value ?? null, indicator.measurementType)}
           </p>
-        ) : (
-          <div className="mt-2 flex flex-wrap gap-2">
-            <TargetGapBadge status={indicator.onTargetStatus} />
-            <TrendBadge indicator={indicator} />
-          </div>
-        )}
+        </div>
+        <div className="flex shrink-0 items-center gap-3">
+          <IndicatorSparkline indicator={indicator} />
+          <span
+            aria-hidden
+            className="text-sm transition-transform duration-150 group-open:rotate-180"
+            style={{ color: "var(--text-muted)" }}
+          >
+            ▾
+          </span>
+        </div>
+      </summary>
+
+      <div className="mt-4 border-t pt-4" style={{ borderColor: "var(--border-hairline)" }}>
+        <IndicatorTrendChart indicator={indicator} />
+        <div className="mt-4">{note ? <IndicatorResearchNote note={note} /> : volatile ? <VolatileNotice /> : <AccountabilitySummary indicator={indicator} />}</div>
+        <Link href={`/indicators/${indicator.id}`} className="mt-3 inline-block text-sm underline" style={{ color: "var(--accent-heading)" }}>
+          Open full page ↗
+        </Link>
       </div>
-      <IndicatorSparkline indicator={indicator} />
-    </Link>
+    </details>
   );
 }
