@@ -61,16 +61,16 @@ export default async function IndicatorPage({ params }: { params: Promise<{ indi
         {indicator.service} — {indicator.goal}
       </p>
 
-      {note ? (
+      {note && (
         <div className="mt-4">
           <IndicatorResearchNote note={note} />
         </div>
-      ) : !volatile ? (
-        <div className="mt-4 flex flex-wrap gap-2">
-          <TargetGapBadge status={indicator.onTargetStatus} />
-          <TrendBadge indicator={indicator} />
-        </div>
-      ) : null}
+      )}
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <TargetGapBadge indicator={indicator} />
+        {!note && !volatile && <TrendBadge indicator={indicator} />}
+      </div>
 
       <div className="mt-6 rounded-xl border-2 p-5" style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}>
         <IndicatorTrendChart indicator={indicator} />

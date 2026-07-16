@@ -1,3 +1,4 @@
+import { detectCountNoun } from "./data/questionify";
 import type { MeasurementType } from "./data/types";
 
 type TimeUnit = "clock-minutes-seconds" | "clock-hours-minutes" | "days" | "weeks" | "months" | "minutes" | "hours" | "unknown";
@@ -36,8 +37,29 @@ export function formatIndicatorValue(value: number | null, measurementType: Meas
       return formatTimeSpan(value, detectTimeUnit(indicatorName));
     case "Number":
     default:
-      return formatTimeSpan(value, detectNumberTimeUnit(indicatorName));
+      return formatNumber(value, indicatorName);
   }
+}
+
+/**
+ * A plain "Number"-type value has no unit field at all — the two available
+ * signals, in order, are: a duration word in the name (handled the same way
+ * as TimeSpan, since a handful of these are day/hour counts mistyped as
+ * Number in the source — see detectNumberTimeUnit), then a countable noun in
+ * the name (e.g. "cases," "events"). If neither is confidently detected, the
+ * value is shown bare rather than guessing at a unit.
+ */
+function formatNumber(value: number, indicatorName: string): string {
+  const timeUnit = detectNumberTimeUnit(indicatorName);
+  if (timeUnit !== "unknown") return formatTimeSpan(value, timeUnit);
+
+  const noun = detectCountNoun(indicatorName);
+  if (noun) {
+    const singular = value === 1 && /s$/i.test(noun) ? noun.slice(0, -1) : noun;
+    return `${formatPlainNumber(value)} ${singular}`;
+  }
+
+  return formatPlainNumber(value);
 }
 
 /**

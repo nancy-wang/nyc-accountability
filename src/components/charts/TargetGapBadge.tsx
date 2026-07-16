@@ -1,23 +1,26 @@
-import type { OnTargetStatus } from "@/lib/data/types";
+import { targetGapBadgeLabel } from "@/lib/data/accountability";
+import type { Indicator } from "@/lib/data/types";
 
-const STATUS_CONFIG: Record<OnTargetStatus, { label: string; color: string; icon: string }> = {
-  "missed-target": { label: "Missing target", color: "var(--status-critical)", icon: "▲" },
-  "on-target": { label: "On target", color: "var(--status-good)", icon: "●" },
-  "no-target-set": { label: "No numeric target set", color: "var(--status-neutral)", icon: "–" },
-  "no-data": { label: "No recent data", color: "var(--status-neutral)", icon: "–" },
-};
+/**
+ * States only whether the indicator is currently hitting its own target, and
+ * by how much — not a trend claim, so (unlike TrendBadge) this shows for
+ * volatile indicators too. Renders nothing when there's no numeric target or
+ * no recent data to compare.
+ */
+export function TargetGapBadge({ indicator }: { indicator: Indicator }) {
+  const label = targetGapBadgeLabel(indicator);
+  if (!label) return null;
 
-export function TargetGapBadge({ status }: { status: OnTargetStatus }) {
-  const config = STATUS_CONFIG[status];
+  const beating = indicator.onTargetStatus === "on-target";
   return (
     <span
       className="inline-flex items-center gap-1.5 rounded-full border-2 px-2.5 py-1 text-xs font-bold"
       style={{ borderColor: "var(--accent-heading)", color: "var(--text-primary)" }}
     >
-      <span aria-hidden style={{ color: config.color, fontSize: "0.7em" }}>
-        {config.icon}
+      <span aria-hidden style={{ color: beating ? "var(--status-good)" : "var(--status-critical)", fontSize: "0.7em" }}>
+        {beating ? "●" : "▲"}
       </span>
-      {config.label}
+      {label}
     </span>
   );
 }

@@ -90,40 +90,10 @@ export function isVolatile(series: IndicatorPoint[]): boolean {
 }
 
 /**
- * A short, honest one-line caption for the card view: the raw direction the
- * number is moving (not the "improving/worsening" value judgment, which is
- * conveyed separately by the ▲/▼ "higher/lower is better" cue) — e.g.
- * "decreasing" rather than "improving." Deliberately does not claim
- * statistical significance: a Theil-Sen slope over 4-5 annual data points
- * from an operational reporting dataset isn't a hypothesis test, and
- * claiming significance without actually running one would be a fabricated
- * precision this site doesn't have.
- *
- * For a genuinely volatile series (see isVolatile), a bare "increasing" or
- * "decreasing" overstates the story — a slope can be technically positive
- * while the real picture is bouncing around in a narrow band. Those get a
- * "fluctuating between X and Y" description instead of a direction word.
- */
-export function trendOneLiner(indicator: Indicator): string {
-  const points = completeYearPoints(indicator.series);
-  if (points.length < 2) return "";
-
-  if (isVolatile(indicator.series)) {
-    const values = points.map((p) => p.value!);
-    const lo = formatIndicatorValue(Math.min(...values), indicator.measurementType, indicator.name);
-    const hi = formatIndicatorValue(Math.max(...values), indicator.measurementType, indicator.name);
-    return `fluctuating between ${lo} and ${hi}`;
-  }
-
-  const slope = theilSenSlope(points.map((p) => ({ x: p.fiscalYear, y: p.value! })));
-  if (slope === 0) return "little changed";
-  return slope > 0 ? "increasing" : "decreasing";
-}
-
-/**
- * "X above/below the Y target" for the one-liner — kept out of the chart
- * itself (no more shaded miss-zone or "Missing target" legend swatch) and
- * surfaced here as plain-language context instead.
+ * "X above/below the Y target" — used in the full accountability sentence
+ * (accountabilitySummary below), where the extra clause reads naturally
+ * inside a full paragraph. The collapsed card view uses the shorter
+ * targetGapBadgeLabel instead (see below).
  */
 export function targetGapPhrase(indicator: Indicator): string {
   const latest = latestPoint(indicator.series);
@@ -135,6 +105,24 @@ export function targetGapPhrase(indicator: Indicator): string {
   const formattedGap = formatValueDifference(latest.value, latest.targetCurrentFY, indicator.measurementType, indicator.name);
   const formattedTarget = formatIndicatorValue(latest.targetCurrentFY, indicator.measurementType, indicator.name);
   return `${formattedGap} ${gap > 0 ? "above" : "below"} the ${formattedTarget} target`;
+}
+
+/**
+ * "Beats target by 10 min" / "Misses target by 7 days" for the card's pill
+ * badge — the reader can already see the trend in the chart itself, so the
+ * badge states only the one fact a badge is good at: is it hitting its own
+ * target right now, and by how much. Shown regardless of volatility (unlike
+ * TrendBadge) since target status isn't a trend claim.
+ */
+export function targetGapBadgeLabel(indicator: Indicator): string | null {
+  if (indicator.onTargetStatus !== "on-target" && indicator.onTargetStatus !== "missed-target") return null;
+
+  const latest = latestPoint(indicator.series);
+  if (latest?.value == null || latest.targetCurrentFY == null) return null;
+  if (latest.value === latest.targetCurrentFY) return "Right at target";
+
+  const formattedGap = formatValueDifference(latest.value, latest.targetCurrentFY, indicator.measurementType, indicator.name);
+  return indicator.onTargetStatus === "on-target" ? `Beats target by ${formattedGap}` : `Misses target by ${formattedGap}`;
 }
 
 export function latestPoint(series: IndicatorPoint[]): IndicatorPoint | undefined {

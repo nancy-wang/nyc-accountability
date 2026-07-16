@@ -25,7 +25,7 @@ function upperFirst(s: string): string {
 const UNIT_PAREN =
   /^(?:%(?:\s+of\s+[\w\s]*)?|CY|FY\d*|preliminary|provisional|annual|total|\$?000(?:,000)?(?:,000)?|days?|weeks?|months?|years?|hours?|minutes?|minutes?:seconds?|hours?:minutes?|business\s+days?|calendar\s+days?|per\s+[\d,]+[\w\s]*)$/i;
 
-function stripTrailingUnitParens(s: string): string {
+export function stripTrailingUnitParens(s: string): string {
   let out = s.trim();
   for (;;) {
     const m = out.match(/^(.*)\s*\(([^()]*)\)\s*$/);
@@ -59,6 +59,43 @@ const PAST_PARTICIPLE = /^(.+?)\s+(\w{3,}ed)$/i;
 // broken as the ungrammatical bare noun it's meant to fix, so these get
 // "how much," not "how many."
 const MASS_NOUN_SUFFIX = /(?:tion|sion|ment|ance|ence)$/i;
+
+// Nouns this dataset uses often enough to recognize directly, so "How many
+// X complaints are there?"-style phrasing and the value's own unit word
+// ("142 complaints") stay in sync — both read off the same detector.
+const EXPLICIT_COUNT_NOUN =
+  /\b(cases?|applications?|requests?|complaints?|inspections?|projects?|incidents?|claims?|reports?|events?|students?|units?|visits?|calls?|hearings?|referrals?|violations?|summonses?|permits?|licenses?|placements?|allegations?|investigations?|families?|children|persons?|clients?)\b/i;
+
+/**
+ * Best-effort guess at the countable noun a plain-number value is measured
+ * in (e.g. "cases" for "623 cases"), from the indicator's own name — there's
+ * no separate unit field in the source data. Deliberately conservative:
+ * returns null rather than guessing when nothing in the name clearly names
+ * the thing being counted, so ambiguous indicators get flagged for a human
+ * to decide rather than silently mislabeled.
+ */
+export function detectCountNoun(indicatorName: string): string | null {
+  const core = stripTrailingUnitParens(indicatorName);
+
+  const explicit = core.match(EXPLICIT_COUNT_NOUN);
+  if (explicit) return explicit[1].toLowerCase();
+
+  // "Trees planted" / "Records digitized" — the countable noun is the
+  // subject before the participle, not the participle itself.
+  const participle = core.match(PAST_PARTICIPLE);
+  if (participle) {
+    const subjectLastWord = (participle[1].split(/\s+/).pop() ?? "").replace(/[^a-zA-Z]+$/, "");
+    if (/s$/i.test(subjectLastWord) && !MASS_NOUN_SUFFIX.test(subjectLastWord) && subjectLastWord.length > 2) {
+      return subjectLastWord.toLowerCase();
+    }
+  }
+
+  const lastWord = (core.split(/\s+/).pop() ?? "").replace(/[^a-zA-Z]+$/, "");
+  if (MASS_NOUN_SUFFIX.test(lastWord)) return null;
+  if (/s$/i.test(lastWord) && lastWord.length > 2) return lastWord.toLowerCase();
+
+  return null;
+}
 
 /**
  * Turns an indicator's MMR-style label (often dense bureaucratic phrasing,

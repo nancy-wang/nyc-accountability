@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
-import { isVolatile, latestPoint, targetGapPhrase, trendOneLiner } from "@/lib/data/accountability";
+import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
+import { isVolatile, latestPoint } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { formatIndicatorValue } from "@/lib/format";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
@@ -16,14 +17,12 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
   const volatile = isVolatile(indicator.series);
   const question = toPlainLanguageQuestion(indicator);
   const valueText = formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name);
-  // A researched note's condensed insight takes priority over the bare
-  // direction word — "overall decreasing, but increase due to broadened
-  // definition" says something a plain "decreasing" can't.
-  const trendText = note?.oneLiner || trendOneLiner(indicator);
-  // The chart no longer shades a "missing target" zone — this is where that
-  // context lives instead, e.g. "10 min above the 15 min target."
-  const targetGap = targetGapPhrase(indicator);
-  const oneLiner = [trendText, targetGap].filter(Boolean).join(", ");
+  // No bare direction word ("increasing"/"decreasing") by default — the
+  // chart right below already shows the trend. Only a researched note's
+  // condensed insight earns a place here, since it explains *why*, which the
+  // chart can't ("decreasing after a new system rollout's integration issues
+  // were resolved").
+  const oneLiner = note?.oneLiner ?? "";
 
   return (
     <details
@@ -35,9 +34,12 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
           <p className="font-medium" style={{ color: "var(--text-primary)" }}>
             {question}
           </p>
-          <p className="mt-0.5 text-sm" style={{ color: "var(--text-secondary)" }}>
-            {valueText}
-            {oneLiner && <span style={{ color: "var(--text-muted)" }}> — {oneLiner}</span>}
+          <p className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+            <span>
+              {valueText}
+              {oneLiner && <span style={{ color: "var(--text-muted)" }}> — {oneLiner}</span>}
+            </span>
+            <TargetGapBadge indicator={indicator} />
           </p>
         </div>
         <div className="flex shrink-0 items-center gap-3">
