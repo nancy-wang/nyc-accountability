@@ -34,6 +34,9 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
 
   const narrative = getNarrative(agency.slug);
 
+  const withTarget = indicators.filter((i) => i.onTargetStatus === "on-target" || i.onTargetStatus === "missed-target");
+  const withoutTarget = indicators.filter((i) => i.onTargetStatus === "no-target-set" || i.onTargetStatus === "no-data");
+
   return (
     <div>
       <p className="text-sm" style={{ color: "var(--text-muted)" }}>
@@ -60,11 +63,32 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
       <h2 className="mt-8 text-lg font-medium" style={{ color: "var(--text-primary)" }}>
         Critical indicators
       </h2>
-      <div className="mt-4 flex flex-col gap-3">
-        {indicators.map((indicator) => (
-          <IndicatorCard key={indicator.id} indicator={indicator} />
-        ))}
-      </div>
+
+      {withTarget.length > 0 && (
+        <>
+          <h3 className="mt-5 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
+            With a numeric target
+          </h3>
+          <div className="mt-3 flex flex-col gap-3">
+            {withTarget.map((indicator) => (
+              <IndicatorCard key={indicator.id} indicator={indicator} />
+            ))}
+          </div>
+        </>
+      )}
+
+      {withoutTarget.length > 0 && (
+        <>
+          <h3 className="mt-6 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
+            Without a numeric target
+          </h3>
+          <div className="mt-3 flex flex-col gap-3">
+            {withoutTarget.map((indicator) => (
+              <IndicatorCard key={indicator.id} indicator={indicator} />
+            ))}
+          </div>
+        </>
+      )}
 
       {narrative && narrative.noteworthyChanges.length > 0 && (
         <div className="mt-10">

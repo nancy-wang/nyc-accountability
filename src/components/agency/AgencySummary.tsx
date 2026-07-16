@@ -6,7 +6,7 @@ import { toPlainLanguageQuestion } from "@/lib/data/questionify";
 import type { Indicator } from "@/lib/data/types";
 import { formatIndicatorValue } from "@/lib/format";
 
-const MAX_BULLETS = 6;
+const MAX_BULLETS = 3;
 
 function lowerFirst(s: string): string {
   return s.length === 0 ? s : s.charAt(0).toLowerCase() + s.slice(1);
@@ -38,6 +38,16 @@ function classify(indicators: Indicator[]): { working: Indicator[]; worsening: I
     }
   }
   return { working, worsening };
+}
+
+/**
+ * "Top" = has a researched note first (a real, cited explanation is more
+ * worth a reader's limited attention than a bare stat), then the dataset's
+ * own order within each group — a stable sort, so it doesn't reshuffle
+ * ties on every render.
+ */
+function rankBullets(indicators: Indicator[]): Indicator[] {
+  return [...indicators].sort((a, b) => Number(getIndicatorNote(a.id) == null) - Number(getIndicatorNote(b.id) == null));
 }
 
 function Bullet({ indicator }: { indicator: Indicator }) {
@@ -122,6 +132,8 @@ export function AgencySummary({ agencyName, indicators }: { agencyName: string; 
           : "its overall trajectory is mixed, with close to as many indicators improving as declining";
 
   const { working, worsening } = classify(indicators);
+  const rankedWorking = rankBullets(working);
+  const rankedWorsening = rankBullets(worsening);
 
   return (
     <div className="mt-6 rounded-xl border-2 p-5" style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}>
@@ -133,8 +145,8 @@ export function AgencySummary({ agencyName, indicators }: { agencyName: string; 
       </p>
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
-        <Section title="What's working" indicators={working} emptyText="Nothing stands out as a clear win right now." />
-        <Section title="What's getting worse" indicators={worsening} emptyText="Nothing stands out as a clear problem right now." />
+        <Section title="What's working" indicators={rankedWorking} emptyText="Nothing stands out as a clear win right now." />
+        <Section title="What's getting worse" indicators={rankedWorsening} emptyText="Nothing stands out as a clear problem right now." />
       </div>
     </div>
   );
