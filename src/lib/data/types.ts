@@ -18,6 +18,15 @@ export interface IndicatorPoint {
    * labeled, on the chart).
    */
   isPartialYear: boolean;
+  /**
+   * A full-year estimate for a partial year, extrapolated from the
+   * year-to-date figure — only set when the indicator is confirmed
+   * cumulative (its YTD figure is a running sum of period values, not a
+   * running average/rate) and only on the current partial year's point.
+   * null everywhere else, including for indicators where cumulative-ness
+   * couldn't be confirmed — no projection is shown rather than guessing.
+   */
+  projectedValue: number | null;
 }
 
 export interface Indicator {

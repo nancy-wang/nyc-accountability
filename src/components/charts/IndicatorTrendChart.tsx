@@ -6,6 +6,8 @@ const HEIGHT = 320;
 const PAD_TOP = 36;
 const PAD_BOTTOM = 40;
 const LABEL_FONT_SIZE = 13;
+/** Horizontal distance from the latest actual point to its projected-full-year marker. */
+const PROJECTION_OFFSET = 46;
 
 /** Rough glyph-width estimate (no DOM measurement available server-side) — generous enough to avoid clipping without wasting space. */
 function estimateTextWidth(text: string, fontSize: number): number {
@@ -48,7 +50,9 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const points = indicator.series;
   const values = points.map((p) => p.value).filter((v): v is number => v != null);
   const targets = points.map((p) => p.targetCurrentFY).filter((v): v is number => v != null);
-  const allValues = [...values, ...targets];
+  const projectedIndex = points.findIndex((p) => p.projectedValue != null);
+  const projectedValue = projectedIndex >= 0 ? points[projectedIndex].projectedValue! : null;
+  const allValues = [...values, ...targets, ...(projectedValue != null ? [projectedValue] : [])];
 
   if (values.length === 0) {
     return (
@@ -74,9 +78,11 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const widestTickWidth = Math.max(0, ...ticks.map((t) => labelWidth(t)));
   const firstLabelHalfWidth = labelWidth(points[0]?.value ?? null) / 2;
   const lastLabelHalfWidth = labelWidth(points[points.length - 1]?.value ?? null) / 2;
+  const projectedLabelHalfWidth = labelWidth(projectedValue) / 2;
 
   const PAD_LEFT = Math.max(48, widestTickWidth + 20, firstLabelHalfWidth + 6);
-  const PAD_RIGHT = Math.max(24, lastLabelHalfWidth + 6);
+  const PAD_RIGHT =
+    projectedValue != null ? PROJECTION_OFFSET + projectedLabelHalfWidth + 6 : Math.max(24, lastLabelHalfWidth + 6);
 
   const plotWidth = WIDTH - PAD_LEFT - PAD_RIGHT;
   const plotHeight = HEIGHT - PAD_TOP - PAD_BOTTOM;
@@ -99,6 +105,11 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const latestIndex = [...points].map((p, i) => ({ p, i })).reverse().find(({ p }) => p.value != null)?.i;
   const directionLabel = indicator.desiredDirection === "Up" ? "Higher values are better" : "Lower values are better";
   const directionIcon = indicator.desiredDirection === "Up" ? "▲" : "▼";
+
+  const projectedX = projectedValue != null ? xFor(projectedIndex) + PROJECTION_OFFSET : null;
+  const projectedY = projectedValue != null ? yFor(projectedValue) : null;
+  const projectedFromX = projectedValue != null ? xFor(projectedIndex) : null;
+  const projectedFromY = projectedValue != null && points[projectedIndex].value != null ? yFor(points[projectedIndex].value!) : null;
   const unit = chartUnitLabel(indicator.measurementType, indicator.name);
 
   return (
@@ -168,25 +179,60 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
             </g>
           );
         })}
+
+        {projectedX != null && projectedY != null && projectedFromX != null && projectedFromY != null && (
+          <g>
+            <line
+              x1={projectedFromX}
+              y1={projectedFromY}
+              x2={projectedX}
+              y2={projectedY}
+              stroke="var(--series-1)"
+              strokeWidth={2}
+              strokeDasharray="3 3"
+              opacity={0.5}
+            />
+            <circle cx={projectedX} cy={projectedY} r={5} fill="var(--surface-1)" stroke="var(--series-1)" strokeWidth={2} opacity={0.7} />
+            <text
+              x={projectedX}
+              y={projectedY < PAD_TOP + 18 ? projectedY + 20 : projectedY - 12}
+              textAnchor="middle"
+              fontSize={13}
+              fontWeight={500}
+              fill="var(--text-muted)"
+            >
+              ~{formatChartValue(projectedValue, indicator.measurementType, indicator.name)}
+            </text>
+          </g>
+        )}
       </svg>
 
       {points.some((p) => p.isPartialYear) && (
         <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
           * Year to date — this fiscal year isn&apos;t complete, so it&apos;s not compared against prior years in the target/trend status above.
+          {projectedValue != null && " The dashed marker projects a full-year estimate at the current year-to-date pace."}
         </p>
       )}
 
-      {/* A single series (no target) needs no legend — the chart's own heading already says what's plotted. */}
-      {hasTarget && (
-        <div className="mt-1 flex gap-4 text-xs" style={{ color: "var(--text-secondary)" }}>
+      {/* A single series (no target, no projection) needs no legend — the chart's own heading already says what's plotted. */}
+      {(hasTarget || projectedValue != null) && (
+        <div className="mt-1 flex flex-wrap gap-4 text-xs" style={{ color: "var(--text-secondary)" }}>
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden style={{ display: "inline-block", width: 12, height: 2, background: "var(--series-1)" }} />
             Actual
           </span>
-          <span className="inline-flex items-center gap-1.5">
-            <span aria-hidden style={{ display: "inline-block", width: 12, height: 0, borderTop: "2px dashed var(--text-muted)" }} />
-            Target
-          </span>
+          {hasTarget && (
+            <span className="inline-flex items-center gap-1.5">
+              <span aria-hidden style={{ display: "inline-block", width: 12, height: 0, borderTop: "2px dashed var(--text-muted)" }} />
+              Target
+            </span>
+          )}
+          {projectedValue != null && (
+            <span className="inline-flex items-center gap-1.5">
+              <span aria-hidden style={{ display: "inline-block", width: 12, height: 0, borderTop: "2px dashed var(--series-1)", opacity: 0.6 }} />
+              Projected (full year)
+            </span>
+          )}
         </div>
       )}
 
@@ -227,6 +273,17 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
                 )}
               </tr>
             ))}
+            {projectedValue != null && (
+              <tr style={{ borderBottom: "1px solid var(--border-hairline)" }}>
+                <td className="py-1.5 pr-4" style={{ color: "var(--text-muted)" }}>
+                  {formatFiscalYear(points[projectedIndex].fiscalYear)} (projected)
+                </td>
+                <td className="py-1.5 pr-4" style={{ color: "var(--text-muted)" }}>
+                  ~{formatIndicatorValue(projectedValue, indicator.measurementType, indicator.name)}
+                </td>
+                {hasTarget && <td className="py-1.5" />}
+              </tr>
+            )}
           </tbody>
         </table>
       </details>
