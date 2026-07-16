@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { isVolatile, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
+import { effectiveTrend, isVolatile, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { rollupAccountability, trendRollup } from "@/lib/data/rollup";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
@@ -17,10 +17,11 @@ function lowerFirst(s: string): string {
  * of both when neither applies. Target status wins over trend when both are
  * known — an indicator currently missing its target is the headline concern
  * even if its multi-year trend happens to be improving, and vice versa.
- * Volatile indicators (see isVolatile) only land here via target status,
- * never via their mechanical trend field — the same reason TrendBadge is
- * suppressed for them elsewhere, a Theil-Sen slope on a series that's really
- * just bouncing in a band isn't a trustworthy "better" or "worse" signal.
+ * Falls back to effectiveTrend() otherwise, which uses a researched note's
+ * resolved direction for a volatile indicator when one exists (see
+ * effectiveTrend) rather than a mechanical trend field that isn't a
+ * trustworthy "better" or "worse" signal on its own for a series that's
+ * really just bouncing in a band.
  */
 function classify(indicators: Indicator[]): { working: Indicator[]; worsening: Indicator[] } {
   const working: Indicator[] = [];
@@ -30,9 +31,10 @@ function classify(indicators: Indicator[]): { working: Indicator[]; worsening: I
       worsening.push(indicator);
     } else if (indicator.onTargetStatus === "on-target") {
       working.push(indicator);
-    } else if (!isVolatile(indicator.series)) {
-      if (indicator.trend === "improving") working.push(indicator);
-      else if (indicator.trend === "worsening") worsening.push(indicator);
+    } else {
+      const trend = effectiveTrend(indicator, getIndicatorNote(indicator.id));
+      if (trend === "improving") working.push(indicator);
+      else if (trend === "worsening") worsening.push(indicator);
     }
   }
   return { working, worsening };
@@ -93,7 +95,11 @@ export function AgencySummary({ agencyName, indicators }: { agencyName: string; 
   const rollup = rollupAccountability(indicators);
   const targetable = rollup.total - rollup.noTargetSet;
 
-  const volatileCount = indicators.filter((i) => isVolatile(i.series)).length;
+  // Only counts volatile indicators a researched note *hasn't* resolved a
+  // direction for — one that has is no longer "too much to call a trend,"
+  // it's already been called, and shows up in improvingCount/worseningCount
+  // instead.
+  const volatileCount = indicators.filter((i) => isVolatile(i.series) && effectiveTrend(i, getIndicatorNote(i.id)) === "insufficient-data").length;
   const { improving: improvingCount, worsening: worseningCount } = trendRollup(indicators);
   const trendTotal = improvingCount + worseningCount;
 

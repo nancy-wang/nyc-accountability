@@ -1,5 +1,5 @@
 import { formatFiscalYear, formatIndicatorValue, formatValueDifference } from "../format";
-import type { DesiredDirection, Indicator, IndicatorPoint, OnTargetStatus, TrendDirection } from "./types";
+import type { DesiredDirection, Indicator, IndicatorPoint, IndicatorResearchNote, OnTargetStatus, TrendDirection } from "./types";
 
 export function onTargetStatus(
   latestValue: number | null,
@@ -87,6 +87,43 @@ export function isVolatile(series: IndicatorPoint[]): boolean {
   const hi = Math.max(...values);
   if (lo === 0) return false;
   return (hi - lo) / Math.abs(lo) > VOLATILITY_SWING_THRESHOLD;
+}
+
+/**
+ * A researched note's oneLiner is written to always lead with the resolved
+ * direction ("increasing, driven by more joint enforcement...", "decreasing
+ * overall, though a recent staff loss...") — a human already looked at a
+ * volatile series and determined which way it's really going, the same
+ * judgment call the mechanical Theil-Sen slope isn't trusted to make alone.
+ * Reads that leading word and combines it with desiredDirection, so it means
+ * the same "improving = good" as the mechanical trend field. Returns null
+ * (not resolvable) when there's no note, or the note doesn't lead with a
+ * plain direction (e.g. "fluctuating between X and Y") — genuinely
+ * unresolved cases stay unresolved rather than being guessed at.
+ */
+function noteImpliedTrend(note: IndicatorResearchNote | null, desiredDirection: DesiredDirection): TrendDirection | null {
+  if (!note) return null;
+  const direction = /^(?:overall\s+)?increasing\b/i.test(note.oneLiner) ? "Up" : /^(?:overall\s+)?decreasing\b/i.test(note.oneLiner) ? "Down" : null;
+  if (!direction) return null;
+  const improved = desiredDirection === "Up" ? direction === "Up" : direction === "Down";
+  return improved ? "improving" : "worsening";
+}
+
+/**
+ * The trend value aggregate rollups (topic-page trend bars, the agency
+ * summary's scorecard sentence and "What's working"/"getting worse" lists)
+ * should actually use — the mechanical trendDirection() for a stable
+ * series, but a researched note's resolved direction for a volatile one
+ * when a note exists and gives one, rather than unconditionally discarding
+ * volatile indicators from aggregate counts. Individual indicator cards
+ * already prefer a note's oneLiner over the bare mechanical trend word for
+ * this same reason (see IndicatorCard) — this extends that same judgment
+ * call to the aggregate views, which previously looked at raw trend/
+ * isVolatile only and never saw the note at all.
+ */
+export function effectiveTrend(indicator: Indicator, note: IndicatorResearchNote | null): TrendDirection {
+  if (!isVolatile(indicator.series)) return indicator.trend;
+  return noteImpliedTrend(note, indicator.desiredDirection) ?? "insufficient-data";
 }
 
 /**

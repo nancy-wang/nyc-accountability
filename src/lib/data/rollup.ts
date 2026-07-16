@@ -1,4 +1,5 @@
-import { isVolatile } from "./accountability";
+import { effectiveTrend } from "./accountability";
+import { getIndicatorNote } from "./getIndicators";
 import type { Indicator } from "./types";
 
 export interface AccountabilityRollup {
@@ -31,19 +32,20 @@ export interface TrendRollup {
 }
 
 /**
- * Same improving/worsening split as rollupAccountability, except volatile
- * indicators are excluded from both counts (into "other") rather than
- * counted at face value — a volatile series' mechanical trend field can say
- * "worsening" while the real story is a stable series bouncing in a band,
- * the same reason TrendBadge is suppressed for these elsewhere.
+ * Same improving/worsening split as rollupAccountability, except each
+ * indicator's *effective* trend is used instead of its raw mechanical one —
+ * for a volatile indicator, that's a researched note's resolved direction
+ * when one exists and gives one, and "no clear trend" (folded into "other")
+ * otherwise, rather than a mechanical slope that can say "worsening" while
+ * the real story is a stable series bouncing in a band.
  */
 export function trendRollup(indicators: Indicator[]): TrendRollup {
   let improving = 0;
   let worsening = 0;
   for (const indicator of indicators) {
-    if (isVolatile(indicator.series)) continue;
-    if (indicator.trend === "improving") improving += 1;
-    else if (indicator.trend === "worsening") worsening += 1;
+    const effective = effectiveTrend(indicator, getIndicatorNote(indicator.id));
+    if (effective === "improving") improving += 1;
+    else if (effective === "worsening") worsening += 1;
   }
   return { total: indicators.length, improving, worsening, other: indicators.length - improving - worsening };
 }
