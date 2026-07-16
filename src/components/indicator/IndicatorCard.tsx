@@ -27,7 +27,7 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
             {question}
           </p>
           <p className="mt-0.5 text-sm" style={{ color: "var(--text-secondary)" }}>
-            {formatIndicatorValue(latest?.value ?? null, indicator.measurementType)}
+            {formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name)}
           </p>
         </div>
         <div className="flex shrink-0 items-center gap-3">

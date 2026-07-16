@@ -3,10 +3,14 @@ import type { Indicator } from "@/lib/data/types";
 
 const WIDTH = 640;
 const HEIGHT = 320;
-const PAD_LEFT = 60;
-const PAD_RIGHT = 24;
 const PAD_TOP = 36;
 const PAD_BOTTOM = 40;
+const LABEL_FONT_SIZE = 13;
+
+/** Rough glyph-width estimate (no DOM measurement available server-side) — generous enough to avoid clipping without wasting space. */
+function estimateTextWidth(text: string, fontSize: number): number {
+  return text.length * fontSize * 0.62;
+}
 
 const STATUS_COLOR: Record<Indicator["onTargetStatus"], string> = {
   "missed-target": "var(--status-critical)",
@@ -60,6 +64,20 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const yMin = ticks[0];
   const yMax = ticks[ticks.length - 1];
 
+  // Padding is sized to the actual labels being rendered rather than a fixed
+  // constant — values on this site range from "0.9" to "1,576,043", and a
+  // padding wide enough for one clips the other. Left padding fits the
+  // widest y-axis tick label plus half the first point's own value label
+  // (also centered there); right padding fits half the last point's value
+  // label (center-anchored on the point, so half its width extends past it).
+  const labelWidth = (v: number | null) => (v == null ? 0 : estimateTextWidth(formatIndicatorValue(v, indicator.measurementType, indicator.name), LABEL_FONT_SIZE));
+  const widestTickWidth = Math.max(0, ...ticks.map((t) => labelWidth(t)));
+  const firstLabelHalfWidth = labelWidth(points[0]?.value ?? null) / 2;
+  const lastLabelHalfWidth = labelWidth(points[points.length - 1]?.value ?? null) / 2;
+
+  const PAD_LEFT = Math.max(48, widestTickWidth + 20, firstLabelHalfWidth + 6);
+  const PAD_RIGHT = Math.max(24, lastLabelHalfWidth + 6);
+
   const plotWidth = WIDTH - PAD_LEFT - PAD_RIGHT;
   const plotHeight = HEIGHT - PAD_TOP - PAD_BOTTOM;
   const plotBottom = PAD_TOP + plotHeight;
@@ -109,7 +127,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
           <g key={tick}>
             <line x1={PAD_LEFT} x2={WIDTH - PAD_RIGHT} y1={yFor(tick)} y2={yFor(tick)} stroke="var(--gridline)" strokeWidth={1} />
             <text x={PAD_LEFT - 10} y={yFor(tick)} textAnchor="end" dominantBaseline="middle" fontSize={13} fill="var(--text-secondary)">
-              {formatIndicatorValue(tick, indicator.measurementType)}
+              {formatIndicatorValue(tick, indicator.measurementType, indicator.name)}
             </text>
           </g>
         ))}
@@ -152,7 +170,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
                 fontWeight={isLatest ? 700 : 500}
                 fill={isLatest ? "var(--text-primary)" : "var(--text-secondary)"}
               >
-                {formatIndicatorValue(p.value, indicator.measurementType)}
+                {formatIndicatorValue(p.value, indicator.measurementType, indicator.name)}
               </text>
             </g>
           );
@@ -211,11 +229,11 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
                   {p.isPartialYear ? " (YTD)" : ""}
                 </td>
                 <td className="py-1.5 pr-4" style={{ color: "var(--text-primary)" }}>
-                  {formatIndicatorValue(p.value, indicator.measurementType)}
+                  {formatIndicatorValue(p.value, indicator.measurementType, indicator.name)}
                 </td>
                 {hasTarget && (
                   <td className="py-1.5" style={{ color: "var(--text-primary)" }}>
-                    {formatIndicatorValue(p.targetCurrentFY, indicator.measurementType)}
+                    {formatIndicatorValue(p.targetCurrentFY, indicator.measurementType, indicator.name)}
                   </td>
                 )}
               </tr>
