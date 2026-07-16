@@ -23,7 +23,7 @@ function upperFirst(s: string): string {
 // qualifier, not a unit, and must survive so the question doesn't lose
 // information.
 const UNIT_PAREN =
-  /^(?:%(?:\s+of\s+[\w\s]*)?|CY|FY\d*|preliminary|provisional|annual|total|\$?000(?:,000)?(?:,000)?|days?|weeks?|months?|years?|hours?|minutes?|minutes?:seconds?|hours?:minutes?|business\s+days?|calendar\s+days?|per\s+[\d,]+[\w\s]*)$/i;
+  /^(?:%(?:\s+of\s+[\w\s]*)?|CY|FY\d*|preliminary|provisional|annual|total|\$?000(?:,000)?(?:,000)?|days?|weeks?|months?|years?|hours?|minutes?|minutes?:seconds?|hours?:minutes?|business\s+days?|calendar\s+days?|(?:average\s+)?(?:monthly\s+)?(?:rate\s+)?per\s+[\d,]+[\w\s]*)$/i;
 
 export function stripTrailingUnitParens(s: string): string {
   let out = s.trim();
@@ -128,6 +128,56 @@ const CURATED_COUNT_NOUNS: Record<string, string> = {
   "NYC Ferry - Total ridership": "riders",
   "Unique emergency housing maintenance problems requiring HPD response": "problems",
   "Homes projected through land use actions reviewed by the City Planning Commission": "homes",
+
+  // Siblings of the shelter-census entries above — same reasoning, just
+  // missed in the first pass. The blanket "per" exclusion below (added for
+  // rate-denominator names like "incidents (rate per 1,000 ADP)") would
+  // otherwise catch these too: "per day" here is a census cadence, not a
+  // rate denominator — the value itself is still a headcount.
+  "Average number of families with children in shelters per day": "families",
+  "Average number of adult families in shelters per day": "families",
+  "Average number of individuals in adult families in shelters per day": "individuals",
+  "Average number of individuals in families with children in shelters per day": "individuals",
+
+  // Same false-positive shape, different cause: "per" here is part of the
+  // embedded unit "micrograms per deciliter" (the clinical threshold being
+  // counted against), not a rate denominator for the indicator's own value
+  // — which is still a plain count of children.
+  "Childhood blood lead levels – number of children younger than age 6 with blood lead levels of 5 micrograms per deciliter or greater (CY) (preliminary)": "children",
+  "Childhood blood lead levels – number of children younger than age 18 with blood lead levels of 5 micrograms per deciliter or greater (CY) (preliminary)": "children",
+};
+
+// A small cluster of DOC/DOP indicators whose names combine two things the
+// rules above can't clean up on their own: "ADP" (Average Daily Population,
+// the rate's denominator — meaningful for the methodology page, but not
+// something a reader needs spelled out in the question) and DOC's own
+// repetitive "individuals in custody-on-individuals in custody" phrasing
+// (the department's preferred people-first term for what used to be called
+// "inmate-on-inmate," but tripled up in one sentence it reads as broken).
+// Hand-written rather than pattern-matched — reviewed once, keyed on the
+// exact source name so a rename falls back to the generic rules instead of
+// silently going stale.
+const CURATED_QUESTIONS: Record<string, string> = {
+  "Youth-on-youth assaults and altercations with injury rate in detention (per 100 total ADP)":
+    "How often do youth-on-youth assaults with injury happen in detention?",
+  "Youth-on-staff assaults and altercations with injury rate in detention (per 100 total ADP)":
+    "How often do youth-on-staff assaults with injury happen in detention?",
+  "Weapon recovery rate in detention (average per 100 total ADP)": "How often are weapons recovered in detention?",
+  "Illegal substance/prescription or OTC medication recovery rate in detention (average per 100 total ADP)":
+    "How often are illegal drugs or medication recovered in detention?",
+  "Abscond rate in non-secure detention (average per 100 total ADP in non-secure)":
+    "How often do youth abscond from non-secure detention?",
+  "Violent individuals in custody-on-individuals in custody incidents (monthly rate per 1,000 ADP)":
+    "How often do violent incidents happen between people in custody?",
+  "Serious injury to individuals in custody as a result of violent individuals in custody-on-individuals in custody incidents (monthly rate per 1,000 ADP)":
+    "How often do violent incidents between people in custody result in serious injury?",
+  "Assault on staff by individual in custody (monthly rate per 1,000 ADP)": "How often are staff assaulted by someone in custody?",
+  "Serious injury to staff as a result of assault on staff by individual in custody (monthly rate per 1,000 ADP)":
+    "How often do assaults on staff by someone in custody result in serious injury?",
+  "Department use of force incidents with serious injury (rate per 1,000 ADP)":
+    "How often do use-of-force incidents result in serious injury?",
+  "Child abuse and/or neglect reports for youth in detention that are substantiated, rate (average per 100 total ADP)":
+    "How often are child abuse or neglect reports involving youth in detention substantiated?",
 };
 
 /**
@@ -140,6 +190,13 @@ const CURATED_COUNT_NOUNS: Record<string, string> = {
  */
 export function detectCountNoun(indicatorName: string): string | null {
   if (indicatorName in CURATED_COUNT_NOUNS) return CURATED_COUNT_NOUNS[indicatorName];
+
+  // A "per X" indicator's value is a rate, not a raw count — even when the
+  // name itself contains a plural noun like "incidents" (e.g. "incidents
+  // (monthly rate per 1,000 ADP)"). Appending that noun would misrepresent
+  // "94.9" as a literal count of 94.9 incidents rather than a per-population
+  // rate, so these fall through to a bare number instead.
+  if (/\bper\b/i.test(indicatorName)) return null;
 
   const core = stripTrailingUnitParens(indicatorName);
 
@@ -176,6 +233,8 @@ export function detectCountNoun(indicatorName: string): string | null {
  * rather than being appended raw.
  */
 export function toPlainLanguageQuestion(indicator: Indicator): string {
+  if (indicator.name in CURATED_QUESTIONS) return CURATED_QUESTIONS[indicator.name];
+
   const core = stripTrailingUnitParens(indicator.name);
 
   let m = core.match(/response time (?:to|for)\s+(.+)/i);
