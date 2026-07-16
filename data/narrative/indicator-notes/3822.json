@@ -1,9 +1,19 @@
 {
   "summary": "Part of this rise reflects a change in what's being measured, not just student performance: New York State redesigned its grades 3-8 math and ELA tests in 2023 to align with new learning standards, and state officials said scores from 2022 and earlier are not directly comparable to 2023 and later. Independent reporting has also found the state has lowered the score needed to be rated 'proficient' in most years since 2023, so some of the continued increase through Fiscal 2025 may reflect an easier scoring bar rather than purely higher achievement, even as the city credits its NYC Reads and NYC Solves curriculum initiatives for the gains.",
   "sources": [
-    { "label": "NYC Public Schools, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doe.pdf" },
-    { "label": "Chalkbeat New York, \"NY state tests for grades 3-8 are changing again. Here's what to know.\"", "url": "https://www.chalkbeat.org/newyork/2023/3/23/23654125/state-tests-new-york-reading-math-scores-pandemic-learning-loss/" },
-    { "label": "Empire Center for Public Policy, \"As Math and Reading Proficiency Went Up, 'Cut Scores' Went Down\"", "url": "https://www.empirecenter.org/publications/as-math-and-reading-proficiency-went-up-cut-scores-went-down/" }
+    {
+      "label": "NYC Public Schools, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doe.pdf"
+    },
+    {
+      "label": "Chalkbeat New York, \"NY state tests for grades 3-8 are changing again. Here's what to know.\"",
+      "url": "https://www.chalkbeat.org/newyork/2023/3/23/23654125/state-tests-new-york-reading-math-scores-pandemic-learning-loss/"
+    },
+    {
+      "label": "Empire Center for Public Policy, \"As Math and Reading Proficiency Went Up, 'Cut Scores' Went Down\"",
+      "url": "https://www.empirecenter.org/publications/as-math-and-reading-proficiency-went-up-cut-scores-went-down/"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing, though partly reflecting a 2023 test redesign, not just achievement"
 }

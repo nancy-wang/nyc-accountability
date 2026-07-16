@@ -1,8 +1,15 @@
 {
   "summary": "Youth-on-youth assault rates in detention fell substantially from Fiscal 2022 through Fiscal 2024 and have stayed well below their earlier level since, even as the number of youth held in detention has grown sharply. ACS credits expanded behavior-management training (its \"STRIVE+\" program), on-site violence interrupters, and a specialized de-escalation response team, while noting the slight Fiscal 2025 uptick reflected added stress from a larger population sharing limited space.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing despite a growing detention population, credited to new de-escalation programs"
 }

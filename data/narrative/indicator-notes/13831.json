@@ -1,8 +1,15 @@
 {
   "summary": "Response rates dipped slightly in FY23 while NYCHA's exterminator staff were being reorganized, then jumped sharply starting FY24 after NYCHA created a dedicated rapid-response rat team (October 2023) and consolidated exterminators under a centralized Pest Control Department. Both moves were part of NYCHA's push to meet pest-control deadlines in its 2019 consent agreement with the federal Department of Housing and Urban Development.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2023 and Fiscal 2025 Mayor's Management Reports", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" },
-    { "label": "U.S. Dept. of Justice, \"Manhattan U.S. Attorney Announces Settlement With NYCHA and NYC\"", "url": "https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-settlement-nycha-and-nyc-fundamentally-reform-nycha" }
+    {
+      "label": "NYCHA, Fiscal 2023 and Fiscal 2025 Mayor's Management Reports",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf"
+    },
+    {
+      "label": "U.S. Dept. of Justice, \"Manhattan U.S. Attorney Announces Settlement With NYCHA and NYC\"",
+      "url": "https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-settlement-nycha-and-nyc-fundamentally-reform-nycha"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing sharply after NYCHA created a dedicated rapid-response rat team"
 }

@@ -1,8 +1,15 @@
 {
-  "summary": "Admissions to city juvenile detention centers rose sharply through Fiscal 2025, which ACS attributed to an increase in arrests, including those tied to gun violence and other public-safety concerns. That trend reversed in the first months of Fiscal 2026 — the first year-over-year admissions decline since Fiscal 2020, according to ACS's own report — though the detention population kept climbing anyway because youth are staying much longer once admitted.",
+  "summary": "Admissions to city juvenile detention centers rose sharply through Fiscal 2025, which ACS attributed to an increase in arrests, including those tied to gun violence and other public-safety concerns. That trend reversed in the first months of Fiscal 2026 \u2014 the first year-over-year admissions decline since Fiscal 2020, according to ACS's own report \u2014 though the detention population kept climbing anyway because youth are staying much longer once admitted.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing overall, though admissions have recently started to decline"
 }

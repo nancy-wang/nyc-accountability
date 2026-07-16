@@ -1,9 +1,19 @@
 {
   "summary": "Processing time for renewing this disability homeowner exemption rose for two straight years, then fell sharply in fiscal 2025. DOF attributes the fiscal 2023 rise to a pandemic-era backlog from continuing benefits for people who couldn't file renewal paperwork on time, and the further fiscal 2024 increase to a 2023 New York State law that redefined how income is calculated for the benefit, which required DOF to overhaul its systems and verification process. The fiscal 2025 drop reflects DOF automating income verification and document workflows.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "rose from a backlog and a law change, then fell sharply after automation"
 }

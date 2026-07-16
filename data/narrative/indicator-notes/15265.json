@@ -1,8 +1,15 @@
 {
-  "summary": "Site visits grew nearly six-fold from FY22 to FY25 as DVS steadily expanded its marketing — adding direct mail, targeted text messaging, and paid social media and newspaper ads on top of its existing outreach — according to the agency's own year-by-year reporting.",
+  "summary": "Site visits grew nearly six-fold from FY22 to FY25 as DVS steadily expanded its marketing \u2014 adding direct mail, targeted text messaging, and paid social media and newspaper ads on top of its existing outreach \u2014 according to the agency's own year-by-year reporting.",
   "sources": [
-    { "label": "DVS, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dvs.pdf" },
-    { "label": "DVS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf" }
+    {
+      "label": "DVS, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dvs.pdf"
+    },
+    {
+      "label": "DVS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as DVS steadily expanded its marketing outreach"
 }

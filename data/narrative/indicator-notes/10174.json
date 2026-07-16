@@ -1,9 +1,19 @@
 {
   "summary": "The Fiscal 2023 drop is directly attributed by NYCEM to the departure of temporary COVID-19 outreach staff, which cut the agency's capacity to run preparedness sessions by half. Attendance has since climbed back through Fiscal 2025 and into Fiscal 2026 as NYCEM expanded outreach events and its Ready New York education program.",
   "sources": [
-    { "label": "NYCEM, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycem.pdf" },
-    { "label": "NYCEM, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycem.pdf" },
-    { "label": "NYCEM, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycem.pdf" }
+    {
+      "label": "NYCEM, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycem.pdf"
+    },
+    {
+      "label": "NYCEM, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycem.pdf"
+    },
+    {
+      "label": "NYCEM, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycem.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing overall, though attendance has recovered since a FY23 staffing loss"
 }

@@ -1,7 +1,11 @@
 {
   "summary": "This rate nearly quadrupled in relative terms (0.3% to 1.1%) between FY22 and FY26, but the underlying change is a small absolute increase in the number of families with children who returned to shelter after a subsidized housing placement, out of thousands of such placements each year. DHS's own reporting describes returns for families with children as ticking up only slightly and remaining \"historically low\" overall, even as the volume of subsidized exits grew substantially through CityFHEPS.",
   "sources": [
-    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing in relative terms, though DHS calls the rate still historically low"
 }

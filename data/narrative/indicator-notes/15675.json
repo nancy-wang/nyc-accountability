@@ -1,9 +1,19 @@
 {
   "summary": "This indicator, which counts parents and guardians of students in temporary housing using caregiver transit cards, rose along with New York City's shelter population during the 2022-2024 surge in migrant and asylum-seeking family arrivals. It fell back in Fiscal 2025 as arrivals slowed dramatically and the city closed dozens of emergency shelters, roughly halving the shelter census by late 2025 compared with its January 2024 peak.",
   "sources": [
-    { "label": "NYC Public Schools, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doe.pdf" },
-    { "label": "NYC Comptroller, Asylum Seeker Census", "url": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census/" },
-    { "label": "NYC Mayor's Office, \"Mayor Adams Announces new Round of Migrant Shelter Closures\"", "url": "https://www.nyc.gov/mayors-office/news/2025/01/mayor-adams-new-round-migrant-shelter-closures-including-one-city-s-largest" }
+    {
+      "label": "NYC Public Schools, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doe.pdf"
+    },
+    {
+      "label": "NYC Comptroller, Asylum Seeker Census",
+      "url": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census/"
+    },
+    {
+      "label": "NYC Mayor's Office, \"Mayor Adams Announces new Round of Migrant Shelter Closures\"",
+      "url": "https://www.nyc.gov/mayors-office/news/2025/01/mayor-adams-new-round-migrant-shelter-closures-including-one-city-s-largest"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall, though it fell back as shelter arrivals slowed"
 }

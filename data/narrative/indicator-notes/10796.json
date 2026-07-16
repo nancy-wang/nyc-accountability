@@ -1,8 +1,15 @@
 {
   "summary": "Processing time for these disability rent-freeze applications spiked in fiscal 2023 for the same reason as the related senior program: DOF kept extending benefits for people who couldn't submit renewal paperwork during the pandemic rather than cutting them off, which built up a backlog just as processing staff levels dropped. DOF's later reports say times came back down through fiscal 2025 as the agency shifted staff and added automation.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since a pandemic-era backlog cleared and DOF added automation"
 }

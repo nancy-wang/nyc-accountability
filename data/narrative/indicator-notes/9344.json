@@ -1,8 +1,15 @@
 {
   "summary": "Processing time for renewing this senior rent-freeze benefit spiked in fiscal 2023 because DOF, following a pandemic-era policy, kept renewing benefits for seniors who couldn't submit paperwork on time rather than denying them, which piled up cases just as processing staff levels fell. Monthly processing times hit as high as 52 days that November before easing; DOF's later reports say times were brought back down through added automation and more efficient use of staff.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since a pandemic-era backlog cleared and DOF added automation"
 }

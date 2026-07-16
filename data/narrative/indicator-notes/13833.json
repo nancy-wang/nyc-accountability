@@ -1,8 +1,15 @@
 {
-  "summary": "Response times for bedbug, mice, and roach complaints worsened through FY23 but then improved dramatically as NYCHA consolidated its exterminators into one Pest Control Department, focused on identifying root causes of infestations, and — per NYCHA's FY26 report — added daily supervisor check-in meetings and cross-training programs. This buildout was driven by pest-response deadlines in NYCHA's 2019 consent agreement with the federal Department of Housing and Urban Development.",
+  "summary": "Response times for bedbug, mice, and roach complaints worsened through FY23 but then improved dramatically as NYCHA consolidated its exterminators into one Pest Control Department, focused on identifying root causes of infestations, and \u2014 per NYCHA's FY26 report \u2014 added daily supervisor check-in meetings and cross-training programs. This buildout was driven by pest-response deadlines in NYCHA's 2019 consent agreement with the federal Department of Housing and Urban Development.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" },
-    { "label": "NYCHA, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf"
+    },
+    {
+      "label": "NYCHA, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing after NYCHA consolidated pest control under its 2019 HUD agreement"
 }

@@ -1,7 +1,11 @@
 {
   "summary": "The extreme FY22 figure (nearly 16 hours to resolve a sewer backup, versus roughly 3 hours in surrounding years) was driven by the record-breaking rainfall from Hurricanes Henri and Ida that fiscal year, which overwhelmed crews responding to sewer backups and clogged catch basins citywide. DEP's own reporting says resolution times returned to normal once that unusually severe rain event passed.",
   "sources": [
-    { "label": "DEP, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf" }
+    {
+      "label": "DEP, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing since the record rainfall of Hurricanes Henri and Ida passed"
 }

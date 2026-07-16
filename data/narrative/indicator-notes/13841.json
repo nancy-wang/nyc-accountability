@@ -1,8 +1,15 @@
 {
   "summary": "The jump from 621 units abated in FY22 to over 5,000 by FY24-FY25 reflects a citywide law (Local Law 66) that took effect December 1, 2021 and lowered the legal threshold defining lead-based paint from 1.0 to 0.5 mg/cm2, which meant far more NYCHA apartments suddenly required remediation. NYCHA's own reporting says it ramped up abatement work specifically to comply with this lower threshold.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/nycha.pdf" },
-    { "label": "NYC Dept. of Housing Preservation and Development, Lead-Based Paint Threshold FAQ", "url": "https://www.nyc.gov/assets/hpd/downloads/pdfs/services/lead-based-paint-threshold-faqs.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/nycha.pdf"
+    },
+    {
+      "label": "NYC Dept. of Housing Preservation and Development, Lead-Based Paint Threshold FAQ",
+      "url": "https://www.nyc.gov/assets/hpd/downloads/pdfs/services/lead-based-paint-threshold-faqs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing sharply since a 2021 law lowered the legal lead-paint threshold"
 }

@@ -1,10 +1,23 @@
 {
-  "summary": "QPL's program attendance grew sharply as the library restored pandemic-reduced hours and in-person programming from Fiscal 2022 through Fiscal 2024, weathering a brief 2023 citywide budget cut to Sunday hours that was fully restored the next year. The Fiscal 2026 figure shown here is a partial-year total — QPL's own preliminary Fiscal 2026 report shows program attendance for the first four months of the year running well ahead of the same period in Fiscal 2025, so the apparent dip likely reflects incomplete-year data rather than a real decline.",
+  "summary": "QPL's program attendance grew sharply as the library restored pandemic-reduced hours and in-person programming from Fiscal 2022 through Fiscal 2024, weathering a brief 2023 citywide budget cut to Sunday hours that was fully restored the next year. The Fiscal 2026 figure shown here is a partial-year total \u2014 QPL's own preliminary Fiscal 2026 report shows program attendance for the first four months of the year running well ahead of the same period in Fiscal 2025, so the apparent dip likely reflects incomplete-year data rather than a real decline.",
   "sources": [
-    { "label": "NYPL, Statement on Fiscal Year 2024 Budget Cuts (with BPL and QPL)", "url": "https://www.nypl.org/press/statement-brooklyn-public-library-new-york-public-library-and-queens-public-library-fiscal" },
-    { "label": "CNN, \"NYC public libraries have their funding restored, will reopen on Sundays\"", "url": "https://www.cnn.com/2024/06/28/business/nyc-libraries-funding-restored/index.html" },
-    { "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf" },
-    { "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf" }
+    {
+      "label": "NYPL, Statement on Fiscal Year 2024 Budget Cuts (with BPL and QPL)",
+      "url": "https://www.nypl.org/press/statement-brooklyn-public-library-new-york-public-library-and-queens-public-library-fiscal"
+    },
+    {
+      "label": "CNN, \"NYC public libraries have their funding restored, will reopen on Sundays\"",
+      "url": "https://www.cnn.com/2024/06/28/business/nyc-libraries-funding-restored/index.html"
+    },
+    {
+      "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf"
+    },
+    {
+      "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as pandemic-era hours were restored; FY26 dip is partial-year data"
 }

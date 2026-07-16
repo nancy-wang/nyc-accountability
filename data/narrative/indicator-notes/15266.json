@@ -1,8 +1,15 @@
 {
-  "summary": "Impressions surged 54% in FY24 as DVS diversified its marketing channels, then declined over the next two years — DVS attributes the FY25 dip to reaching \"the upper limits of existing tools and tactics,\" and the further FY26 drop to a deliberate strategy shift away from paid social media promotion toward in-person outreach events instead.",
+  "summary": "Impressions surged 54% in FY24 as DVS diversified its marketing channels, then declined over the next two years \u2014 DVS attributes the FY25 dip to reaching \"the upper limits of existing tools and tactics,\" and the further FY26 drop to a deliberate strategy shift away from paid social media promotion toward in-person outreach events instead.",
   "sources": [
-    { "label": "DVS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf" },
-    { "label": "DVS, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dvs.pdf" }
+    {
+      "label": "DVS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf"
+    },
+    {
+      "label": "DVS, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dvs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall, though DVS has since shifted focus to in-person outreach"
 }

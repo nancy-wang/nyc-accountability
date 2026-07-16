@@ -1,8 +1,15 @@
 {
   "summary": "DOT's Fiscal 2025 Vision Zero report attributes the drop in speed hump and cushion installations (443 to 224, a 49% decline) to fewer available contractors, shortages of equipment and installation materials, and delays from community feedback on individual projects. Fiscal 2024's high total, by contrast, reflected DOT deploying extra installation crews on Saturdays.",
   "sources": [
-    { "label": "NYC, \"Collaborating to Deliver Results: Vision Zero,\" Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/vision_zero.pdf" },
-    { "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf" }
+    {
+      "label": "NYC, \"Collaborating to Deliver Results: Vision Zero,\" Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/vision_zero.pdf"
+    },
+    {
+      "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing, tied to contractor and materials shortages after an unusually high FY24"
 }

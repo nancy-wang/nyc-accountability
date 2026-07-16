@@ -1,9 +1,19 @@
 {
   "summary": "Referrals for civil and administrative action fell 38% in Fiscal 2025, part of a multi-year decline DOI attributes to handling fewer, larger and more resource-intensive investigations rather than a high volume of smaller cases. As with DOI's other case-outcome indicators, the Fiscal 2026 figure is a year-to-date total (118 referrals through the first four months, per DOI's own preliminary report) and is not yet a full-year count.",
   "sources": [
-    { "label": "DOI, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf" },
-    { "label": "DOI, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf" },
-    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+    {
+      "label": "DOI, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing as DOI shifts toward fewer, larger, more resource-intensive investigations"
 }

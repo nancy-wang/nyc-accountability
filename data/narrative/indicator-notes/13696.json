@@ -1,8 +1,15 @@
 {
   "summary": "The rise to 194 days in fiscal 2023 coincided with DCWP's settlement of a large, complex case against Chipotle covering roughly 100 store locations and over 9,200 employees, the kind of multi-site investigation that takes longer to close. Median closure time then fell in fiscal 2024 and 2025 as a growing share of investigations involved simpler, faster-resolving app-based delivery-worker pay cases.",
   "sources": [
-    { "label": "DCWP, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcwp.pdf" },
-    { "label": "DCWP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf" }
+    {
+      "label": "DCWP, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcwp.pdf"
+    },
+    {
+      "label": "DCWP, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since a large multi-site case in FY23 gave way to simpler cases"
 }

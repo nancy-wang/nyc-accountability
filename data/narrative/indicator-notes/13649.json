@@ -1,9 +1,19 @@
 {
-  "summary": "Organics diversion has climbed steadily as DSNY rolled out mandatory curbside composting borough by borough — starting in Queens in fall 2022, expanding to Brooklyn in fall 2023, and reaching every borough citywide by October 2024. City officials and local reporting both describe this as the largest curbside composting program in the country, and DSNY's own numbers show diverted tonnage roughly doubling as each phase of the rollout took effect.",
+  "summary": "Organics diversion has climbed steadily as DSNY rolled out mandatory curbside composting borough by borough \u2014 starting in Queens in fall 2022, expanding to Brooklyn in fall 2023, and reaching every borough citywide by October 2024. City officials and local reporting both describe this as the largest curbside composting program in the country, and DSNY's own numbers show diverted tonnage roughly doubling as each phase of the rollout took effect.",
   "sources": [
-    { "label": "DSNY, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dsny.pdf" },
-    { "label": "NYC Mayor's Office, \"Mayor Adams Announces Completion of Roll-out of First-Ever No-Cost, Pain-Free Citywide Curbside Composting Program\"", "url": "https://www.nyc.gov/mayors-office/news/2024/10/mayor-adams-completion-roll-out-first-ever-no-cost-pain-free-citywide-curbside" },
-    { "label": "Inside Climate News, \"Curbside 'Composting' Is Finally Citywide in New York. Or Is It?\"", "url": "https://insideclimatenews.org/news/05102024/new-york-city-curbside-composting-environmental-issues/" }
+    {
+      "label": "DSNY, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dsny.pdf"
+    },
+    {
+      "label": "NYC Mayor's Office, \"Mayor Adams Announces Completion of Roll-out of First-Ever No-Cost, Pain-Free Citywide Curbside Composting Program\"",
+      "url": "https://www.nyc.gov/mayors-office/news/2024/10/mayor-adams-completion-roll-out-first-ever-no-cost-pain-free-citywide-curbside"
+    },
+    {
+      "label": "Inside Climate News, \"Curbside 'Composting' Is Finally Citywide in New York. Or Is It?\"",
+      "url": "https://insideclimatenews.org/news/05102024/new-york-city-curbside-composting-environmental-issues/"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as citywide curbside composting rolled out borough by borough"
 }

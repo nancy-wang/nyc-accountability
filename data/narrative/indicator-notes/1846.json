@@ -1,8 +1,15 @@
 {
   "summary": "The Law Department's average time to approve a records-disposal application nearly tripled in fiscal 2024, to 3.7 months, which DORIS attributes to a side effect of its own disposal-streamlining push: the volume of records DORIS sent for disposal jumped 350% that year, and processing that much larger caseload took the Law Department longer. The figure eased to 2.1 months in fiscal 2025, though DORIS's more recent reporting shows it climbing again as disposal volumes keep growing.",
   "sources": [
-    { "label": "DORIS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/2024_mmr.pdf" },
-    { "label": "DORIS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/2025_mmr.pdf" }
+    {
+      "label": "DORIS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/2024_mmr.pdf"
+    },
+    {
+      "label": "DORIS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/2025_mmr.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing as DORIS's own disposal volume surged, overloading downstream review"
 }

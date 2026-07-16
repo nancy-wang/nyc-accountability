@@ -1,8 +1,15 @@
 {
   "summary": "DYCD attributes the Fiscal 2025 drop in English literacy program participants to a new multi-year contract cycle: awards to providers weren't finalized until partway through the year, new providers needed time to start up, and some providers shifted into a separate pilot program not counted in this total. DYCD's preliminary Fiscal 2026 report shows enrollment recovering as that contract cycle settles in.",
   "sources": [
-    { "label": "DYCD, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dycd.pdf" },
-    { "label": "DYCD, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dycd.pdf" }
+    {
+      "label": "DYCD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dycd.pdf"
+    },
+    {
+      "label": "DYCD, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dycd.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall; a FY25 dip reflected a contract-cycle transition"
 }

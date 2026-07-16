@@ -1,8 +1,15 @@
 {
   "summary": "Adult families are DHS's smallest shelter population (well under 2,000 households on an average day), so this return-to-shelter rate is calculated on a small base and can swing several tenths of a point from a handful of cases in either direction. DHS reporting ties the FY22-FY25 decline to expanded subsidized housing placements, while the rise in the FY26 year-to-date figure is consistent with the small underlying case counts rather than a clear change in program performance.",
   "sources": [
-    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
-    { "label": "DHS, Preliminary Mayor's Management Report, Fiscal 2026", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf"
+    },
+    {
+      "label": "DHS, Preliminary Mayor's Management Report, Fiscal 2026",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing overall, though based on a very small number of families each year"
 }

@@ -1,8 +1,15 @@
 {
-  "summary": "Homeless households moved into newly built units have more than doubled since fiscal 2022. HPD attributes this mainly to a rising number of 'volunteer' units — market-and-affordable apartments not originally set aside for homeless placements that landlords opt into — encouraged by the Augmented CityFHEPS rental voucher, which subsidizes rent for certain middle-income units filled through HPD's homeless placement process.",
+  "summary": "Homeless households moved into newly built units have more than doubled since fiscal 2022. HPD attributes this mainly to a rising number of 'volunteer' units \u2014 market-and-affordable apartments not originally set aside for homeless placements that landlords opt into \u2014 encouraged by the Augmented CityFHEPS rental voucher, which subsidizes rent for certain middle-income units filled through HPD's homeless placement process.",
   "sources": [
-    { "label": "HPD, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf" },
-    { "label": "HPD, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf" }
+    {
+      "label": "HPD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf"
+    },
+    {
+      "label": "HPD, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, driven by more landlords opting in via Augmented CityFHEPS"
 }

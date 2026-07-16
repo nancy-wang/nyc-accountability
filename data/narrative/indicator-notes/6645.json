@@ -1,8 +1,15 @@
 {
-  "summary": "Affordable housing starts fell to a recent low in fiscal 2022 amid rising construction costs and HPD staffing shortages, then climbed each year after as the agency's pipeline recovered — helped by a surge in new construction financed through the 421-a tax-exemption program, which pushed fiscal 2025 starts to their second-highest new-construction total on record.",
+  "summary": "Affordable housing starts fell to a recent low in fiscal 2022 amid rising construction costs and HPD staffing shortages, then climbed each year after as the agency's pipeline recovered \u2014 helped by a surge in new construction financed through the 421-a tax-exemption program, which pushed fiscal 2025 starts to their second-highest new-construction total on record.",
   "sources": [
-    { "label": "HPD, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf" },
-    { "label": "HPD, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf" }
+    {
+      "label": "HPD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf"
+    },
+    {
+      "label": "HPD, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing as the pipeline recovered, helped by the 421-a tax program"
 }

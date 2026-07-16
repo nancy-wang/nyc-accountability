@@ -1,8 +1,15 @@
 {
   "summary": "DOB attributes longer waits for plumbing inspections to ongoing budget constraints and reduced inspector staffing capacity, the same explanation the agency gives for slower inspection turnaround across other trades. A 2025 city Comptroller audit similarly found DOB staffing reductions contributed to slower processing times.",
   "sources": [
-    { "label": "DOB, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf" },
-    { "label": "NYC Comptroller, Audit of the New York City Department of Buildings' Enforcement of Building Codes (Apr. 21, 2025)", "url": "https://comptroller.nyc.gov/reports/audit-of-the-new-york-city-department-of-buildings-enforcement-of-building-codes/" }
+    {
+      "label": "DOB, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf"
+    },
+    {
+      "label": "NYC Comptroller, Audit of the New York City Department of Buildings' Enforcement of Building Codes (Apr. 21, 2025)",
+      "url": "https://comptroller.nyc.gov/reports/audit-of-the-new-york-city-department-of-buildings-enforcement-of-building-codes/"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, which DOB attributes to budget constraints and reduced staffing"
 }

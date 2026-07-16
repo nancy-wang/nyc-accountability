@@ -48,4 +48,6 @@ export interface IndicatorResearchNote {
   sources: Array<{ label: string; url: string }>;
   /** ISO date the research was done — this reflects known facts as of that date, not a live feed. */
   researchedOn: string;
+  /** A condensed (<15 word) version of summary's key finding, for the collapsed card view — e.g. "overall decreasing, but increase due to broadened definition." */
+  oneLiner: string;
 }

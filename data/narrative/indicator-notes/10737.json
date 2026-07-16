@@ -1,8 +1,15 @@
 {
-  "summary": "The average time to approve a waste hauling license renewal fell to 230 days in fiscal 2024 as BIC improved internal processing, then rose again afterward. As with new applications, BIC attributes the fiscal 2025 increase to a significant loss of staff involved in reviewing and approving applications, which added to the workload of remaining staff — a pressure the agency's later reporting says continued into fiscal 2026.",
+  "summary": "The average time to approve a waste hauling license renewal fell to 230 days in fiscal 2024 as BIC improved internal processing, then rose again afterward. As with new applications, BIC attributes the fiscal 2025 increase to a significant loss of staff involved in reviewing and approving applications, which added to the workload of remaining staff \u2014 a pressure the agency's later reporting says continued into fiscal 2026.",
   "sources": [
-    { "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf" },
-    { "label": "Business Integrity Commission, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/bic.pdf" }
+    {
+      "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf"
+    },
+    {
+      "label": "Business Integrity Commission, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/bic.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing overall, though a recent staff loss has slowed things again"
 }

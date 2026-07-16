@@ -1,8 +1,15 @@
 {
-  "summary": "Total attendance at NYPL's research libraries roughly doubled from Fiscal 2022 to Fiscal 2024 as pandemic-era hours and access restrictions were fully lifted. The Fiscal 2026 figure shown here is a partial-year total — the City's preliminary Fiscal 2026 report shows attendance for the first four months of the year running ahead of the same period in Fiscal 2025, so the apparent dip likely reflects incomplete-year data rather than a real decline.",
+  "summary": "Total attendance at NYPL's research libraries roughly doubled from Fiscal 2022 to Fiscal 2024 as pandemic-era hours and access restrictions were fully lifted. The Fiscal 2026 figure shown here is a partial-year total \u2014 the City's preliminary Fiscal 2026 report shows attendance for the first four months of the year running ahead of the same period in Fiscal 2025, so the apparent dip likely reflects incomplete-year data rather than a real decline.",
   "sources": [
-    { "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf" },
-    { "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf" }
+    {
+      "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf"
+    },
+    {
+      "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as pandemic-era hours were restored; FY26 dip is partial-year data"
 }

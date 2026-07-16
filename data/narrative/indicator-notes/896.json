@@ -1,10 +1,23 @@
 {
-  "summary": "The share of water bills based on an estimate rather than an actual meter reading climbed steadily for several years — DEP attributed the early increases to pandemic-era supply chain shortages of meter transmission units, and more recently to an aging fleet of Automated Meter Reading (AMR) devices that increasingly fail to transmit readings. In December 2024, DEP began a three-year, $72 million program to replace over 600,000 AMR devices citywide, which it expects will gradually reduce reliance on estimated bills.",
+  "summary": "The share of water bills based on an estimate rather than an actual meter reading climbed steadily for several years \u2014 DEP attributed the early increases to pandemic-era supply chain shortages of meter transmission units, and more recently to an aging fleet of Automated Meter Reading (AMR) devices that increasingly fail to transmit readings. In December 2024, DEP began a three-year, $72 million program to replace over 600,000 AMR devices citywide, which it expects will gradually reduce reliance on estimated bills.",
   "sources": [
-    { "label": "DEP, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf" },
-    { "label": "DEP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dep.pdf" },
-    { "label": "DEP, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dep.pdf" },
-    { "label": "The Rockaway Times, \"New Yorkers Face Estimated Water Bills as They Await Meter Upgrades\"", "url": "https://rockawaytimes.com/new-yorkers-face-estimated-water-bills-as-they-await-meter-upgrades/" }
+    {
+      "label": "DEP, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf"
+    },
+    {
+      "label": "DEP, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dep.pdf"
+    },
+    {
+      "label": "DEP, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dep.pdf"
+    },
+    {
+      "label": "The Rockaway Times, \"New Yorkers Face Estimated Water Bills as They Await Meter Upgrades\"",
+      "url": "https://rockawaytimes.com/new-yorkers-face-estimated-water-bills-as-they-await-meter-upgrades/"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as meter devices age; DEP has a 3-year replacement program underway"
 }

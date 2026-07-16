@@ -1,8 +1,15 @@
 {
-  "summary": "The rate of drugs or medication recovered from youth in detention rose through Fiscal 2024 before falling sharply. ACS's own report credits the recent decline to enhanced search and investigation procedures, more frequent searches, and — starting in Fiscal 2026 — new millimeter-wave body scanners installed to detect contraband.",
+  "summary": "The rate of drugs or medication recovered from youth in detention rose through Fiscal 2024 before falling sharply. ACS's own report credits the recent decline to enhanced search and investigation procedures, more frequent searches, and \u2014 starting in Fiscal 2026 \u2014 new millimeter-wave body scanners installed to detect contraband.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing overall, though recent searches and new scanners have cut it sharply"
 }

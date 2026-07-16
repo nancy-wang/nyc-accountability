@@ -1,8 +1,15 @@
 {
   "summary": "Part of this indicator's rise reflects a definitional change: DSNY expanded the list of violation codes counted as \"cleanliness violations\" starting in the Fiscal 2024 report (applied retroactively to prior years), which broadened what gets counted. The increase also coincides with DSNY's stated refocus on core cleanliness enforcement beginning in Fiscal 2023 and, in later years, with new containerization set-out rules that added additional violation categories to enforce.",
   "sources": [
-    { "label": "DSNY, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dsny.pdf" },
-    { "label": "DSNY, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dsny.pdf" }
+    {
+      "label": "DSNY, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dsny.pdf"
+    },
+    {
+      "label": "DSNY, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dsny.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing, partly because DSNY broadened what counts as a violation"
 }

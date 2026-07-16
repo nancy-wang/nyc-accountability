@@ -1,8 +1,15 @@
 {
   "summary": "This indicator reflects the size and number of individual tax-incentive deals the NYC Industrial Development Agency (NYCIDA) closes each year, so it can swing sharply based on a few large transactions rather than a steady trend. The Fiscal 2025 jump to 239 projected jobs came as NYCIDA closed 20 contracts, more than double Fiscal 2024's 8, including financing for an offshore-wind terminal at the South Brooklyn Marine Terminal and NYCIDA's first deal under its new Manhattan office-tower conversion program (M-CORE).",
   "sources": [
-    { "label": "NYCEDC, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/edc.pdf" },
-    { "label": "NYCEDC, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/edc.pdf" }
+    {
+      "label": "NYCEDC, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/edc.pdf"
+    },
+    {
+      "label": "NYCEDC, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/edc.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing, but driven by a handful of large deals, not a steady trend"
 }

@@ -1,8 +1,15 @@
 {
-  "summary": "Total attendance at Queens Public Library rose steadily as pandemic-era hours and service limits were lifted between Fiscal 2022 and Fiscal 2025. The Fiscal 2026 figure shown here is a partial-year total — QPL's own preliminary Fiscal 2026 report shows attendance for the first four months of the year running ahead of the same period in Fiscal 2025, so the apparent drop likely reflects incomplete-year data rather than an actual decline.",
+  "summary": "Total attendance at Queens Public Library rose steadily as pandemic-era hours and service limits were lifted between Fiscal 2022 and Fiscal 2025. The Fiscal 2026 figure shown here is a partial-year total \u2014 QPL's own preliminary Fiscal 2026 report shows attendance for the first four months of the year running ahead of the same period in Fiscal 2025, so the apparent drop likely reflects incomplete-year data rather than an actual decline.",
   "sources": [
-    { "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf" },
-    { "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf" }
+    {
+      "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf"
+    },
+    {
+      "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as pandemic-era hours were restored; FY26 dip is partial-year data"
 }

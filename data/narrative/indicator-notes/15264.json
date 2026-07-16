@@ -1,8 +1,15 @@
 {
-  "summary": "Referrals fell sharply starting in FY24 because DVS made mental health screenings voluntary rather than automatic for clients, which meant fewer people were screened and therefore fewer were referred out — the agency says this was a deliberate choice to avoid assuming every Veteran who contacts DVS needs mental health support. The partial rebound in FY26 followed a new intake system (using a more detailed suicide-risk screening tool) that DVS adopted mid-year.",
+  "summary": "Referrals fell sharply starting in FY24 because DVS made mental health screenings voluntary rather than automatic for clients, which meant fewer people were screened and therefore fewer were referred out \u2014 the agency says this was a deliberate choice to avoid assuming every Veteran who contacts DVS needs mental health support. The partial rebound in FY26 followed a new intake system (using a more detailed suicide-risk screening tool) that DVS adopted mid-year.",
   "sources": [
-    { "label": "DVS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf" },
-    { "label": "DVS, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dvs.pdf" }
+    {
+      "label": "DVS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf"
+    },
+    {
+      "label": "DVS, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dvs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing since DVS made mental health screenings voluntary rather than automatic"
 }

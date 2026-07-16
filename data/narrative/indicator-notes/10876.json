@@ -1,8 +1,15 @@
 {
-  "summary": "This indicator tracks returns to shelter among adult families who exited without a housing subsidy — a very small group, with DHS reporting only around 100-140 such exits citywide in a typical year. With so few cases, a handful of additional families returning to shelter can swing the percentage by several points, which is the most likely explanation for the sharp jump in the FY26 year-to-date figure rather than a meaningful change in outcomes.",
+  "summary": "This indicator tracks returns to shelter among adult families who exited without a housing subsidy \u2014 a very small group, with DHS reporting only around 100-140 such exits citywide in a typical year. With so few cases, a handful of additional families returning to shelter can swing the percentage by several points, which is the most likely explanation for the sharp jump in the FY26 year-to-date figure rather than a meaningful change in outcomes.",
   "sources": [
-    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" },
-    { "label": "DHS, Preliminary Mayor's Management Report, Fiscal 2026", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf"
+    },
+    {
+      "label": "DHS, Preliminary Mayor's Management Report, Fiscal 2026",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, though based on a very small number of families each year"
 }

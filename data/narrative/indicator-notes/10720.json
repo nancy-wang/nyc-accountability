@@ -1,9 +1,19 @@
 {
   "summary": "This indicator swings with the mix of exam types DCAS processes in a given year, not a change in efficiency. Fiscal 2024's low time reflected a high share of automated, single-part exams that year; Fiscal 2025 rose because that mix wasn't repeated, and the improvement in the first part of Fiscal 2026 is again attributed to a larger share of quicker, single-part exams.",
   "sources": [
-    { "label": "DCAS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcas.pdf" },
-    { "label": "DCAS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcas.pdf" },
-    { "label": "DCAS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dcas.pdf" }
+    {
+      "label": "DCAS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcas.pdf"
+    },
+    {
+      "label": "DCAS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcas.pdf"
+    },
+    {
+      "label": "DCAS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dcas.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing, though this mostly reflects which exam types were processed that year"
 }

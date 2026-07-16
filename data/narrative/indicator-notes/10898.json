@@ -1,8 +1,15 @@
 {
-  "summary": "Intel enforcement events roughly quadrupled between Fiscal 2022 and Fiscal 2024 as DOP's Intelligence Unit expanded collaboration with case-carrying probation officers, then fell 31% in Fiscal 2025 — a decline DOP attributes largely to an 87% drop in ignition-interlock-device compliance checks (tied to fewer court referrals for those devices), even as weapon-possession and domestic-incident enforcement visits both rose that year.",
+  "summary": "Intel enforcement events roughly quadrupled between Fiscal 2022 and Fiscal 2024 as DOP's Intelligence Unit expanded collaboration with case-carrying probation officers, then fell 31% in Fiscal 2025 \u2014 a decline DOP attributes largely to an 87% drop in ignition-interlock-device compliance checks (tied to fewer court referrals for those devices), even as weapon-possession and domestic-incident enforcement visits both rose that year.",
   "sources": [
-    { "label": "Department of Probation, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dop.pdf" },
-    { "label": "Department of Probation, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf" }
+    {
+      "label": "Department of Probation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dop.pdf"
+    },
+    {
+      "label": "Department of Probation, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall, though a FY25 dip reflects fewer interlock-device checks"
 }

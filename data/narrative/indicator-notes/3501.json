@@ -1,8 +1,15 @@
 {
   "summary": "Average caseloads for ACS child protective specialists have dropped from a recent high of 9.7 cases in Fiscal 2023 to roughly 6 by Fiscal 2026. ACS's own performance reports attribute this to a deliberate staffing strategy: hiring more caseworkers ahead of expected attrition and keeping more case-assignable staff available at any given time, rather than a drop in the number of cases needing attention.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing due to a deliberate ACS staffing strategy, not fewer cases"
 }

@@ -1,7 +1,11 @@
 {
   "summary": "DOP itself cautions that this metric is difficult to compare year to year because the mix of juvenile cases referred to the department changes, and each case is evaluated individually for statutory eligibility and suitability for diversion from formal court proceedings. The agency says it continues to apply a standardized assessment tool to keep screening consistent but has not identified a single cause for the multi-year decline in the adjustment-eligible share.",
   "sources": [
-    { "label": "Department of Probation, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf" }
+    {
+      "label": "Department of Probation, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing, though DOP hasn't identified a single cause for the multi-year decline"
 }

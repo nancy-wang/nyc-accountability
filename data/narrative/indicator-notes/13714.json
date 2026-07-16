@@ -1,8 +1,15 @@
 {
   "summary": "The number of people living in adult-family shelter units rose sharply from FY22 to FY23 as asylum-seeking families entered the system, then declined over the following two years even as new entries kept rising. DHS credits continued permanent-housing placements, and in FY25 a specific push to reduce long-term stays, with bringing this population back down.",
   "sources": [
-    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
-    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf"
+    },
+    {
+      "label": "DHS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing as permanent-housing placements outpaced new shelter entries"
 }

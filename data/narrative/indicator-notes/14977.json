@@ -1,8 +1,15 @@
 {
   "summary": "DOB attributes the multi-year decline in stop work orders largely to rising industry compliance: even as the agency has conducted more field inspections than ever, it says inspectors have been finding fewer violating conditions serious enough to halt work. DOB's fiscal 2025 report also notes a deliberate shift toward issuing partial rather than full stop work orders so that not all activity on a site is halted unless necessary.",
   "sources": [
-    { "label": "DOB, \"Marking Construction Safety Week, DOB Releases Annual Construction Safety Report\" (May 6, 2024)", "url": "https://www.nyc.gov/site/buildings/dob/pr-cons-safety-week-2024.page" },
-    { "label": "DOB, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf" }
+    {
+      "label": "DOB, \"Marking Construction Safety Week, DOB Releases Annual Construction Safety Report\" (May 6, 2024)",
+      "url": "https://www.nyc.gov/site/buildings/dob/pr-cons-safety-week-2024.page"
+    },
+    {
+      "label": "DOB, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, which DOB attributes to rising industry compliance, not less enforcement"
 }

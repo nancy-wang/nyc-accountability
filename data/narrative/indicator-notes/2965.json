@@ -1,8 +1,15 @@
 {
   "summary": "This time dropped sharply after fiscal year 2022 because DOF rolled out optical character recognition technology for scanning property documents, which let staff review and accept filings much faster. DOF's own reports credit continued staff training and growing proficiency with the new technology for keeping times low in the years since.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since DOF rolled out optical character recognition technology"
 }

@@ -1,8 +1,15 @@
 {
   "summary": "HRA's own reporting attributes the Fiscal 2023 collapse in SNAP application timeliness (to 39.7%) to an unprecedented surge in applications combined with staff attrition and retirements, plus the expiration of pandemic-era state waivers that had suspended recertification requirements, which created a backlog. The recovery to 87.6% by Fiscal 2025 reflects new staff hires and process and technology improvements HRA implemented in response.",
   "sources": [
-    { "label": "Human Resources Administration, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/hra.pdf" },
-    { "label": "Human Resources Administration, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hra.pdf" }
+    {
+      "label": "Human Resources Administration, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/hra.pdf"
+    },
+    {
+      "label": "Human Resources Administration, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hra.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing after a FY23 collapse tied to an application surge and staff attrition"
 }

@@ -1,8 +1,15 @@
 {
-  "summary": "Only 4 of the 49 housing vouchers available to DVS were used in FY23 — the agency's own reporting blames unforeseen delays processing voucher applications that year. Usage recovered to 35 (of 45 available) in FY24 and stayed strong in FY25, which DVS credits to more referrals from local VA medical facilities and the restart of its Mission: VetCheck volunteer outreach program.",
+  "summary": "Only 4 of the 49 housing vouchers available to DVS were used in FY23 \u2014 the agency's own reporting blames unforeseen delays processing voucher applications that year. Usage recovered to 35 (of 45 available) in FY24 and stayed strong in FY25, which DVS credits to more referrals from local VA medical facilities and the restart of its Mission: VetCheck volunteer outreach program.",
   "sources": [
-    { "label": "DVS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf" },
-    { "label": "DVS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf" }
+    {
+      "label": "DVS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf"
+    },
+    {
+      "label": "DVS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing since a FY23 processing delay eased and VA referrals grew"
 }

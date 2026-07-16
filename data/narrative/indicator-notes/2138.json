@@ -1,8 +1,15 @@
 {
   "summary": "The share of officers disciplined after a substantiated complaint stayed low (47-55%) from fiscal 2022 through 2025 largely because NYPD's Department Advocate's Office was increasingly dismissing cases as \"Short SOL\" -- meaning discipline wasn't pursued because CCRB's recommendation came too close to an 18-month legal deadline -- with 890 cases dismissed this way in 2024 alone. Police Commissioner Jessica Tisch ended that practice in the second quarter of 2025, and CCRB reports discipline and concurrence rates for non-prosecuted cases more than tripled afterward, which is reflected in the fiscal 2026 jump to 92%.",
   "sources": [
-    { "label": "CCRB Annual Report 2025", "url": "https://www.nyc.gov/assets/ccrb/downloads/pdf/policy_pdf/annual_bi-annual/2025CCRBAnnualReport.pdf" },
-    { "label": "CCRB, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/ccrb.pdf" }
+    {
+      "label": "CCRB Annual Report 2025",
+      "url": "https://www.nyc.gov/assets/ccrb/downloads/pdf/policy_pdf/annual_bi-annual/2025CCRBAnnualReport.pdf"
+    },
+    {
+      "label": "CCRB, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/ccrb.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing sharply after NYPD ended a practice of dismissing cases on a technicality"
 }

@@ -1,7 +1,11 @@
 {
   "summary": "This steady decline tracks the same elevator-repair investments behind NYCHA's falling outage-resolution times: more mechanics hired and trained, and equipment upgrades like voltage regulators and waterproof door operators installed under NYCHA's 2019 federal HUD Agreement, which set specific elevator-service targets.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing as NYCHA hires more mechanics and upgrades elevator equipment"
 }

@@ -1,8 +1,15 @@
 {
   "summary": "Corruption-prevention lectures more than tripled from 72 in Fiscal 2022 to 240 in Fiscal 2023, which DOI credits to a new outreach effort that brought lectures directly to Department of Sanitation garage locations, reaching over 9,300 employees who otherwise had limited access to its usual e-learning platform. The apparent drop to 120 in Fiscal 2026 is a year-to-date figure rather than a final total; DOI's own preliminary report shows it delivered 64 lectures in the first four months of the year and said it remained on track to meet or exceed its full-year target of 100.",
   "sources": [
-    { "label": "DOI, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf" },
-    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+    {
+      "label": "DOI, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing since a new outreach effort reached DSNY garage workers directly"
 }

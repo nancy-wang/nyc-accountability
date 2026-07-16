@@ -1,8 +1,15 @@
 {
-  "summary": "The FY23 spike is largely explained by heat and hot water requests, which made up about 80% of all emergency work orders that year and took longer to resolve — especially at developments managed by outside vendors that lack onsite NYCHA heating staff. Response times then improved steadily through FY26 as NYCHA invested in repair capacity and new tracking dashboards under its 2019 federal HUD Agreement.",
+  "summary": "The FY23 spike is largely explained by heat and hot water requests, which made up about 80% of all emergency work orders that year and took longer to resolve \u2014 especially at developments managed by outside vendors that lack onsite NYCHA heating staff. Response times then improved steadily through FY26 as NYCHA invested in repair capacity and new tracking dashboards under its 2019 federal HUD Agreement.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycha.pdf" },
-    { "label": "NYCHA, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycha.pdf"
+    },
+    {
+      "label": "NYCHA, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since a FY23 spike in heat and hot-water requests eased"
 }

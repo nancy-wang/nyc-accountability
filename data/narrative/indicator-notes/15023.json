@@ -1,7 +1,11 @@
 {
   "summary": "Congenital syphilis cases (passed from a pregnant person to their infant) have more than doubled over five years, though the pace of increase slowed in the most recent year. The Health Department reports that more than half of birthing parents whose infants were born with congenital syphilis in 2024 had late or no prenatal screening -- the primary opportunity to catch and treat syphilis during pregnancy -- and that Manhattan saw the largest borough-level rise alongside a drop in prenatal screening rates there.",
   "sources": [
-    { "label": "DOHMH, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf" }
+    {
+      "label": "DOHMH, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, linked by the Health Department to late or missed prenatal screening"
 }

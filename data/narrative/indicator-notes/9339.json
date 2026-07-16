@@ -1,9 +1,19 @@
 {
   "summary": "Processing time for these senior rent-freeze applications spiked in fiscal 2023 because DOF, following a pandemic-era policy, kept renewing benefits for seniors who couldn't submit paperwork on time rather than denying them, which piled up cases just as processing staff levels fell. DOF's later reports say the agency brought times back down through fiscal 2025 by shifting staff and expanding automation.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing since a pandemic-era backlog cleared and DOF added automation"
 }

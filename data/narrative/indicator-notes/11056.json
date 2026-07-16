@@ -1,8 +1,15 @@
 {
   "summary": "FY23's jump was driven by a renewed push from the city's Human Resources Administration on NYCHA's Jobs-Plus employment vendors to hit their placement goals, per NYCHA's own reporting. The FY26 drop instead reflects a one-time disruption: NYCHA's Jobs Plus employment sites transitioned to a new service provider, partner organizations were behind on reporting completed placements, and NYCHA saw longer job retention among graduates of its Resident Training Academy, which reduced the count of new placements logged that year.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycha.pdf" },
-    { "label": "NYCHA, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/nycha.pdf"
+    },
+    {
+      "label": "NYCHA, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing overall; a recent dip reflects a one-time provider transition"
 }

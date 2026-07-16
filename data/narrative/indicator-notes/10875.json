@@ -1,7 +1,11 @@
 {
   "summary": "Adult families who exit shelter with a housing subsidy are a very small group each year (well under 700 households), so this return-rate percentage is sensitive to just a few additional or fewer returning families year to year. DHS's Fiscal 2024 report explicitly notes that swings in adult-family placement figures are \"partially explained by\" the small size of this population, which is the most plausible driver of the up-and-down pattern here rather than a shift in program effectiveness.",
   "sources": [
-    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, though based on a very small number of families each year"
 }

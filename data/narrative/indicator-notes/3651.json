@@ -1,7 +1,11 @@
 {
   "summary": "New York City tuberculosis cases have risen sharply for several years running -- part of a nationwide increase -- driven in part by growth among high-risk populations and ongoing outbreaks in specific communities. The Health Department also says staffing gaps and restricted funding have limited its capacity for core TB control work like contact investigation and case management, and it has been actively hiring to close those gaps.",
   "sources": [
-    { "label": "DOHMH, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf" }
+    {
+      "label": "DOHMH, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, part of a national trend; DOHMH cites staffing and funding gaps"
 }

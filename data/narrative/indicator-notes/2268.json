@@ -1,7 +1,11 @@
 {
   "summary": "BIC approves only a few dozen public wholesale market renewal applications each year, so its average approval-time figure can swing sharply from a small number of unusually fast or slow cases. Fiscal 2025's improvement to 103 days (44% faster than fiscal 2024) reflects processing gains BIC reported that year, while its more recent reporting shows renewal approval times rising again alongside a loss of application-review staff.",
   "sources": [
-    { "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf" }
+    {
+      "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing overall, though based on a small caseload and rising again recently"
 }

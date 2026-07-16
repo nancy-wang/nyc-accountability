@@ -1,8 +1,15 @@
 {
-  "summary": "Housing placements more than doubled from FY22 to FY23 (52 to 123) — DVS's own reporting attributes this to the lifting of New York State's pandemic-era eviction moratorium, which drove up demand for housing help and let DVS place more Veterans with expanded VA coordination. The further climb to 153 placements in FY25 is credited to three additional housing staff the agency hired that year.",
+  "summary": "Housing placements more than doubled from FY22 to FY23 (52 to 123) \u2014 DVS's own reporting attributes this to the lifting of New York State's pandemic-era eviction moratorium, which drove up demand for housing help and let DVS place more Veterans with expanded VA coordination. The further climb to 153 placements in FY25 is credited to three additional housing staff the agency hired that year.",
   "sources": [
-    { "label": "DVS, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dvs.pdf" },
-    { "label": "DVS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf" }
+    {
+      "label": "DVS, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dvs.pdf"
+    },
+    {
+      "label": "DVS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dvs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing as the eviction moratorium lifted and DVS added staff"
 }

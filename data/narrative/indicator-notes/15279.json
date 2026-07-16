@@ -1,7 +1,11 @@
 {
   "summary": "Business outreach and engagement events grew steadily and then jumped 20% in fiscal 2025 to 103, which DCWP attributes mainly to expanded direct outreach promoting its free Self-Employed Tax Preparation program for small businesses and entrepreneurs.",
   "sources": [
-    { "label": "DCWP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf" }
+    {
+      "label": "DCWP, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, with a FY25 jump tied to promoting a free tax-prep program"
 }

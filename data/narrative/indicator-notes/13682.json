@@ -1,8 +1,15 @@
 {
   "summary": "Response time to inspection referrals doubled to 20 days in fiscal 2024, which DCWP attributes to rising demand for inspections plus operational and data-integration challenges from rolling out a new Business Automation system that year. Once those integration issues were resolved, response time improved to 9 days in fiscal 2025 and continued dropping to about 7-8 days into fiscal 2026 as data synchronization between DCWP's systems improved.",
   "sources": [
-    { "label": "DCWP, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcwp.pdf" },
-    { "label": "DCWP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf" }
+    {
+      "label": "DCWP, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcwp.pdf"
+    },
+    {
+      "label": "DCWP, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcwp.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing after a new system rollout's integration issues were resolved"
 }

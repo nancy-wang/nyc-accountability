@@ -1,9 +1,19 @@
 {
   "summary": "The average time to complete a background investigation has climbed since Fiscal 2022 largely because of staffing shortages in DOI's Background Investigation Unit. A December 2025 city Comptroller audit found the unit's staff fell from 25 people in January 2022 to 17 by October 2024 due to attrition and hiring freezes, even as new cases kept arriving; DOI's own Fiscal 2025 and preliminary Fiscal 2026 reports likewise cite staffing levels and increased demand as the reason processing has slowed, though all reported times remain well under the 180-day target.",
   "sources": [
-    { "label": "NYC Comptroller, Audit on DOI's Background Investigations for City Employees", "url": "https://comptroller.nyc.gov/reports/audit-on-the-department-of-investigations-background-investigations-for-city-employees/" },
-    { "label": "DOI, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf" },
-    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+    {
+      "label": "NYC Comptroller, Audit on DOI's Background Investigations for City Employees",
+      "url": "https://comptroller.nyc.gov/reports/audit-on-the-department-of-investigations-background-investigations-for-city-employees/"
+    },
+    {
+      "label": "DOI, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, tied to a staffing shortage confirmed by a Comptroller audit"
 }

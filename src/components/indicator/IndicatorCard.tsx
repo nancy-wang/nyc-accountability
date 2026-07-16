@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
-import { isVolatile, latestPoint } from "@/lib/data/accountability";
+import { isVolatile, latestPoint, trendOneLiner } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { formatIndicatorValue } from "@/lib/format";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
@@ -15,6 +15,11 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
   const note = getIndicatorNote(indicator.id);
   const volatile = isVolatile(indicator.series);
   const question = toPlainLanguageQuestion(indicator);
+  const valueText = formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name);
+  // A researched note's condensed insight takes priority over the bare
+  // direction word — "overall decreasing, but increase due to broadened
+  // definition" says something a plain "decreasing" can't.
+  const oneLiner = note?.oneLiner || trendOneLiner(indicator.series);
 
   return (
     <details
@@ -27,7 +32,8 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
             {question}
           </p>
           <p className="mt-0.5 text-sm" style={{ color: "var(--text-secondary)" }}>
-            {formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name)}
+            {valueText}
+            {oneLiner && <span style={{ color: "var(--text-muted)" }}> — {oneLiner}</span>}
           </p>
         </div>
         <div className="flex shrink-0 items-center gap-3">

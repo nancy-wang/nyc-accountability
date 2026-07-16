@@ -1,9 +1,19 @@
 {
-  "summary": "Property tax refund processing time roughly doubled after fiscal 2023 because DOF added extra review steps to fight a wave of fraudulent refund claims — over 800 suspicious claims worth more than $3 million were caught in late 2023 and early 2024, and the agency tightened identity-theft and fraud checks further the following year. DOF's Fiscal 2026 preliminary report says processing time has since come down as staff became more familiar with the new fraud-screening process.",
+  "summary": "Property tax refund processing time roughly doubled after fiscal 2023 because DOF added extra review steps to fight a wave of fraudulent refund claims \u2014 over 800 suspicious claims worth more than $3 million were caught in late 2023 and early 2024, and the agency tightened identity-theft and fraud checks further the following year. DOF's Fiscal 2026 preliminary report says processing time has since come down as staff became more familiar with the new fraud-screening process.",
   "sources": [
-    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf" },
-    { "label": "NYC Department of Finance, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dof.pdf" }
+    {
+      "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf"
+    },
+    {
+      "label": "NYC Department of Finance, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dof.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing since DOF added fraud-review steps after catching suspicious claims"
 }

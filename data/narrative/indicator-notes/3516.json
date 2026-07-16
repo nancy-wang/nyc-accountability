@@ -1,8 +1,15 @@
 {
-  "summary": "The share of children entering foster care who are placed with relatives has fallen almost every year since Fiscal 2022. ACS's own performance reports link the decline to rising family poverty in New York City and a growing number of relatives who say they are unable to take in kin, along with more teenagers — who are harder to place with relatives — entering foster care; the city lowered its own Fiscal 2026 target for this measure for the same reasons.",
+  "summary": "The share of children entering foster care who are placed with relatives has fallen almost every year since Fiscal 2022. ACS's own performance reports link the decline to rising family poverty in New York City and a growing number of relatives who say they are unable to take in kin, along with more teenagers \u2014 who are harder to place with relatives \u2014 entering foster care; the city lowered its own Fiscal 2026 target for this measure for the same reasons.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, which ACS links to rising family poverty and fewer available relatives"
 }

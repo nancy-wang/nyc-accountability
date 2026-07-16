@@ -1,9 +1,19 @@
 {
-  "summary": "The steady decline in facility security checks tracks a persistent staffing shortage in DEP's police force, which patrols the City's water supply infrastructure. DEP has reported for several years that officer attrition has outpaced hiring (its officers' union contract expired in 2017), and the sharpest recent drop coincides with 31 recruits being in the police academy — and therefore not yet available for patrol duty — pushing the effective vacancy rate to 28% in the first part of FY26.",
+  "summary": "The steady decline in facility security checks tracks a persistent staffing shortage in DEP's police force, which patrols the City's water supply infrastructure. DEP has reported for several years that officer attrition has outpaced hiring (its officers' union contract expired in 2017), and the sharpest recent drop coincides with 31 recruits being in the police academy \u2014 and therefore not yet available for patrol duty \u2014 pushing the effective vacancy rate to 28% in the first part of FY26.",
   "sources": [
-    { "label": "DEP, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf" },
-    { "label": "DEP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dep.pdf" },
-    { "label": "DEP, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dep.pdf" }
+    {
+      "label": "DEP, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf"
+    },
+    {
+      "label": "DEP, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dep.pdf"
+    },
+    {
+      "label": "DEP, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dep.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing, tied to a persistent staffing shortage in DEP's police force"
 }

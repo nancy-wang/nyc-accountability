@@ -1,8 +1,15 @@
 {
   "summary": "DOB says extended plan-review times for minor renovation (alteration) filings reflect a mix of more complex filings, lower-quality initial submissions requiring rework, and resource constraints within its review staff. A 2025 city Comptroller audit found similar staffing reductions and diversion of examiners to training and system updates were slowing plan reviews citywide.",
   "sources": [
-    { "label": "DOB, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dob.pdf" },
-    { "label": "NYC Comptroller, Audit of the New York City Department of Buildings' Enforcement of Building Codes (Apr. 21, 2025)", "url": "https://comptroller.nyc.gov/reports/audit-of-the-new-york-city-department-of-buildings-enforcement-of-building-codes/" }
+    {
+      "label": "DOB, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dob.pdf"
+    },
+    {
+      "label": "NYC Comptroller, Audit of the New York City Department of Buildings' Enforcement of Building Codes (Apr. 21, 2025)",
+      "url": "https://comptroller.nyc.gov/reports/audit-of-the-new-york-city-department-of-buildings-enforcement-of-building-codes/"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, which DOB attributes to complex filings and staffing constraints"
 }

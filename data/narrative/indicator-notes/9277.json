@@ -1,8 +1,15 @@
 {
   "summary": "DOP attributes the rise in the adult probation-violation rate through Fiscal 2024 largely to an increase in rearrests among people on probation, which drives up the overall count of violations. The subsequent decline to 1.5% in Fiscal 2025 is credited by the agency to enhanced supervision efforts aimed at helping clients stay in compliance with the terms of probation.",
   "sources": [
-    { "label": "Department of Probation, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dop.pdf" },
-    { "label": "Department of Probation, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf" }
+    {
+      "label": "Department of Probation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dop.pdf"
+    },
+    {
+      "label": "Department of Probation, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dop.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall, though easing recently with enhanced supervision efforts"
 }

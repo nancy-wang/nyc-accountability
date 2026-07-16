@@ -1,7 +1,11 @@
 {
-  "summary": "The average daily cost per youth in detention has fallen every year since Fiscal 2021, but this isn't because ACS is spending less — the agency's own performance report says overall detention spending actually rose slightly. Instead, the decline mainly reflects the average daily detention population more than doubling over the same period, which spreads largely fixed costs like staffing and facilities across more youth and drives the per-person daily figure down.",
+  "summary": "The average daily cost per youth in detention has fallen every year since Fiscal 2021, but this isn't because ACS is spending less \u2014 the agency's own performance report says overall detention spending actually rose slightly. Instead, the decline mainly reflects the average daily detention population more than doubling over the same period, which spreads largely fixed costs like staffing and facilities across more youth and drives the per-person daily figure down.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, but reflects a growing detention population spreading fixed costs, not less spending"
 }

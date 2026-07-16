@@ -1,7 +1,11 @@
 {
   "summary": "Like DEP's sewer backup resolution time, this indicator spiked in FY22 because of the record rainfall from Hurricanes Henri and Ida, which pushed far more street segments into repeat sewer-backup territory that year. DEP's reporting shows the rate returning to its normal, low range once that unusually severe rain event was behind them.",
   "sources": [
-    { "label": "DEP, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf" }
+    {
+      "label": "DEP, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dep.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing since the record rainfall of Hurricanes Henri and Ida passed"
 }

@@ -1,7 +1,11 @@
 {
   "summary": "This is a small-number count, so a handful of incidents swings the total sharply. NYCHA attributes the jump from 1 injury in FY24 to 11 in FY25 mainly to aging elevator door operators that can open or close too quickly during wet weather, and says it is replacing them with waterproof door operators to cut both outages and injuries. There were zero elevator-related fatalities across this entire period.",
   "sources": [
-    { "label": "NYCHA, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" }
+    {
+      "label": "NYCHA, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, though based on a small number of incidents tied to aging equipment"
 }

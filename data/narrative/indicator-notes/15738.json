@@ -1,7 +1,11 @@
 {
   "summary": "DOE's own Fiscal 2025 report attributes the 39% drop in Infant/Toddler program enrollment (from 10,441 to 6,378) to the loss of a major Family Child Care Network partner that had provided many of these childcare seats. DOE notes that enrollment losses show up in its data before the matching reduction in program capacity, which is reevaluated on an ongoing basis based on provider partnerships.",
   "sources": [
-    { "label": "NYC Public Schools, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doe.pdf" }
+    {
+      "label": "NYC Public Schools, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doe.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing overall; a FY25 drop reflected losing a major childcare partner"
 }

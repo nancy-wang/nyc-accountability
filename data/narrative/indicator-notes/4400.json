@@ -1,8 +1,15 @@
 {
   "summary": "Average length of stay for adult families in shelter has fallen by more than half since FY22, dropping every year through FY25. DHS attributes the decline both to a large share of recently arrived asylum-seeking families with inherently shorter stays and, more recently, a deliberate agency push in FY25 to speed exits for long-term shelter stayers in this population.",
   "sources": [
-    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
-    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" }
+    {
+      "label": "DHS, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf"
+    },
+    {
+      "label": "DHS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing due to shorter stays among new arrivals and a deliberate push to speed exits"
 }

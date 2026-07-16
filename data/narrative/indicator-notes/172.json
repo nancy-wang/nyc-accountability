@@ -1,8 +1,15 @@
 {
   "summary": "Injuries rose through fiscal 2023 alongside a construction boom, then fell sharply as DOB rolled out new safety measures: stricter enforcement of Local Law 196's mandatory 40-hour worker safety training, and a Calendar 2024 rule cutting the number of sites one construction superintendent can oversee from five to three. DOB reports these efforts helped cut injuries by 42 percent from fiscal 2024 to fiscal 2025, with the decline continuing into fiscal 2026.",
   "sources": [
-    { "label": "DOB, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf" },
-    { "label": "NYC Mayor's Office, \"Mayor Adams and DOB Commissioner Oddo Release Annual Construction Safety Report\" (Apr. 25, 2025)", "url": "https://www.nyc.gov/mayors-office/news/2025/04/mayor-adams-dob-commissioner-oddo-release-annual-construction-safety-report-highlight-safest" }
+    {
+      "label": "DOB, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf"
+    },
+    {
+      "label": "NYC Mayor's Office, \"Mayor Adams and DOB Commissioner Oddo Release Annual Construction Safety Report\" (Apr. 25, 2025)",
+      "url": "https://www.nyc.gov/mayors-office/news/2025/04/mayor-adams-dob-commissioner-oddo-release-annual-construction-safety-report-highlight-safest"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing after DOB tightened worker safety training and site-oversight rules"
 }

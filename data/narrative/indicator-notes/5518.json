@@ -1,8 +1,15 @@
 {
   "summary": "Youth-on-staff assault rates in detention roughly halved between Fiscal 2022 and Fiscal 2024 and have held steady since, despite the detention population nearly doubling over the same span. ACS credits the same safety measures it points to for falling youth-on-youth violence: expanded behavior-management training, on-site violence interrupters, and a dedicated de-escalation response team.",
   "sources": [
-    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
-    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+    {
+      "label": "ACS, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf"
+    },
+    {
+      "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing and holding steady despite a nearly doubled detention population"
 }

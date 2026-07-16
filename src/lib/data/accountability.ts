@@ -1,4 +1,4 @@
-import { formatFiscalYear } from "../format";
+import { formatFiscalYear, formatIndicatorValue } from "../format";
 import type { DesiredDirection, Indicator, IndicatorPoint, OnTargetStatus, TrendDirection } from "./types";
 
 export function onTargetStatus(
@@ -68,6 +68,25 @@ export function trendSpanFiscalYears(series: IndicatorPoint[]): number {
   return points[points.length - 1].fiscalYear - points[0].fiscalYear;
 }
 
+/**
+ * A short, honest one-line caption for the card view: the raw direction the
+ * number is moving (not the "improving/worsening" value judgment, which is
+ * conveyed separately by the ▲/▼ "higher/lower is better" cue) — e.g.
+ * "decreasing" rather than "improving." Deliberately does not claim
+ * statistical significance: a Theil-Sen slope over 4-5 annual data points
+ * from an operational reporting dataset isn't a hypothesis test, and
+ * claiming significance without actually running one would be a fabricated
+ * precision this site doesn't have.
+ */
+export function trendOneLiner(series: IndicatorPoint[]): string {
+  const points = completeYearPoints(series);
+  if (points.length < 2) return "";
+
+  const slope = theilSenSlope(points.map((p) => ({ x: p.fiscalYear, y: p.value! })));
+  if (slope === 0) return "little changed";
+  return slope > 0 ? "increasing" : "decreasing";
+}
+
 const VOLATILITY_SWING_THRESHOLD = 0.5;
 
 /**
@@ -100,18 +119,19 @@ export function latestPoint(series: IndicatorPoint[]): IndicatorPoint | undefine
  * A deterministic sentence built only from the precomputed status/trend fields
  * (never free-text generation), so the accountability framing stays auditable —
  * every claim traces to onTargetStatus/trendDirection, which trace to the source data.
+ * Leads with the actual number, same as the card's "{value} — {context}" pattern,
+ * rather than burying it at the end of the sentence.
  */
 export function accountabilitySummary(indicator: Indicator): string {
   const latest = latestPoint(indicator.series);
-  const fy = latest ? formatFiscalYear(latest.fiscalYear) : null;
   const span = trendSpanFiscalYears(indicator.series);
   const years = `${span} year${span === 1 ? "" : "s"}`;
 
   const statusClause: Record<OnTargetStatus, string> = {
-    "missed-target": fy ? `${fy} missed the City's own target for this indicator` : "This indicator is missing its target",
-    "on-target": fy ? `${fy} met the City's own target for this indicator` : "This indicator is meeting its target",
-    "no-target-set": "The City has not set a numeric target for this indicator",
-    "no-data": "No recent data has been reported for this indicator",
+    "missed-target": "missed the City's own target for this indicator",
+    "on-target": "met the City's own target for this indicator",
+    "no-target-set": "has no numeric target set by the City",
+    "no-data": "has no recent data reported",
   };
 
   // Conjunction flips between "and" (trend reinforces the status) and "though"
@@ -131,9 +151,11 @@ export function accountabilitySummary(indicator: Indicator): string {
     "no-data": { worsening: true, improving: true, flat: true },
   };
 
+  const lead = latest?.value != null ? `${formatIndicatorValue(latest.value, indicator.measurementType, indicator.name)} in ${formatFiscalYear(latest.fiscalYear)} — ` : "";
+
   const phrase = trendPhrase[indicator.trend];
-  if (!phrase) return `${statusClause[indicator.onTargetStatus]}.`;
+  if (!phrase) return `${lead}${statusClause[indicator.onTargetStatus]}.`;
 
   const conjunction = reinforces[indicator.onTargetStatus][indicator.trend] ? "and" : "though";
-  return `${statusClause[indicator.onTargetStatus]}, ${conjunction} ${phrase}.`;
+  return `${lead}${statusClause[indicator.onTargetStatus]}, ${conjunction} ${phrase}.`;
 }

@@ -1,8 +1,15 @@
 {
   "summary": "Birth certificate response times rose in fiscal 2025 and have stayed elevated because request volume jumped, largely driven by the federal Real ID policy pushing more New Yorkers to obtain certified birth certificates. The Health Department says it has kept response times within its 3-day target through process improvements like promoting online requests, even as order volume climbed further into fiscal 2026.",
   "sources": [
-    { "label": "DOHMH, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf" },
-    { "label": "DOHMH, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dohmh.pdf" }
+    {
+      "label": "DOHMH, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf"
+    },
+    {
+      "label": "DOHMH, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dohmh.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing overall, despite a recent rise tied to Real ID-driven demand"
 }

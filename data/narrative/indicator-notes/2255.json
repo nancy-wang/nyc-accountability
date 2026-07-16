@@ -1,8 +1,15 @@
 {
   "summary": "Total violations issued to private waste haulers spiked to 2,876 in fiscal 2023, then fell by nearly half the following year. BIC attributes the fiscal 2023 spike to a backlog of violations that had built up during the COVID-19 pandemic and BIC's newly expanded traffic-safety authority; a new Violation Unit created that year worked through the backlog, which is why fiscal 2024 numbers dropped so much. The renewed increase in fiscal 2025 reflects more joint enforcement operations with the NYPD and other partners plus a rise in on-street enforcement targeting unlicensed haulers.",
   "sources": [
-    { "label": "Business Integrity Commission, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/bic.pdf" },
-    { "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf" }
+    {
+      "label": "Business Integrity Commission, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/bic.pdf"
+    },
+    {
+      "label": "Business Integrity Commission, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/bic.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, driven by more joint enforcement with NYPD and other partners"
 }

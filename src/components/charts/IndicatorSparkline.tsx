@@ -12,7 +12,10 @@ const STATUS_COLOR: Record<Indicator["onTargetStatus"], string> = {
 };
 
 export function IndicatorSparkline({ indicator }: { indicator: Indicator }) {
-  const points = indicator.series.filter((p) => p.value != null);
+  // Excludes the current in-progress fiscal year — its lower year-to-date
+  // total isn't a real dip, and a bare sparkline has no room for the "FY26
+  // is partial" footnote the full chart uses to explain that.
+  const points = indicator.series.filter((p) => p.value != null && !p.isPartialYear);
   if (points.length < 2) return null;
 
   const values = points.map((p) => p.value!);

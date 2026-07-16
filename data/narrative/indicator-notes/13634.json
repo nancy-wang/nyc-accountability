@@ -1,8 +1,15 @@
 {
   "summary": "The time to issue a Section 8 voucher after a completed application swung from 26 days to 77 days over three years mainly because of a shift in voucher type, according to HPD: Project-Based Vouchers, where households are matched directly to an available unit, are much faster to process than Tenant-Based Vouchers, where holders must find and secure a rental on the private market themselves. Fiscal 2025 saw a larger share of Tenant-Based Vouchers issued, slowing the process, while fiscal 2024's faster time reflected more Project-Based Vouchers that year.",
   "sources": [
-    { "label": "HPD, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf" },
-    { "label": "HPD, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf" }
+    {
+      "label": "HPD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hpd.pdf"
+    },
+    {
+      "label": "HPD, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hpd.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "increasing, largely due to a shift toward slower-to-process tenant-based vouchers"
 }

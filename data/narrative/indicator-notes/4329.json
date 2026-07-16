@@ -1,9 +1,19 @@
 {
   "summary": "The number of written policy recommendations DOI issues swings widely because a single large investigation can generate dozens at once: DOI's own reporting says the unusually high Fiscal 2022 total (276) was driven largely by one case that alone produced 133 recommendations, while the Fiscal 2024 rebound to 212 followed several large-scale investigations that surfaced systemic problems at City agencies. The Fiscal 2026 figure is also a year-to-date total (30 issued in the first four months, per DOI's preliminary report), not a final year-end count.",
   "sources": [
-    { "label": "DOI, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf" },
-    { "label": "DOI, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf" },
-    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+    {
+      "label": "DOI, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf"
+    },
+    {
+      "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, though this swings with how many big investigations conclude each year"
 }

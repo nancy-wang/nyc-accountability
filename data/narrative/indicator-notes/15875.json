@@ -1,7 +1,11 @@
 {
   "summary": "Infectious syphilis cases declined across every gender, race/ethnicity, age group, and borough between 2023 and 2024, echoing a national trend. The Health Department suggests the decrease may be partly linked to growing use of doxy PEP, a preventive antibiotic taken after sex to reduce the risk of certain bacterial STIs including syphilis, though it notes racial and neighborhood disparities in case rates persist.",
   "sources": [
-    { "label": "DOHMH, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf" }
+    {
+      "label": "DOHMH, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dohmh.pdf"
+    }
   ],
-  "researchedOn": "2026-07-15"
+  "researchedOn": "2026-07-15",
+  "oneLiner": "decreasing, mirroring a national trend possibly tied to preventive antibiotic use"
 }

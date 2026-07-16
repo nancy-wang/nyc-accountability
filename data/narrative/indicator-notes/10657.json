@@ -1,8 +1,15 @@
 {
   "summary": "This indicator tracks how many Cash Assistance clients HRA helped place into jobs, which fell during the pandemic era when New York State waived mandatory work-engagement requirements for CA recipients. Fiscal 2024's dip to about 8,100 reflected a pause in voluntary employment referrals as HRA prepared to resume state-mandated activities; the subsequent jump to nearly 22,000 in Fiscal 2025 came as HRA resumed federal- and state-mandated employment engagement requirements earlier in that fiscal year.",
   "sources": [
-    { "label": "Human Resources Administration, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hra.pdf" },
-    { "label": "Human Resources Administration, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hra.pdf" }
+    {
+      "label": "Human Resources Administration, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hra.pdf"
+    },
+    {
+      "label": "Human Resources Administration, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hra.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "increasing since HRA resumed state-mandated employment engagement requirements"
 }

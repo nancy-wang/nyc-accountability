@@ -1,8 +1,15 @@
 {
   "summary": "This rate is based on a small number of injuries (21 to 29 per year) divided by ridership in the millions, so it is sensitive to small year-to-year changes. DOT attributed the Fiscal 2023 rise to 1.97 injuries per million passengers to a rebound in ridership as the ferry returned to normal post-pandemic service, with slip-and-fall incidents as the leading cause; the number of injuries then declined even as ridership kept growing, improving the rate to 1.46 by Fiscal 2025.",
   "sources": [
-    { "label": "NYC Department of Transportation, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dot.pdf" },
-    { "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf" }
+    {
+      "label": "NYC Department of Transportation, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dot.pdf"
+    },
+    {
+      "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf"
+    }
   ],
-  "researchedOn": "2026-07-16"
+  "researchedOn": "2026-07-16",
+  "oneLiner": "decreasing, though based on a small number of incidents each year"
 }
