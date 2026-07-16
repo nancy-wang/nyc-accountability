@@ -44,6 +44,17 @@ export default function MethodologyPage() {
           year-to-date figure from the most recently reported period in that year — the same figure the Mayor&apos;s
           Management Report itself presents as the year&apos;s &quot;Actual,&quot; not a raw monthly snapshot.
         </p>
+        <p className="mt-2">
+          For the current, partial fiscal year, some indicators also show a light dashed{" "}
+          <strong style={{ color: "var(--text-primary)" }}>projected</strong> marker — a full-year estimate at the
+          current year-to-date pace. This only appears where the indicator is a running cumulative count (e.g. a
+          total number of complaints or incidents), determined per indicator from a complete prior fiscal year by
+          checking whether that year&apos;s final year-to-date figure matches the sum of its reported periods rather
+          than their average. Indicators that are themselves an average or a rate (most percentages, response
+          times, and many &quot;Average X&quot; indicators) don&apos;t get one — their year-to-date figure is
+          already the best available estimate, not something to scale up. The projection is shown for reference
+          only: it never feeds the trend or target-status figures elsewhere on this site.
+        </p>
       </Section>
 
       <Section title="How &quot;on target&quot; is determined">
