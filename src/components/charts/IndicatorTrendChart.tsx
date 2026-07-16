@@ -1,0 +1,220 @@
+import { formatFiscalYear, formatIndicatorValue } from "@/lib/format";
+import type { Indicator } from "@/lib/data/types";
+
+const WIDTH = 640;
+const HEIGHT = 320;
+const PAD_LEFT = 60;
+const PAD_RIGHT = 24;
+const PAD_TOP = 36;
+const PAD_BOTTOM = 40;
+
+const STATUS_COLOR: Record<Indicator["onTargetStatus"], string> = {
+  "missed-target": "var(--status-critical)",
+  "on-target": "var(--status-good)",
+  "no-target-set": "var(--series-1)",
+  "no-data": "var(--status-neutral)",
+};
+
+/** Rounds a numeric range to "nice" step sizes (1/2/5 × 10^n) so axis ticks read as clean numbers instead of padded decimals. */
+function niceTicks(min: number, max: number, targetCount = 4): number[] {
+  if (min === max) return [min - 1, min, min + 1];
+
+  const range = max - min;
+  const roughStep = range / targetCount;
+  const magnitude = 10 ** Math.floor(Math.log10(roughStep));
+  const residual = roughStep / magnitude;
+
+  let step: number;
+  if (residual > 5) step = 10 * magnitude;
+  else if (residual > 2) step = 5 * magnitude;
+  else if (residual > 1) step = 2 * magnitude;
+  else step = magnitude;
+
+  const niceMin = Math.floor(min / step) * step;
+  const niceMax = Math.ceil(max / step) * step;
+
+  const ticks: number[] = [];
+  for (let v = niceMin; v <= niceMax + step * 0.5; v += step) {
+    ticks.push(Number(v.toFixed(10)));
+  }
+  return ticks;
+}
+
+export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
+  const points = indicator.series;
+  const values = points.map((p) => p.value).filter((v): v is number => v != null);
+  const targets = points.map((p) => p.targetCurrentFY).filter((v): v is number => v != null);
+  const allValues = [...values, ...targets];
+
+  if (values.length === 0) {
+    return (
+      <div className="flex h-[200px] items-center justify-center text-sm" style={{ color: "var(--text-muted)" }}>
+        No data available for this indicator in the last 5 fiscal years.
+      </div>
+    );
+  }
+
+  const dataMin = Math.min(...allValues);
+  const dataMax = Math.max(...allValues);
+  const ticks = niceTicks(dataMin, dataMax, 3);
+  const yMin = ticks[0];
+  const yMax = ticks[ticks.length - 1];
+
+  const plotWidth = WIDTH - PAD_LEFT - PAD_RIGHT;
+  const plotHeight = HEIGHT - PAD_TOP - PAD_BOTTOM;
+  const plotBottom = PAD_TOP + plotHeight;
+
+  const xFor = (i: number) => PAD_LEFT + (points.length === 1 ? plotWidth / 2 : (i / (points.length - 1)) * plotWidth);
+  const yFor = (v: number) => PAD_TOP + plotHeight - ((v - yMin) / (yMax - yMin)) * plotHeight;
+
+  const valuePath = points
+    .map((p, i) => (p.value == null ? null : `${i === 0 || points[i - 1]?.value == null ? "M" : "L"} ${xFor(i)} ${yFor(p.value)}`))
+    .filter(Boolean)
+    .join(" ");
+
+  const targetPoints = points
+    .map((p, i) => (p.targetCurrentFY == null ? null : { i, x: xFor(i), y: yFor(p.targetCurrentFY) }))
+    .filter((p): p is { i: number; x: number; y: number } => p != null);
+  const hasTarget = targetPoints.length > 0;
+  const targetPath = targetPoints.map((p, idx) => `${idx === 0 ? "M" : "L"} ${p.x} ${p.y}`).join(" ");
+
+  // Shades the side of the target line that counts as "missing target" — a
+  // reader can see at a glance whether the line sits in the danger zone
+  // without doing any arithmetic against the axis.
+  let missZonePath: string | null = null;
+  if (hasTarget) {
+    const edgeY = indicator.desiredDirection === "Up" ? plotBottom : PAD_TOP;
+    const first = targetPoints[0]!;
+    const last = targetPoints[targetPoints.length - 1]!;
+    missZonePath = `${targetPath} L ${last.x} ${edgeY} L ${first.x} ${edgeY} Z`;
+  }
+
+  const latestIndex = [...points].map((p, i) => ({ p, i })).reverse().find(({ p }) => p.value != null)?.i;
+  const directionLabel = indicator.desiredDirection === "Up" ? "Higher values are better" : "Lower values are better";
+  const directionIcon = indicator.desiredDirection === "Up" ? "▲" : "▼";
+
+  return (
+    <div>
+      <div className="mb-3 flex items-center gap-1.5 text-xs font-semibold" style={{ color: "var(--text-secondary)" }}>
+        <span aria-hidden style={{ color: "var(--series-1)" }}>
+          {directionIcon}
+        </span>
+        {directionLabel}
+      </div>
+
+      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label={`Trend chart for ${indicator.name}`} className="w-full">
+        {missZonePath && <path d={missZonePath} fill="var(--status-critical)" opacity={0.08} />}
+
+        {ticks.map((tick) => (
+          <g key={tick}>
+            <line x1={PAD_LEFT} x2={WIDTH - PAD_RIGHT} y1={yFor(tick)} y2={yFor(tick)} stroke="var(--gridline)" strokeWidth={1} />
+            <text x={PAD_LEFT - 10} y={yFor(tick)} textAnchor="end" dominantBaseline="middle" fontSize={13} fill="var(--text-secondary)">
+              {formatIndicatorValue(tick, indicator.measurementType)}
+            </text>
+          </g>
+        ))}
+
+        <line x1={PAD_LEFT} x2={WIDTH - PAD_RIGHT} y1={plotBottom} y2={plotBottom} stroke="var(--baseline)" strokeWidth={1} />
+
+        {points.map((p, i) => (
+          <text key={p.fiscalYear} x={xFor(i)} y={HEIGHT - 14} textAnchor="middle" fontSize={13} fontWeight={600} fill="var(--text-secondary)">
+            {formatFiscalYear(p.fiscalYear)}
+          </text>
+        ))}
+
+        {hasTarget && <path d={targetPath} fill="none" stroke="var(--text-muted)" strokeWidth={2} strokeDasharray="5 4" />}
+
+        <path d={valuePath} fill="none" stroke="var(--series-1)" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+
+        {points.map((p, i) => {
+          if (p.value == null) return null;
+          const isLatest = i === latestIndex;
+          const y = yFor(p.value);
+          // Flip the label below the point when it's too close to the chart's
+          // top edge to fit a label above it without clipping.
+          const labelBelow = y < PAD_TOP + 18;
+          return (
+            <g key={p.fiscalYear}>
+              <circle
+                cx={xFor(i)}
+                cy={y}
+                r={isLatest ? 6 : 4}
+                fill={isLatest ? STATUS_COLOR[indicator.onTargetStatus] : "var(--series-1)"}
+                stroke="var(--surface-1)"
+                strokeWidth={2}
+              />
+              <text
+                x={xFor(i)}
+                y={labelBelow ? y + 20 : y - 12}
+                textAnchor="middle"
+                fontSize={13}
+                fontWeight={isLatest ? 700 : 500}
+                fill={isLatest ? "var(--text-primary)" : "var(--text-secondary)"}
+              >
+                {formatIndicatorValue(p.value, indicator.measurementType)}
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+
+      {/* A single series (no target) needs no legend — the chart's own heading already says what's plotted. */}
+      {hasTarget && (
+        <div className="mt-1 flex gap-4 text-xs" style={{ color: "var(--text-secondary)" }}>
+          <span className="inline-flex items-center gap-1.5">
+            <span aria-hidden style={{ display: "inline-block", width: 12, height: 2, background: "var(--series-1)" }} />
+            Actual
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <span aria-hidden style={{ display: "inline-block", width: 12, height: 0, borderTop: "2px dashed var(--text-muted)" }} />
+            Target
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <span aria-hidden style={{ display: "inline-block", width: 10, height: 10, background: "var(--status-critical)", opacity: 0.35 }} />
+            Missing target
+          </span>
+        </div>
+      )}
+
+      <details className="mt-4 text-sm">
+        <summary className="cursor-pointer font-medium" style={{ color: "var(--accent-heading)" }}>
+          View as table
+        </summary>
+        <table className="mt-2 w-full border-collapse text-left">
+          <thead>
+            <tr style={{ borderBottom: "1px solid var(--border-hairline)" }}>
+              <th className="py-1.5 pr-4 font-medium" style={{ color: "var(--text-secondary)" }}>
+                Fiscal year
+              </th>
+              <th className="py-1.5 pr-4 font-medium" style={{ color: "var(--text-secondary)" }}>
+                Actual
+              </th>
+              {hasTarget && (
+                <th className="py-1.5 font-medium" style={{ color: "var(--text-secondary)" }}>
+                  Target
+                </th>
+              )}
+            </tr>
+          </thead>
+          <tbody>
+            {points.map((p) => (
+              <tr key={p.fiscalYear} style={{ borderBottom: "1px solid var(--border-hairline)" }}>
+                <td className="py-1.5 pr-4" style={{ color: "var(--text-primary)" }}>
+                  {formatFiscalYear(p.fiscalYear)}
+                </td>
+                <td className="py-1.5 pr-4" style={{ color: "var(--text-primary)" }}>
+                  {formatIndicatorValue(p.value, indicator.measurementType)}
+                </td>
+                {hasTarget && (
+                  <td className="py-1.5" style={{ color: "var(--text-primary)" }}>
+                    {formatIndicatorValue(p.targetCurrentFY, indicator.measurementType)}
+                  </td>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
+    </div>
+  );
+}

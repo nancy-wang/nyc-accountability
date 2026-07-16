@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  /* Campaign palette */
+  --brand-red: #e13529;
+  --brand-blue: #1e2a78;
+  --brand-gold: #f3a62b;
+  --brand-cream: #fdf6e9;
+
+  --background: #fdf8ed;
+  --foreground: #16193f;
+
+  --surface-1: #ffffff;
+  --text-primary: #16193f;
+  --text-secondary: #47497a;
+  --text-muted: #8184ab;
+  --gridline: #e6e1cf;
+  --baseline: #c9c4a8;
+  --border-hairline: rgba(30, 42, 120, 0.15);
+
+  --series-1: var(--brand-blue); /* line/value color */
+  --accent-heading: var(--brand-blue); /* headings/links/borders sitting directly on --background */
+
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+  --status-neutral: #52514e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14162e;
+    --foreground: #fdf6e9;
+
+    --surface-1: #1b1d3f;
+    --text-primary: #fdf6e9;
+    --text-secondary: #c7c5e6;
+    --text-muted: #8d8bb8;
+    --gridline: #2d2f5c;
+    --baseline: #40427a;
+    --border-hairline: rgba(253, 246, 233, 0.14);
+
+    --series-1: #f3a62b;
+    --accent-heading: var(--brand-gold);
+
+    --status-good: #35c759;
+    --status-warning: #fab219;
+    --status-serious: #ec835a;
+    --status-critical: #ff6b60;
+    --status-neutral: #c7c5e6;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
