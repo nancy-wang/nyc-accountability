@@ -3,9 +3,9 @@ import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findAgencyBySlug, taxonomy } from "@data/narrative/taxonomy";
+import { AgencySummary } from "@/components/agency/AgencySummary";
 import { IndicatorCard } from "@/components/indicator/IndicatorCard";
 import { getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
-import { rollupAccountability, sortWorstFirst } from "@/lib/data/rollup";
 
 interface AgencyNarrative {
   intro: string;
@@ -32,8 +32,6 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
   const indicators = getIndicatorsByAgencyCodes(agency.codes);
   if (indicators.length === 0) notFound();
 
-  const sorted = sortWorstFirst(indicators);
-  const rollup = rollupAccountability(indicators);
   const narrative = getNarrative(agency.slug);
 
   return (
@@ -57,18 +55,13 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
         </p>
       )}
 
-      <p className="mt-4 text-sm font-medium" style={{ color: "var(--status-critical)" }}>
-        {rollup.missedTarget} of {rollup.total} critical indicators are currently missing their target.
-      </p>
+      <AgencySummary agencyName={agency.name} indicators={indicators} />
 
       <h2 className="mt-8 text-lg font-medium" style={{ color: "var(--text-primary)" }}>
         Critical indicators
       </h2>
-      <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-        Sorted worst status first.
-      </p>
       <div className="mt-4 flex flex-col gap-3">
-        {sorted.map((indicator) => (
+        {indicators.map((indicator) => (
           <IndicatorCard key={indicator.id} indicator={indicator} />
         ))}
       </div>
