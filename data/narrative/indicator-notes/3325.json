@@ -1,0 +1,8 @@
+{
+  "summary": "The average time to close a DOI investigation rose from 214 days in Fiscal 2024 to 251 days in Fiscal 2025, which DOI's own reporting attributes to the mix of cases it handled that year: fewer, more complex investigations, often run jointly with prosecutors and other law enforcement partners, take longer to complete than a larger number of simpler ones. The Fiscal 2026 figure (a year-to-date average of 325 days through the first four months, per DOI's preliminary report) suggests this trend has continued.",
+  "sources": [
+    { "label": "DOI, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf" },
+    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

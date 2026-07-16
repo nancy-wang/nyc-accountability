@@ -1,0 +1,8 @@
+{
+  "summary": "This rate is well below NYCHA's 95% target but has grown roughly eightfold since FY22 as NYCHA ramped up mold remediation under the Baez v. NYCHA consent decree and its 2019 federal HUD Agreement. NYCHA credits a data dashboard (its Mold and Leak Scorecard, plus a new daily operations dashboard added in January 2025) for helping identify and prioritize backlogged mold cases Authority-wide.",
+  "sources": [
+    { "label": "NYCHA, Fiscal 2025 and Preliminary Fiscal 2026 Mayor's Management Reports", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf" },
+    { "label": "NRDC, \"Baez v. New York City Housing Authority\"", "url": "https://www.nrdc.org/court-battles/baez-v-new-york-city-housing-authority" }
+  ],
+  "researchedOn": "2026-07-15"
+}

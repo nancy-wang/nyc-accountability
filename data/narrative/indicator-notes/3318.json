@@ -1,0 +1,8 @@
+{
+  "summary": "Arrests from DOI investigations dropped 37% in Fiscal 2025. DOI's own reporting says this reflects a shift toward fewer, more resource-intensive investigations of smaller numbers of people, which tends to reduce both referral and arrest counts even when overall casework holds steady. The Fiscal 2026 number is a year-to-date total (47 arrests through the first four months, per DOI's preliminary report) rather than a full year of activity, and is likely to grow before the fiscal year closes.",
+  "sources": [
+    { "label": "DOI, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doi.pdf" },
+    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

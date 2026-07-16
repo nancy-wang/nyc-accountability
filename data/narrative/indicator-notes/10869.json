@@ -1,0 +1,9 @@
+{
+  "summary": "How long it takes the Office of the Taxpayer Advocate to close a case has swung for several documented reasons: a 2023 state law changing income rules for homeowner exemptions added verification work that lengthened cases in fiscal 2024, process improvements brought times down in fiscal 2025, and afterward the office's growing involvement in complex, lien-sale-related cases — which require more coordination across DOF divisions — pushed case times back up.",
+  "sources": [
+    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" },
+    { "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf" },
+    { "label": "NYC Department of Finance, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dof.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

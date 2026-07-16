@@ -1,0 +1,8 @@
+{
+  "summary": "The rate at which youth abscond from non-secure detention spiked in Fiscal 2024 before falling back down through Fiscal 2026. ACS attributes the recent improvement to added staffing support at non-secure facilities, more consistent staffing patterns, and more regular training and coaching on youth supervision; its reports do not spell out what specifically drove the Fiscal 2024 spike.",
+  "sources": [
+    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
+    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

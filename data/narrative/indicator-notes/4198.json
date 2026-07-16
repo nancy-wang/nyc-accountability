@@ -1,0 +1,8 @@
+{
+  "summary": "The number of families with children in DHS shelters more than doubled between FY22 and FY24, which the agency's own reporting ties directly to the wave of asylum-seeking families arriving in New York City since spring 2022. Growth leveled off in FY25 (18,652 to 18,767) as entries slowed and the city expanded exits to permanent housing, marking a stabilization after two years of rapid increases.",
+  "sources": [
+    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
+    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

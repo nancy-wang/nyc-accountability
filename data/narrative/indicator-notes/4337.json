@@ -1,0 +1,9 @@
+{
+  "summary": "Court-ordered financial recoveries are lumpy from year to year because they hinge on the outcome and timing of a small number of large cases rather than a steady flow of settlements. DOI's own reporting says the Fiscal 2023 spike to $10.1 million was driven almost entirely by one wire-fraud case in which two defendants were ordered to repay over $5 million, and that recovery amounts in any given year are largely outside DOI's control. The elevated Fiscal 2026 year-to-date figure reflects the same case-by-case volatility rather than a sustained trend.",
+  "sources": [
+    { "label": "DOI, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf" },
+    { "label": "DOI, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf" },
+    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

@@ -1,0 +1,8 @@
+{
+  "summary": "Rescinded stop work orders track closely with how many are issued in the first place, so this decline largely mirrors the drop in new orders. DOB attributes that drop mainly to rising industry compliance - inspectors finding fewer violating conditions serious enough to halt work, despite conducting more inspections than ever.",
+  "sources": [
+    { "label": "DOB, \"Marking Construction Safety Week, DOB Releases Annual Construction Safety Report\" (May 6, 2024)", "url": "https://www.nyc.gov/site/buildings/dob/pr-cons-safety-week-2024.page" },
+    { "label": "DOB, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

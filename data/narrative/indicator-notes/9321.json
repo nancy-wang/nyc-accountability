@@ -1,0 +1,8 @@
+{
+  "summary": "This measures how long it takes DOF to decide a parking summons hearing filed online. DOF's management reports tie fluctuations here to the same forces affecting all parking hearing types in this period: a growing volume of hearings combined with an ongoing shortage of administrative law judges, which the agency has been working to address through recruitment.",
+  "sources": [
+    { "label": "NYC Department of Finance, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dof.pdf" },
+    { "label": "NYC Department of Finance, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dof.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

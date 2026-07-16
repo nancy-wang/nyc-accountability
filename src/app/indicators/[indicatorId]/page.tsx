@@ -4,9 +4,11 @@ import { findAgencyBySlug, taxonomy } from "@data/narrative/taxonomy";
 import { AccountabilitySummary } from "@/components/indicator/AccountabilitySummary";
 import { IndicatorResearchNote } from "@/components/indicator/IndicatorResearchNote";
 import { SourceCitation } from "@/components/indicator/SourceCitation";
+import { VolatileNotice } from "@/components/indicator/VolatileNotice";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
 import { TrendBadge } from "@/components/charts/TrendBadge";
+import { isVolatile } from "@/lib/data/accountability";
 import { getAllIndicators, getIndicatorById, getIndicatorNote } from "@/lib/data/getIndicators";
 
 export function generateStaticParams() {
@@ -29,6 +31,7 @@ export default async function IndicatorPage({ params }: { params: Promise<{ indi
 
   const agencyRef = findAgencyRefByCode(indicator.agencyCode);
   const note = getIndicatorNote(indicator.id);
+  const volatile = isVolatile(indicator.series);
 
   return (
     <div>
@@ -62,22 +65,18 @@ export default async function IndicatorPage({ params }: { params: Promise<{ indi
         <div className="mt-4">
           <IndicatorResearchNote note={note} />
         </div>
-      ) : (
+      ) : !volatile ? (
         <div className="mt-4 flex flex-wrap gap-2">
           <TargetGapBadge status={indicator.onTargetStatus} />
           <TrendBadge indicator={indicator} />
         </div>
-      )}
+      ) : null}
 
       <div className="mt-6 rounded-xl border-2 p-5" style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}>
         <IndicatorTrendChart indicator={indicator} />
       </div>
 
-      {!note && (
-        <div className="mt-6">
-          <AccountabilitySummary indicator={indicator} />
-        </div>
-      )}
+      {!note && <div className="mt-6">{volatile ? <VolatileNotice /> : <AccountabilitySummary indicator={indicator} />}</div>}
 
       <div className="mt-8">
         <SourceCitation indicator={indicator} />

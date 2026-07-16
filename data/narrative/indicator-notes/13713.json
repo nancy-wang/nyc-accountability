@@ -1,0 +1,9 @@
+{
+  "summary": "The average number of people in DHS shelters per night nearly doubled between FY22 and FY24, and DHS's own performance reporting attributes this almost entirely to the influx of asylum seekers that began arriving in New York City in spring 2022 — as of June 2024, asylum seekers made up 37 percent of the shelter population and accounted for 79 percent of the growth since June 2022. The population held roughly flat in FY25, which DHS describes as a stabilization after several years of unprecedented growth, aided by expanded prevention and rehousing efforts.",
+  "sources": [
+    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
+    { "label": "DHS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dhs.pdf" },
+    { "label": "NYC Comptroller, Asylum Seeker Census", "url": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census/" }
+  ],
+  "researchedOn": "2026-07-15"
+}

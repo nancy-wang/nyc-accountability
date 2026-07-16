@@ -1,0 +1,9 @@
+{
+  "summary": "New York City's juvenile detention population has climbed steadily since Fiscal 2022. ACS's own performance reports attribute recent growth to a rise in arrests (including gun-violence cases) and to youth staying in detention much longer while their cases move through court — average length of stay grew from about 38 days in Fiscal 2021 to roughly 60 days in early Fiscal 2026. The longer-running increase also traces back to New York State's 2017 \"Raise the Age\" law and 2019 bail-reform changes, which shifted an older population facing more serious charges into the city's two juvenile detention centers, according to a city Department of Investigation report.",
+  "sources": [
+    { "label": "ACS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/acs.pdf" },
+    { "label": "ACS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/acs.pdf" },
+    { "label": "CBS News New York, \"New report details impact of bail reform at NYC juvenile detention centers\"", "url": "https://www.cbsnews.com/newyork/news/nyc-juvenile-detention-centers-bail-reform/" }
+  ],
+  "researchedOn": "2026-07-15"
+}

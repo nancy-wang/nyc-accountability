@@ -1,0 +1,8 @@
+{
+  "summary": "This decline is a byproduct of DOB's multi-year migration of filings out of its legacy Building Information System (BIS) into the newer DOB NOW portal. As DOB requires most new filings to go through DOB NOW instead, the pool of jobs still in BIS - and therefore the resubmission reviews counted under this older system - has been shrinking each year.",
+  "sources": [
+    { "label": "DOB, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dob.pdf" },
+    { "label": "DOB, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dob.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

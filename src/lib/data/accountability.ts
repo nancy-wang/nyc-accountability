@@ -56,6 +56,25 @@ export function trendSpanFiscalYears(series: IndicatorPoint[]): number {
   return points[points.length - 1].fiscalYear - points[0].fiscalYear;
 }
 
+const VOLATILITY_SWING_THRESHOLD = 0.5;
+
+/**
+ * True when a value swings by more than 50% (peak vs. trough) somewhere in
+ * the lookback window. A simple up/down trend badge oversimplifies — and can
+ * actively mislead on — indicators this volatile (a single unusual year can
+ * dominate the story, as with a one-time policy or definitional change).
+ * Volatile indicators never show the mechanical status/trend pills; they get
+ * either a researched note or a neutral "see the chart" caption instead.
+ */
+export function isVolatile(series: IndicatorPoint[]): boolean {
+  const values = series.map((p) => p.value).filter((v): v is number => v != null);
+  if (values.length < 2) return false;
+  const lo = Math.min(...values);
+  const hi = Math.max(...values);
+  if (lo === 0) return false;
+  return (hi - lo) / Math.abs(lo) > VOLATILITY_SWING_THRESHOLD;
+}
+
 export function latestPoint(series: IndicatorPoint[]): IndicatorPoint | undefined {
   for (let i = series.length - 1; i >= 0; i -= 1) {
     if (series[i].value != null) return series[i];

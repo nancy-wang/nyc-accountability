@@ -1,0 +1,8 @@
+{
+  "summary": "Inspectors investigating suspected illegal apartment conversions are frequently turned away or simply can't reach anyone at the door, and DOB's own case data shows this access rate has hovered in the roughly high-20s to low-30s percent range for most of the past decade. Fiscal 2022's 41.4 percent appears to have been an unusually high year that the rate has since fallen back from; DOB has not published a specific explanation for the year-to-year swings.",
+  "sources": [
+    { "label": "CBS News New York, \"Data reveals Department of Buildings' struggle to inspect illegally converted homes\" (June 2023)", "url": "https://www.cbsnews.com/newyork/news/new-york-city-illegally-converted-homes-apartments/" },
+    { "label": "NYC Comptroller, Audit Report on the Queens Quality of Life Unit of the Department of Buildings", "url": "https://comptroller.nyc.gov/reports/audit-report-on-the-queens-quality-of-life-unit-of-the-department-of-buildings/" }
+  ],
+  "researchedOn": "2026-07-15"
+}

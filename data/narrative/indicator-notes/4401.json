@@ -1,0 +1,8 @@
+{
+  "summary": "Average length of stay for families with children in shelter fell sharply from FY22 to FY24 as a large wave of recently arrived asylum-seeking families — who by definition had short stays so far — pulled the average down, alongside faster housing placements. The FY25 uptick reversed part of that: DHS's preliminary FY26 report explains that as fewer new families entered shelter, the mix shifted toward longer-tenured households, which mechanically raises the average length of stay even without anyone individually staying longer.",
+  "sources": [
+    { "label": "DHS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dhs.pdf" },
+    { "label": "DHS, Preliminary Mayor's Management Report, Fiscal 2026", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dhs.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

@@ -1,0 +1,9 @@
+{
+  "summary": "The amount DOI actually collects for the City varies sharply year to year because collection depends on court-ordered payment schedules and the timing of a handful of case settlements — factors DOI's own reporting describes as largely outside its control, and which don't necessarily track the amount ordered in that same year. DOI's preliminary Fiscal 2026 report shows collections already running well above the same period last year due to a few case resolutions landing early in the year, consistent with this pattern of case-driven swings rather than a steady trend.",
+  "sources": [
+    { "label": "DOI, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/doi.pdf" },
+    { "label": "DOI, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doi.pdf" },
+    { "label": "DOI, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/doi.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

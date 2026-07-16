@@ -1,0 +1,8 @@
+{
+  "summary": "This metric follows the same pattern as the 7-day pest response rate: performance worsened through FY23, then improved sharply as NYCHA consolidated exterminators under one Pest Control Department and added daily supervisor reviews and cross-training, part of its effort to meet pest-response deadlines under its 2019 consent agreement with the federal Department of Housing and Urban Development.",
+  "sources": [
+    { "label": "NYCHA, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycha.pdf" },
+    { "label": "NYCHA, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycha.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}
