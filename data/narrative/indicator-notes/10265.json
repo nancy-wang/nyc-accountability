@@ -1,0 +1,8 @@
+{
+  "summary": "Build NYC's tax-revenue projections are dominated by a handful of large deals each year. Fiscal 2022's high total was driven overwhelmingly by a single transaction with Richmond Medical Center, which alone accounted for about 73% of that year's total; without a comparably sized deal in later years, plus an interest-rate-driven slowdown in bond financings in Fiscal 2024, subsequent years' totals fell well below the Fiscal 2022 level.",
+  "sources": [
+    { "label": "NYCEDC, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/edc.pdf" },
+    { "label": "NYCEDC, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/edc.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

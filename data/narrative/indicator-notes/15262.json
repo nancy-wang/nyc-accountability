@@ -1,0 +1,8 @@
+{
+  "summary": "This utilization rate is a ratio of two small, volatile numbers — vouchers available and vouchers used — so it swings widely. The 100%-to-8% collapse from FY22 to FY23 reflects application-processing delays DVS reported that year, while the recent slide toward 21% in FY26 is mostly supply-side: DVS says a much larger allocation of vouchers arrived that year than the agency's caseload could immediately use.",
+  "sources": [
+    { "label": "DVS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dvs.pdf" },
+    { "label": "DVS, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dvs.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

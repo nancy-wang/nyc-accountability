@@ -1,0 +1,10 @@
+{
+  "summary": "This indicator counts citywide (as opposed to neighborhood-specific) planning materials DCP produces, and its FY24 peak of 91 was driven mostly by outreach for City of Yes for Housing Opportunity, the city's biggest zoning overhaul since 1961, which the City Council approved that year. DCP's own report says FY25's drop to 18 is \"due to the successful passage of Housing Opportunity,\" which generated most of the prior year's materials, followed by a wind-down of that initiative's remaining explainer and outreach documents.",
+  "sources": [
+    {
+      "label": "NYC Department of City Planning, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcp.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

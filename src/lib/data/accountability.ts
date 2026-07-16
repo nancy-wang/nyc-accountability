@@ -34,13 +34,25 @@ function theilSenSlope(points: Array<{ x: number; y: number }>): number {
 }
 
 /**
- * Fits a robust trend across every available fiscal year in the lookback
+ * Points from fiscal years whose data collection has actually finished
+ * (through June), excluding the current year's year-to-date figure. A
+ * partial year's running total is naturally smaller than a prior full
+ * year's — comparing them directly would read as a decline that isn't real,
+ * so trend and volatility math only ever look at completed years.
+ */
+function completeYearPoints(series: IndicatorPoint[]): IndicatorPoint[] {
+  return series.filter((p) => p.value != null && !p.isPartialYear).sort((a, b) => a.fiscalYear - b.fiscalYear);
+}
+
+/**
+ * Fits a robust trend across every complete fiscal year in the lookback
  * window (not just the latest year vs. the one before it), so a real
- * multi-year trajectory — not a single noisy year in either direction — is
- * what "improving"/"worsening" means now that charts show up to 5 years.
+ * multi-year trajectory — not a single noisy year in either direction, and
+ * not an in-progress year's partial total — is what "improving"/"worsening"
+ * means now that charts show up to 5 years.
  */
 export function trendDirection(series: IndicatorPoint[], direction: DesiredDirection): TrendDirection {
-  const points = series.filter((p) => p.value != null).sort((a, b) => a.fiscalYear - b.fiscalYear);
+  const points = completeYearPoints(series);
   if (points.length < 2) return "insufficient-data";
 
   const slope = theilSenSlope(points.map((p) => ({ x: p.fiscalYear, y: p.value! })));
@@ -51,7 +63,7 @@ export function trendDirection(series: IndicatorPoint[], direction: DesiredDirec
 
 /** Fiscal-year span the trend was computed over, for labels like "worsening over 4 years." */
 export function trendSpanFiscalYears(series: IndicatorPoint[]): number {
-  const points = series.filter((p) => p.value != null).sort((a, b) => a.fiscalYear - b.fiscalYear);
+  const points = completeYearPoints(series);
   if (points.length < 2) return 0;
   return points[points.length - 1].fiscalYear - points[0].fiscalYear;
 }
@@ -59,15 +71,17 @@ export function trendSpanFiscalYears(series: IndicatorPoint[]): number {
 const VOLATILITY_SWING_THRESHOLD = 0.5;
 
 /**
- * True when a value swings by more than 50% (peak vs. trough) somewhere in
- * the lookback window. A simple up/down trend badge oversimplifies — and can
- * actively mislead on — indicators this volatile (a single unusual year can
- * dominate the story, as with a one-time policy or definitional change).
- * Volatile indicators never show the mechanical status/trend pills; they get
- * either a researched note or a neutral "see the chart" caption instead.
+ * True when a value swings by more than 50% (peak vs. trough) somewhere
+ * across complete fiscal years in the lookback window. A simple up/down
+ * trend badge oversimplifies — and can actively mislead on — indicators
+ * this volatile (a single unusual year can dominate the story, as with a
+ * one-time policy or definitional change). Volatile indicators never show
+ * the mechanical status/trend pills; they get either a researched note or a
+ * neutral "see the chart" caption instead. The current in-progress year is
+ * excluded here since its lower year-to-date total isn't a real swing.
  */
 export function isVolatile(series: IndicatorPoint[]): boolean {
-  const values = series.map((p) => p.value).filter((v): v is number => v != null);
+  const values = completeYearPoints(series).map((p) => p.value!);
   if (values.length < 2) return false;
   const lo = Math.min(...values);
   const hi = Math.max(...values);

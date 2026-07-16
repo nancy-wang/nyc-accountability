@@ -1,0 +1,9 @@
+{
+  "summary": "Response times worsened for two distinct reasons in successive years: in FY24, DEP pointed to a small number of anonymous chemical-odor complaints that lacked enough location or callback detail to verify quickly, and in FY25 to a rise in complaints tied to damaged lithium-ion batteries combined with a staffing shortage in DEP's hazardous materials unit. DEP has since rolled out a new triage system with other City agencies that it credits with cutting response times substantially in early FY26.",
+  "sources": [
+    { "label": "DEP, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dep.pdf" },
+    { "label": "DEP, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dep.pdf" },
+    { "label": "DEP, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dep.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

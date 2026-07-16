@@ -1,0 +1,9 @@
+{
+  "summary": "HRA attributes the decline from 39% (Fiscal 2022) to 14% (Fiscal 2024) to a combination of lost emergency domestic-violence shelter bed capacity from Fiscal 2021-2022 that had not been replaced, and limited turnover as some families remained in shelter beyond the state's 180-day stay limit. The rebound to 22% in Fiscal 2025 followed HRA's efforts to add shelter capacity, though the agency has not published a detailed explanation for that specific year's increase.",
+  "sources": [
+    { "label": "Human Resources Administration, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/hra.pdf" },
+    { "label": "Human Resources Administration, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hra.pdf" },
+    { "label": "Human Resources Administration, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hra.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

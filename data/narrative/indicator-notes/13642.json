@@ -1,0 +1,14 @@
+{
+  "summary": "New service catalog submissions nearly doubled from FY22 to FY23 (29,646 to 57,077), which OTI attributed to a 93 percent jump in agency requests for items like desk phones, mobile devices, multi-factor authentication and software licenses as the newly consolidated agency took on more IT support work. The FY26 figure in this dataset is a partial-year, year-to-date total rather than a full fiscal year, which is why it looks lower than FY25.",
+  "sources": [
+    {
+      "label": "OTI, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/oti.pdf"
+    },
+    {
+      "label": "OTI, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/oti.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

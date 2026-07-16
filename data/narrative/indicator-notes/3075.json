@@ -1,0 +1,8 @@
+{
+  "summary": "NYPL's research libraries (the four scholarly research centers, separate from the branch system) show the same pandemic-recovery pattern as the branches: attendance grew steadily from Fiscal 2022 as hours and programming were fully restored. The Fiscal 2026 figure is a partial-year total; the City's preliminary Fiscal 2026 report shows program attendance for the first four months of the year running well ahead of the same period in Fiscal 2025, so the apparent dip likely reflects incomplete-year data rather than a real decline.",
+  "sources": [
+    { "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf" },
+    { "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

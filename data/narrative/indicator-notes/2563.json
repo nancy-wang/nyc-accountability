@@ -1,0 +1,9 @@
+{
+  "summary": "NYCEM's Emergency Operations Center stayed activated almost every day from Fiscal 2022 through Fiscal 2025, largely because of the citywide response to the asylum seeker influx (which ran through May 2024) plus other major events like the CrowdStrike outage and severe weather. The sharp drop shown for Fiscal 2026 reflects NYCEM's own reporting that EOC activation fell about 90 percent in the first four months of the year as its role in asylum seeker operations wound down.",
+  "sources": [
+    { "label": "NYCEM, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nycem.pdf" },
+    { "label": "NYCEM, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/nycem.pdf" },
+    { "label": "NYCEM, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nycem.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

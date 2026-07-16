@@ -1,0 +1,9 @@
+{
+  "summary": "The average time to respond to historical photo requests fell to 2 days in fiscal 2024 thanks to streamlined processing procedures, then more than doubled in fiscal 2025 after DORIS temporarily reassigned a staffer from the vital-record and photo unit to cover a vacancy elsewhere. It kept rising into fiscal 2026, which DORIS attributes to a roughly 30% jump in the volume of photo requests received rather than a return of the earlier staffing issue.",
+  "sources": [
+    { "label": "DORIS, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/2024_mmr.pdf" },
+    { "label": "DORIS, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/2025_mmr.pdf" },
+    { "label": "DORIS, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/2026_pmmr.pdf" }
+  ],
+  "researchedOn": "2026-07-15"
+}

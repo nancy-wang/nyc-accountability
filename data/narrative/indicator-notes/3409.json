@@ -1,0 +1,14 @@
+{
+  "summary": "OCME's own reporting attributes the FY22-FY25 improvement in autopsy turnaround (140 to 92 days) to investments in staffing, lab equipment, and new postmortem CT scanners, plus a shift toward using external examinations and toxicology testing rather than full autopsies for some overdose deaths. The subsequent increase after FY25 is attributed to a loss of about one-third of Medical Examiner staff through retirements and recruitment by other jurisdictions amid a nationwide forensic-pathologist shortage, along with the temporary consolidation of autopsy operations from three facilities to two.",
+  "sources": [
+    {
+      "label": "NYC Office of Chief Medical Examiner, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/ocme.pdf"
+    },
+    {
+      "label": "NYC Office of Chief Medical Examiner, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/ocme.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

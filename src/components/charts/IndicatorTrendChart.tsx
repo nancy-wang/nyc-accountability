@@ -119,6 +119,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
         {points.map((p, i) => (
           <text key={p.fiscalYear} x={xFor(i)} y={HEIGHT - 14} textAnchor="middle" fontSize={13} fontWeight={600} fill="var(--text-secondary)">
             {formatFiscalYear(p.fiscalYear)}
+            {p.isPartialYear ? "*" : ""}
           </text>
         ))}
 
@@ -157,6 +158,12 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
           );
         })}
       </svg>
+
+      {points.some((p) => p.isPartialYear) && (
+        <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
+          * Year to date — this fiscal year isn&apos;t complete, so it&apos;s not compared against prior years in the target/trend status above.
+        </p>
+      )}
 
       {/* A single series (no target) needs no legend — the chart's own heading already says what's plotted. */}
       {hasTarget && (
@@ -201,6 +208,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
               <tr key={p.fiscalYear} style={{ borderBottom: "1px solid var(--border-hairline)" }}>
                 <td className="py-1.5 pr-4" style={{ color: "var(--text-primary)" }}>
                   {formatFiscalYear(p.fiscalYear)}
+                  {p.isPartialYear ? " (YTD)" : ""}
                 </td>
                 <td className="py-1.5 pr-4" style={{ color: "var(--text-primary)" }}>
                   {formatIndicatorValue(p.value, indicator.measurementType)}

@@ -1,0 +1,14 @@
+{
+  "summary": "The average time to resolve a critical IT incident nearly doubled from 6 hours in FY22 to 11 in FY23, which OTI attributed to greater dependence on third-party telecommunications and cloud-system vendors (prompting an application-modernization project for 28 legacy systems). It then dropped back to about 7 hours in FY24-FY26 as OTI reported operational changes that reduced reliance on those outside vendors.",
+  "sources": [
+    {
+      "label": "OTI, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/oti.pdf"
+    },
+    {
+      "label": "OTI, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/oti.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

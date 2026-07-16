@@ -58,11 +58,15 @@ export function groupIntoIndicators(rows: RawRow[]): Array<Omit<Indicator, "onTa
     const series: IndicatorPoint[] = Array.from(latestRowByFiscalYear.entries())
       .map(([fiscalYear, row]) => {
         const raw = parseNum(row.acceptedvalueytd) ?? parseNum(row.acceptedvalue);
+        // NYC's fiscal year ends in June; a representative row dated any
+        // other month means that year's data collection isn't finished yet.
+        const reportedMonth = row.valuedate.slice(5, 7);
         return {
           fiscalYear,
           valueDate: row.valuedate,
           value: scale(raw, factor),
           targetCurrentFY: scale(parseNum(row.targetmmr), factor),
+          isPartialYear: reportedMonth !== "06",
         };
       })
       .sort((a, b) => a.fiscalYear - b.fiscalYear);

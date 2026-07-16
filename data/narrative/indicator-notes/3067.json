@@ -1,0 +1,10 @@
+{
+  "summary": "NYPL's branch libraries were still restoring pandemic-era hours and programming through Fiscal 2022, so program attendance more than doubled once a full year of expanded service was in place by Fiscal 2023. Attendance kept climbing even through a citywide budget cut that briefly eliminated Sunday hours in late 2023 (funding was fully restored in mid-2024). The Fiscal 2026 figure shown here is a partial year total — the City's preliminary Fiscal 2026 report shows attendance for the first four months of the year actually running ahead of the same period in Fiscal 2025, so the dip likely reflects incomplete-year data rather than a real decline.",
+  "sources": [
+    { "label": "NYPL, Statement on Fiscal Year 2024 Budget Cuts (with BPL and QPL)", "url": "https://www.nypl.org/press/statement-brooklyn-public-library-new-york-public-library-and-queens-public-library-fiscal" },
+    { "label": "CNN, \"NYC public libraries have their funding restored, will reopen on Sundays\"", "url": "https://www.cnn.com/2024/06/28/business/nyc-libraries-funding-restored/index.html" },
+    { "label": "NYC Public Libraries, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib.pdf" },
+    { "label": "NYC Public Libraries, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

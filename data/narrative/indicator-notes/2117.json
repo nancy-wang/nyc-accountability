@@ -1,0 +1,14 @@
+{
+  "summary": "This indicator swings enormously because a single historic-district designation can add hundreds of buildings at once, while a year with only individual landmarks adds just a handful. FY25's total of 4 reflects a year with no historic districts designated, while the jump in FY26 lines up with LPC's designation, in November 2025, of the Beverley Square West and Ditmas Park West Historic Districts in Flatbush, Brooklyn -- which alone added 118 and 127 houses respectively -- on top of individual landmark designations elsewhere in the city.",
+  "sources": [
+    {
+      "label": "NYC Landmarks Preservation Commission, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lpc.pdf"
+    },
+    {
+      "label": "Brownstoner, \"Flatbush Gets Two New Historic Districts Following LPC Vote\"",
+      "url": "https://www.brownstoner.com/architecture/flatbush-historic-districts-beverley-square-west-ditmas-park-west-designation/"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

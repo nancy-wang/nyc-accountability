@@ -1,0 +1,14 @@
+{
+  "summary": "This indicator measures the share of the most complex zoning projects (those requiring a full Environmental Impact Statement) that reach public review within 22 months, and the count of such projects is small -- just 3 in FY23 versus 9 in FY24 -- so a couple of slow cases can swing the percentage sharply. DCP's own report attributes FY23's low 33% to that small caseload and credits the jump to 89% in FY24 (sustained at 91% in FY25) to new-staff training and DCP prioritizing City-led initiatives like City of Yes for Housing Opportunity and the Bronx Metro-North Station Area Plan.",
+  "sources": [
+    {
+      "label": "NYC Department of City Planning, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dcp.pdf"
+    },
+    {
+      "label": "NYC Department of City Planning, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcp.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

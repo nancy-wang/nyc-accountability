@@ -1,0 +1,9 @@
+{
+  "summary": "This indicator counts how many times DSNY activated its winter storm response, which tracks how many storms actually hit the City each year — DSNY's own reporting explicitly ties the swings to winter weather, not agency readiness (for example, FY23 had an unusually mild winter with far fewer storms, while FY22 and FY25 saw more snow events). It's a weather-driven number that is expected to bounce around year to year.",
+  "sources": [
+    { "label": "DSNY, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dsny.pdf" },
+    { "label": "DSNY, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dsny.pdf" },
+    { "label": "DSNY, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dsny.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

@@ -1,0 +1,14 @@
+{
+  "summary": "Decisions issued by OATH's Hearings Division grew steadily through FY25, tracking a sharp rise in summonses filed by city enforcement agencies, which topped one million in a single fiscal year for the first time. The lower FY26 figure in this dataset is a partial-year, year-to-date total rather than a full 12 months; OATH's preliminary FY26 report actually shows decisions issued running about 12 percent ahead of the same period a year earlier, so a full-year FY26 total would likely exceed FY25's, not fall short of it.",
+  "sources": [
+    {
+      "label": "OATH, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/oath.pdf"
+    },
+    {
+      "label": "OATH, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/oath.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

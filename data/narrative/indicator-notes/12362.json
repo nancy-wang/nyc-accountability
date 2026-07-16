@@ -1,0 +1,14 @@
+{
+  "summary": "Critical IT incidents nearly tripled from FY22 to FY23 (61 to 163) as OTI, newly consolidated from several separate city tech offices, took on many more IT services and saw a roughly one-third jump in incident workload; OTI itself flagged dependence on third-party telecom and cloud vendors as a driver. Incidents then declined in FY25 as OTI credited hardware/software upgrades and a cloud-services migration for the drop.",
+  "sources": [
+    {
+      "label": "OTI, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/oti.pdf"
+    },
+    {
+      "label": "OTI, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/oti.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

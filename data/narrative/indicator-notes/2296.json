@@ -1,0 +1,14 @@
+{
+  "summary": "Much of BPL's climb from FY22 through FY25 reflects recovery from COVID-19 pandemic closures -- the library system's own reporting says it \"resumed providing all of these [in-person] services\" as pandemic restrictions eased, rebuilding program attendance from a depressed FY22 base. The apparent FY26 drop is a preliminary, partial-year figure: BPL's own reporting for the first four months of FY26 shows program attendance actually running 6% ahead of the same period in FY25, so the full-year comparison is not yet complete.",
+  "sources": [
+    {
+      "label": "NYC Public Libraries, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/lib.pdf"
+    },
+    {
+      "label": "NYC Public Libraries, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/lib.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

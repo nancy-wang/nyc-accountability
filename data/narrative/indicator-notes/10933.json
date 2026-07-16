@@ -1,0 +1,9 @@
+{
+  "summary": "TLC attributes the rise in resolution time through Fiscal 2024 to a surge in driver complaints (up sharply as ridership recovered post-pandemic) combined with staff shortages in the Prosecution Division. TLC's Fiscal 2025 report and preliminary Fiscal 2026 report describe specific process changes since then, including contacting drivers earlier and improving how repeat complainants are identified, that cut resolution time substantially.",
+  "sources": [
+    { "label": "TLC, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/tlc.pdf" },
+    { "label": "TLC, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/tlc.pdf" },
+    { "label": "TLC, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/tlc.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "The FY26 figure for this indicator in the dataset is a partial-year, year-to-date total rather than a full fiscal year. OATH's own preliminary Fiscal 2026 report shows appeals decisions running about 24 percent behind the same period a year earlier through the first four months of the fiscal year, so the full-year total will be higher than this partial figure suggests, though still likely below FY24's level.",
+  "sources": [
+    {
+      "label": "OATH, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/oath.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

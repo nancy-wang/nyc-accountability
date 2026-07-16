@@ -1,0 +1,14 @@
+{
+  "summary": "Murders and non-negligent manslaughter fell for four consecutive fiscal years through FY25, which NYPD's own reporting attributes to citywide crime-reduction efforts including neighborhood safety teams, community response teams, and coordination with regional law-enforcement partners. The much lower FY26 figure in this dataset is a partial-year total (NYPD reported murders down about 18 percent in just the first four months of FY26 versus the same period a year earlier), not a full fiscal year, so it isn't directly comparable to prior full-year totals.",
+  "sources": [
+    {
+      "label": "NYPD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nypd.pdf"
+    },
+    {
+      "label": "NYPD, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nypd.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

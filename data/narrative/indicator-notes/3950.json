@@ -1,0 +1,14 @@
+{
+  "summary": "Grand larceny auto (car theft) climbed from FY22 through FY24 before declining 10 percent in FY25, which NYPD's own reporting attributes broadly to citywide deterrence, intelligence and enforcement efforts across major felony categories. The much lower FY26 figure in this dataset covers only part of the fiscal year, not a full 12 months, so it understates a comparable full-year total.",
+  "sources": [
+    {
+      "label": "NYPD, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/nypd.pdf"
+    },
+    {
+      "label": "NYPD, Preliminary Fiscal 2026 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nypd.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

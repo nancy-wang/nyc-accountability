@@ -9,6 +9,15 @@ export interface IndicatorPoint {
   valueDate: string;
   value: number | null;
   targetCurrentFY: number | null;
+  /**
+   * True when this fiscal year's data doesn't yet run through June (the NYC
+   * fiscal year's last month) — a year-to-date figure, not a final annual
+   * total. Comparing a partial year's total directly against prior full
+   * years understates it for any indicator that accumulates over the year,
+   * so partial years are excluded from swing/trend math (but still shown,
+   * labeled, on the chart).
+   */
+  isPartialYear: boolean;
 }
 
 export interface Indicator {

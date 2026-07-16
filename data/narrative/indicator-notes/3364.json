@@ -1,0 +1,10 @@
+{
+  "summary": "This indicator counts materials (info sheets, presentations, videos) DCP produces to advance neighborhood-level rezoning plans, so it rises and falls with how many major plans are in active public engagement each year. FY24's spike to 73 was driven largely by the City of Yes for Housing Opportunity citywide zoning initiative, which generated an unusually large volume of outreach materials; FY25's drop to 39 reflects that initiative wrapping up, even as DCP kept advancing other neighborhood plans.",
+  "sources": [
+    {
+      "label": "NYC Department of City Planning, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcp.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

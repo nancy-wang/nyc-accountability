@@ -1,0 +1,14 @@
+{
+  "summary": "H+H's own reporting says the FY24 spike to 64.1 days was \"not reflective of actual performance\": a February 2024 cyberattack on the clearinghouse vendor that processes patient statements, insurance eligibility, and claims disrupted the System's ability to post and reconcile payments, artificially inflating the accounts-receivable figure. The drop to 31.8 days in FY25 reflects the System having \"mostly rebounded\" from that disruption, plus a large one-time payment the System received at the end of June 2025.",
+  "sources": [
+    {
+      "label": "NYC Health + Hospitals, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/hhc.pdf"
+    },
+    {
+      "label": "NYC Health + Hospitals, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hhc.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

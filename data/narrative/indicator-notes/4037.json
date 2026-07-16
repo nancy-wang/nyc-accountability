@@ -1,0 +1,14 @@
+{
+  "summary": "Two distinct, documented factors drive this swing. First, the FY22-to-FY23 drop is mostly a reporting change: H+H's own notes say the methodology switched to exclude insured patients who received non-billable services, which had previously \"artificially inflated\" the count, making FY22 and later years not directly comparable. Second, the decline after FY24 reflects New York State Medicaid expansions -- including continuous eligibility for children under six and Medicaid coverage for New Yorkers 65+ regardless of immigration status -- plus the correction of a temporary inflation in FY24's figure caused by a February 2024 cyberattack on a health care claims/insurance-eligibility vendor that disrupted insurance verification system-wide.",
+  "sources": [
+    {
+      "label": "NYC Health + Hospitals, Fiscal 2023 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/hhc.pdf"
+    },
+    {
+      "label": "NYC Health + Hospitals, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/hhc.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

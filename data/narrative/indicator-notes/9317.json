@@ -1,0 +1,10 @@
+{
+  "summary": "Much of the FY22-to-FY24 drop reflects a change in how DOC counts these incidents, not just a change in underlying violence: through FY22, any use-of-force incident where someone was seriously injured was classified as a \"serious injury\" use of force even if the injury actually came from the violent incident that force was used to stop; in FY23 DOC realigned its practice to count an incident as a serious-injury use of force only when the injury was a direct result of the force itself. The small increase in FY25 involved a very small number of incidents (79 out of 7,044 total uses of force that year), so it moves the rate significantly even though it represents a small absolute change.",
+  "sources": [
+    {
+      "label": "DOC, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/doc.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

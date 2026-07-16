@@ -1,0 +1,8 @@
+{
+  "summary": "The steady decline in vacant lots cleaned is mostly a resourcing story: DSNY's own reporting attributes the FY22-to-FY23 dip partly to its new Targeted Neighborhood Taskforce providing more regular upkeep of these properties (shifting some work out of this count), and it explicitly attributes the much larger FY24-to-FY25 drop to City budget cuts to the lot-cleaning program.",
+  "sources": [
+    { "label": "DSNY, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/dsny.pdf" },
+    { "label": "DSNY, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dsny.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

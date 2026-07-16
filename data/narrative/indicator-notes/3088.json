@@ -1,0 +1,9 @@
+{
+  "summary": "This wait time tracks visit and call volume at TLC's Long Island City licensing office relative to staffing. It rose in Fiscal 2023 as visits jumped 31 percent, then fell sharply in Fiscal 2024 as TLC expanded online services that let more customers avoid an in-person visit. TLC's own preliminary Fiscal 2026 report says wait times rose again because in-person demand increased without additional staffing.",
+  "sources": [
+    { "label": "TLC, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/tlc.pdf" },
+    { "label": "TLC, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/tlc.pdf" },
+    { "label": "TLC, Fiscal 2026 Preliminary Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/tlc.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

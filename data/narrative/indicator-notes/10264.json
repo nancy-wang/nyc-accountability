@@ -1,0 +1,8 @@
+{
+  "summary": "NYCIDA's projected tax-revenue figures are driven by which specific projects close each year. Fiscal 2023's low figure partly reflected several tax-exempt battery-storage financings that leverage large private investment but, since they have no on-site employees, generate comparatively little tax revenue; Fiscal 2025's jump to $775 million reflected large deals including an offshore-wind terminal financing and the first project completed under the Manhattan Commercial Revitalization (M-CORE) office-conversion program.",
+  "sources": [
+    { "label": "NYCEDC, Fiscal 2023 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2023/edc.pdf" },
+    { "label": "NYCEDC, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/edc.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

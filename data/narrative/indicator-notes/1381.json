@@ -1,0 +1,9 @@
+{
+  "summary": "The FY24 peak (56.8%) followed operational changes DSNY made to truck routing that year. The subsequent decline is tied to the citywide rollout of curbside composting: many collection trucks now carry two separate bins and must offload at two different facilities, often far apart, which takes more time and leaves less room in a shift to complete a second trip to the dump.",
+  "sources": [
+    { "label": "DSNY, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dsny.pdf" },
+    { "label": "DSNY, Fiscal 2025 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dsny.pdf" },
+    { "label": "DSNY, Preliminary Fiscal 2026 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dsny.pdf" }
+  ],
+  "researchedOn": "2026-07-16"
+}

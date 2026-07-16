@@ -1,0 +1,14 @@
+{
+  "summary": "This Vision Zero indicator tracks DOT's installation of Accessible Pedestrian Signals (APS), which send audible and vibrotactile crossing signals for blind and low-vision pedestrians. Installation pace is governed by annual targets under a Federal Court Remedial Order stemming from a December 2021 disability-rights lawsuit (American Council of the Blind of New York v. NYC DOT) that requires the City to equip 10,000 intersections with APS by the end of 2031, so year-to-year counts move with that court-ordered schedule rather than purely reflecting City priorities; DOT reports it fell short of its own FY25 target of 900.",
+  "sources": [
+    {
+      "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf"
+    },
+    {
+      "label": "NYC Department of Transportation, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dot.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "This Vision Zero indicator is reported using DOT's speed-hump and speed-cushion installation data. DOT's own reporting attributes FY24's record total of 443 to the deployment of additional installation crews on Saturdays that year; FY25's total of 224 is more in line with typical annual output once that extra Saturday crew deployment wasn't repeated, rather than reflecting a cutback in the Vision Zero traffic-calming program.",
+  "sources": [
+    {
+      "label": "NYC Department of Transportation, Fiscal 2024 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/dot.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

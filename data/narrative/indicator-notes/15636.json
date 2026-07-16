@@ -1,0 +1,10 @@
+{
+  "summary": "This indicator tracks the projected number of new homes in land-use applications that entered public review before the City Planning Commission each year, so it jumps whenever large neighborhood rezonings launch. DCP's own report attributes the roughly threefold jump from FY24 to FY25 to four major neighborhood plans entering public review that year -- the Atlantic Avenue Mixed-Use Plan, the Midtown South Mixed-Use Plan, the Jamaica Neighborhood Plan, and the OneLIC Long Island City Neighborhood Plan -- which together accounted for over 40,000 of the projected new homes.",
+  "sources": [
+    {
+      "label": "NYC Department of City Planning, Fiscal 2025 Mayor's Management Report",
+      "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/dcp.pdf"
+    }
+  ],
+  "researchedOn": "2026-07-16"
+}

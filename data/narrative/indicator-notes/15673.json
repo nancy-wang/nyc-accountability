@@ -1,0 +1,8 @@
+{
+  "summary": "The number of students in temporary housing using yellow school buses tracks the size of the citywide shelter population, which grew rapidly starting in spring 2022 amid a surge of migrant and asylum-seeking families arriving in New York City and entering shelters — a surge DOE says it supported through its Project Open Arms school-enrollment effort. Shelter numbers later declined sharply as arrivals slowed to a trickle and the city closed dozens of emergency shelters starting in mid-2024, roughly halving the shelter population by late 2025.",
+  "sources": [
+    { "label": "NYC Public Schools, Fiscal 2024 Mayor's Management Report", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2024/doe.pdf" },
+    { "label": "NYC Comptroller, Asylum Seeker Census", "url": "https://comptroller.nyc.gov/services/for-the-public/accounting-for-asylum-seeker-services/asylum-seeker-census/" }
+  ],
+  "researchedOn": "2026-07-16"
+}
