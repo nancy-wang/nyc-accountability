@@ -1,3 +1,4 @@
+import { isVolatile } from "./accountability";
 import type { Indicator } from "./types";
 
 export interface AccountabilityRollup {
@@ -19,4 +20,30 @@ export function rollupAccountability(indicators: Indicator[]): AccountabilityRol
     if (indicator.trend === "improving") rollup.improving += 1;
   }
   return rollup;
+}
+
+export interface TrendRollup {
+  total: number;
+  improving: number;
+  worsening: number;
+  /** Flat, insufficient-data, or volatile — lumped together as "no clear trend" rather than split into a 4th bucket. */
+  other: number;
+}
+
+/**
+ * Same improving/worsening split as rollupAccountability, except volatile
+ * indicators are excluded from both counts (into "other") rather than
+ * counted at face value — a volatile series' mechanical trend field can say
+ * "worsening" while the real story is a stable series bouncing in a band,
+ * the same reason TrendBadge is suppressed for these elsewhere.
+ */
+export function trendRollup(indicators: Indicator[]): TrendRollup {
+  let improving = 0;
+  let worsening = 0;
+  for (const indicator of indicators) {
+    if (isVolatile(indicator.series)) continue;
+    if (indicator.trend === "improving") improving += 1;
+    else if (indicator.trend === "worsening") worsening += 1;
+  }
+  return { total: indicators.length, improving, worsening, other: indicators.length - improving - worsening };
 }

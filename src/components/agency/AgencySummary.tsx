@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { isVolatile, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
-import { rollupAccountability } from "@/lib/data/rollup";
+import { rollupAccountability, trendRollup } from "@/lib/data/rollup";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
 import type { Indicator } from "@/lib/data/types";
 import { formatIndicatorValue } from "@/lib/format";
@@ -94,8 +94,7 @@ export function AgencySummary({ agencyName, indicators }: { agencyName: string; 
   const targetable = rollup.total - rollup.noTargetSet;
 
   const volatileCount = indicators.filter((i) => isVolatile(i.series)).length;
-  const improvingCount = indicators.filter((i) => !isVolatile(i.series) && i.trend === "improving").length;
-  const worseningCount = indicators.filter((i) => !isVolatile(i.series) && i.trend === "worsening").length;
+  const { improving: improvingCount, worsening: worseningCount } = trendRollup(indicators);
   const trendTotal = improvingCount + worseningCount;
 
   const targetClause =
