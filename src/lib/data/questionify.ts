@@ -17,16 +17,77 @@ function upperFirst(s: string): string {
   return s.length === 0 ? s : s.charAt(0).toUpperCase() + s.slice(1);
 }
 
+// A handful of full phrases this dataset reuses across several indicators
+// that read as jargon or, worse, as a different well-known acronym entirely
+// ("DHS" nationally means Homeland Security; here it's the City's
+// Department of Homeless Services) — swapped for plain language wherever
+// they appear, rather than curating each indicator that happens to use them.
+const JARGON_PHRASE_SUBSTITUTIONS: Array<[RegExp, string]> = [[/\bDHS shelter services system\b/gi, "city's shelter system"]];
+
+function applyJargonSubstitutions(s: string): string {
+  return JARGON_PHRASE_SUBSTITUTIONS.reduce((acc, [pattern, replacement]) => acc.replace(pattern, replacement), s);
+}
+
+const SKIP_INITIAL_WORDS = new Set(["and", "of", "the", "for", "&", "in", "to", "a", "an"]);
+
+/**
+ * Strips a parenthetical acronym that just repeats the capitalized phrase
+ * right before it — e.g. "Adult Protective Services (APS)" ->
+ * "Adult Protective Services". This dataset spells out an agency/program
+ * name once and then re-abbreviates it in parens; the abbreviation adds
+ * nothing a reader doesn't already have, and left in only reads as jargon.
+ * Matched by initials: walk backward through the preceding capitalized
+ * words (skipping connectors like "and"/"of") until they spell the
+ * acronym — if they don't (e.g. "(BIS)" with no matching expansion
+ * nearby), the paren is left alone rather than guessed at.
+ */
+function stripRedundantAcronymParens(s: string): string {
+  const out = s.replace(/\(([A-Z]{2,6})\)/g, (match, acronym: string, offset: number, full: string) => {
+    const before = full.slice(0, offset);
+    const words = before.trim().split(/\s+/);
+    let initials = "";
+    let i = words.length - 1;
+    while (i >= 0 && initials.length < acronym.length) {
+      const word = words[i].replace(/[^A-Za-z]/g, "");
+      if (!word || SKIP_INITIAL_WORDS.has(word.toLowerCase())) {
+        i -= 1;
+        continue;
+      }
+      if (/^[A-Z]/.test(word)) {
+        initials = word[0].toUpperCase() + initials;
+        i -= 1;
+      } else {
+        break;
+      }
+    }
+    return initials === acronym ? "" : match;
+  });
+  return out.replace(/\s{2,}/g, " ").trim();
+}
+
 // Only strip trailing parens that are pure unit/period annotations (e.g.
 // "(%)", "(days)", "(CY)", "(minutes:seconds)", "(% of system)") — a
 // parenthetical like "(tier 1 calls)" or "(Renewal)" is a meaningful
 // qualifier, not a unit, and must survive so the question doesn't lose
 // information.
 const UNIT_PAREN =
-  /^(?:%(?:\s+of\s+[\w\s]*)?|CY|FY\d*|preliminary|provisional|annual|total|\$?000(?:,000)?(?:,000)?|days?|weeks?|months?|years?|hours?|minutes?|minutes?:seconds?|hours?:minutes?|business\s+days?|calendar\s+days?|(?:average\s+)?(?:monthly\s+)?(?:rate\s+)?per\s+[\d,]+[\w\s]*)$/i;
+  /^(?:%(?:\s+of\s+[\w\s]*)?|CY|FY\d*|preliminary|provisional|annual|total|\$|units?|linear\s+feet|metric\s+tons?|five[\s-]year\s+averages?|\$?000(?:,000)?(?:,000)?|days?|weeks?|months?|years?|hours?|minutes?|minutes?:seconds?|hours?:minutes?|business\s+days?|calendar\s+days?|(?:average\s+)?(?:monthly\s+)?(?:rate\s+)?per\s+[\d,]+[\w\s]*)$/i;
 
 export function stripTrailingUnitParens(s: string): string {
-  let out = s.trim();
+  let out = stripRedundantAcronymParens(applyJargonSubstitutions(s.trim()));
+
+  // A unit-only paren can sit *before* a trailing dash-category breakdown
+  // ("Average time to approve X (days) — New") rather than at the string's
+  // true end — set the breakdown aside, strip the paren as usual, then
+  // reattach it, so "(days)" doesn't survive into the question just because
+  // something followed it.
+  let suffix = "";
+  const beforeDash = out.match(/^(.*\))\s*([—-]\s*.+)$/);
+  if (beforeDash) {
+    out = beforeDash[1].trim();
+    suffix = " " + beforeDash[2].trim();
+  }
+
   for (;;) {
     const m = out.match(/^(.*)\s*\(([^()]*)\)\s*$/);
     if (!m || !UNIT_PAREN.test(m[2].trim())) break;
@@ -36,7 +97,7 @@ export function stripTrailingUnitParens(s: string): string {
   // once phrased as a question; category breakdowns like "— Male" or
   // "— Renewal" are meaningful and stay.
   out = out.replace(/\s*[—-]\s*Total\s*$/i, "").trim();
-  return out;
+  return (out + suffix).trim();
 }
 
 // Any of these appearing inside a fragment means it's already a clause
@@ -178,6 +239,104 @@ const CURATED_QUESTIONS: Record<string, string> = {
     "How often do use-of-force incidents result in serious injury?",
   "Child abuse and/or neglect reports for youth in detention that are substantiated, rate (average per 100 total ADP)":
     "How often are child abuse or neglect reports involving youth in detention substantiated?",
+
+  // DOB tracks the same review-time metrics through two systems: "BIS," its
+  // older filing system (elsewhere on this site already described in plain
+  // language as DOB's "legacy system"), and "DOB NOW," its newer one. Both
+  // are meaningless initialisms to a reader with no reason to know DOB's
+  // internal system names, but keeping *which* system is what distinguishes
+  // otherwise-identical-sounding indicator pairs, so it stays as a named,
+  // explained system rather than being dropped entirely.
+  "Average days to complete first plan review – Major Renovations (Alteration I) – Initial applications (BIS)":
+    "How many days does it take to complete the first plan review for major renovation (Alteration I) initial applications, filed through DOB's legacy system?",
+  "Resubmission plan reviews completed – All applications (BIS)": "How many resubmission plan reviews are completed through DOB's legacy system?",
+  "Resubmission plan reviews completed – All applications (DOB NOW)": "How many resubmission plan reviews are completed through DOB NOW?",
+  "Average days to complete first plan review – New Buildings – All applications (DOB NOW)":
+    "How many days does it take to complete the first plan review for new building applications through DOB NOW?",
+  "Average days to complete first plan review – Major Renovations (Alteration CO) – All applications (DOB NOW)":
+    "How many days does it take to complete the first plan review for major renovation (Alteration CO) applications through DOB NOW?",
+  "Average days to complete first plan review – Minor Renovations (Alteration) – All applications (DOB NOW)":
+    "How many days does it take to complete the first plan review for minor renovation applications through DOB NOW?",
+
+  // "HOPE" is NYC's annual point-in-time street-homelessness survey — an
+  // unexplained acronym otherwise, on top of one of the longest raw names
+  // in the dataset.
+  "Unsheltered individuals who are estimated to be living on the streets, in parks, under highways, on subways and in the public transportation stations in New York City (HOPE) * (CY)":
+    "How many people are estimated to be living unsheltered, according to the annual HOPE count?",
+
+  "HIV/AIDS Services Administration (HASA) — Individuals receiving services":
+    "How many individuals are receiving services from the HIV/AIDS Services Administration?",
+
+  // CEQR/EAS/EIS are City Planning review-process jargon: an EAS is the
+  // basic environmental review most zoning actions get; an EIS is the more
+  // extensive one required when a project's impact could be significant.
+  "Zoning actions with CEQR (EAS) that entered public review within 15 months (%)":
+    "What percent of zoning actions needing a basic environmental review entered public review within 15 months?",
+  "Zoning actions with CEQR (EIS) that entered public review within 22 months (%)":
+    "What percent of zoning actions needing a full environmental impact review entered public review within 22 months?",
+
+  "Average incident resolution time by SLA level (hours) — Critical": "On average, how many hours does it take to resolve a critical-priority IT incident?",
+
+  "Remains identified following the September 11, 2001 attacks (cumulative)":
+    "How many sets of remains from the September 11, 2001 attacks have been identified?",
+
+  "English Language Learners testing out of English Language Learner status who did so within 3 years (%)":
+    "What percent of English Language Learners exit that status within 3 years?",
+
+  "Public service requests received — Total (Forestry)": "How many public service requests does the Forestry division receive?",
+
+  // "Entering the city's shelter system" (post-substitution) has no
+  // structural word the bare-category fallback recognizes as its own
+  // clause, so it was inserting an awkward "cases" — "How many single
+  // adults entering the city's shelter system cases are there?"
+  "Single adults entering the DHS shelter services system": "How many single adults enter the city's shelter system?",
+  "Adult families entering the DHS shelter services system": "How many adult families enter the city's shelter system?",
+  "Families with children entering the DHS shelter services system": "How many families with children enter the city's shelter system?",
+
+  // "Attendance ... are there" is broken English regardless of jargon — a
+  // mass noun ("attendance") needs "how much," not "how many," and the
+  // trailing "(pool season)" qualifier defeated the rule that would
+  // normally catch that.
+  "Attendance at outdoor Olympic and intermediate pools (pool season)":
+    "How many people attend outdoor Olympic and intermediate pools during pool season?",
+
+  "Average wait time (tier 1 calls) (minutes:seconds)": "On average, how long is the wait for tier 1 calls?",
+
+  // M/WBE = minority- and women-owned business enterprise, City procurement
+  // shorthand with no expansion anywhere in these names.
+  "M/WBE award rate (Local Law 1) (%)": "What percent of contracts are awarded to minority- and women-owned businesses?",
+  "Completed affordable housing projects that met or exceeded their M/WBE Build Up goal (%)":
+    "What percent of completed affordable housing projects met or exceeded their goal for hiring minority- and women-owned businesses?",
+
+  // NYCIDA (NYC Industrial Development Agency) is a distinct entity from
+  // EDC, the agency whose page these indicators live on — unlike "NYCEDC"
+  // elsewhere in this dataset, it isn't the page's own name, so a reader has
+  // no context to infer what it is.
+  "Projected three-year job growth associated with closed NYCIDA projects":
+    "How much three-year job growth is projected from completed NYC Industrial Development Agency projects?",
+  "Projected net City tax revenues generated in connection with closed NYCIDA contracts ($000,000)":
+    "How much net City tax revenue is projected from completed NYC Industrial Development Agency contracts?",
+
+  // OCME as a bare acronym works as an adjective ("an OCME facility") but
+  // reads badly as a sentence's own subject ("How many fatalities handled
+  // by OCME...") — spelled out where it's the subject, left as-is (already
+  // says "Medical Examiner" in full) where it's just a modifier.
+  "Median time from OCME receipt of decedents' remains to \"Ready to Release\" status (hours:minutes)":
+    "On average, how long does it take the Medical Examiner's Office to release a decedent's remains after receiving them?",
+  "Fatalities handled by OCME following a mass fatality event": "How many fatalities has the Medical Examiner's Office handled following a mass fatality event?",
+
+  "Services OTI provides": "How many services does the Office of Technology and Innovation provide?",
+  "Major incidents that directly impact services that OTI provides":
+    "How many major incidents directly impact the services the Office of Technology and Innovation provides?",
+
+  // A trailing paren that isn't a clean UNIT_PAREN match (a compound unit
+  // like "000,000 linear feet," or a second paren stacked after the first)
+  // survives to the end of the string, which defeats the past-participle
+  // and mass-noun rules that only look at the string's literal last word —
+  // both fell through to "X cases are there," awkwardly tacking "cases"
+  // onto a parenthetical instead of the actual noun.
+  "Pavement safety markings installed (000,000 linear feet)": "How many pavement safety markings have been installed?",
+  "NYC.gov unique visitors (average monthly) (000)": "On average, how many unique visitors does NYC.gov get per month?",
 };
 
 /**
