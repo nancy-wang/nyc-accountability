@@ -66,6 +66,70 @@ const MASS_NOUN_SUFFIX = /(?:tion|sion|ment|ance|ence)$/i;
 const EXPLICIT_COUNT_NOUN =
   /\b(cases?|applications?|requests?|complaints?|inspections?|projects?|incidents?|claims?|reports?|events?|students?|units?|visits?|calls?|hearings?|referrals?|violations?|summonses?|permits?|licenses?|placements?|allegations?|investigations?|families?|children|persons?|clients?)\b/i;
 
+// Names the automatic heuristics below can't confidently parse (bare crime
+// category labels, "X enrollment"/"X membership" mass nouns, rate-flavored
+// names that happen to contain a plural word, etc.) — reviewed by hand
+// rather than guessed, keyed on the exact indicator name from the source
+// dataset. Deliberately excludes rate/ratio/index-style indicators (tons per
+// truck-shift, hospitalization rates, attendance, circulation) where no
+// single countable noun fits the value, so those still render as a bare
+// number rather than a misleading unit.
+const CURATED_COUNT_NOUNS: Record<string, string> = {
+  // Bare crime-category names already read as "cases" in the question text
+  // (see the bare-category fallback below) — same judgment call for the value.
+  "Major felony crime": "cases",
+  "Murder and non-negligent manslaughter": "cases",
+  "Forcible rape": "cases",
+  Robbery: "cases",
+  "Felonious assault": "cases",
+  Burglary: "cases",
+  "Grand larceny": "cases",
+  "Grand larceny auto": "cases",
+  "School safety — Major felony crime": "cases",
+  "Major felonies reported on NYC Parks properties — Crimes against property": "cases",
+  "Cash Assistance — Caseload (point in time) (000)": "cases",
+
+  // Enrollment/membership figures are people, not an abstract mass noun.
+  "Medicaid — Enrollees administered by HRA (000)": "people enrolled",
+  "Average center-based child care voucher enrollment": "people enrolled",
+  "Average family child care voucher enrollment": "people enrolled",
+  "Average informal child care voucher enrollment": "people enrolled",
+  "MetroPlus membership": "people enrolled",
+  "NYC Care enrollment": "people enrolled",
+  "Fair Fares NYC — Total enrollment": "people enrolled",
+
+  "Escapes from secure detention": "escapes",
+  "Deaths from unintentional drug overdose (CY) (provisional)": "deaths",
+  "Admissions to detention": "admissions",
+  "Non-natural deaths of individuals in custody": "deaths",
+
+  "Tons of refuse disposed (000)": "tons",
+  "Street trees pruned — Block program": "trees",
+  "Single adults entering the DHS shelter services system": "adults",
+  "Unsheltered individuals who are estimated to be living on the streets, in parks, under highways, on subways and in the public transportation stations in New York City (HOPE) * (CY)":
+    "individuals",
+  "Average number of single adults in shelters per day": "adults",
+  "Average daily population in detention (total)": "people",
+  "Participants in COMPASS NYC programs —School year": "participants",
+  "Participants in Summer Youth Employment Program": "participants",
+  "Average lunches served daily": "lunches",
+  "Average breakfasts served daily": "breakfasts",
+  "Lots cleaned citywide": "lots",
+  "Financial awards to businesses (facilitated or disbursed)": "awards",
+  "Businesses receiving financial awards (facilitated or disbursed)": "businesses",
+  "M/WBEs awarded City contracts after receiving procurement and capacity building assistance": "businesses",
+  "NYC.gov unique visitors (average monthly) (000)": "visitors",
+  "Subscribers to Notify NYC, CorpNet, Advance Warning System, and Community Preparedness Newsletter": "subscribers",
+  "Pavement safety markings installed (000,000 linear feet)": "linear feet",
+  "DCP initiated planning information and policy analysis initiatives presented to the public": "initiatives",
+  "NYC adults who bike regularly (CY)": "adults",
+  "Average number of individuals in shelter per day": "individuals",
+  "Owners approved for the Medallion Relief Program": "owners",
+  "NYC Ferry - Total ridership": "riders",
+  "Unique emergency housing maintenance problems requiring HPD response": "problems",
+  "Homes projected through land use actions reviewed by the City Planning Commission": "homes",
+};
+
 /**
  * Best-effort guess at the countable noun a plain-number value is measured
  * in (e.g. "cases" for "623 cases"), from the indicator's own name — there's
@@ -75,6 +139,8 @@ const EXPLICIT_COUNT_NOUN =
  * to decide rather than silently mislabeled.
  */
 export function detectCountNoun(indicatorName: string): string | null {
+  if (indicatorName in CURATED_COUNT_NOUNS) return CURATED_COUNT_NOUNS[indicatorName];
+
   const core = stripTrailingUnitParens(indicatorName);
 
   const explicit = core.match(EXPLICIT_COUNT_NOUN);
