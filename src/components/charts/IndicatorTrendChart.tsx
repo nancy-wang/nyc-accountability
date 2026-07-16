@@ -106,10 +106,18 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const directionLabel = indicator.desiredDirection === "Up" ? "Higher values are better" : "Lower values are better";
   const directionIcon = indicator.desiredDirection === "Up" ? "▲" : "▼";
 
+  // The dashed line to the projection is drawn from the last *complete* year,
+  // not from the partial year's own actual point. The partial year's YTD
+  // figure is mechanically low simply because the year isn't over yet (e.g.
+  // 9 months of data) — connecting the dashed line to it would draw a
+  // misleading sharp-drop-then-sharp-recovery zigzag that doesn't reflect
+  // the real trend, which the projection is actually extending.
+  const priorCompleteIndex = projectedValue != null ? [...points].slice(0, projectedIndex).reverse().find((p) => p.value != null && !p.isPartialYear) : undefined;
   const projectedX = projectedValue != null ? xFor(projectedIndex) + PROJECTION_OFFSET : null;
   const projectedY = projectedValue != null ? yFor(projectedValue) : null;
-  const projectedFromX = projectedValue != null ? xFor(projectedIndex) : null;
-  const projectedFromY = projectedValue != null && points[projectedIndex].value != null ? yFor(points[projectedIndex].value!) : null;
+  const projectedFromIndex = priorCompleteIndex ? points.indexOf(priorCompleteIndex) : -1;
+  const projectedFromX = projectedFromIndex >= 0 ? xFor(projectedFromIndex) : null;
+  const projectedFromY = priorCompleteIndex?.value != null ? yFor(priorCompleteIndex.value) : null;
   const unit = chartUnitLabel(indicator.measurementType, indicator.name);
 
   return (
