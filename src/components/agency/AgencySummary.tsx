@@ -1,133 +1,136 @@
 import Link from "next/link";
-import { isVolatile, targetGapBadgeLabel } from "@/lib/data/accountability";
+import { isVolatile, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { rollupAccountability } from "@/lib/data/rollup";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
 import type { Indicator } from "@/lib/data/types";
+import { formatIndicatorValue } from "@/lib/format";
 
-const MAX_LISTED = 3;
+const MAX_BULLETS = 6;
 
 function lowerFirst(s: string): string {
   return s.length === 0 ? s : s.charAt(0).toLowerCase() + s.slice(1);
 }
 
-/** A linked question, plus whatever real context is available — the researched cause if one exists, else the raw target gap. Never invents a reason. */
-function IndicatorMention({ indicator, showGap }: { indicator: Indicator; showGap?: boolean }) {
+/**
+ * Sorts every indicator into "working" or "getting worse," or leaves it out
+ * of both when neither applies. Target status wins over trend when both are
+ * known — an indicator currently missing its target is the headline concern
+ * even if its multi-year trend happens to be improving, and vice versa.
+ * Volatile indicators (see isVolatile) only land here via target status,
+ * never via their mechanical trend field — the same reason TrendBadge is
+ * suppressed for them elsewhere, a Theil-Sen slope on a series that's really
+ * just bouncing in a band isn't a trustworthy "better" or "worse" signal.
+ */
+function classify(indicators: Indicator[]): { working: Indicator[]; worsening: Indicator[] } {
+  const working: Indicator[] = [];
+  const worsening: Indicator[] = [];
+  for (const indicator of indicators) {
+    if (indicator.onTargetStatus === "missed-target") {
+      worsening.push(indicator);
+    } else if (indicator.onTargetStatus === "on-target") {
+      working.push(indicator);
+    } else if (!isVolatile(indicator.series)) {
+      if (indicator.trend === "improving") working.push(indicator);
+      else if (indicator.trend === "worsening") worsening.push(indicator);
+    }
+  }
+  return { working, worsening };
+}
+
+function Bullet({ indicator }: { indicator: Indicator }) {
   const note = getIndicatorNote(indicator.id);
-  const gap = showGap ? targetGapBadgeLabel(indicator) : null;
+  const gap = targetGapBadgeLabel(indicator);
   const detail = note?.oneLiner || (gap ? lowerFirst(gap) : null);
+  const latest = latestPoint(indicator.series);
+  const valueText = formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name);
+
   return (
-    <>
+    <li>
       <Link href={`/indicators/${indicator.id}`} className="underline">
         {toPlainLanguageQuestion(indicator)}
       </Link>
-      {detail && ` (${detail})`}
-    </>
+      {": "}
+      {valueText}
+      {detail && <span style={{ color: "var(--text-muted)" }}> — {detail}</span>}
+    </li>
   );
 }
 
-function mentionList(indicators: Indicator[], showGap?: boolean) {
-  const shown = indicators.slice(0, MAX_LISTED);
+function Section({ title, indicators, emptyText }: { title: string; indicators: Indicator[]; emptyText: string }) {
+  const shown = indicators.slice(0, MAX_BULLETS);
   const remainder = indicators.length - shown.length;
+
   return (
-    <>
-      {shown.map((indicator, i) => (
-        <span key={indicator.id}>
-          {i > 0 && (i === shown.length - 1 && remainder === 0 ? ", and " : ", ")}
-          <IndicatorMention indicator={indicator} showGap={showGap} />
-        </span>
-      ))}
-      {remainder > 0 && `, and ${remainder} more`}
-    </>
+    <div>
+      <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
+        {title}
+      </h3>
+      {indicators.length === 0 ? (
+        <p className="mt-1.5 text-sm" style={{ color: "var(--text-muted)" }}>
+          {emptyText}
+        </p>
+      ) : (
+        <ul className="mt-1.5 list-disc space-y-1.5 pl-5 text-sm" style={{ color: "var(--text-secondary)" }}>
+          {shown.map((indicator) => (
+            <Bullet key={indicator.id} indicator={indicator} />
+          ))}
+          {remainder > 0 && <li style={{ color: "var(--text-muted)" }}>and {remainder} more below</li>}
+        </ul>
+      )}
+    </div>
   );
 }
 
 /**
  * A narrative built only from rollup counts, each indicator's own
- * precomputed status/trend, and — where one exists — its researched note
- * (same auditability rule as accountabilitySummary, just aggregated and
- * interpreted at the agency level). The "encouraging/mixed/concerning"
- * framing is a deterministic read of the improving-vs-worsening ratio, not
- * free-text judgment, so it stays defensible: change the ratio, the framing
- * changes with it.
+ * precomputed status/trend, and — where one exists — its researched note.
+ * Leads with a short scorecard sentence, then splits the specific
+ * indicators driving that scorecard into two scannable lists, rather than
+ * one dense paragraph — same underlying, auditable data, easier to read.
  */
 export function AgencySummary({ agencyName, indicators }: { agencyName: string; indicators: Indicator[] }) {
   const rollup = rollupAccountability(indicators);
-  const missed = indicators.filter((i) => i.onTargetStatus === "missed-target");
   const targetable = rollup.total - rollup.noTargetSet;
 
-  // A volatile indicator's mechanical trend field (Theil-Sen slope) can say
-  // "worsening" even when the real story is a stable series bouncing in a
-  // narrow band — the same reason TrendBadge is suppressed for these on the
-  // indicator page. Excluded from the trend counts here for the same reason,
-  // and called out separately instead of folded into "declining."
-  const volatile = indicators.filter((i) => isVolatile(i.series));
-  const improving = indicators.filter((i) => !isVolatile(i.series) && i.trend === "improving");
-  const worsening = indicators.filter((i) => !isVolatile(i.series) && i.trend === "worsening");
-  const trendTotal = improving.length + worsening.length;
+  const volatileCount = indicators.filter((i) => isVolatile(i.series)).length;
+  const improvingCount = indicators.filter((i) => !isVolatile(i.series) && i.trend === "improving").length;
+  const worseningCount = indicators.filter((i) => !isVolatile(i.series) && i.trend === "worsening").length;
+  const trendTotal = improvingCount + worseningCount;
 
-  let targetParagraph: React.ReactNode;
-  if (targetable === 0) {
-    targetParagraph = `${agencyName} doesn't have a numeric target set by the City for any of its ${rollup.total} critical indicators, so its performance here can only be judged by which way each one is heading, not whether it's hitting a goal.`;
-  } else {
-    const ratio = rollup.onTarget / targetable;
-    const framing =
-      ratio === 1
-        ? "hitting the City's own target on every indicator that has one"
-        : ratio >= 0.66
-          ? `hitting the City's own target on most of what it tracks — ${rollup.onTarget} of ${targetable} indicators with a numeric goal`
-          : ratio <= 0.34
-            ? `falling short of the City's own target on most of what it tracks — only ${rollup.onTarget} of ${targetable} indicators with a numeric goal are hitting it`
-            : `on mixed footing against its own targets — ${rollup.onTarget} of ${targetable} indicators with a numeric goal are hitting it`;
-    targetParagraph = (
-      <>
-        {agencyName} is {framing}.{" "}
-        {missed.length > 0 && (
-          <>
-            {missed.length === 1 ? "Its miss is on " : `Its misses are on `}
-            {mentionList(missed, true)}.{" "}
-          </>
-        )}
-        {rollup.noTargetSet > 0 &&
-          `The City hasn't set a numeric target for its other ${rollup.noTargetSet} tracked ${rollup.noTargetSet === 1 ? "indicator" : "indicators"}, so ${rollup.noTargetSet === 1 ? "it" : "those"} can only be judged by direction of travel.`}
-      </>
-    );
-  }
+  const targetClause =
+    targetable === 0
+      ? `${agencyName} doesn't have a numeric target set by the City for any of its ${rollup.total} critical indicators`
+      : rollup.onTarget === targetable
+        ? `${agencyName} is hitting the City's own target on all ${targetable} indicators that have one`
+        : rollup.onTarget / targetable <= 0.34
+          ? `${agencyName} is falling short of the City's own target on most of what it tracks (${rollup.onTarget} of ${targetable})`
+          : `${agencyName} is hitting the City's own target on ${rollup.onTarget} of ${targetable} indicators with a numeric goal`;
 
-  let trendParagraph: React.ReactNode;
-  if (trendTotal === 0) {
-    trendParagraph = "There isn't enough multi-year data yet to say whether the department's indicators are trending up or down.";
-  } else {
-    const improveRatio = improving.length / trendTotal;
-    const meaning =
-      improveRatio >= 0.66
-        ? "an encouraging sign — the department's operations appear to be strengthening across most of what it measures"
-        : improveRatio <= 0.34
-          ? "a concerning sign — more of the department's tracked indicators are heading the wrong way than the right one"
-          : "a mixed picture, with close to as many indicators moving the wrong way as the right one";
-    trendParagraph = (
-      <>
-        Looking at multi-year trends, {improving.length} of {trendTotal} measured indicators have moved toward improvement versus {worsening.length}{" "}
-        toward decline — {meaning}.{worsening.length > 0 && <> The ones heading the wrong way: {mentionList(worsening)}.</>}
-        {volatile.length > 0 && (
-          <>
-            {" "}
-            {volatile.length} {volatile.length === 1 ? "indicator swings" : "indicators swing"} too much year to year for a simple trend label — see
-            each one's own chart for the full picture.
-          </>
-        )}
-      </>
-    );
-  }
+  const trendClause =
+    trendTotal === 0
+      ? "there isn't enough multi-year data yet to say whether it's trending up or down"
+      : improvingCount / trendTotal >= 0.66
+        ? "its overall trajectory is encouraging, with most measured indicators trending toward improvement"
+        : improvingCount / trendTotal <= 0.34
+          ? "its overall trajectory is concerning, with more indicators heading the wrong way than the right one"
+          : "its overall trajectory is mixed, with close to as many indicators improving as declining";
+
+  const { working, worsening } = classify(indicators);
 
   return (
     <div className="mt-6 rounded-xl border-2 p-5" style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}>
       <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-        {targetParagraph}
+        {targetClause}, and {trendClause}
+        {volatileCount > 0 &&
+          ` (${volatileCount} ${volatileCount === 1 ? "indicator swings" : "indicators swing"} too much year to year for a simple trend label)`}
+        .
       </p>
-      <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
-        {trendParagraph}
-      </p>
+
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
+        <Section title="What's working" indicators={working} emptyText="Nothing stands out as a clear win right now." />
+        <Section title="What's getting worse" indicators={worsening} emptyText="Nothing stands out as a clear problem right now." />
+      </div>
     </div>
   );
 }
