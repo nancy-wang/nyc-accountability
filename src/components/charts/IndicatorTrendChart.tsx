@@ -1,4 +1,4 @@
-import { formatFiscalYear, formatIndicatorValue } from "@/lib/format";
+import { chartUnitLabel, formatChartValue, formatFiscalYear, formatIndicatorValue } from "@/lib/format";
 import type { Indicator } from "@/lib/data/types";
 
 const WIDTH = 640;
@@ -70,7 +70,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   // widest y-axis tick label plus half the first point's own value label
   // (also centered there); right padding fits half the last point's value
   // label (center-anchored on the point, so half its width extends past it).
-  const labelWidth = (v: number | null) => (v == null ? 0 : estimateTextWidth(formatIndicatorValue(v, indicator.measurementType, indicator.name), LABEL_FONT_SIZE));
+  const labelWidth = (v: number | null) => (v == null ? 0 : estimateTextWidth(formatChartValue(v, indicator.measurementType, indicator.name), LABEL_FONT_SIZE));
   const widestTickWidth = Math.max(0, ...ticks.map((t) => labelWidth(t)));
   const firstLabelHalfWidth = labelWidth(points[0]?.value ?? null) / 2;
   const lastLabelHalfWidth = labelWidth(points[points.length - 1]?.value ?? null) / 2;
@@ -99,6 +99,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const latestIndex = [...points].map((p, i) => ({ p, i })).reverse().find(({ p }) => p.value != null)?.i;
   const directionLabel = indicator.desiredDirection === "Up" ? "Higher values are better" : "Lower values are better";
   const directionIcon = indicator.desiredDirection === "Up" ? "▲" : "▼";
+  const unit = chartUnitLabel(indicator.measurementType, indicator.name);
 
   return (
     <div>
@@ -107,6 +108,11 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
           {directionIcon}
         </span>
         {directionLabel}
+        {unit && (
+          <span className="font-normal" style={{ color: "var(--text-muted)" }}>
+            &nbsp;· in {unit}
+          </span>
+        )}
       </div>
 
       <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label={`Trend chart for ${indicator.name}`} className="w-full">
@@ -114,7 +120,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
           <g key={tick}>
             <line x1={PAD_LEFT} x2={WIDTH - PAD_RIGHT} y1={yFor(tick)} y2={yFor(tick)} stroke="var(--gridline)" strokeWidth={1} />
             <text x={PAD_LEFT - 10} y={yFor(tick)} textAnchor="end" dominantBaseline="middle" fontSize={13} fill="var(--text-secondary)">
-              {formatIndicatorValue(tick, indicator.measurementType, indicator.name)}
+              {formatChartValue(tick, indicator.measurementType, indicator.name)}
             </text>
           </g>
         ))}
@@ -157,7 +163,7 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
                 fontWeight={isLatest ? 700 : 500}
                 fill={isLatest ? "var(--text-primary)" : "var(--text-secondary)"}
               >
-                {formatIndicatorValue(p.value, indicator.measurementType, indicator.name)}
+                {formatChartValue(p.value, indicator.measurementType, indicator.name)}
               </text>
             </g>
           );

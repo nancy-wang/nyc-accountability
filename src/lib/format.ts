@@ -109,6 +109,57 @@ function formatPlainNumber(value: number): string {
   return new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 }).format(value);
 }
 
+const TIME_UNIT_LABEL: Partial<Record<TimeUnit, string>> = {
+  days: "days",
+  weeks: "weeks",
+  months: "months",
+  minutes: "min",
+  hours: "hr",
+  "clock-minutes-seconds": "min:sec",
+  "clock-hours-minutes": "hr:min",
+};
+
+/**
+ * The unit a chart should state once (in its axis label / header), rather
+ * than have every axis tick and point label repeat it — "35 days," "34
+ * days," "31 days" five times over on one small chart is noise, not
+ * clarity. Percentage/Currency are left out: their symbol is a single
+ * character stated inline per value (68%, $50), which is standard chart
+ * practice and not the clutter this exists to avoid.
+ */
+export function chartUnitLabel(measurementType: MeasurementType, indicatorName = ""): string | null {
+  if (measurementType === "TimeSpan") return TIME_UNIT_LABEL[detectTimeUnit(indicatorName)] ?? null;
+  if (measurementType === "Number") {
+    const timeUnit = detectNumberTimeUnit(indicatorName);
+    if (timeUnit !== "unknown") return TIME_UNIT_LABEL[timeUnit] ?? null;
+    return detectCountNoun(indicatorName);
+  }
+  return null;
+}
+
+/**
+ * Bare numeric value for chart ticks/point labels — the unit lives once in
+ * the axis label (chartUnitLabel) instead. Clock-encoded TimeSpan values
+ * still need decoding (9.02 isn't literally "9.02" of anything), just
+ * rendered as compact "9:02" rather than the prose "9 min 2 sec" used
+ * elsewhere, since the axis label already says "min:sec."
+ */
+export function formatChartValue(value: number | null, measurementType: MeasurementType, indicatorName = ""): string {
+  if (value == null) return "N/A";
+
+  if (measurementType === "TimeSpan" || measurementType === "Number") {
+    const unit = measurementType === "TimeSpan" ? detectTimeUnit(indicatorName) : detectNumberTimeUnit(indicatorName);
+    if (unit === "clock-minutes-seconds" || unit === "clock-hours-minutes") {
+      const whole = Math.trunc(value);
+      const sub = Math.min(Math.round(Math.abs(value - whole) * 100), 59);
+      return `${whole}:${String(sub).padStart(2, "0")}`;
+    }
+    return formatPlainNumber(value);
+  }
+
+  return formatIndicatorValue(value, measurementType, indicatorName);
+}
+
 /**
  * NYC's MMR reports "X:YY" time values as a single decimal number where the
  * digits after the point ARE the sub-unit count directly (9.02 -> 9 min 2
@@ -148,7 +199,9 @@ export function formatValueDifference(a: number, b: number, measurementType: Mea
     const whole = Math.floor(totalSubUnits / 60);
     const sub = totalSubUnits % 60;
     const [wholeUnit, subUnitLabel] = unit === "clock-minutes-seconds" ? ["min", "sec"] : ["hr", "min"];
-    return sub === 0 ? `${whole} ${wholeUnit}` : `${whole} ${wholeUnit} ${sub} ${subUnitLabel}`;
+    if (sub === 0) return `${whole} ${wholeUnit}`;
+    if (whole === 0) return `${sub} ${subUnitLabel}`;
+    return `${whole} ${wholeUnit} ${sub} ${subUnitLabel}`;
   }
   return formatIndicatorValue(Math.abs(a - b), measurementType, indicatorName);
 }
