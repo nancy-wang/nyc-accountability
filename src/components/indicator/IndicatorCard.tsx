@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
-import { isVolatile, latestPoint, trendOneLiner } from "@/lib/data/accountability";
+import { isVolatile, latestPoint, targetGapPhrase, trendOneLiner } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
 import { formatIndicatorValue } from "@/lib/format";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
@@ -19,7 +19,11 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
   // A researched note's condensed insight takes priority over the bare
   // direction word — "overall decreasing, but increase due to broadened
   // definition" says something a plain "decreasing" can't.
-  const oneLiner = note?.oneLiner || trendOneLiner(indicator.series);
+  const trendText = note?.oneLiner || trendOneLiner(indicator);
+  // The chart no longer shades a "missing target" zone — this is where that
+  // context lives instead, e.g. "10 min above the 15 min target."
+  const targetGap = targetGapPhrase(indicator);
+  const oneLiner = [trendText, targetGap].filter(Boolean).join(", ");
 
   return (
     <details

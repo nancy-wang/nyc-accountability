@@ -35,29 +35,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #14162e;
-    --foreground: #fdf6e9;
-
-    --surface-1: #1b1d3f;
-    --text-primary: #fdf6e9;
-    --text-secondary: #c7c5e6;
-    --text-muted: #8d8bb8;
-    --gridline: #2d2f5c;
-    --baseline: #40427a;
-    --border-hairline: rgba(253, 246, 233, 0.14);
-
-    --series-1: #f3a62b;
-    --accent-heading: var(--brand-gold);
-
-    --status-good: #35c759;
-    --status-warning: #fab219;
-    --status-serious: #ec835a;
-    --status-critical: #ff6b60;
-    --status-neutral: #c7c5e6;
-  }
-}
+/* The cream/tan light palette is used regardless of system color-scheme
+   preference — the campaign-poster look reads best against it, and a
+   navy dark mode muddied the palette's contrast between the brand colors. */
 
 body {
   background: var(--background);

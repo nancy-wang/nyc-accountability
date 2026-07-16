@@ -96,17 +96,6 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
   const hasTarget = targetPoints.length > 0;
   const targetPath = targetPoints.map((p, idx) => `${idx === 0 ? "M" : "L"} ${p.x} ${p.y}`).join(" ");
 
-  // Shades the side of the target line that counts as "missing target" — a
-  // reader can see at a glance whether the line sits in the danger zone
-  // without doing any arithmetic against the axis.
-  let missZonePath: string | null = null;
-  if (hasTarget) {
-    const edgeY = indicator.desiredDirection === "Up" ? plotBottom : PAD_TOP;
-    const first = targetPoints[0]!;
-    const last = targetPoints[targetPoints.length - 1]!;
-    missZonePath = `${targetPath} L ${last.x} ${edgeY} L ${first.x} ${edgeY} Z`;
-  }
-
   const latestIndex = [...points].map((p, i) => ({ p, i })).reverse().find(({ p }) => p.value != null)?.i;
   const directionLabel = indicator.desiredDirection === "Up" ? "Higher values are better" : "Lower values are better";
   const directionIcon = indicator.desiredDirection === "Up" ? "▲" : "▼";
@@ -121,8 +110,6 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
       </div>
 
       <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-label={`Trend chart for ${indicator.name}`} className="w-full">
-        {missZonePath && <path d={missZonePath} fill="var(--status-critical)" opacity={0.08} />}
-
         {ticks.map((tick) => (
           <g key={tick}>
             <line x1={PAD_LEFT} x2={WIDTH - PAD_RIGHT} y1={yFor(tick)} y2={yFor(tick)} stroke="var(--gridline)" strokeWidth={1} />
@@ -193,10 +180,6 @@ export function IndicatorTrendChart({ indicator }: { indicator: Indicator }) {
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden style={{ display: "inline-block", width: 12, height: 0, borderTop: "2px dashed var(--text-muted)" }} />
             Target
-          </span>
-          <span className="inline-flex items-center gap-1.5">
-            <span aria-hidden style={{ display: "inline-block", width: 10, height: 10, background: "var(--status-critical)", opacity: 0.35 }} />
-            Missing target
           </span>
         </div>
       )}

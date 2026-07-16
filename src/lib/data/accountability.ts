@@ -1,4 +1,4 @@
-import { formatFiscalYear, formatIndicatorValue } from "../format";
+import { formatFiscalYear, formatIndicatorValue, formatValueDifference } from "../format";
 import type { DesiredDirection, Indicator, IndicatorPoint, OnTargetStatus, TrendDirection } from "./types";
 
 export function onTargetStatus(
@@ -68,25 +68,6 @@ export function trendSpanFiscalYears(series: IndicatorPoint[]): number {
   return points[points.length - 1].fiscalYear - points[0].fiscalYear;
 }
 
-/**
- * A short, honest one-line caption for the card view: the raw direction the
- * number is moving (not the "improving/worsening" value judgment, which is
- * conveyed separately by the ▲/▼ "higher/lower is better" cue) — e.g.
- * "decreasing" rather than "improving." Deliberately does not claim
- * statistical significance: a Theil-Sen slope over 4-5 annual data points
- * from an operational reporting dataset isn't a hypothesis test, and
- * claiming significance without actually running one would be a fabricated
- * precision this site doesn't have.
- */
-export function trendOneLiner(series: IndicatorPoint[]): string {
-  const points = completeYearPoints(series);
-  if (points.length < 2) return "";
-
-  const slope = theilSenSlope(points.map((p) => ({ x: p.fiscalYear, y: p.value! })));
-  if (slope === 0) return "little changed";
-  return slope > 0 ? "increasing" : "decreasing";
-}
-
 const VOLATILITY_SWING_THRESHOLD = 0.5;
 
 /**
@@ -108,6 +89,54 @@ export function isVolatile(series: IndicatorPoint[]): boolean {
   return (hi - lo) / Math.abs(lo) > VOLATILITY_SWING_THRESHOLD;
 }
 
+/**
+ * A short, honest one-line caption for the card view: the raw direction the
+ * number is moving (not the "improving/worsening" value judgment, which is
+ * conveyed separately by the ▲/▼ "higher/lower is better" cue) — e.g.
+ * "decreasing" rather than "improving." Deliberately does not claim
+ * statistical significance: a Theil-Sen slope over 4-5 annual data points
+ * from an operational reporting dataset isn't a hypothesis test, and
+ * claiming significance without actually running one would be a fabricated
+ * precision this site doesn't have.
+ *
+ * For a genuinely volatile series (see isVolatile), a bare "increasing" or
+ * "decreasing" overstates the story — a slope can be technically positive
+ * while the real picture is bouncing around in a narrow band. Those get a
+ * "fluctuating between X and Y" description instead of a direction word.
+ */
+export function trendOneLiner(indicator: Indicator): string {
+  const points = completeYearPoints(indicator.series);
+  if (points.length < 2) return "";
+
+  if (isVolatile(indicator.series)) {
+    const values = points.map((p) => p.value!);
+    const lo = formatIndicatorValue(Math.min(...values), indicator.measurementType, indicator.name);
+    const hi = formatIndicatorValue(Math.max(...values), indicator.measurementType, indicator.name);
+    return `fluctuating between ${lo} and ${hi}`;
+  }
+
+  const slope = theilSenSlope(points.map((p) => ({ x: p.fiscalYear, y: p.value! })));
+  if (slope === 0) return "little changed";
+  return slope > 0 ? "increasing" : "decreasing";
+}
+
+/**
+ * "X above/below the Y target" for the one-liner — kept out of the chart
+ * itself (no more shaded miss-zone or "Missing target" legend swatch) and
+ * surfaced here as plain-language context instead.
+ */
+export function targetGapPhrase(indicator: Indicator): string {
+  const latest = latestPoint(indicator.series);
+  if (latest?.value == null || latest.targetCurrentFY == null) return "";
+
+  const gap = latest.value - latest.targetCurrentFY;
+  if (gap === 0) return "right at the target";
+
+  const formattedGap = formatValueDifference(latest.value, latest.targetCurrentFY, indicator.measurementType, indicator.name);
+  const formattedTarget = formatIndicatorValue(latest.targetCurrentFY, indicator.measurementType, indicator.name);
+  return `${formattedGap} ${gap > 0 ? "above" : "below"} the ${formattedTarget} target`;
+}
+
 export function latestPoint(series: IndicatorPoint[]): IndicatorPoint | undefined {
   for (let i = series.length - 1; i >= 0; i -= 1) {
     if (series[i].value != null) return series[i];
@@ -127,9 +156,11 @@ export function accountabilitySummary(indicator: Indicator): string {
   const span = trendSpanFiscalYears(indicator.series);
   const years = `${span} year${span === 1 ? "" : "s"}`;
 
+  const gap = targetGapPhrase(indicator);
+  const gapSuffix = gap ? ` (${gap})` : "";
   const statusClause: Record<OnTargetStatus, string> = {
-    "missed-target": "missed the City's own target for this indicator",
-    "on-target": "met the City's own target for this indicator",
+    "missed-target": `missed the City's own target for this indicator${gapSuffix}`,
+    "on-target": `met the City's own target for this indicator${gapSuffix}`,
     "no-target-set": "has no numeric target set by the City",
     "no-data": "has no recent data reported",
   };
