@@ -1,14 +1,35 @@
 import type { AgencyRef } from "@data/narrative/taxonomy";
-import { latestPoint } from "@/lib/data/accountability";
+import { effectiveTrend, latestPoint } from "@/lib/data/accountability";
 import { getAgencyNarrative, getAgencySeal, getIndicatorNote, getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
-import { toPlainLanguageQuestion } from "@/lib/data/questionify";
-import { trendRollup } from "@/lib/data/rollup";
+import { stripTrailingUnitParens } from "@/lib/data/questionify";
+import { rollupAccountability, trendRollup } from "@/lib/data/rollup";
 import type { Indicator } from "@/lib/data/types";
-import { formatIndicatorValue } from "@/lib/format";
+import { formatCompactValue, formatIndicatorValue } from "@/lib/format";
 import { AgencyCardFlip, type TopIndicator } from "./AgencyCardFlip";
 
 const MAX_TOP_INDICATORS = 4;
+const YEARS_SHOWN = 5;
+const MAX_INTRO_BULLETS = 3;
 const GENERIC_SEAL_PATH = "/seals/_nyc-generic.svg";
+
+/** Splits hand-written narrative prose into short standalone bullets for the card back, instead of a run-on paragraph. */
+function splitIntoBullets(text: string, max: number): string[] {
+  return text
+    .split(/(?<=[.!?])\s+(?=[A-Z])/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .slice(0, max);
+}
+
+/**
+ * A raw indicator name is precise but MMR-verbose ("Average time to approve
+ * X applications"); the card has no ellipsis-truncation (nothing should
+ * ever read as cut off), so trimming the generic statistical lead-in here
+ * keeps names close to one line without losing the actual subject.
+ */
+function cardIndicatorLabel(name: string): string {
+  return stripTrailingUnitParens(name).replace(/^(Average|Median)\s+/i, "");
+}
 
 /**
  * A currently-missed target is the most card-worthy fact about an
@@ -28,13 +49,58 @@ function pickTopIndicators(indicators: Indicator[]): Indicator[] {
   return [...indicators].sort((a, b) => priority(a) - priority(b)).slice(0, MAX_TOP_INDICATORS);
 }
 
+/** An indicator worth bragging about: currently on-target, or trending the right way per the same judgment call used elsewhere (see effectiveTrend). */
+function pickBestWorkingIndicator(indicators: Indicator[]): Indicator | null {
+  const working = indicators.filter((indicator) => {
+    if (indicator.onTargetStatus === "on-target") return true;
+    if (indicator.onTargetStatus === "missed-target") return false;
+    return effectiveTrend(indicator, getIndicatorNote(indicator.id)) === "improving";
+  });
+  if (working.length === 0) return null;
+  // Note-first, stable — a real, cited explanation beats a bare stat.
+  return [...working].sort((a, b) => Number(getIndicatorNote(a.id) == null) - Number(getIndicatorNote(b.id) == null))[0];
+}
+
+/**
+ * A deterministic 1-2 sentence "what's going well" for the card, built only
+ * from precomputed status/trend fields and a researched note's oneLiner
+ * where one exists — never free-text generation, same auditability rule as
+ * accountabilitySummary(). Falls back to an honest "nothing stands out" line
+ * rather than manufacturing a positive when the data doesn't support one.
+ */
+function agencyStandoutSummary(indicators: Indicator[]): string {
+  const rollup = rollupAccountability(indicators);
+  const targetable = rollup.total - rollup.noTargetSet;
+
+  const targetClause =
+    targetable > 0 && rollup.onTarget > 0 ? `Hits the City's own target on ${rollup.onTarget} of ${targetable} indicators with a numeric goal.` : null;
+
+  const best = pickBestWorkingIndicator(indicators);
+  const bestClause = (() => {
+    if (!best) return null;
+    const latest = latestPoint(best.series);
+    const valueText = formatIndicatorValue(latest?.value ?? null, best.measurementType, best.name);
+    const note = getIndicatorNote(best.id);
+    return note?.oneLiner
+      ? `${cardIndicatorLabel(best.name)} is a bright spot: ${lowerFirstChar(note.oneLiner)}.`
+      : `${cardIndicatorLabel(best.name)} is trending well, now at ${valueText}.`;
+  })();
+
+  const clauses = [targetClause, bestClause].filter((c): c is string => c != null);
+  return clauses.length > 0 ? clauses.join(" ") : "Nothing stands out as a clear win right now — see the full page for the complete picture.";
+}
+
+function lowerFirstChar(s: string): string {
+  return s.length === 0 ? s : s.charAt(0).toLowerCase() + s.slice(1);
+}
+
 /**
  * Fetches and shapes everything AgencyCardFlip needs, then hands off to it.
  * Kept as a plain server component (no "use client") specifically so the
  * filesystem-backed lookups here (notes, narrative, seal manifest) never
  * end up needing to run in the browser — see AgencyCardFlip's own comment.
  */
-export function AgencyCard({ agency }: { agency: AgencyRef }) {
+export function AgencyCard({ agency, topicTitle }: { agency: AgencyRef; topicTitle: string }) {
   const indicators = getIndicatorsByAgencyCodes(agency.codes);
   if (indicators.length === 0) return null;
 
@@ -43,22 +109,43 @@ export function AgencyCard({ agency }: { agency: AgencyRef }) {
   const trend = trendRollup(indicators);
 
   const topIndicators: TopIndicator[] = pickTopIndicators(indicators).map((indicator) => {
-    const latest = latestPoint(indicator.series);
+    const note = getIndicatorNote(indicator.id);
+    const years = [...indicator.series]
+      .sort((a, b) => a.fiscalYear - b.fiscalYear)
+      .slice(-YEARS_SHOWN)
+      .map((point) => {
+        const isProjected = point.isPartialYear && point.projectedValue != null;
+        const value = isProjected ? point.projectedValue : point.value;
+        return {
+          fiscalYear: point.fiscalYear,
+          valueText: formatCompactValue(value, indicator.measurementType, indicator.name),
+          isProjected,
+        };
+      });
+
     return {
       id: indicator.id,
-      question: toPlainLanguageQuestion(indicator),
-      valueText: formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name),
+      name: cardIndicatorLabel(indicator.name),
       status: indicator.onTargetStatus,
+      trend: effectiveTrend(indicator, note),
+      years,
     };
   });
+
+  const introBullets = narrative?.intro
+    ? splitIntoBullets(narrative.intro, MAX_INTRO_BULLETS)
+    : ["A summary of this agency's mission hasn't been researched yet."];
+
+  const standoutSummary = agencyStandoutSummary(indicators);
 
   return (
     <AgencyCardFlip
       agencyName={agency.name}
       agencySlug={agency.slug}
       sealPath={seal?.sealPath ?? GENERIC_SEAL_PATH}
-      indicatorCount={indicators.length}
-      intro={narrative?.intro ?? null}
+      topicTitle={topicTitle}
+      introBullets={introBullets}
+      standoutSummary={standoutSummary}
       trend={trend}
       topIndicators={topIndicators}
     />

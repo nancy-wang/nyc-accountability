@@ -209,3 +209,26 @@ export function formatValueDifference(a: number, b: number, measurementType: Mea
 export function formatFiscalYear(fiscalYear: number): string {
   return `FY${String(fiscalYear).slice(-2)}`;
 }
+
+/**
+ * Narrowest legible rendering of a value — for a multi-year table where 5
+ * years' worth of numbers share a single row's width (the trading card
+ * back). Large counts/currency get Intl's "compact" notation (99K, 1.2M)
+ * rather than the noun-suffixed prose formatIndicatorValue uses elsewhere;
+ * Percentage and TimeSpan are already short enough as-is.
+ */
+export function formatCompactValue(value: number | null, measurementType: MeasurementType, indicatorName = ""): string {
+  if (value == null) return "—";
+
+  switch (measurementType) {
+    case "Percentage":
+      return `${new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 }).format(value)}%`;
+    case "TimeSpan":
+      return formatChartValue(value, measurementType, indicatorName);
+    case "Currency":
+      return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", notation: "compact", maximumFractionDigits: 1 }).format(value);
+    case "Number":
+    default:
+      return new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 }).format(value);
+  }
+}

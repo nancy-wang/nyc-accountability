@@ -25,7 +25,7 @@ export default function AgencyCardsPage() {
           </h2>
           <div className="mt-4 flex flex-wrap gap-5">
             {topic.agencies.map((agency) => (
-              <AgencyCard key={agency.slug} agency={agency} />
+              <AgencyCard key={agency.slug} agency={agency} topicTitle={topic.title} />
             ))}
           </div>
         </section>
