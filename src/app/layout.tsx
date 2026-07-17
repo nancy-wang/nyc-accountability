@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import localFont from "next/font/local";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import "./globals.css";
@@ -15,17 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// FRERE-JONES TYPE TRIAL LICENSE — evaluation only, not licensed for public or
-// commercial use. Never deploy this build publicly or commit src/fonts/empirica-trial
-// (gitignored). Buy the retail license at frerejones.com before shipping this site.
-const displayFont = localFont({
-  variable: "--font-display",
-  src: [
-    { path: "../fonts/empirica-trial/EmpiricaTRIALHeadline-Bold.otf", weight: "700", style: "normal" },
-    { path: "../fonts/empirica-trial/EmpiricaTRIALHeadline-BoldItalic.otf", weight: "700", style: "italic" },
-    { path: "../fonts/empirica-trial/EmpiricaTRIALHeadline-Black.otf", weight: "900", style: "normal" },
-  ],
-});
+// The real display headline font (Empirica TRIAL, from Frere-Jones Type) is
+// under an evaluation-only trial license — not cleared for public/commercial
+// use, and its files are gitignored (src/fonts/empirica-trial) so they don't
+// even exist in deployed builds. Buy the retail license at frerejones.com,
+// then restore the next/font/local loader here (see git history) to swap
+// the real font back in; until then, the deployed build uses the plain CSS
+// fallback set as --font-display in globals.css.
 
 export const metadata: Metadata = {
   title: "NYC Accountability",
@@ -40,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${displayFont.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />

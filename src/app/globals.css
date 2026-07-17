@@ -37,6 +37,11 @@
   --trend-improving: #7a8f3d;
   --trend-worsening: var(--brand-red);
   --trend-other: var(--brand-gold);
+
+  /* Deployed-build fallback for the display headline font — see the
+     licensing note in layout.tsx. When the real Empirica TRIAL font is
+     wired back in there, its next/font variable overrides this. */
+  --font-display: Georgia, "Times New Roman", serif;
 }
 
 @theme inline {
