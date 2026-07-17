@@ -38,13 +38,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
         {agency.name}
       </h1>
 
-      {narrative && (
-        <p className="mt-4 max-w-2xl text-base" style={{ color: "var(--text-secondary)" }}>
-          {narrative.intro}
-        </p>
-      )}
-
-      <AgencySummary agencyName={agency.name} indicators={indicators} />
+      <AgencySummary indicators={indicators} narrative={narrative} />
 
       <h2 className="mt-8 text-lg font-medium" style={{ color: "var(--text-primary)" }}>
         Critical indicators

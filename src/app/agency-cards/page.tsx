@@ -23,7 +23,7 @@ export default function AgencyCardsPage() {
           <h2 className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
             {topic.title}
           </h2>
-          <div className="mt-4 flex flex-wrap gap-5">
+          <div className="mt-4 flex flex-wrap gap-3">
             {topic.agencies.map((agency) => (
               <AgencyCard key={agency.slug} agency={agency} topicTitle={topic.title} />
             ))}

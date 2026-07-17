@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { taxonomy } from "@data/narrative/taxonomy";
 import { getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
-import { rollupAccountability } from "@/lib/data/rollup";
 
 const SWATCHES = [
   { bg: "var(--brand-red)", heading: "var(--brand-cream)", body: "rgba(253, 246, 233, 0.85)" },
@@ -35,7 +34,6 @@ export default function HomePage() {
         {taxonomy.map((topic, i) => {
           const codes = topic.agencies.flatMap((a) => a.codes);
           const indicators = getIndicatorsByAgencyCodes(codes);
-          const rollup = rollupAccountability(indicators);
           const live = indicators.length > 0;
           const swatch = SWATCHES[i % SWATCHES.length];
 
@@ -51,11 +49,7 @@ export default function HomePage() {
               <h2 className="font-display text-xl leading-tight" style={{ color: swatch.heading }}>
                 {topic.title}
               </h2>
-              {live ? (
-                <p className="mt-2 text-sm font-medium" style={{ color: swatch.body }}>
-                  {rollup.missedTarget} of {rollup.total} critical indicators currently missing target
-                </p>
-              ) : (
+              {!live && (
                 <p className="mt-2 text-sm font-medium" style={{ color: swatch.body }}>
                   Coming soon
                 </p>

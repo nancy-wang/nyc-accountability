@@ -5,30 +5,31 @@ import { stripTrailingUnitParens } from "@/lib/data/questionify";
 import { rollupAccountability, trendRollup } from "@/lib/data/rollup";
 import type { Indicator } from "@/lib/data/types";
 import { formatCompactValue, formatIndicatorValue } from "@/lib/format";
+import { splitIntoSentences } from "@/lib/text";
 import { AgencyCardFlip, type TopIndicator } from "./AgencyCardFlip";
 
-const MAX_TOP_INDICATORS = 4;
+const MAX_TOP_INDICATORS = 3;
 const YEARS_SHOWN = 5;
-const MAX_INTRO_BULLETS = 3;
+const MAX_INTRO_BULLETS = 2;
 const GENERIC_SEAL_PATH = "/seals/_nyc-generic.svg";
 
-/** Splits hand-written narrative prose into short standalone bullets for the card back, instead of a run-on paragraph. */
-function splitIntoBullets(text: string, max: number): string[] {
-  return text
-    .split(/(?<=[.!?])\s+(?=[A-Z])/)
-    .map((s) => s.trim())
-    .filter(Boolean)
-    .slice(0, max);
-}
-
 /**
- * A raw indicator name is precise but MMR-verbose ("Average time to approve
- * X applications"); the card has no ellipsis-truncation (nothing should
- * ever read as cut off), so trimming the generic statistical lead-in here
- * keeps names close to one line without losing the actual subject.
+ * A raw indicator name is precise but MMR-verbose ("Combined average
+ * response time to X (FDNY dispatch and travel time only)"); the card has
+ * no ellipsis-truncation (nothing should ever read as cut off), so this
+ * trims the generic statistical lead-in and any remaining parenthetical
+ * qualifiers stripTrailingUnitParens intentionally leaves alone for the
+ * full question (real footnote-level detail, but more than a small card
+ * has room for) — keeps names close to one line without losing the subject.
  */
 function cardIndicatorLabel(name: string): string {
-  return stripTrailingUnitParens(name).replace(/^(Average|Median)\s+/i, "");
+  let out = stripTrailingUnitParens(name).replace(/^(?:Combined\s+)?(?:Average|Median)\s+/i, "");
+  for (;;) {
+    const next = out.replace(/\s*\([^()]*\)\s*$/, "").trim();
+    if (next === out) break;
+    out = next;
+  }
+  return out;
 }
 
 /**
@@ -133,7 +134,7 @@ export function AgencyCard({ agency, topicTitle }: { agency: AgencyRef; topicTit
   });
 
   const introBullets = narrative?.intro
-    ? splitIntoBullets(narrative.intro, MAX_INTRO_BULLETS)
+    ? splitIntoSentences(narrative.intro, MAX_INTRO_BULLETS)
     : ["A summary of this agency's mission hasn't been researched yet."];
 
   const standoutSummary = agencyStandoutSummary(indicators);

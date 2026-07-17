@@ -15,20 +15,21 @@ import type { TrendRollup } from "@/lib/data/rollup";
  * notes from disk) and stays safe to render from a client component tree —
  * see AgencyCardFlip, which needs that.
  */
-export function AgencyTrendBar({ trend }: { trend: TrendRollup }) {
+/** `compact` shrinks the bar/text for tight spaces (the trading card) without affecting the default size used on topic pages. */
+export function AgencyTrendBar({ trend, compact = false }: { trend: TrendRollup; compact?: boolean }) {
   const { total, improving, worsening, other } = trend;
   if (total === 0) return null;
 
   const pct = (n: number) => (n / total) * 100;
 
   return (
-    <div className="mt-2 flex items-center gap-2.5">
-      <div className="flex h-2.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--gridline)" }}>
-        {improving > 0 && <div style={{ width: `${pct(improving)}%`, background: "var(--status-good)" }} />}
-        {worsening > 0 && <div style={{ width: `${pct(worsening)}%`, background: "var(--status-critical)" }} />}
-        {other > 0 && <div style={{ width: `${pct(other)}%`, background: "var(--baseline)" }} />}
+    <div className={`mt-2 flex items-center ${compact ? "gap-1.5" : "gap-2.5"}`}>
+      <div className={`flex flex-1 overflow-hidden rounded-full ${compact ? "h-1.5" : "h-2.5"}`} style={{ background: "var(--gridline)" }}>
+        {improving > 0 && <div style={{ width: `${pct(improving)}%`, background: "var(--trend-improving)" }} />}
+        {worsening > 0 && <div style={{ width: `${pct(worsening)}%`, background: "var(--trend-worsening)" }} />}
+        {other > 0 && <div style={{ width: `${pct(other)}%`, background: "var(--trend-other)" }} />}
       </div>
-      <span className="shrink-0 text-xs" style={{ color: "var(--text-secondary)" }}>
+      <span className={`shrink-0 ${compact ? "text-[9px]" : "text-xs"}`} style={{ color: "var(--text-secondary)" }}>
         {improving} improving, {worsening} worse
       </span>
     </div>

@@ -26,6 +26,17 @@
   --status-serious: #ec835a;
   --status-critical: #d03b3b;
   --status-neutral: #52514e;
+
+  /* Improving/worsening/neither trio for proportion bars (AgencyTrendBar) —
+     distinct from --status-good/critical above, which are a brighter, more
+     clinical pair used for on-target badges and charts elsewhere and
+     shouldn't shift just because this trio does. Red and yellow are the
+     site's own brand-red/brand-gold verbatim, not new colors; the green is
+     a visible olive (per the user-supplied swatch) — bright enough to read
+     clearly at a glance, unlike the too-dark forest tone tried earlier. */
+  --trend-improving: #7a8f3d;
+  --trend-worsening: var(--brand-red);
+  --trend-other: var(--brand-gold);
 }
 
 @theme inline {

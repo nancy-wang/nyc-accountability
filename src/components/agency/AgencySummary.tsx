@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { effectiveTrend, isVolatile, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
+import { effectiveTrend, latestPoint, targetGapBadgeLabel } from "@/lib/data/accountability";
 import { getIndicatorNote } from "@/lib/data/getIndicators";
-import { rollupAccountability, trendRollup } from "@/lib/data/rollup";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
-import type { Indicator } from "@/lib/data/types";
+import type { AgencyNarrative, Indicator } from "@/lib/data/types";
 import { formatIndicatorValue } from "@/lib/format";
+import { splitIntoSentences } from "@/lib/text";
 
 const MAX_BULLETS = 3;
 
@@ -94,43 +94,28 @@ function Section({ title, indicators, emptyText }: { title: string; indicators: 
   );
 }
 
+const MAX_DESCRIPTION_SENTENCES = 2;
+
 /**
- * A narrative built only from rollup counts, each indicator's own
- * precomputed status/trend, and — where one exists — its researched note.
- * Leads with a short scorecard sentence, then splits the specific
- * indicators driving that scorecard into two scannable lists, rather than
- * one dense paragraph — same underlying, auditable data, easier to read.
+ * A real, sourced 1-2 sentence description of the agency itself — what it
+ * does and why the work matters — rather than a mechanical target/trend
+ * scorecard sentence built from status codes. Falls back to an honest
+ * placeholder for the agencies that haven't been researched yet instead of
+ * fabricating one.
  */
-export function AgencySummary({ agencyName, indicators }: { agencyName: string; indicators: Indicator[] }) {
-  const rollup = rollupAccountability(indicators);
-  const targetable = rollup.total - rollup.noTargetSet;
+function agencyDescription(narrative: AgencyNarrative | null): string {
+  return narrative?.intro
+    ? splitIntoSentences(narrative.intro, MAX_DESCRIPTION_SENTENCES).join(" ")
+    : "A summary of this agency's mission hasn't been researched yet.";
+}
 
-  // Only counts volatile indicators a researched note *hasn't* resolved a
-  // direction for — one that has is no longer "too much to call a trend,"
-  // it's already been called, and shows up in improvingCount/worseningCount
-  // instead.
-  const volatileCount = indicators.filter((i) => isVolatile(i.series) && effectiveTrend(i, getIndicatorNote(i.id)) === "insufficient-data").length;
-  const { improving: improvingCount, worsening: worseningCount } = trendRollup(indicators);
-  const trendTotal = improvingCount + worseningCount;
-
-  const targetClause =
-    targetable === 0
-      ? `${agencyName} doesn't have a numeric target set by the City for any of its ${rollup.total} critical indicators`
-      : rollup.onTarget === targetable
-        ? `${agencyName} is hitting the City's own target on all ${targetable} indicators that have one`
-        : rollup.onTarget / targetable <= 0.34
-          ? `${agencyName} is falling short of the City's own target on most of what it tracks (${rollup.onTarget} of ${targetable})`
-          : `${agencyName} is hitting the City's own target on ${rollup.onTarget} of ${targetable} indicators with a numeric goal`;
-
-  const trendClause =
-    trendTotal === 0
-      ? "there isn't enough multi-year data yet to say whether it's trending up or down"
-      : improvingCount / trendTotal >= 0.66
-        ? "its overall trajectory is encouraging, with most measured indicators trending toward improvement"
-        : improvingCount / trendTotal <= 0.34
-          ? "its overall trajectory is concerning, with more indicators heading the wrong way than the right one"
-          : "its overall trajectory is mixed, with close to as many indicators improving as declining";
-
+/**
+ * Leads with what the agency is and why it matters, then splits the
+ * indicators actually driving its record into two scannable lists — built
+ * only from each indicator's own precomputed status/trend and, where one
+ * exists, its researched note, same underlying auditable data as before.
+ */
+export function AgencySummary({ indicators, narrative }: { indicators: Indicator[]; narrative: AgencyNarrative | null }) {
   const { working, worsening } = classify(indicators);
   const rankedWorking = rankBullets(working);
   const rankedWorsening = rankBullets(worsening);
@@ -138,10 +123,7 @@ export function AgencySummary({ agencyName, indicators }: { agencyName: string; 
   return (
     <div className="mt-6 rounded-xl border-2 p-5" style={{ borderColor: "var(--border-hairline)", background: "var(--surface-1)" }}>
       <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-        {targetClause}, and {trendClause}
-        {volatileCount > 0 &&
-          ` (${volatileCount} ${volatileCount === 1 ? "indicator swings" : "indicators swing"} too much year to year for a simple trend label)`}
-        .
+        {agencyDescription(narrative)}
       </p>
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
