@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { findTopicBySlug, taxonomy } from "@data/narrative/taxonomy";
 import { AgencyTrendBar } from "@/components/agency/AgencyTrendBar";
 import { getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
+import { trendRollup } from "@/lib/data/rollup";
 
 export function generateStaticParams() {
   return taxonomy.map((topic) => ({ topicSlug: topic.slug }));
@@ -38,7 +39,7 @@ export default async function TopicPage({ params }: { params: Promise<{ topicSlu
                 {agency.name}
               </h2>
               {live ? (
-                <AgencyTrendBar indicators={indicators} />
+                <AgencyTrendBar trend={trendRollup(indicators)} />
               ) : (
                 <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
                   Coming soon

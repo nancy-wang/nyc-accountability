@@ -78,3 +78,16 @@ export interface ServiceContext {
   summary: string;
   sources: Array<{ label: string; url: string }>;
 }
+
+export interface AgencyNarrative {
+  intro: string;
+  noteworthyChanges: string[];
+  sourceUrl?: string;
+}
+
+/** Real seal/logo art for an agency's trading card, keyed by agency slug. Falls back to the generic NYC seal when no distinct one could be found and verified. */
+export interface AgencySeal {
+  sealPath: string;
+  isFallback: boolean;
+  source: { label: string; url: string };
+}

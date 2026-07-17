@@ -26,6 +26,9 @@ export default function HomePage() {
           </a>
           .
         </p>
+        <Link href="/agency-cards" className="mt-4 inline-block text-sm font-semibold underline" style={{ color: "var(--accent-heading)" }}>
+          Meet the agencies as trading cards ↗
+        </Link>
       </section>
 
       <div className="grid gap-4 sm:grid-cols-2">

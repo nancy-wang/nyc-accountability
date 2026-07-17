@@ -1,23 +1,9 @@
-import { readFileSync, existsSync } from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findAgencyBySlug, taxonomy } from "@data/narrative/taxonomy";
 import { AgencySummary } from "@/components/agency/AgencySummary";
 import { IndicatorCard } from "@/components/indicator/IndicatorCard";
-import { getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
-
-interface AgencyNarrative {
-  intro: string;
-  noteworthyChanges: string[];
-  sourceUrl?: string;
-}
-
-function getNarrative(slug: string): AgencyNarrative | null {
-  const filePath = path.join(process.cwd(), "data", "narrative", "agencies", `${slug}.json`);
-  if (!existsSync(filePath)) return null;
-  return JSON.parse(readFileSync(filePath, "utf-8")) as AgencyNarrative;
-}
+import { getAgencyNarrative, getIndicatorsByAgencyCodes } from "@/lib/data/getIndicators";
 
 export function generateStaticParams() {
   return taxonomy.flatMap((topic) => topic.agencies.map((agency) => ({ agencySlug: agency.slug })));
@@ -32,7 +18,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
   const indicators = getIndicatorsByAgencyCodes(agency.codes);
   if (indicators.length === 0) notFound();
 
-  const narrative = getNarrative(agency.slug);
+  const narrative = getAgencyNarrative(agency.slug);
 
   const withTarget = indicators.filter((i) => i.onTargetStatus === "on-target" || i.onTargetStatus === "missed-target");
   const withoutTarget = indicators.filter((i) => i.onTargetStatus === "no-target-set" || i.onTargetStatus === "no-data");

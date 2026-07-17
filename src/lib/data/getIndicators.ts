@@ -1,14 +1,17 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
-import type { Indicator, IndicatorResearchNote, ServiceContext, SnapshotMeta } from "./types";
+import type { AgencyNarrative, AgencySeal, Indicator, IndicatorResearchNote, ServiceContext, SnapshotMeta } from "./types";
 
 const SNAPSHOT_DIR = path.join(process.cwd(), "data", "snapshot");
 const INDICATOR_NOTES_DIR = path.join(process.cwd(), "data", "narrative", "indicator-notes");
 const SERVICE_CONTEXT_DIR = path.join(process.cwd(), "data", "narrative", "service-context");
+const AGENCIES_DIR = path.join(process.cwd(), "data", "narrative", "agencies");
+const AGENCY_SEALS_PATH = path.join(process.cwd(), "data", "narrative", "agency-seals.json");
 
 let cachedIndicators: Indicator[] | null = null;
 let cachedMeta: SnapshotMeta | null = null;
 let cachedServiceContext: Map<string, ServiceContext> | null = null;
+let cachedAgencySeals: Record<string, AgencySeal> | null = null;
 
 function readJson<T>(filename: string): T {
   const filePath = path.join(SNAPSHOT_DIR, filename);
@@ -83,4 +86,23 @@ export function getServiceContext(agencyCode: string, service: string): ServiceC
     cachedServiceContext = loadServiceContext();
   }
   return cachedServiceContext.get(serviceContextKey(agencyCode, service)) ?? null;
+}
+
+/**
+ * A short hand-written "what this agency does" blurb, keyed by agency slug.
+ * Optional per-agency, same reasoning as indicator notes — real prose needs
+ * real research, so most agencies won't have one until that pass is done.
+ */
+export function getAgencyNarrative(slug: string): AgencyNarrative | null {
+  const filePath = path.join(AGENCIES_DIR, `${slug}.json`);
+  if (!existsSync(filePath)) return null;
+  return JSON.parse(readFileSync(filePath, "utf-8")) as AgencyNarrative;
+}
+
+/** Real, sourced seal art for an agency's trading card (see AgencySeal), or null if no entry exists yet. */
+export function getAgencySeal(slug: string): AgencySeal | null {
+  if (!cachedAgencySeals) {
+    cachedAgencySeals = existsSync(AGENCY_SEALS_PATH) ? (JSON.parse(readFileSync(AGENCY_SEALS_PATH, "utf-8")) as Record<string, AgencySeal>) : {};
+  }
+  return cachedAgencySeals[slug] ?? null;
 }

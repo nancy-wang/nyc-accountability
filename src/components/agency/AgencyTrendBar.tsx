@@ -1,5 +1,4 @@
-import { trendRollup } from "@/lib/data/rollup";
-import type { Indicator } from "@/lib/data/types";
+import type { TrendRollup } from "@/lib/data/rollup";
 
 /**
  * A proportional bar of how an agency's critical indicators are trending —
@@ -10,9 +9,14 @@ import type { Indicator } from "@/lib/data/types";
  * going abstract or cherry-picking one to stand in for the rest; a
  * proportional bar shows the real mix at a glance and scales to any agency
  * size without picking a "winner."
+ *
+ * Takes the already-computed rollup rather than raw indicators, so this
+ * component has no filesystem dependency (trendRollup() reads researched
+ * notes from disk) and stays safe to render from a client component tree —
+ * see AgencyCardFlip, which needs that.
  */
-export function AgencyTrendBar({ indicators }: { indicators: Indicator[] }) {
-  const { total, improving, worsening, other } = trendRollup(indicators);
+export function AgencyTrendBar({ trend }: { trend: TrendRollup }) {
+  const { total, improving, worsening, other } = trend;
   if (total === 0) return null;
 
   const pct = (n: number) => (n / total) * 100;

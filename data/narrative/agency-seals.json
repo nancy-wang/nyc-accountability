@@ -1,0 +1,26 @@
+{
+  "nypd": {
+    "sealPath": "/seals/nypd.svg",
+    "isFallback": false,
+    "source": {
+      "label": "Patch of the New York City Police Department — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:Patch_of_the_New_York_City_Police_Department.svg"
+    }
+  },
+  "fdny": {
+    "sealPath": "/seals/fdny.svg",
+    "isFallback": false,
+    "source": {
+      "label": "Emblem of the New York City Fire Department — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_New_York_City_Fire_Department.svg"
+    }
+  },
+  "bic": {
+    "sealPath": "/seals/_nyc-generic.svg",
+    "isFallback": true,
+    "source": {
+      "label": "Seal of New York City — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:Seal_of_New_York_City.svg"
+    }
+  }
+}
