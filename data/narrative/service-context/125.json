@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OCME",
+  "service": "Provide preventative and supportive fatality-related services to New Yorkers.",
+  "oneLiner": "This work matters because losing a family member suddenly is traumatic and can also be a warning sign for relatives, so OCME pairs grief support at its Family Services Centers with programs like GIFTS that test at-risk relatives for the inherited conditions that killed their loved one.",
+  "summary": "Beyond investigating individual deaths, OCME operates Family Services Centers in each borough to support relatives through sudden and traumatic loss with dignity and compassion. The agency has also moved into fatality prevention: its Genetic Intervention Family Testing Services (GIFTS) program screens surviving family members of people who died from inherited conditions at no cost, aiming to catch dangerous genetic conditions in relatives before they prove fatal.",
+  "sources": [
+    {"label": "OCME - For Families and Friends", "url": "https://www.nyc.gov/site/ocme/for-families/for-families.page"},
+    {"label": "OCME - Office of Chief Medical Examiner Takes Trailblazing Step to Prevent Sudden and Unexpected Deaths", "url": "https://www.nyc.gov/site/ocme/news/cm0725/office-chief-medical-examiner-takes-trailblazing-step-prevent-sudden-unexpected-deaths"}
+  ]
+}

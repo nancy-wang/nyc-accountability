@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCP",
+  "service": "Manage land use and environmental review processes to facilitate public and private development citywide.",
+  "oneLiner": "This process exists because 1960s backlash against Robert Moses-era top-down urban renewal and highway projects led the city, in its 1975 charter, to require that community boards and the public get a formal, uniform say before major developments and rezonings can move forward.",
+  "summary": "The Uniform Land Use Review Procedure, known as ULURP, was mandated by the 1975 revision of the New York City Charter and adopted by the City Planning Commission in 1976. It grew out of two intersecting trends: mounting community backlash against the destructive, top-down urban renewal and highway projects of the mid-20th century, and the rising role of the city's newly empowered Community Boards. By standardizing how land use applications move through community board review, borough president input, the City Planning Commission, and often the City Council, ULURP was designed to democratize development decisions that had previously been made with little public input.",
+  "sources": [
+    {"label": "Uniform Land Use Review Procedure - Wikipedia", "url": "https://en.wikipedia.org/wiki/Uniform_Land_Use_Review_Procedure"},
+    {"label": "ULURP: What is it? And Why Do We Have It? - Brownstoner", "url": "https://www.brownstoner.com/development/ulurp/"}
+  ]
+}

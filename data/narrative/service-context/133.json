@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OTI",
+  "service": "Support sharing and management of citywide data and information.",
+  "oneLiner": "This work matters because a 2012 city law now requires agencies to publish their data by default instead of making residents file a public-records request for it, and OTI is what keeps that flow of open data actually working.",
+  "summary": "New York's Open Data Law (Local Law 11 of 2012), championed by Council Member Gale Brewer, required the City to publish essentially all of its public data sets on a single portal, building on the older Freedom of Information Law but flipping the default from reactive disclosure to proactive publication. Later amendments in 2015, 2016, and 2017 strengthened requirements around data dictionaries, retention, and response times. OTI (formerly DoITT) is responsible for the technical infrastructure and coordination that lets dozens of city agencies actually share and manage that data.",
+  "sources": [
+    {"label": "Data-Smart City Solutions - New York City Open Data: A Brief History", "url": "https://datasmart.hks.harvard.edu/news/article/new-york-city-open-data-a-brief-history-991"},
+    {"label": "NYC Open Data - Laws and Reports", "url": "https://opendata.cityofnewyork.us/open-data-law/"}
+  ]
+}

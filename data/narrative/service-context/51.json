@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOF",
+  "service": "Bill, adjudicate and collect on parking summonses.",
+  "oneLiner": "This exists because by 1969 NYC's criminal courts were choked with over 3.2 million parking-ticket cases a year, so in 1970 the City moved parking violations out of criminal court entirely and into a civil administrative bureau.",
+  "summary": "Before 1970, contesting a parking ticket meant going through the criminal court system, which by the late 1960s was handling more than 3.2 million non-moving-violation cases annually on top of hundreds of thousands of moving-violation cases. State legislation effective July 1, 1970 shifted these cases to the newly created Parking Violations Bureau, a civil administrative tribunal where jail time is not a possible penalty. That decriminalization is why parking tickets today are billed, contested, and collected by DOF's Parking Violations Bureau rather than treated as a criminal matter.",
+  "sources": [
+    {"label": "NYC Administrative Code - Chapter 2: Parking Violations Bureau", "url": "https://nycadmincode.readthedocs.io/t19/c02/"},
+    {"label": "Office of Justice Programs - Administrative Adjudication Bureau of NYS DMV", "url": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/administrative-adjudication-bureau-new-york-state-department-motor"}
+  ]
+}

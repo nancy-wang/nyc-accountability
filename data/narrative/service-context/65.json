@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DORIS",
+  "service": "Preserve and provide access to historical and contemporary New York City government records.",
+  "oneLiner": "This work matters because without a dedicated archive, centuries of NYC government records - vital records, court files, photographs, and maps documenting the city's history - would be scattered, deteriorating, or lost, instead of preserved and open to the public.",
+  "summary": "The push for a central city archive dates to 1939, when Mayor Fiorello LaGuardia's Municipal Archives Committee, led by librarian Rebecca Rankin, proposed consolidating city records into one properly maintained facility. DORIS itself was formally established in 1977 and now operates the Municipal Archives, Municipal Library, and Records Center. The Municipal Archives alone holds over 200,000 cubic feet of original documents, photographs, ledgers, maps, and moving images documenting New York City's government and history, material that would otherwise be vulnerable to loss, damage, or simply becoming inaccessible to researchers, journalists, and the public.",
+  "sources": [
+    {"label": "NYC Department of Records - About", "url": "https://www.nyc.gov/site/records/about/overview.page"},
+    {"label": "Municipal Archives - the Institutional History", "url": "https://www.archives.nyc/blog/2021/1/22/municipal-archives-the-institutional-history"},
+    {"label": "New York City Department of Records and Information Services - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Records_and_Information_Services"}
+  ]
+}

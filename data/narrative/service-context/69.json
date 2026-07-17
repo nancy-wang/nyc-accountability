@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOT",
+  "service": "Foster a safe and secure transportation environment.",
+  "oneLiner": "This work matters because Vision Zero, the citywide effort DOT leads since 2014 to eliminate traffic deaths, has coincided with some of the safest years on New York City's streets in recorded history.",
+  "summary": "Mayor Bill de Blasio launched Vision Zero in January 2014, adapting a road-safety approach pioneered in Sweden, with the goal of eliminating traffic deaths and serious injuries on city streets. DOT has led much of the implementation, completing over 1,200 street-safety projects and more than 200 miles of protected bike lanes as of the program's tenth anniversary. City data shows eight of the ten safest years on New York City streets have occurred during the Vision Zero era, though advocates note that progress has not been steady every year and traffic violence remains an ongoing public safety problem.",
+  "sources": [
+    {"label": "Vision Zero (New York City) - Wikipedia", "url": "https://en.wikipedia.org/wiki/Vision_Zero_(New_York_City)"},
+    {"label": "NYC Streets Safer and More Equitable After 10 Years of Vision Zero", "url": "https://www.nyc.gov/html/dot/html/pr2024/10-years-vision-zero.shtml"},
+    {"label": "Vision Zero in New York City - FHWA", "url": "https://highways.dot.gov/safety/zero-deaths/vision-zero-new-york-city"}
+  ]
+}

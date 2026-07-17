@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYCHA",
+  "service": "1 Operate as an effective and efficient landlord.",
+  "oneLiner": "NYCHA was created in 1934 as the first public housing authority in the United States, built to replace overcrowded Depression-era tenements with modern apartments — it's now measured as a landlord because it directly owns and manages that housing itself, not just funds it.",
+  "summary": "Mayor Fiorello LaGuardia established NYCHA on January 20, 1934, in response to the severe housing crisis of the Great Depression, making it the first agency in the country to provide publicly funded housing. Its first project, the First Houses on the Lower East Side, replaced dilapidated tenements with apartments that had private kitchens and bathrooms — basic amenities many residents didn't previously have. Because NYCHA owns and directly operates its developments rather than simply subsidizing private landlords, its performance is tracked the way any landlord's would be: repairs, cleanliness, and tenant services.",
+  "sources": [
+    { "label": "New York City Housing Authority — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Housing_Authority" },
+    { "label": "About NYCHA — nyc.gov", "url": "https://www.nyc.gov/site/nycha/about/about-nycha.page" }
+  ]
+}

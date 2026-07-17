@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HPD",
+  "service": "Efficiently offer New Yorkers housing-related subsidies and support.",
+  "oneLiner": "This work matters because HPD administers Section 8 and CityFHEPS vouchers that let tens of thousands of low-income households afford market-rate apartments, a lifeline for families who would otherwise face eviction or homelessness while waiting for the city to build more housing directly.",
+  "summary": "HPD runs the Housing Choice Voucher (Section 8) program, which made up about 80 percent of the rental assistance HPD administered as of late 2024, serving over 36,000 households at an average monthly cost per unit of roughly $1,408. It also administers CityFHEPS, a city-funded voucher for families with children on cash assistance who are at risk of eviction or have lost housing due to domestic violence or health and safety issues; unlike the federally funded Section 8 program, CityFHEPS has no waitlist, so eligible applicants receive it without waiting years. Together these programs are a major part of how the city tries to keep low-income households housed rather than in shelter.",
+  "sources": [
+    {"label": "Section 8 Housing Choice Vouchers - Office of the New York State Comptroller", "url": "https://www.osc.ny.gov/reports/budget/fed-funding-ny/section-8-housing-choice-vouchers"},
+    {"label": "Housing Vouchers 101 - NYC Anti-Violence Project", "url": "https://avp.org/factsheets/housing-vouchers-101/"}
+  ]
+}

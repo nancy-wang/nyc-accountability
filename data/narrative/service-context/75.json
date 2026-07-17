@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DPR",
+  "service": "Provide recreational and educational opportunities for New Yorkers of all ages.",
+  "oneLiner": "This work matters because NYC's public pools and recreation centers trace back to a public-health response - an 1895 state law mandating free public baths in dense, disease-prone cities - and today they remain free or low-cost recreation many New Yorkers couldn't otherwise access.",
+  "summary": "As New York's population surged in the 19th century and cholera and typhoid spread through crowded tenement neighborhoods, the state mandated free public bathhouses in large cities starting in 1895; by 1911, twelve had opened in Manhattan alone. In the 1930s, the Parks Department took over these bathhouses and, using Works Progress Administration labor, built eleven large outdoor pools that all opened within weeks of each other in summer 1936. That legacy continues today: the Department operates dozens of outdoor and indoor pools that are free or low-cost, alongside recreation centers offering programs for children, seniors, and people with disabilities, with a 2024 initiative committing over $1 billion to modernize aging pool infrastructure.",
+  "sources": [
+    {"label": "History of Parks' Swimming Pools - NYC Parks", "url": "https://www.nycgovparks.org/about/history/pools"},
+    {"label": "History of Recreation in Parks - NYC Parks", "url": "https://www.nycgovparks.org/about/history/recreation"},
+    {"label": "Mayor Adams Launches Let's Swim NYC", "url": "https://www.nyc.gov/mayors-office/news/2024/06/mayor-adams-launches-let-s-swim-nyc-over-1-billion-improvements-public-pools-all"}
+  ]
+}

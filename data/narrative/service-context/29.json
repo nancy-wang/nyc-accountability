@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DDC",
+  "service": "Design and build quality public buildings and infrastructure.",
+  "oneLiner": "This work matters because before 1996 NYC's public construction was split across many agencies each running its own building program, which is why Mayor Giuliani consolidated street, water and building construction into one agency, DDC, to manage the city's capital projects more efficiently.",
+  "summary": "The Department of Design and Construction opened in July 1996 to unify what had been fragmented construction functions: the Department of Transportation's street work, the Department of Environmental Protection's water main and sewer construction, and the Department of General Services' building program covering police, fire, sanitation, correctional, library and cultural facilities. By becoming the City's primary capital construction manager, DDC freed other agencies to focus on delivering their core services rather than running their own construction divisions.",
+  "sources": [
+    {"label": "DDC Feature: Building New York City Since 1996", "url": "https://www.nyc.gov/site/ddc/resources/features/DDC30th.page"},
+    {"label": "New York City Department of Design and Construction - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Design_and_Construction"}
+  ]
+}

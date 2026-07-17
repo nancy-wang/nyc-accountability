@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DHS",
+  "service": "Coordinate and provide support services to help individuals and families experiencing homelessness exit shelter as quickly as possible.",
+  "oneLiner": "This work matters because when NYC and State rental assistance was cut in 2011, homelessness jumped 38% in three years, showing how directly the availability of rehousing subsidies determines whether people can actually leave shelter for good.",
+  "summary": "New York City has cycled through several rental-subsidy programs aimed at moving shelter residents into permanent housing quickly, a strategy known as rapid rehousing, starting with Housing Stability Plus in the mid-2000s and later Advantage New York. When state funding for Advantage was cut in 2011, homelessness rose 38 percent within three years, prompting the City to rebuild and expand rehousing programs. Today, subsidies like CityFHEPS account for the large majority of subsidized shelter exits, and DHS reports that the vast majority of households who receive a subsidized placement do not return to shelter within a year.",
+  "sources": [
+    {"label": "City Programs Help More Than 100,000 New Yorkers Exit Shelter or Avoid Shelter Since 2014", "url": "https://www.nyc.gov/site/dhs/about/press-releases/city-programs-help-more-than-100000-new-yorkers.page"},
+    {"label": "Urban Institute: Homelessness Prevention, Intake, and Shelter for Single Adults and Families", "url": "https://www.urban.org/sites/default/files/publication/32871/413060-Innovations-in-NYC-Health-and-Human-Services-Policy-Homelessness-Prevention-Intake-and-Shelter-for-Single-Adults-and-Families.PDF"}
+  ]
+}

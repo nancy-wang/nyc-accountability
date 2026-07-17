@@ -1,0 +1,10 @@
+{
+  "agencyCode": "CCHR",
+  "service": "Educate the community on the NYC Human Rights Law.",
+  "oneLiner": "This work matters because the NYC Human Rights Law only protects people who know it exists, so CCHR's outreach traces back to a commission first formed in the 1930s and 1940s to address racial unrest in the city, when the City learned that laws against discrimination are only as effective as the public's awareness of them.",
+  "summary": "The Commission's roots go back to Mayor Fiorello La Guardia's Mayor's Committee on Unity, formed to address race relations after unrest in Harlem in 1935 and 1943, though it initially lacked enforcement power. It evolved into the Commission on Intergroup Relations in the mid-1950s and became the Commission on Human Rights in 1962. The NYC Human Rights Law, passed in 1965 and expanded many times since, is now one of the most comprehensive civil rights laws in the country, covering employment, housing, and public accommodations. CCHR's community education work exists because a legal right to be free from discrimination only protects people who know the law exists and know how to invoke it.",
+  "sources": [
+    {"label": "Commission's History - NYC Commission on Human Rights", "url": "https://www.nyc.gov/site/cchr/about/commissions-history.page"},
+    {"label": "New York City Human Rights Law - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Human_Rights_Law"}
+  ]
+}

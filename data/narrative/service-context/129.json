@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OTI",
+  "service": "Arrange for free, fast, and reliable internet access to NYCHA eligible residents.",
+  "oneLiner": "This work matters because before this program, an estimated 30 to 40 percent of NYCHA households had no broadband, a gap that literally locked kids out of remote classes during the pandemic when their loaner tablets couldn't get a signal.",
+  "summary": "The City launched Big Apple Connect in September 2022 to close a longstanding digital divide in public housing, after an earlier, more ambitious Internet Master Plan was put on hold. The program provides free basic internet and cable TV to NYCHA households through agreements with providers like Optimum and Spectrum, growing from 100 developments at launch to about 220 developments serving roughly 330,000 residents, saving participating households an estimated $1,700 a year. It was extended through 2028 in 2025.",
+  "sources": [
+    {"label": "NYC Mayor's Office - Mayor Adams Extends 'Big Apple Connect' Program", "url": "https://www.nyc.gov/mayors-office/news/2025/09/mayor-adams-extends--big-apple-connect--program--continues-to-pr"},
+    {"label": "GovTech - NYC Tackles Digital Divide With New Free Internet Program", "url": "https://www.govtech.com/network/nyc-tackles-digital-divide-with-new-free-internet-program"}
+  ]
+}

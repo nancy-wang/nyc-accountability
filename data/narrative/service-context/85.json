@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DYCD",
+  "service": "Provide youth, families, and adults with multiple points of entry to a spectrum of high-quality services.",
+  "oneLiner": "This work matters because DYCD delivers most services through a citywide network of community-based organizations and Beacon community centers, a model dating to 1991, so families can find help close to home instead of through one central office.",
+  "summary": "Rather than running a single intake office, DYCD funds and coordinates a decentralized network of nonprofit community-based organizations across the five boroughs, including the Beacon program, which turns public schools into evening and weekend community centers offering programming for both youth and adults. The Beacon model was launched under Mayor Dinkins in 1991 as part of the 'Safe Streets, Safe City' initiative and has since grown to dozens of sites citywide. This decentralized, multi-site structure is meant to give New Yorkers several accessible entry points into services like afterschool care, job programs, and family support, rather than a single bottlenecked point of contact.",
+  "sources": [
+    {"label": "Beacon Programs - DYCD", "url": "https://www.nyc.gov/site/dycd/services/after-school/beacon.page"},
+    {"label": "Mission and Funding - DYCD", "url": "https://www.nyc.gov/site/dycd/involved/funding-and-support/funding-and-support.page"}
+  ]
+}

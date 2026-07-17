@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Treat wastewater and sewage to protect water quality in the receiving waters surrounding the City.",
+  "oneLiner": "This work matters because before the 1972 Clean Water Act forced cities to treat sewage, much of NYC's waste flowed largely untreated into its harbor and rivers, which is why DEP now runs 14 treatment plants, including Newtown Creek, the city's largest, to keep the waterways around it clean.",
+  "summary": "New York City's first wastewater treatment plant opened at Coney Island in 1892 to protect its beaches, but serious citywide sewage treatment did not take hold until the federal Clean Water Act of 1972 mandated it. The Newtown Creek plant, originally built in 1967, is the largest of DEP's 14 wastewater treatment plants and underwent a major expansion completed in 2014 that more than doubled its wet-weather processing capacity. By 2011, all 14 city plants were certified as meeting the Clean Water Act's secondary treatment standards, a marked change from decades earlier when the city's harbor waters were far more polluted.",
+  "sources": [
+    {"label": "Newtown Creek Wastewater Treatment Plant - Wikipedia", "url": "https://en.wikipedia.org/wiki/Newtown_Creek_Wastewater_Treatment_Plant"},
+    {"label": "DEP Certifies That Newtown Creek Wastewater Treatment Plant Is Meeting Clean Water Act Secondary Treatment", "url": "https://www.nyc.gov/html/dep/html/press_releases/11-41pr.shtml"}
+  ]
+}

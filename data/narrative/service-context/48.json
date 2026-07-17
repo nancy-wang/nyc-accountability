@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOE",
+  "service": "Provide essential, non-academic services to all eligible New York City students in public, charter, and non-public schools.",
+  "oneLiner": "This reaches non-public school students too because city rules like Chancellor's Regulation A-801 require the City to provide services such as busing to children in private and religious schools, not only those in traditional public schools.",
+  "summary": "New York State and City policy has long required certain support services, most notably pupil transportation, to be extended to eligible students at charter and non-public (private and religious) schools as well as traditional public schools -- reflecting the principle that some student services are about child safety and welfare regardless of where a child is enrolled. DOE administers busing under Chancellor's Regulation A-801 and separately provides food service to many charter and non-public schools that request it. That's why this service is defined to cover \"all eligible\" students across school types rather than public-school students alone.",
+  "sources": [
+    {"label": "NYC Public Schools - Transportation Overview", "url": "https://www.schools.nyc.gov/school-life/transportation/transportation-overview"},
+    {"label": "NYSED - Transportation for Students Enrolled in Nonpublic Schools", "url": "https://www.p12.nysed.gov/nonpub/handbookonservices/transportation.html"}
+  ]
+}

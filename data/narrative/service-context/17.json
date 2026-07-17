@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Manage the City's surplus real and personal property.",
+  "oneLiner": "This work matters because when a city agency no longer needs a building, vehicle, or piece of equipment, that property still belongs to taxpayers, and DCAS's Office of Surplus Activities is responsible for either putting it to use elsewhere in government or selling it at public auction rather than letting it sit unused.",
+  "summary": "DCAS's Office of Surplus Activities handles property that city agencies no longer need, first checking whether another agency can use it, and if not, selling it through public auction or, for real estate, through processes governed by the City Charter such as auction sale to the highest bidder or the SAIL slivers program. This function exists so that unused public assets, real estate, vehicles, furniture, and other equipment, are either redeployed productively within government or converted back into value for the City rather than sitting idle or being disposed of without transparency or competition.",
+  "sources": [
+    {"label": "Surplus Sales - NYC Department of Citywide Administrative Services", "url": "https://www.nyc.gov/site/dcas/business/surplus-sales.page"},
+    {"label": "Real Estate Auctions - NYC Department of Citywide Administrative Services", "url": "https://www.nyc.gov/site/dcas/business/real-estate-auctions.page"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOT",
+  "service": "Develop alternative and inclusive transportation solutions.",
+  "oneLiner": "This work matters because not every New Yorker can safely use standard streets and sidewalks - a federal court found the City's lack of accessible pedestrian signals violated the rights of people with vision disabilities, and DOT is now under a 15-year order to fix it citywide.",
+  "summary": "In October 2020, a federal court ruled that New York City's shortage of Accessible Pedestrian Signals (APS) - crosswalk devices that give audible and vibrating cues to blind and low-vision pedestrians - violated their rights under disability law. The resulting order requires DOT to install APS at 10,000 intersections within 10 years and citywide within 15. DOT separately settled ADA lawsuits in 2019 over pedestrian ramp maintenance and has expanded programs like bike share and ferry accessibility upgrades, reflecting a broader mandate to make the street network usable by people who don't or can't drive, and by people with disabilities.",
+  "sources": [
+    {"label": "Federal Court Orders NYC to Install Accessible Crosswalk Signals - DRA", "url": "https://dralegal.org/featured/federal-court-orders-new-york-city-to-install-thousands-of-accessible-crosswalk-signals-over-the-next-10-years/"},
+    {"label": "NYC DOT - Accessibility", "url": "https://www.nyc.gov/html/dot/html/about/accessibility-information.shtml"},
+    {"label": "NYC DOT Transition Plan for Pedestrian Ramps", "url": "https://www.nycpedramps.info/sites/default/files/2021-10/Transition-Plan-for-Pedestrian-Ramps.pdf"}
+  ]
+}

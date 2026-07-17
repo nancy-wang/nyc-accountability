@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Implement green infrastructure to improve water quality and resiliency.",
+  "oneLiner": "This work matters because about 60% of NYC still has combined sewers that dump roughly 18 billion gallons of untreated sewage and stormwater into local waterways every year during heavy rain, which is why DEP builds rain gardens and other green infrastructure to soak up water before it overwhelms the system.",
+  "summary": "New York City has one of the largest combined sewer systems in the country, with 398 outfalls that discharge an estimated 18 billion gallons of mixed sewage and stormwater into local waterways annually during rainstorms. After the EPA found the City in violation of the Clean Water Act in 2005, DEP established a citywide green infrastructure program in 2010, and a 2012 agreement with the state committed the City to a hybrid green-and-gray approach. Under a 2023 consent order, DEP must cut combined sewer overflow volume by 1.67 billion gallons a year by 2040, backed by $3.5 billion in green infrastructure investment.",
+  "sources": [
+    {"label": "NYS DEC and NYC DEP Announce Agreement to Invest $3.5 Billion", "url": "https://www.nyc.gov/site/dep/news/23-019/new-york-state-dec-new-york-city-dep-agreement-invest-3-5-billion-further"},
+    {"label": "NYSDEC: New York City CSO Program", "url": "https://dec.ny.gov/environmental-protection/water/cso/nyc-cso"}
+  ]
+}

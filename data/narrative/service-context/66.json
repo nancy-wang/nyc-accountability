@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DORIS",
+  "service": "Provide City agencies, non-federal courts and district attorneys with record storage, retrieval and record management services.",
+  "oneLiner": "This work matters because city agencies, courts, and district attorneys depend on DORIS to store and quickly retrieve case files and records from off-site warehouses, a routine but essential function since delayed records can stall prosecutions, court cases, and city business.",
+  "summary": "DORIS's Records Management Division operates off-site storage facilities holding roughly 1 million cubic feet of active physical records on behalf of New York City agencies, courts, and district attorneys' offices. When one of these offices needs a stored file, DORIS retrieves it from the warehouse and makes it available for pickup, with performance tracked by how many requests are fulfilled within 48 hours. It is an unglamorous but load-bearing function: courts and prosecutors' offices cannot operate without timely access to their own case records.",
+  "sources": [
+    {"label": "NYC Department of Records - About", "url": "https://www.nyc.gov/site/records/about/overview.page"},
+    {"label": "DORIS Mayor's Management Report Indicator Definitions", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dor_idf.pdf"}
+  ]
+}

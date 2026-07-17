@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Manage energy use by City agencies.",
+  "oneLiner": "This work matters because buildings generate over two-thirds of New York City's greenhouse gas emissions, and DCAS is responsible for cutting energy use in the City's own facilities so city government isn't asking private buildings to do what it won't do itself.",
+  "summary": "Local Law 97 of 2019 requires most buildings over 25,000 square feet, including the City's own, to meet stricter greenhouse gas emissions limits starting in 2024, with the broader goal of cutting large-building emissions 40% by 2030 and reaching net zero by 2050, since buildings account for more than two-thirds of the City's total emissions. DCAS has implemented over 17,500 energy conservation measures across roughly 2,500 municipal facilities, cutting an estimated 460,000 metric tons of CO2-equivalent emissions. Because private buildings face steep financial penalties for exceeding their emissions limits, the City's own compliance through DCAS carries added weight as a model for the standard it's asking everyone else to meet.",
+  "sources": [
+    {"label": "NYC Buildings - Local Law 97: Greenhouse Gas Emissions Reductions", "url": "https://www.nyc.gov/site/buildings/codes/ll97-greenhouse-gas-emissions-reductions.page"},
+    {"label": "DCAS Marks Earth Week with Major Sustainability Milestones - City of New York", "url": "https://www.nyc.gov/site/dcas/news/011-26/dcas-marks-earth-week-major-sustainability-milestones-across-energy-efficiency-solar"}
+  ]
+}

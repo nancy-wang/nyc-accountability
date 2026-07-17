@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OATH",
+  "service": "Adjudicate due process complaints related to special education services.",
+  "oneLiner": "OATH hears these disputes because a federal law, the Individuals with Disabilities Education Act, guarantees families the right to an independent hearing when they disagree with a school system's special-education decisions for their child.",
+  "summary": "Under the federal Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act, parents who disagree with the NYC Department of Education over their child's special-education services have a legal right to an independent \"impartial hearing.\" OATH's Special Education Hearings Division administers these hearings through Impartial Hearing Officers — experienced attorneys appointed to four-year terms specifically to insulate them from pressure by either the DOE or the families involved — whose written decisions are legally binding and can be enforced in court.",
+  "sources": [
+    { "label": "Overview — Special Education Hearings, OATH", "url": "https://www.nyc.gov/site/oath/special-ed/overview.page" },
+    { "label": "Due Process Hearings — OATH", "url": "https://www.nyc.gov/site/oath/special-ed/due-process-hearings.page" }
+  ]
+}

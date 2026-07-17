@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DSNY",
+  "service": "Collect and compost organic material",
+  "oneLiner": "This work matters because food and yard waste make up a large share of what New Yorkers throw away, and composting it instead of landfilling it - a program that took decades of piloting before going citywide in 2024 - cuts methane emissions and reduces the trash the City has to export.",
+  "summary": "DSNY's push for curbside organics collection began with leaf composting in 1990 and a Park Slope pilot in 1992, but early efforts were repeatedly scaled back over cost concerns. The 2013 City Council law, Local Law 77, mandated a real pilot program, which expanded gradually through the 2010s, was suspended during the COVID-19 pandemic due to funding cuts, and finally became a citywide curbside \"brown bin\" program by late 2024, reaching Manhattan, Staten Island, and the Bronx after earlier phases in Brooklyn and Queens. Diverting organic waste from landfills reduces the methane those landfills generate and shrinks the volume of waste New York must collect, process, and export out of state.",
+  "sources": [
+    {"label": "Curbside 'Composting' Is Finally Citywide in New York - Inside Climate News", "url": "https://insideclimatenews.org/news/05102024/new-york-city-curbside-composting-environmental-issues/"},
+    {"label": "10 Facts You Should Know About NYC's Composting Efforts", "url": "https://www.nycfoodpolicy.org/10-facts-you-should-know-about-nyc-composting-efforts/"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOHMH",
+  "service": "Prevent chronic disease by promoting access to health resources and a healthy environment.",
+  "oneLiner": "This work matters because chronic diseases like heart disease and diabetes are largely preventable, which is why NYC's Health Department pioneered now-nationwide policies -- the indoor smoking ban, the trans fat ban, and calorie counts on menus -- aimed at making the healthy choice the easy one.",
+  "summary": "Under Mayor Bloomberg, NYC's Health Department became a national trendsetter in chronic disease prevention: the 2003 Smoke-Free Air Act banned smoking in bars and restaurants and helped cut the city's smoking rate by more than a quarter within a decade; a 2005 rule made New York the first city to force restaurants to phase out artificial trans fats, a policy the FDA later adopted nationwide; and in 2008 NYC became the first city to require calorie counts on chain restaurant menus. A later attempt to cap sugary-drink sizes was struck down in court, showing the limits of this approach, but the broader strategy of shaping the food and public environment to reduce chronic disease has persisted as a model other cities followed.",
+  "sources": [
+    {"label": "CNN - Three Bloomberg policies all of America now lives with", "url": "https://edition.cnn.com/2020/02/25/politics/bloomberg-smoking-calorie-counts-trans-fat/index.html"},
+    {"label": "NPR - New York City's Bloomberg Leaves Mixed Results On Health", "url": "https://www.npr.org/sections/health-shots/2013/12/27/257646680/new-york-citys-bloomberg-leaves-mixed-results-on-health"}
+  ]
+}

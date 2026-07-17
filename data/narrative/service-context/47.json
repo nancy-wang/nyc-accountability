@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOE",
+  "service": "Educate New York City’s children to become productive, engaged adults.",
+  "oneLiner": "This mission traces back to 1805, when New York's Free School Society opened the city's first free schools for children whose families couldn't otherwise afford one, establishing the idea that every child's education is a public responsibility.",
+  "summary": "New York's system of free public education began with the 1805 charter of the Free School Society, a group founded with backing from DeWitt Clinton to educate poor children not served by religious schools. New York State's first compulsory school-attendance law followed in 1874, though it was only unevenly enforced for decades afterward. Today's DOE, the largest school system in the country, continues that basic premise established over two centuries ago: that educating the city's children is a shared civic obligation, not just a private family matter.",
+  "sources": [
+    {"label": "Untapped New York - New York Launches the Public School System (1805)", "url": "https://www.untappedcities.com/today-in-nyc-history-new-york-launches-the-public-school-system-1805/"},
+    {"label": "Encyclopedia.com - New York Free School Society, 1805", "url": "https://www.encyclopedia.com/history/news-wires-white-papers-and-books/new-york-free-school-society-1805"}
+  ]
+}

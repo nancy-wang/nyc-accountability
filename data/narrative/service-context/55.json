@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOHMH",
+  "service": "Detect, prevent, and reduce the transmission of infectious diseases.",
+  "oneLiner": "This work traces back to 1866, when a cholera epidemic and years of documented squalor in Manhattan's tenements led to the creation of the country's first municipal public health authority, whose inspections held New York's death toll far below other major cities.",
+  "summary": "A privately organized 1865 survey of sanitary conditions across Manhattan's wards, prompted by fears of an approaching cholera epidemic, built the public support that led the state legislature to create New York's Metropolitan Board of Health in February 1866 -- the first municipal public health authority in the United States. When cholera arrived that spring, the Board's aggressive house-to-house inspections, quarantines, and sanitation orders kept New York's death toll well below that of other major American cities. DOHMH's modern disease-surveillance and control work is a direct descendant of that founding mission.",
+  "sources": [
+    {"label": "Metropolitan Board of Health - Wikipedia", "url": "https://en.wikipedia.org/wiki/Metropolitan_Board_of_Health"},
+    {"label": "New York Academy of Medicine - Cholera Comes to New York City", "url": "https://nyamcenterforhistory.org/2015/02/03/cholera-comes-to-new-york-city/"}
+  ]
+}

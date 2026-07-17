@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DSNY",
+  "service": "Prepare and clear snow and ice from City streets and roadways.",
+  "oneLiner": "This work matters because the Great Blizzard of 1888, which killed roughly 400 New Yorkers and buried the city under snow that had to be dug out entirely by hand, exposed the need for an organized municipal snow response - a mission DSNY's predecessor took on directly afterward.",
+  "summary": "The Great Blizzard of 1888 dropped around 21 inches of snow on New York City over three days and contributed to roughly 400 deaths in the city, with no snowplows available to clear it; workers organized into an \"Army of the Shovel\" to dig the city out by hand. The disaster exposed how unprepared the city's street-cleaning apparatus was for a major storm, and spurred the more organized, systematic approach to street and snow response that Colonel George Waring built when he took over the Department of Street Cleaning a few years later. Today's snow response, run by DSNY, exists to keep streets passable for emergency vehicles, commerce, and daily life, and failures in that response can still be dangerous and disruptive.",
+  "sources": [
+    {"label": "The origin of snow removal for all New Yorkers, rich and poor - Bowery Boys", "url": "https://www.boweryboyshistory.com/2026/01/the-origin-of-snow-removal-for-all-new.html"},
+    {"label": "Virtual New York City: The Blizzard of 1888", "url": "https://virtualny.ashp.cuny.edu/blizzard/sanitation/san_set.html"}
+  ]
+}

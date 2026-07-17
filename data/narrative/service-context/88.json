@@ -1,0 +1,11 @@
+{
+  "agencyCode": "EDC",
+  "service": "Deliver future-forward infrastructure.",
+  "oneLiner": "This work matters because much of NYC's shoreline and waterfront infrastructure was built for a different climate; EDC's projects, like the multibillion-dollar Lower Manhattan Coastal Resiliency effort, aim to protect the city's subways, sewers, and jobs from rising seas and storm surge.",
+  "summary": "EDC's infrastructure work includes large climate-resilience projects such as the Financial District and Seaport Climate Resilience Master Plan, a roughly $7 billion effort to raise and rebuild Lower Manhattan's shoreline with floodwalls, upgraded stormwater systems, and resilient ferry terminals. The broader Lower Manhattan Coastal Resiliency initiative is intended to protect the subway and ferry network, sewer system, and about 10 percent of the city's jobs from sea-level rise and coastal storms. EDC also runs newer efforts like the Blue Highways pilot to shift freight onto the city's waterways.",
+  "sources": [
+    {"label": "Delivering Sustainable Infrastructure - NYCEDC", "url": "https://edc.nyc/delivering-sustainable-infrastructure"},
+    {"label": "Lower Manhattan Coastal Resiliency - NYCEDC", "url": "https://edc.nyc/project/lower-manhattan-coastal-resiliency"},
+    {"label": "The Financial District and Seaport Climate Resilience Master Plan - NYC.gov", "url": "https://www.nyc.gov/site/lmcr/progress/financial-district-and-seaport-climate-resilience-master-plan.page"}
+  ]
+}

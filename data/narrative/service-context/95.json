@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HPD",
+  "service": "Ensure that housing throughout NYC is physically safe and habitable.",
+  "oneLiner": "This exists because HPD was created in 1978 specifically to give the city a dedicated code-enforcement arm during its 1970s affordable-housing crisis, and today it performs more than 500,000 apartment inspections a year enforcing rules on heat, hot water, mold, pests, and fire safety.",
+  "summary": "HPD was established in 1978, in the wake of Local Law 45 of 1976, by consolidating various housing-related city agencies to address New York's affordable-housing crisis of that era. One of its central ongoing functions is enforcing the city's Housing Maintenance Code, covering conditions like heat, hot water, mold, pests, gas leaks, and fire safety. HPD reports performing over 500,000 inspections annually and uses tools ranging from owner outreach to Housing Court cases to emergency repairs when landlords fail to fix hazardous conditions.",
+  "sources": [
+    {"label": "Code Enforcement - HPD", "url": "https://www.nyc.gov/site/hpd/services-and-information/enforcement.page"},
+    {"label": "New York City Department of Housing Preservation and Development - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development"}
+  ]
+}

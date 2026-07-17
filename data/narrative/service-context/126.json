@@ -1,0 +1,9 @@
+{
+  "agencyCode": "OCME",
+  "service": "Provide services to the City for forensic purposes.",
+  "oneLiner": "This work matters because OCME's crime lab is what turns physical evidence into proof, and its 2001-2003 push to eliminate New York's rape kit backlog for good shows what's at stake when this kind of forensic capacity is underfunded.",
+  "summary": "OCME's forensic laboratories, including the nation's only public molecular genetics laboratory, process the DNA and other physical evidence that police investigators and courts rely on to solve crimes and clear the wrongly suspected. In 1998 its Department of Forensic Biology became the first lab in the country to use Y-chromosome STR testing in casework, and a dedicated 2001-2003 project eliminated the city's backlog of untested sexual assault kits; the city has not had a backlog since. The lab also compares profiles against the FBI's national CODIS database to generate new leads in cold cases.",
+  "sources": [
+    {"label": "OCME - Department of Forensic Biology", "url": "https://www.nyc.gov/site/ocme/services/department-of-forensic-biology.page"}
+  ]
+}

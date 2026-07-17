@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOF",
+  "service": "Record property-related documents",
+  "oneLiner": "This matters because a fraudulent deed can be filed against someone's home in minutes, and the City Register's document-recording process is a frontline defense against deed theft that disproportionately targets seniors, immigrants, and people of color.",
+  "summary": "The City Register's Office, part of DOF, reviews and records deeds, mortgages, and other property documents through the Automated City Register Information System (ACRIS), which covers records back to 1966. Because deed fraud happens when someone records a fraudulent document against a property without the true owner's knowledge or consent, the City Register's review-and-recording function -- including flagging suspicious filings to the Sheriff's Office for investigation -- is a key safeguard, alongside the newer Mayor's Office of Deed Theft Prevention that is also housed within DOF.",
+  "sources": [
+    {"label": "NYC Department of Finance - Protect Your Property from Deed Fraud", "url": "https://www.nyc.gov/site/finance/property/deed-fraud.page"},
+    {"label": "NYC Department of Finance - Recording Documents", "url": "https://www.nyc.gov/site/finance/property/property-recording-documents.page"}
+  ]
+}

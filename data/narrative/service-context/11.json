@@ -1,0 +1,10 @@
+{
+  "agencyCode": "CCRB",
+  "service": "Investigate, prosecute and resolve claims of police misconduct.",
+  "oneLiner": "This function exists because New Yorkers fought for decades to get police misconduct reviewed by civilians rather than police themselves, winning an independent, subpoena-empowered CCRB only in 1993, over the objection of a police union protest that shut down the Brooklyn Bridge.",
+  "summary": "Earlier review boards were staffed partly or entirely by police officers, undermining public trust that misconduct complaints would be handled impartially. In 1993, Mayor David Dinkins and the City Council created the modern, fully civilian CCRB via City Charter amendment, giving it subpoena power, in part to obtain video evidence from media outlets, and authority to recommend discipline in substantiated cases. The reform faced intense resistance, including a September 1992 protest at City Hall where thousands of off-duty officers blocked the Brooklyn Bridge. The board was underfunded in its early years, with adequate funding not arriving until 1997 under Mayor Giuliani.",
+  "sources": [
+    {"label": "History - NYC Civilian Complaint Review Board", "url": "https://www.nyc.gov/site/ccrb/about/history.page"},
+    {"label": "New York City Civilian Complaint Review Board - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Civilian_Complaint_Review_Board"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYCHA",
+  "service": "2 (Re)build, expand and preserve public housing and affordable housing stock",
+  "oneLiner": "NYCHA's mission to preserve its housing stock traces back to being the first public housing authority in the US, created in 1934 — nearly a century later, keeping that aging stock livable is now as central to its work as building new units once was.",
+  "summary": "NYCHA was founded in 1934 as the nation's first public housing authority, and many of its developments were built decades ago under very different construction standards and funding assumptions. As its buildings have aged, preserving and rebuilding that existing stock — not just adding new units — has become a central and heavily scrutinized part of NYCHA's mission, given how many New Yorkers depend on it as their only affordable housing option.",
+  "sources": [
+    { "label": "New York City Housing Authority — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Housing_Authority" },
+    { "label": "About NYCHA — nyc.gov", "url": "https://www.nyc.gov/site/nycha/about/about-nycha.page" }
+  ]
+}

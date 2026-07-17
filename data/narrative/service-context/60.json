@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOI",
+  "service": "Conduct background and fingerprint checks for certain City employees, contractors and child care workers.",
+  "oneLiner": "This work matters because DOI was created in 1873 in the wake of the Boss Tweed corruption scandal specifically to be the City's independent watchdog, and today that same office fingerprints and vets people headed into sensitive jobs -- including child care workers -- before they start.",
+  "summary": "DOI traces its roots to the 1873 Office of the Commissioners of Accounts, created after the Tweed Ring scandal in which Tammany Hall boss William \"Boss\" Tweed and his allies were found to have skimmed millions of dollars from city coffers. That watchdog mission evolved into DOI's modern Background Investigation and Fingerprint Units, which vet City employees headed for sensitive or high-authority positions and process fingerprint-based criminal history checks -- run through the state's contracted vendor -- for jobs including school teachers, school bus drivers, and child care workers. In fiscal year 2024 alone, DOI conducted more than 1,700 such background investigations, aiming to keep people with disqualifying criminal histories out of positions of public trust before problems occur.",
+  "sources": [
+    {"label": "New York City Department of Investigation - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Investigation"},
+    {"label": "NYC Department of Investigation - Background Investigations Unit", "url": "https://www.nyc.gov/site/doi/offices/background-investigations-unit.page"},
+    {"label": "NYC Department of Investigation - Fingerprint Unit", "url": "https://www.nyc.gov/site/doi/offices/fingerprint-unit.page"}
+  ]
+}

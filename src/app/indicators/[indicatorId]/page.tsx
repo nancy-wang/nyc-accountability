@@ -3,13 +3,14 @@ import { notFound } from "next/navigation";
 import { findAgencyBySlug, taxonomy } from "@data/narrative/taxonomy";
 import { AccountabilitySummary } from "@/components/indicator/AccountabilitySummary";
 import { IndicatorResearchNote } from "@/components/indicator/IndicatorResearchNote";
+import { ServiceContextNote } from "@/components/indicator/ServiceContextNote";
 import { SourceCitation } from "@/components/indicator/SourceCitation";
 import { VolatileNotice } from "@/components/indicator/VolatileNotice";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
 import { TrendBadge } from "@/components/charts/TrendBadge";
 import { isVolatile } from "@/lib/data/accountability";
-import { getAllIndicators, getIndicatorById, getIndicatorNote } from "@/lib/data/getIndicators";
+import { getAllIndicators, getIndicatorById, getIndicatorNote, getServiceContext } from "@/lib/data/getIndicators";
 
 export function generateStaticParams() {
   return getAllIndicators().map((indicator) => ({ indicatorId: String(indicator.id) }));
@@ -31,6 +32,7 @@ export default async function IndicatorPage({ params }: { params: Promise<{ indi
 
   const agencyRef = findAgencyRefByCode(indicator.agencyCode);
   const note = getIndicatorNote(indicator.id);
+  const serviceContext = getServiceContext(indicator.agencyCode, indicator.service);
   const volatile = isVolatile(indicator.series);
 
   return (
@@ -77,6 +79,8 @@ export default async function IndicatorPage({ params }: { params: Promise<{ indi
       </div>
 
       {!note && <div className="mt-6">{volatile ? <VolatileNotice /> : <AccountabilitySummary indicator={indicator} />}</div>}
+
+      {serviceContext && <ServiceContextNote context={serviceContext} />}
 
       <div className="mt-8">
         <SourceCitation indicator={indicator} />

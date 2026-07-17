@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOF",
+  "service": "Bill and collect property and other taxes.",
+  "oneLiner": "This work matters because property tax is NYC's single largest source of revenue, generating tens of billions of dollars a year that pay for schools, police, fire protection, sanitation, and the wages of hundreds of thousands of city workers.",
+  "summary": "Property taxes make up roughly half of the city's tax revenue and underwrite core services from schools to the NYPD and FDNY. DOF is responsible for determining property values, calculating tax bills based on a property's class and rate, and collecting payment -- work that ties the accuracy and timeliness of routine billing directly to the City's ability to fund basic services. Because the tax is so central to the municipal budget, delays, errors, or shortfalls in billing and collection can have outsized fiscal consequences citywide.",
+  "sources": [
+    {"label": "Office of the New York State Comptroller - Local Government Financial Condition Report", "url": "https://www.osc.ny.gov/reports/finance/2023-fcr/local-government"},
+    {"label": "TaxBills.nyc - NYC Property Tax Bills, Payments & Calculator", "url": "https://taxbills.nyc/"}
+  ]
+}

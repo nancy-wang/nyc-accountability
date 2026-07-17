@@ -1,0 +1,10 @@
+{
+  "agencyCode": "LPC",
+  "service": "Identify and protect qualifying architectural, historical, cultural, and archaeological assets in all five boroughs.",
+  "oneLiner": "The Landmarks Preservation Commission exists because the 1963 demolition of the original Pennsylvania Station — an architectural landmark torn down with no legal way to stop it — shocked New Yorkers into demanding a City agency with real power to save historic buildings.",
+  "summary": "The original Penn Station, a Beaux-Arts landmark completed in 1910, was demolished starting in 1963 to make way for a new Madison Square Garden, and at the time there was no city agency with legal authority to prevent the loss of a building simply because of its historic or architectural value. The public outcry over its destruction directly led Mayor Robert Wagner to sign the Landmarks Law on April 15, 1965, creating the Landmarks Preservation Commission as the first city body empowered to formally designate and protect historic buildings, and helped spur similar preservation laws nationwide.",
+  "sources": [
+    { "label": "Penn Station and the Rise of Historic Preservation — MCNY Blog", "url": "https://blog.mcny.org/2012/05/08/penn-station-and-the-rise-of-historic-preservation/" },
+    { "label": "Pennsylvania Station (1910–1963) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Pennsylvania_Station_(1910%E2%80%931963)" }
+  ]
+}

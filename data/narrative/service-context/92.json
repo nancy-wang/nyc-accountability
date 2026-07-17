@@ -1,0 +1,10 @@
+{
+  "agencyCode": "FDNY",
+  "service": "Protect lives and property from fire hazards and other emergency conditions.",
+  "oneLiner": "This work matters because FDNY was created in 1865 after steam engines made volunteer fire brigades obsolete and insurers pushed the state to professionalize firefighting in a rapidly growing city, and it remains what guarantees a fire anywhere in the five boroughs gets a trained, paid response.",
+  "summary": "The modern FDNY traces to the Metropolitan Fire Department, created by an 1865 New York State law establishing a paid, professional fire department to replace the city's volunteer companies. The shift was driven by the rise of steam fire engines, which made hand-operated volunteer apparatus outdated, the city's rapid growth, and pressure from insurance companies that wanted a more reliable, professionalized fire response. The first professional unit went into service on July 31, 1865. That basic mandate, protecting lives and property from fire and other hazards, remains FDNY's core function 160 years later.",
+  "sources": [
+    {"label": "History - FDNY", "url": "https://www.nyc.gov/site/fdny/about/overview/history/history.page"},
+    {"label": "New York City Fire Department - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Fire_Department"}
+  ]
+}

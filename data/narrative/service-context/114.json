@@ -1,0 +1,9 @@
+{
+  "agencyCode": "NYPD",
+  "service": "Manage public safety programs related to criminal activity.",
+  "oneLiner": "The NYPD, established in 1845, was one of the first modern municipal police forces in the country, created to replace an informal night-watch system that couldn't keep pace with a rapidly growing 19th-century city.",
+  "summary": "New York City created a professional, uniformed police department in 1845, following the model London had established with its Metropolitan Police in 1829, because the City's older system of volunteer night watchmen and constables was no longer adequate for a city growing as fast as New York was in the mid-19th century. Since then, managing programs to reduce and respond to criminal activity has remained the department's core public safety function, alongside the many other roles — traffic, counterterrorism, emergency response — it has taken on over nearly two centuries.",
+  "sources": [
+    { "label": "New York City Police Department agency page — this site's own agency narrative", "url": "https://www.nyc.gov/site/nypd/about/about-nypd/history.page" }
+  ]
+}

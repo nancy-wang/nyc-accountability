@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DVS",
+  "service": "Provide supportive services to Veterans and their families.",
+  "oneLiner": "This exists because DVS, the nation's first standalone municipal veterans' agency when it was created in 2016, pairs veterans and families with dedicated care coordinators and wellness programs rather than just referrals to outside providers.",
+  "summary": "DVS was formed in 2016 by combining the city's former Office of Veterans' Affairs with veteran-housing staff from the Department of Homeless Services, following advocacy from veteran nonprofits who wanted a single city agency dedicated to their community. Beyond referrals, DVS directly runs care coordination, social-enrichment, and wellness services for veterans and their caregivers, survivors, and families. Its stated mission is to connect, mobilize, and empower NYC's veteran community to help members lead purpose-driven lives after service.",
+  "sources": [
+    {"label": "Mission - NYC Department of Veterans' Services", "url": "https://www.nyc.gov/site/veterans/about/mission.page"},
+    {"label": "Social Enrichment - NYC Department of Veterans' Services", "url": "https://www.nyc.gov/site/veterans/services/social-enrichment.page"},
+    {"label": "History and structure of DVS - NYC Council Committee on Veterans", "url": "https://citymeetings.nyc/meetings/new-york-city-council/2025-03-25-1200-pm-committee-on-veterans/chapter/history-and-structure-of-the-department-of-veterans-services/"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DVS",
+  "service": "Assist Veterans and their families with accessing eligible resources.",
+  "oneLiner": "This work matters because DVS, created in 2016 as the first standalone U.S. city agency for veterans, runs VetConnectNYC, connecting veterans and families to more than 80 service providers so they aren't left to navigate benefits alone.",
+  "summary": "New York City's Department of Veterans' Services was established under Local Law 113 of 2015 and launched on April 8, 2016, after years of advocacy from veteran service organizations who wanted a dedicated city agency to coordinate resources rather than relying on scattered nonprofit and city efforts. It became the first standalone municipal agency in the country focused exclusively on veterans, combining staff from the mayor's former Office of Veterans' Affairs with veteran-housing staff transferred from the Department of Homeless Services. Its VetConnectNYC platform lets veterans, service members, and their families submit a single request that DVS care coordinators route within days to the right provider among a network of more than 80 public, private, and nonprofit organizations covering housing, healthcare, education, and employment.",
+  "sources": [
+    {"label": "History and structure of DVS - NYC Council Committee on Veterans", "url": "https://citymeetings.nyc/meetings/new-york-city-council/2025-03-25-1200-pm-committee-on-veterans/chapter/history-and-structure-of-the-department-of-veterans-services/"},
+    {"label": "VetConnectNYC Officially Launched - Syracuse University Institute for Veterans and Military Families", "url": "https://ivmf.syracuse.edu/2018/11/10/vetconnectnyc-officially-launched/"},
+    {"label": "VetConnectNYC - NYC Jobs", "url": "https://www.nyc.gov/employment/programs/vetconnectnyc"}
+  ]
+}

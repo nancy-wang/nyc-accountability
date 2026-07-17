@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DPR",
+  "service": "Manage the City’s parks and recreation facilities.",
+  "oneLiner": "This work matters because NYC's park system - built on the idea, dating to Central Park's 1850s founding, that green space should be open to everyone regardless of wealth - now depends on the Parks Department to keep tens of thousands of acres actually safe and usable.",
+  "summary": "Central Park, approved in 1853 and designed by Frederick Law Olmsted and Calvert Vaux, was created partly on the premise that a large public park was a democratic amenity, meant to serve all New Yorkers rather than the wealthy alone. A single unified, citywide Parks Department was created in 1934 under Commissioner Robert Moses, who dramatically expanded the system's playgrounds, pools, and parkland over his 26-year tenure. Today's Department is the steward of that legacy, responsible for maintaining and operating parks and recreation facilities across all five boroughs so they remain functional public space rather than neglected land.",
+  "sources": [
+    {"label": "Robert Moses and the Modern Park System - NYC Parks", "url": "https://www.nycgovparks.org/about/history/timeline/robert-moses-modern-parks"},
+    {"label": "160 Years of Central Park: A Brief History", "url": "https://www.centralparknyc.org/articles/central-park-history"}
+  ]
+}

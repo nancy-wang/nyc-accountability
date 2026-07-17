@@ -1,0 +1,9 @@
+{
+  "agencyCode": "LAW",
+  "service": "Represent the City of New York in litigation and other legal matters involving the City's interests.",
+  "oneLiner": "The Law Department exists because relying on scattered private attorneys to represent the City in court became unworkable — an 1849 City Charter amendment created the Office of the Corporation Counsel specifically to give New York one unified legal office.",
+  "summary": "Before 1849, New York City hired outside private attorneys as needed to handle its legal affairs, an arrangement that became chaotic as caseloads shifted unpredictably between different counsel. The City Charter was amended that year to create the Office of the Corporation Counsel — named because New York City is legally a municipal corporation — establishing an independently elected chief legal officer and a dedicated staff that became the Law Department, still the City's sole in-house counsel today.",
+  "sources": [
+    { "label": "New York City Law Department — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Law_Department" }
+  ]
+}

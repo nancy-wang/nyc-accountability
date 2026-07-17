@@ -1,0 +1,9 @@
+{
+  "agencyCode": "OTI",
+  "service": "Accelerate and simplify the delivery of City services and modernize supporting technologies.",
+  "oneLiner": "This work matters because city technology used to be split across half a dozen separate offices, and OTI was created in 2022 to consolidate that scattered authority so New Yorkers get simpler, more reliable digital services from a single accountable agency.",
+  "summary": "OTI was established by Executive Order 3 in January 2022, renaming the former Department of Information Technology and Telecommunications (DoITT) and folding in the Mayor's Office of the Chief Technology Officer, NYC Cyber Command, the Mayor's Office of Data Analytics, the Mayor's Office of Information Privacy, and algorithms management staff. The consolidation was meant to unify technology strategy and service delivery under one roof instead of several overlapping offices. Notably, OTI is still legally referred to as DoITT in the City's rules, since the underlying legal department was renamed rather than newly created.",
+  "sources": [
+    {"label": "Wikipedia - New York City Office of Technology and Innovation", "url": "https://en.wikipedia.org/wiki/New_York_City_Office_of_Technology_and_Innovation"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOC",
+  "service": "Provide a safe and secure environment for individuals in custody, staff and host communities.",
+  "oneLiner": "This mandate carries extra weight in NYC because Rikers Island has been under a federal consent decree since 2015 after a lawsuit exposed a pattern of guards using excessive force, and the City was later held in contempt for failing to fix it.",
+  "summary": "The 2015 Nunez consent decree grew out of a lawsuit brought by a teenager who alleged he was beaten by a DOC captain on Rikers Island; it mandated reforms including de-escalation policies and restrictions on tactics like head strikes. A court-appointed monitor has since filed dozens of reports finding the City out of compliance with the order, and in 2025 a federal judge appointed an outside Remediation Manager to take over reform efforts after the City was held in contempt of multiple provisions. That history is why \"safe and secure\" custody in NYC's jail system is not just a routine institutional goal but a specific, court-monitored legal obligation.",
+  "sources": [
+    {"label": "DOJ - Agreement to Address NYC's Non-Compliance With Rikers Consent Judgment", "url": "https://www.justice.gov/usao-sdny/pr/acting-manhattan-us-attorney-announces-agreement-address-new-york-city-s-ongoing-non"},
+    {"label": "Legal Aid Society - Nunez v. City of New York", "url": "https://legalaidnyc.org/court-case/nunez-v-city-of-new-york/"}
+  ]
+}

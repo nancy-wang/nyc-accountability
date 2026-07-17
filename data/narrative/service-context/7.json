@@ -1,0 +1,10 @@
+{
+  "agencyCode": "BPL",
+  "service": "BPL Performance Reporting",
+  "oneLiner": "This category exists so Brooklyn Public Library's reach and impact, things like program attendance, card holders, and visits, are tracked and published each year in the Mayor's Management Report, letting New Yorkers see whether the library is actually reaching the communities it was built to serve.",
+  "summary": "Brooklyn Public Library was established by an 1892 act of the state legislature and opened its first branch in 1897, with its founding mission to provide the people of Brooklyn free and open access to information for education, recreation, and reference. As a City-funded public system, BPL's performance is tracked through the Mayor's Management Report, which defines and reports indicators such as program attendance, active library cards, computer and wireless sessions, and branch visits. This reporting exists to give the public and City officials a factual basis for assessing whether the library, one of the largest public library systems in the country, is delivering on that founding mission.",
+  "sources": [
+    {"label": "Our History | Brooklyn Public Library", "url": "https://www.bklynlibrary.org/cbh/about/history"},
+    {"label": "NYC Mayor's Management Report - Public Libraries Indicator Definitions", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2025/lib_idf.pdf"}
+  ]
+}

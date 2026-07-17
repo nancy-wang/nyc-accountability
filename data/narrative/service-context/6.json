@@ -1,0 +1,10 @@
+{
+  "agencyCode": "BIC",
+  "service": "Regulate the trade waste industry in the City.",
+  "oneLiner": "This oversight exists because organized crime controlled much of NYC's private trash-hauling industry for decades, rigging prices and intimidating businesses, until the City created BIC's predecessor, the Trade Waste Commission, in 1996 specifically to drive the mob out.",
+  "summary": "For much of the 20th century, private carting (trade waste) in New York City was dominated by a cartel with deep mob ties, which rigged prices, divided territory among haulers, and intimidated business owners who tried to switch carters. The City created the Trade Waste Commission under Local Law 42 of 1996 specifically to license and regulate the industry and remove organized crime's grip on it. In 2001-2002, its functions were folded into the newly formed Business Integrity Commission (BIC), which also took over regulation of the public wholesale markets and shipboard gambling, consolidating the City's anti-corruption oversight of these historically mob-linked industries under one agency.",
+  "sources": [
+    {"label": "About BIC - NYC Business Integrity Commission", "url": "https://www.nyc.gov/site/bic/about/about-bic.page"},
+    {"label": "New York City Business Integrity Commission - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Business_Integrity_Commission"}
+  ]
+}

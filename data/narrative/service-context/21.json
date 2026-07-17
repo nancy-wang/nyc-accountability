@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DCP",
+  "service": "Foster growth and resiliency through holistic neighborhood planning efforts.",
+  "oneLiner": "This work matters because Hurricane Sandy's 2012 flooding exposed how unprepared many NYC neighborhoods were for climate risk, pushing the City to fold flood protection and resiliency directly into how it plans growth, not as an afterthought.",
+  "summary": "After Superstorm Sandy flooded huge swaths of the city in 2012, the City established the Special Initiative for Rebuilding and Resiliency to study the storm's impact and chart long-term climate adaptation strategies. That effort reshaped how the Department of City Planning approaches neighborhood-level planning, including flood-resilient zoning amendments and Resilient Neighborhoods studies for at-risk waterfront communities. The broader PlaNYC sustainability initiative, launched in 2007, established the template for pairing growth planning with environmental and infrastructure resiliency citywide.",
+  "sources": [
+    {"label": "NYC Hazard Mitigation Plan", "url": "https://nychazardmitigation.com/documentation/nyc-hazard-environment/future/"},
+    {"label": "DCP: Resiliency & Sustainability", "url": "https://home3.nyc.gov/site/planning/about/dcp-priorities/resiliency-sustainability.page"},
+    {"label": "IRP: PlaNYC - a stronger, more resilient New York", "url": "https://recovery.preventionweb.net/publication/united-states-america-planyc-stronger-more-resilient-new-york"}
+  ]
+}

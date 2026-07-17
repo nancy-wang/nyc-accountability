@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DPR",
+  "service": "Customer Service",
+  "oneLiner": "This work matters because most New Yorkers only interact with the Parks Department when something is broken - a locked playground, an unmaintained field, a dead tree - and how quickly those complaints get resolved shapes whether public space actually stays usable.",
+  "summary": "New Yorkers report park and recreation problems mainly through 311, which routes maintenance complaints, program questions, and tree service requests to the Parks Department around the clock. The Department describes its mission around five value pillars, including cleanliness, safety, and equity of access, and customer-service performance - like how promptly complaints are addressed - is one of the more direct ways the public can judge whether that mission translates into practice. Watchdog reporting has noted that 311 complaint resolutions are not always accurately tracked, which is part of why publicly reported response-time data matters.",
+  "sources": [
+    {"label": "Park Maintenance Complaint - NYC311", "url": "https://portal.311.nyc.gov/article/?kanumber=KA-01060"},
+    {"label": "NYC Council - Parks & Recreation Report Card", "url": "https://council.nyc.gov/compliance/nycc-soc-report-card/parks-and-recreation/"}
+  ]
+}

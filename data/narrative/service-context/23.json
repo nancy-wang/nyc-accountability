@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCP",
+  "service": "Prepare information and policy analysis for the public, other government agencies and elected officials.",
+  "oneLiner": "This work matters because good policy on housing, schools, transit and more depends on reliable population and land-use data, which is why the City Planning Commission has served since 1938 as NYC's central source of demographic and planning research for other agencies and the public.",
+  "summary": "Since the City Planning Commission's creation under the 1938 charter reform, it has been tasked with advising on the city's growth and producing the analysis that other agencies, elected officials and the public rely on. Today that role lives largely in DCP's Population Division, the city's hub for census data analysis, population estimates and projections, which supports everything from school-siting and transit planning to environmental reviews and needs assessments across city government.",
+  "sources": [
+    {"label": "DCP: Population", "url": "https://www.nyc.gov/content/planning/pages/planning/population"},
+    {"label": "New York City Department of City Planning - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_City_Planning"}
+  ]
+}

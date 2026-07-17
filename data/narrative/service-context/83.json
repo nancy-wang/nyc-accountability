@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DYCD",
+  "service": "Agency-wide Management",
+  "oneLiner": "This category covers DYCD's internal administration, budgeting, and contract oversight, the back-office work that keeps roughly $1.5 billion a year flowing correctly to the youth and community programs the agency funds each year.",
+  "summary": "DYCD is a contracting agency more than a direct service provider: it invests in a citywide network of community-based organizations rather than running most programs itself. This service area covers the administrative functions, budget management, and contract oversight needed to responsibly manage an agency with roughly 600 employees and a fiscal year 2026 budget of $1.53 billion. It doesn't deliver services to the public directly, but weak management here can translate into delayed payments, poor oversight of contracted nonprofits, or programs that don't launch on time.",
+  "sources": [
+    {"label": "About - DYCD", "url": "https://www.nyc.gov/site/dycd/about/about-dycd/about-dycd.page"},
+    {"label": "New York City Department of Youth and Community Development - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Youth_and_Community_Development"}
+  ]
+}

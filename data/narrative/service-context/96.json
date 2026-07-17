@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HPD",
+  "service": "Provide opportunities for New Yorkers to achieve economic advancement through housing-related workforce opportunities.",
+  "oneLiner": "This work matters because HPD requires developers on subsidized affordable-housing projects to hire through programs like HireNYC and its M/WBE Build Up Program, turning the billions the city spends on housing construction into a source of local jobs and contracts, not just new apartments.",
+  "summary": "HPD requires developers, general contractors, and subcontractors on projects receiving more than $2 million in city subsidy to share entry- and mid-level construction job openings with HireNYC and interview qualified candidates the program refers. Its M/WBE Build Up Program aims to increase contracting opportunities for certified Minority- and Women-Owned Business Enterprises on HPD- and HDC-subsidized affordable housing projects, while a Labor Monitoring Unit checks payroll records and conducts site visits to ensure labor law compliance on these projects. The goal is to make sure city-subsidized housing construction also generates jobs and contracting opportunities for New Yorkers, including those historically excluded from the industry.",
+  "sources": [
+    {"label": "HireNYC - HPD", "url": "https://www.nyc.gov/site/hpd/services-and-information/hirenyc.page"},
+    {"label": "M/WBE Program - HPD", "url": "https://www.nyc.gov/site/hpd/services-and-information/mwbe-program.page"}
+  ]
+}

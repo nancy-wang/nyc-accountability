@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DSNY",
+  "service": "Recycle waste.",
+  "oneLiner": "This work matters because New York's mandatory recycling law, passed in 1989 after nearly two years of debate, was created to divert waste from the city's landfills - a need that became urgent when Fresh Kills, once the world's largest landfill, closed in 2001, forcing NYC to export nearly all its garbage out of state.",
+  "summary": "New York City Council enacted Local Law 19 of 1989, the city's first mandatory recycling law, after roughly two years of negotiation among councilmembers, the Koch administration, and environmental advocates, setting an initial 25% recycling target for the mid-1990s. The law followed a smaller 1986 pilot program collecting newspapers, and it aimed to reduce dependence on Fresh Kills landfill, which was already straining under the volume of the city's waste. When Fresh Kills, then the world's largest landfill, closed in 2001 under a 1996 state law and community pressure, New York lost its last in-city disposal option and now exports nearly all residential garbage out of state, making recycling and other diversion programs central to controlling the city's waste footprint and cost.",
+  "sources": [
+    {"label": "New York City's History-Making Recycling Law Turns 25 - NRDC", "url": "https://www.nrdc.org/bio/eric-goldstein/new-york-citys-history-making-recycling-law-turns-25-years-old-part-i"},
+    {"label": "Fresh Kills Landfill - Wikipedia", "url": "https://en.wikipedia.org/wiki/Fresh_Kills_Landfill"}
+  ]
+}

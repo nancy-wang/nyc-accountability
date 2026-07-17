@@ -1,0 +1,10 @@
+{
+  "agencyCode": "TLC",
+  "service": "Ensure the quality and safety of for-hire vehicle transportation services through effective regulation and administration of rules, standards, and licensing requirements.",
+  "oneLiner": "This work matters because taxi and for-hire vehicle regulation used to sit with the NYPD's Hack Bureau, which struggled to keep up with unsafe vehicles and driver misconduct, until the City created the TLC in 1971 specifically to professionalize oversight of the industry.",
+  "summary": "Mayor John Lindsay created the Taxi and Limousine Commission in 1971 through Local Law 12, taking taxi and for-hire vehicle regulation away from the NYPD's Hack Bureau, which had overseen the industry since 1925 but struggled with rising complaints about unsafe vehicles and driver misconduct as the industry grew. Today TLC licenses and inspects drivers and vehicles, requiring fingerprinting, drug testing, driver education, and ongoing vehicle inspections, and it enforces those standards through a dedicated Uniformed Services Bureau. The agency has also had its own controversies, including a role in years of medallion price inflation that a state investigation later scrutinized.",
+  "sources": [
+    {"label": "Wikipedia - New York City Taxi and Limousine Commission", "url": "https://en.wikipedia.org/wiki/New_York_City_Taxi_and_Limousine_Commission"},
+    {"label": "TLC - Licensing and Standards", "url": "https://www.nyc.gov/site/tlc/about/licensing-and-standards.page"}
+  ]
+}

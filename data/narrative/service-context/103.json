@@ -1,0 +1,10 @@
+{
+  "agencyCode": "LAW",
+  "service": "Establish and enforce child support orders in interstate cases.",
+  "oneLiner": "The Law Department's Interstate Child Support Unit exists because child support cases often cross state lines — a parent and child living in different states — and a federal law (UIFSA) requires a specific legal process to establish and enforce those orders across jurisdictions.",
+  "summary": "When a custodial parent lives in New York City but the other parent lives out of state (or vice versa), establishing or enforcing a child support order requires navigating the Uniform Interstate Family Support Act, a federal framework every state has adopted. The Law Department's Family Court Division handles these interstate and international cases specifically, appearing in NYC Family Courts to establish parentage and obtain, modify, or enforce support orders on behalf of custodial parents.",
+  "sources": [
+    { "label": "Family Court — NYC Law Department", "url": "https://www.nyc.gov/site/law/divisions/family-court.page" },
+    { "label": "Child Support — Family Court Division, nyc.gov", "url": "https://www.nyc.gov/site/familycourtdivision/child-support/child-support.page" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "VZ",
+  "service": "VZ Service 1 - Traffic fatalities are preventable incidents.",
+  "oneLiner": "This work matters because Vision Zero rests on the premise, borrowed from Sweden's program that cut its road death rate in half within a decade, that traffic deaths are the result of fixable street design and policy choices rather than unavoidable accidents.",
+  "summary": "Mayor Bill de Blasio launched Vision Zero in New York City on January 15, 2014, adapting a road-safety framework Sweden pioneered in 1997. The Swedish approach treats pedestrian and traffic deaths not as inevitable \"accidents\" but as failures of street design that can be engineered away; Sweden roughly halved its traffic death rate within ten years of adopting it. NYC's program set a goal of eliminating traffic deaths and serious injuries through measures including lower speed limits, redesigned intersections, more enforcement, and expanded use of speed cameras.",
+  "sources": [
+    {"label": "Wikipedia - Vision Zero (New York City)", "url": "https://en.wikipedia.org/wiki/Vision_Zero_(New_York_City)"},
+    {"label": "NYC Vision Zero Action Plan 2014", "url": "https://www.nyc.gov/html/visionzero/pdf/nyc-vision-zero-action-plan.pdf"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYPL",
+  "service": "NYPL Performance Reporting - Branch",
+  "oneLiner": "NYPL's neighborhood branch system exists largely thanks to a single 1901 gift from Andrew Carnegie — $5.2 million to build 65 branch libraries across the city, on the condition that the City itself maintain them going forward.",
+  "summary": "The New York Public Library was formed in 1895 by merging the financially struggling Astor and Lenox libraries with the Samuel Tilden trust, creating a research library — but it had no neighborhood branches of its own. In 1901, industrialist Andrew Carnegie offered $5.2 million (roughly $200 million today) to build 65 circulating branch libraries throughout the city, on the condition the City provide the building sites and commit to maintaining them. That gift created the branch library network NYPL still operates today, distinct from its non-circulating research libraries.",
+  "sources": [
+    { "label": "Celebrating Carnegie's Gift to New Yorkers — nypl.org", "url": "https://www.nypl.org/events/exhibitions/celebrating-carnegies-gift-new-yorkers" },
+    { "label": "History of The New York Public Library — nypl.org", "url": "https://www.nypl.org/about/history" }
+  ]
+}

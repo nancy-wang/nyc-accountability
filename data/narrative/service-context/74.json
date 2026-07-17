@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DPR",
+  "service": "Preserve and expand the infrastructure of New York’s park system.",
+  "oneLiner": "This work matters because the average New York City park is 73 years old, and deferred maintenance needs have grown more than 150% over the past decade - without ongoing capital investment, aging drainage, retaining walls, and bridges in parks will keep deteriorating.",
+  "summary": "NYC's park system is aging faster than it is being rebuilt: a fifth of parks have not had a major infrastructure upgrade in 25 years, and citywide deferred-maintenance needs rose from about $14 million to over $35 million in the past decade, part of a broader state-of-good-repair backlog that reached roughly $616 million. Only about a third of the Parks Department's recognized repair needs are currently funded in the capital budget. This capital and infrastructure work - fixing bulkheads, drainage, retaining walls, and bridges within parks - is what determines whether park space stays safe and functional over the long run, not just clean day to day.",
+  "sources": [
+    {"label": "A New Leaf: Revitalizing NYC's Aging Parks Infrastructure - Center for an Urban Future", "url": "https://nycfuture.org/research/a-new-leaf"},
+    {"label": "NYC Council Outlines the State of Support for City Parks", "url": "https://council.nyc.gov/press/2025/03/20/2820/"}
+  ]
+}

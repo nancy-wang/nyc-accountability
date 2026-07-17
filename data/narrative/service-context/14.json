@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Manage and operate properties owned and leased by the City.",
+  "oneLiner": "This work matters because New York City government occupies dozens of public buildings and leased offices across the five boroughs, and DCAS is the agency responsible for keeping that real estate portfolio, everything from courthouses to office space, running so other agencies can actually deliver services.",
+  "summary": "DCAS was formed in 1996 when Mayor Giuliani merged the Department of General Services and the Department of Personnel, and one of the resulting agency's core jobs is managing the roughly 55 public buildings the City owns, along with acquiring, selling, and leasing City property more broadly. This is unglamorous but foundational work: every other city service, from courts to clinics to agency offices, depends on having functional, well-maintained physical space, and DCAS is the entity that acquires, maintains, and disposes of that space on behalf of the rest of government.",
+  "sources": [
+    {"label": "Our Mission - NYC Department of Citywide Administrative Services", "url": "https://www.nyc.gov/site/dcas/about/our-mission.page"},
+    {"label": "New York City Department of Citywide Administrative Services - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Citywide_Administrative_Services"}
+  ]
+}

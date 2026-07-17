@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOHMH",
+  "service": "Promote a safe environment.",
+  "oneLiner": "This work matters because the City is required to inspect roughly 26,000 restaurants a year and investigate lead hazards in homes, since without that oversight, unsafe food handling and lead exposure -- both largely preventable -- could go undetected until someone got sick.",
+  "summary": "DOHMH's Bureau of Food Safety and Community Sanitation is mandated to inspect all of the city's roughly 26,000 restaurants annually, along with school cafeterias and mobile food vendors, assigning the letter grades now posted in restaurant windows. Its Division of Environmental Health also investigates childhood lead poisoning cases through home risk assessments and lead testing, part of a broader mandate covering air and water quality, pest control, and occupational health. These functions exist because environmental and food hazards are often invisible until someone is harmed, so routine, unannounced inspection is the mechanism that catches problems early.",
+  "sources": [
+    {"label": "NYC Health - Food Establishment Inspections / Restaurant Grades", "url": "https://www.nyc.gov/site/doh/services/restaurant-grades.page"},
+    {"label": "CDC - New York City Childhood Lead Poisoning Prevention Success Story", "url": "https://www.cdc.gov/lead-prevention/success-stories-by-state/new-york-city.html"}
+  ]
+}

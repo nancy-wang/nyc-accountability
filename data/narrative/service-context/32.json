@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Ensure the sufficiency, quality and security of the City's drinking water supply.",
+  "oneLiner": "This work matters because NYC's water arrives unfiltered from upstate reservoirs, a rare and cost-saving arrangement the city earns each decade by proving to federal regulators that it protects the Catskill watershed well enough to skip building a filtration plant that would otherwise cost billions.",
+  "summary": "New York City's drinking water travels up to 125 miles from the Croton, Catskill and Delaware systems, built between the 1840s and 1940s, and is the largest unfiltered water supply in the United States. Since 1993, the City has qualified for a federal Filtration Avoidance Determination by investing heavily in watershed protection, including a 1997 Watershed Memorandum of Agreement and over $2.5 billion spent on protection programs since then. That ongoing effort is what lets DEP continue delivering roughly 1.2 billion gallons a day of high-quality water to nearly half of New York State's population without filtering it.",
+  "sources": [
+    {"label": "DEP: Filtration Avoidance Determination", "url": "https://www.nyc.gov/site/dep/about/filtration-avoidance-determination.page"},
+    {"label": "NYS Dept of Health: New York City's Filtration Avoidance Determination", "url": "https://www.health.ny.gov/environmental/water/drinking/nycfad/"}
+  ]
+}

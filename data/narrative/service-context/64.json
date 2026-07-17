@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOP",
+  "service": "Provide client support and enrichment services to improve probation outcomes.",
+  "oneLiner": "This work matters because since 2011, NYC Probation's NeON program has placed officers directly in the neighborhoods clients live in, connecting them to jobs, education, and community resources on the theory that opportunity, not just supervision, reduces reoffending.",
+  "summary": "Starting in 2011, the Department of Probation created the Neighborhood Opportunity Network (NeON), which relocated probation officers into seven high-need neighborhoods, including Brownsville, East New York, Harlem, and the South Bronx, to work alongside community organizations and residents. The model is built on \"community justice\" and \"justice reinvestment\" principles: rather than treating probation solely as surveillance, it connects medium- and high-risk clients to services and opportunities meant to reduce the conditions that drive reoffending. It is part of a broader set of DOP reforms since 2010 organized around the goals of doing no harm, doing more good, and doing it in the community.",
+  "sources": [
+    {"label": "NYC Probation - Neighborhood Opportunity Network (NeON)", "url": "https://www.nyc.gov/site/probation/community/neon.page"},
+    {"label": "Vera Institute - Adult Probation and NeON", "url": "https://www.vera.org/publications/innovations-in-nyc-health-and-human-services-policy-adult-probation-and-neighborhood-opportunity-network-initiative-neon"},
+    {"label": "NYC NeON Overview 2022", "url": "https://www.nyc.gov/assets/neon/downloads/neon-overview-2022.pdf"}
+  ]
+}

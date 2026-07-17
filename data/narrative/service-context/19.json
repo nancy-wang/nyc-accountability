@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCLA",
+  "service": "Promote public appreciation of non-profit arts and culture.",
+  "oneLiner": "This work matters because New York City has funded and championed its nonprofit cultural sector as a public good since Mayor Robert Wagner created the Office of Cultural Affairs in 1962, on the premise that access to the arts shouldn't depend on wealth or ticket price alone.",
+  "summary": "DCLA's roots trace to the Office of Cultural Affairs, created in 1962 under Mayor Robert F. Wagner Jr., which became the standalone Department of Cultural Affairs in 1976. The department represents and serves nonprofit cultural organizations across the visual, literary, and performing arts, as well as science and humanities institutions like zoos, botanical gardens, and historical societies, in all five boroughs. Promoting public appreciation, through outreach, partnerships, and program support, reflects the City's long-standing view that a thriving arts and culture sector benefits the general public and civic life, not just those who can already afford to pay for it.",
+  "sources": [
+    {"label": "New York City Department of Cultural Affairs - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Cultural_Affairs"},
+    {"label": "About Cultural Affairs - DCLA", "url": "https://www.nyc.gov/site/dcla/about/about-cultural-affairs.page"}
+  ]
+}

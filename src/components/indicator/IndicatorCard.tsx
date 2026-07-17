@@ -3,17 +3,19 @@ import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
 import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
 import { isVolatile, latestPoint } from "@/lib/data/accountability";
-import { getIndicatorNote } from "@/lib/data/getIndicators";
+import { getIndicatorNote, getServiceContext } from "@/lib/data/getIndicators";
 import { formatIndicatorValue } from "@/lib/format";
 import { toPlainLanguageQuestion } from "@/lib/data/questionify";
 import type { Indicator } from "@/lib/data/types";
 import { AccountabilitySummary } from "./AccountabilitySummary";
 import { IndicatorResearchNote } from "./IndicatorResearchNote";
+import { ServiceContextNote } from "./ServiceContextNote";
 import { VolatileNotice } from "./VolatileNotice";
 
 export function IndicatorCard({ indicator }: { indicator: Indicator }) {
   const latest = latestPoint(indicator.series);
   const note = getIndicatorNote(indicator.id);
+  const serviceContext = getServiceContext(indicator.agencyCode, indicator.service);
   const volatile = isVolatile(indicator.series);
   const question = toPlainLanguageQuestion(indicator);
   const valueText = formatIndicatorValue(latest?.value ?? null, indicator.measurementType, indicator.name);
@@ -57,6 +59,7 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
       <div className="mt-4 border-t pt-4" style={{ borderColor: "var(--border-hairline)" }}>
         <IndicatorTrendChart indicator={indicator} />
         <div className="mt-4">{note ? <IndicatorResearchNote note={note} /> : volatile ? <VolatileNotice /> : <AccountabilitySummary indicator={indicator} />}</div>
+        {serviceContext && <ServiceContextNote context={serviceContext} />}
         <Link href={`/indicators/${indicator.id}`} className="mt-3 inline-block text-sm underline" style={{ color: "var(--accent-heading)" }}>
           Open full page ↗
         </Link>

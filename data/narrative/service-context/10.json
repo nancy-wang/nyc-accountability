@@ -1,0 +1,10 @@
+{
+  "agencyCode": "CCRB",
+  "service": "Inform and educate the public about the agency.",
+  "oneLiner": "This outreach matters because the CCRB only became a fully independent, all-civilian board in 1993 after a bitter political fight, including a police-union protest that shut down the Brooklyn Bridge, so New Yorkers need to actually know the board exists and how to use it for it to serve as real oversight.",
+  "summary": "The CCRB in its current all-civilian form dates to 1993, when Mayor David Dinkins and the City Council amended the City Charter to create an independent board made up entirely of private citizens, ending a prior model where police officers reviewed complaints against other police officers. The change was fiercely contested: in September 1992 thousands of off-duty officers protested at City Hall and blocked the Brooklyn Bridge. The board did not receive adequate funding until 1997. Because CCRB's value depends on New Yorkers actually knowing it exists and understanding how to file a complaint, public education is treated as a distinct function of the agency, not an afterthought to its investigative work.",
+  "sources": [
+    {"label": "History - NYC Civilian Complaint Review Board", "url": "https://www.nyc.gov/site/ccrb/about/history.page"},
+    {"label": "New York City Civilian Complaint Review Board - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Civilian_Complaint_Review_Board"}
+  ]
+}

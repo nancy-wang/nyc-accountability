@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOT",
+  "service": "Maintain the City’s transportation infrastructure.",
+  "oneLiner": "This work matters because DOT maintains roughly 800 bridges and tunnels citywide, and in 2024 inspectors found nearly 8% of bridge sections in poor condition - deferred maintenance that the City is now trying to address with a planned $16 billion in bridge repair and rehabilitation.",
+  "summary": "New York City's transportation network includes about 800 bridges and tunnels, along with thousands of miles of streets, that require ongoing preventive maintenance - drain cleaning, debris removal, masonry repair, and snow response - to stay safe and usable. A 2024 assessment found 118 bridge sections, representing nearly a fifth of all bridge roadway citywide, in poor condition, reflecting decades of aging infrastructure, much of it originally built in the early-to-mid 20th century. The City's ten-year capital strategy includes over $16 billion for bridge repair, replacement, and rehabilitation to address this backlog.",
+  "sources": [
+    {"label": "NYC DOT - Bridges", "url": "https://www.nyc.gov/html/dot/html/infrastructure/bridges.shtml"},
+    {"label": "Are You Traveling Over Troubled NYC Bridges? - THE CITY", "url": "https://www.thecityreporter.nyc/2025/05/20/new-york-crumbling-old-bridges/"}
+  ]
+}

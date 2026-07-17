@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Bill and collect revenue for water and sewer usage.",
+  "oneLiner": "This work matters because after the City's 1970s fiscal crisis made investors wary of general city debt, NYC separated water and sewer finances from the city budget in 1985, meaning your water bill directly funds the pipes, plants and repairs that keep water running, not general city spending.",
+  "summary": "In the 1980s, following the fiscal crisis of the 1970s when investors were reluctant to buy bonds backed by the City's shaky general fund, New York restructured its water and sewer system's finances. A 1985 lease agreement placed water and sewer revenue under the independent NYC Water Board, dedicated exclusively to system operations, maintenance, and debt service on water finance bonds, rather than the city's general fund. That is why DEP's billing and collection function exists as a self-sustaining system: the rates it sets and collects are what pay for the water infrastructure New Yorkers depend on.",
+  "sources": [
+    {"label": "History of NYC water and sewer system financial structure - NYC Council", "url": "https://citymeetings.nyc/meetings/new-york-city-council/2024-10-28-0100-pm-committee-on-environmental-protection-resiliency-and-waterfronts/chapter/history-of-nyc-water-and-sewer-system-financial-structure/"},
+    {"label": "NYC Water Board", "url": "https://www.nyc.gov/site/nycwaterboard/index.page"}
+  ]
+}

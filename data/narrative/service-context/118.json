@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OATH",
+  "service": "Adjudicate alleged violations of City administrative laws.",
+  "oneLiner": "OATH was created in 1979 specifically to take disciplinary and administrative cases out of the hands of the same agencies bringing them — before that, agencies used their own employees as judges in cases against their own targets.",
+  "summary": "Before 1979, city agencies conducted their own disciplinary and violation hearings using judges who were themselves employees of that same agency — a setup with an obvious conflict of interest. Mayor Ed Koch's Executive Order 32 in 1979 created the Office of Administrative Trials and Hearings specifically to move those cases to a centralized team of independent Administrative Law Judges separate from the agencies referring the cases. In 1988, voters made OATH a permanent charter agency, establishing it as the first municipal central tribunal of its kind in the country.",
+  "sources": [
+    { "label": "About OATH — nyc.gov", "url": "https://www.nyc.gov/site/oath/about/about-oath.page" },
+    { "label": "New York City Office of Administrative Trials and Hearings — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Office_of_Administrative_Trials_and_Hearings" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "LAW",
+  "service": "Prosecute juvenile delinquency cases in Family Court.",
+  "oneLiner": "The Law Department, not a District Attorney's office, prosecutes juvenile delinquency cases because New York routes children accused of law-breaking into a separate Family Court system focused on rehabilitation rather than the adult criminal courts.",
+  "summary": "New York State law treats most alleged offenses by children under a certain age as juvenile delinquency matters handled in Family Court rather than criminal prosecutions in adult court. The City's Law Department serves as the \"presentment agency\" in these cases — the entity that brings and argues the case against the young person — working alongside the Family Court's broader mandate to weigh rehabilitation and family welfare alongside accountability.",
+  "sources": [
+    { "label": "Family Court — NYC Law Department", "url": "https://www.nyc.gov/site/law/divisions/family-court.page" },
+    { "label": "New York City Law Department — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Law_Department" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Maintain the City's water delivery and sewer collection systems.",
+  "oneLiner": "This work matters because NYC's water travels through aqueducts and tunnels up to 125 miles long, some over a century old, and keeping that vast hidden network of pipes intact is what stands between New Yorkers and a water supply failure.",
+  "summary": "New York City's water arrives through the Croton, Catskill and Delaware systems, engineering projects built between the 1840s and 1940s that remain in continuous use today, alongside a sewer collection network that covers most of the five boroughs. Because so much of this infrastructure predates modern construction standards, ongoing maintenance and repair, including major projects like the decades-long repair of the Delaware Aqueduct, is essential to preventing leaks, contamination and service disruptions for the roughly half of New York State's population that depends on this system.",
+  "sources": [
+    {"label": "New York City water supply system - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_water_supply_system"},
+    {"label": "NCBI: New York City's Water Supply System: Past, Present, and Future", "url": "https://www.ncbi.nlm.nih.gov/books/NBK566285/"}
+  ]
+}

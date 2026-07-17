@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OCME",
+  "service": "Provide mortuary services to the City.",
+  "oneLiner": "This work matters because someone has to care for every body that dies in New York City, including the unidentified and unclaimed, and OCME is the City's legal mortuary of last resort before remains are laid to rest on Hart Island.",
+  "summary": "As the City's official mortuary, OCME takes legal custody of all remains that fall under its jurisdiction, including unidentified or unclaimed bodies from across the five boroughs. Bodies can be held in the morgue for weeks while the agency works to identify them and locate next of kin; those that ultimately go unclaimed are transferred to the Department of Correction for free burial in mass graves on Hart Island, a practice the City has used as its public cemetery for well over a century.",
+  "sources": [
+    {"label": "OCME - Mortuary Services", "url": "https://www.nyc.gov/site/ocme/services/mortuary-services.page"},
+    {"label": "NYC Council Data Team - Hart Island", "url": "https://council.nyc.gov/data/hart-island/"}
+  ]
+}

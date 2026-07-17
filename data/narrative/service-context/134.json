@@ -1,0 +1,10 @@
+{
+  "agencyCode": "QPL",
+  "service": "QPL Performance Reporting",
+  "oneLiner": "This work matters because Queens Public Library grew out of a 1901 promise, cemented by a $240,000 Andrew Carnegie gift, that a free library belongs in every neighborhood, and performance reporting is how the public can check whether that promise is still being kept borough-wide.",
+  "summary": "Queens Public Library traces back to a subscription library founded in Flushing in 1858 that went free in 1869; it was formally incorporated as the borough-wide Queens Borough Public Library in 1907, shortly after Queens joined the consolidated City of New York. Andrew Carnegie's philanthropic gifts funded seven of its branch buildings as part of his broader belief that free public libraries were the \"best gift that can be given to a community.\" Public performance reporting lets residents and oversight bodies track whether the library system, one of the largest in the country, is meeting service goals across its many neighborhood branches.",
+  "sources": [
+    {"label": "Wikipedia - Queens Public Library", "url": "https://en.wikipedia.org/wiki/Queens_Public_Library"},
+    {"label": "Carnegie Corporation of New York - Andrew Carnegie's Library Legacy: A Timeline", "url": "https://www.carnegie.org/our-work/article/andrew-carnegies-library-legacy/"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOT",
+  "service": "Create public spaces to facilitate livability.",
+  "oneLiner": "This work matters because DOT's Plaza Program, launched in 2008, turns underused street space into public plazas using fast, low-cost \"quick-build\" methods, bringing open space to neighborhoods - often lower-income ones - that otherwise lack it.",
+  "summary": "The Plaza Program grew out of PlaNYC 2030, the city's 2007 long-range sustainability plan, which set a goal of every New Yorker living within a ten-minute walk of a park. Rather than waiting years for costly capital construction, DOT under Commissioner Janette Sadik-Khan used movable barriers and tactical-urbanism techniques to convert street space into plazas almost overnight, first tested in 2006-07 and formalized as a program in 2008. Local nonprofit partners help choose sites and maintain the resulting spaces, with the program prioritizing high-pedestrian, low-income neighborhoods that otherwise have little accessible open space.",
+  "sources": [
+    {"label": "NYC DOT Launches New Public Plaza Program - PPS", "url": "https://www.pps.org/article/nyc-dot-launches-new-public-plaza-program"},
+    {"label": "NYC DOT - Pedestrian Plazas", "url": "https://www.nyc.gov/html/dot/html/pedestrians/nyc-plaza-program.shtml"},
+    {"label": "Reflections on 10 Years of the NYC Plaza Program - CNU", "url": "https://www.cnu.org/publicsquare/2018/07/24/reflections-10-years-nyc-plaza-program"}
+  ]
+}

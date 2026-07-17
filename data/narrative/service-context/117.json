@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYPL",
+  "service": "NYPL Performance Reporting - Research",
+  "oneLiner": "NYPL's research libraries are the direct descendants of its 1895 founding merger — the Astor and Lenox libraries and the Tilden trust — which created a reference library, not a lending one, years before Carnegie's money built the circulating branch system.",
+  "summary": "When the New York Public Library was formed in 1895 by combining the Astor Library, the Lenox Library, and the Samuel Tilden trust, the result was a non-circulating reference and research institution, not a lending library. That research mission is preserved today in NYPL's research libraries (including the flagship Fifth Avenue building), which remain functionally distinct from the branch library system that Andrew Carnegie's 1901 gift later created for everyday neighborhood lending.",
+  "sources": [
+    { "label": "History of The New York Public Library — nypl.org", "url": "https://www.nypl.org/about/history" },
+    { "label": "New York Public Library — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_Public_Library" }
+  ]
+}

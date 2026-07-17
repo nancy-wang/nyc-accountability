@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HPD",
+  "service": "Provide opportunities for New Yorkers to live in housing that is affordable and financially stable.",
+  "oneLiner": "This exists because HPD is the largest municipal developer of affordable housing in the United States, and initiatives like the 2014 Housing New York plan, which financed 200,000 affordable homes, the most of any mayoral administration in city history, show how directly HPD's work shapes whether New Yorkers can afford to stay.",
+  "summary": "HPD is described as the largest municipal developer of affordable housing in the United States. In May 2014, the city launched Housing New York: A Five-Borough, Ten-Year Plan, aiming to build and preserve 200,000 affordable homes over a decade; the administration reported hitting that goal two years ahead of schedule and went on to finance the preservation or construction of 200,000 affordable homes overall, the most by any single mayoral administration in city history, before expanding the goal to 300,000 homes under Housing New York 2.0.",
+  "sources": [
+    {"label": "New York City Department of Housing Preservation and Development - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development"},
+    {"label": "200,000 Affordable Homes for New Yorkers - NYC.gov", "url": "https://www.nyc.gov/site/hpd/news/069-21/mayor-de-blasio-200-000-affordable-homes-built-preserved-during-this-administration"}
+  ]
+}

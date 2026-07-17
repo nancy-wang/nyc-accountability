@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DYCD",
+  "service": "Support youth development throughout New York City through the implementation, funding and management of contracts with nonprofit service providers.",
+  "oneLiner": "This work matters because DYCD, created in 1996, doesn't run most youth programs directly, it funds and manages a citywide network of community-based nonprofits through contracts, so the quality of afterschool, job, and youth programs New Yorkers see depends on how well DYCD manages those relationships.",
+  "summary": "DYCD was established in 1996 to give the city a dedicated agency for youth and family programming, and its core operating model is to invest in a network of nonprofit community-based organizations rather than deliver most services with city staff. Its Contract Development Unit formalizes the legally binding agreements that define program scope, budgets, timelines, and responsibilities for these providers. Because so much of DYCD's public-facing work, from afterschool programs to job training, is actually delivered by contracted nonprofits, the agency's contracting and oversight function is central to whether funded programs actually reach youth reliably.",
+  "sources": [
+    {"label": "About - DYCD", "url": "https://www.nyc.gov/site/dycd/about/about-dycd/about-dycd.page"},
+    {"label": "Contract Development Unit (CDU) - DYCD", "url": "https://www.nyc.gov/site/dycd/involved/funding-and-support/contracts-development-unit.page"}
+  ]
+}

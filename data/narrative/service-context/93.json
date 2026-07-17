@@ -1,0 +1,10 @@
+{
+  "agencyCode": "FDNY",
+  "service": "Respond to medical emergencies.",
+  "oneLiner": "This exists because FDNY absorbed the city's ambulance service in a 1996 merger with the hospital-run EMS system, a move that was controversial at the time but that studies later found improved ambulance response times and survival rates by tapping the fire department's citywide station network.",
+  "summary": "New York City's EMS system began in 1973 under the city's Health and Hospitals Corporation. On March 17, 1996, EMS merged into FDNY, bringing roughly 3,200 EMS workers, who then responded to about 1.2 million calls a year, into the fire department. The merger was initially contentious, seen by some EMS workers as a hostile takeover and by some firefighters as an unwanted new duty, but an in-house study conducted a few years afterward found that response times and survival rates improved, helped by the department's Certified First Responder program and additional ambulances and EMS stations. FDNY reports the average end-to-end response time to life-threatening medical emergencies was 11 minutes and 21 seconds in fiscal year 2025.",
+  "sources": [
+    {"label": "The FDNY commemorates the 30th anniversary of the merger with New York City EMS - NYC.gov", "url": "https://www.nyc.gov/site/fdny/news/SE0426/the-fdny-commemorates-30th-anniversary-the-merger-new-york-city-ems"},
+    {"label": "New York City Fire Department Bureau of EMS - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Fire_Department_Bureau_of_EMS"}
+  ]
+}

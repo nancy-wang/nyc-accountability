@@ -1,0 +1,9 @@
+{
+  "agencyCode": "DOC",
+  "service": "Prepare individuals in custody for return to their neighborhoods as civil and contributing members.",
+  "oneLiner": "This work matters because most people held in NYC jails are released back into their communities within months, so what happens during that time -- job training, counseling, help getting an ID -- shapes whether they end up back in the system.",
+  "summary": "The vast majority of people in NYC's jails are awaiting trial or serving short sentences, meaning they return to their neighborhoods relatively quickly. DOC's Programs Division and initiatives like Jails to Jobs partner with outside organizations to offer vocational training, literacy help, counseling, and reentry planning, including help obtaining identification documents needed to get a job or housing. Without this kind of support, the same underlying problems that preceded incarceration -- unemployment, lack of documentation, untreated substance use -- often persist and drive people back into the justice system.",
+  "sources": [
+    {"label": "NYC Department of Correction - Reintegration & Reentry Initiatives", "url": "https://www.nyc.gov/site/doc/programs/reintegration-reentry-initiatives.page"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Procure goods and select services for City agencies.",
+  "oneLiner": "This work matters because DCAS processes roughly $1 billion a year in purchasing on behalf of more than 100 city agencies, and how that money is spent, including how much goes to minority- and women-owned businesses, directly shapes who gets to do business with city government.",
+  "summary": "The DCAS Office of Citywide Procurement solicits and awards contracts for goods and services on behalf of city agencies, managing roughly 1,000 multi-year requirement and citywide contracts and processing about $1 billion annually for over 100 agencies, departments, boards, and authorities. Part of this mandate includes the City's M/WBE program, which is meant to give minority- and women-owned businesses real access to city contracting; in Fiscal 2023 the City awarded a record $1.42 billion to M/WBEs, about 27.9% of contract value subject to Local Law 1. Because DCAS sets the rules and processes through which vendors reach city government, its procurement function has outsized influence over which businesses, and which communities, benefit from public spending.",
+  "sources": [
+    {"label": "Procurement - NYC Department of Citywide Administrative Services", "url": "https://www.nyc.gov/site/dcas/business/procurement-sell-to-nyc.page"},
+    {"label": "NYC Comptroller - Annual Report on M/WBE Procurement: FY22 Findings and Recommendations", "url": "https://comptroller.nyc.gov/reports/annual-report-on-mwbe-procurement/"}
+  ]
+}

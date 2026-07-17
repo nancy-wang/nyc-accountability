@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DYCD",
+  "service": "Support programs that provide participants with the services needed to increase and tap their capacity to strengthen and revitalize the communities of New York City.",
+  "oneLiner": "This exists because since 1991, DYCD's Beacon program has turned NYC public schools into evening and weekend community centers, a strategy born out of Mayor Dinkins' anti-crime 'Safe Streets, Safe City' campaign to stabilize whole neighborhoods, not just individual kids.",
+  "summary": "The Beacon Community Centers initiative began in 1991 under Mayor David Dinkins as a complement to his 'Safe Streets, Safe City' anti-crime campaign, with the idea that safe, resourced neighborhood gathering places for both children and adults help stabilize communities. By 2017 the program had grown to over 90 sites citywide, hosted in public schools and open during afternoons, evenings, weekends, and school breaks. DYCD frames Beacons and similar community-based programs as tools for broader community revitalization, especially in neighborhoods with concentrated poverty or large immigrant populations, not just as youth programming.",
+  "sources": [
+    {"label": "Beacon Programs - DYCD", "url": "https://www.nyc.gov/site/dycd/services/after-school/beacon.page"},
+    {"label": "Beacon Community Centers - CAMBA, Inc.", "url": "https://camba.org/programs/beacon-community-centers/"}
+  ]
+}

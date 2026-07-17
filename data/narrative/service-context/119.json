@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OATH",
+  "service": "Adjudicate alleged violations of State and City administrative laws.",
+  "oneLiner": "OATH's authority expanded beyond city law in 2008, when the City Council moved the Environmental Control Board's caseload under OATH — part of a steady growth from OATH's original 1979 mission of giving city agencies one independent, centralized tribunal.",
+  "summary": "OATH was created in 1979 to centralize administrative adjudication in a body independent of the agencies bringing cases, and became a permanent charter agency in 1988. Its scope has broadened significantly since then; a 2008 City Council amendment moved the Environmental Control Board — which handles many quality-of-life and environmental violation cases governed by both state and city law — under OATH, substantially expanding the range of cases it now hears.",
+  "sources": [
+    { "label": "About OATH — nyc.gov", "url": "https://www.nyc.gov/site/oath/about/about-oath.page" },
+    { "label": "New York City Office of Administrative Trials and Hearings — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Office_of_Administrative_Trials_and_Hearings" }
+  ]
+}

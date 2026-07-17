@@ -1,0 +1,9 @@
+{
+  "agencyCode": "DOB",
+  "service": "Ensure the safe and lawful use of buildings and properties by enforcing the Building Code and the Zoning Resolution.",
+  "oneLiner": "This enforcement exists because deadly building disasters and unsafe, overcrowded tenements in the 1800s and early 1900s showed that without a dedicated code-enforcement agency, builders and landlords would cut corners at the cost of lives.",
+  "summary": "New York's modern building-safety bureaucracy grew out of tragedy: a \"Superintendent of Buildings\" post was created in 1860 after the Elm Street fire on the Lower East Side killed 20 people, and the 1901 Tenement House Act created a citywide Buildings Bureau after investigators documented dangerous, overcrowded housing conditions. A unified, citywide Department of Buildings was established in 1936. Today DOB enforces the Building Code and Zoning Resolution across more than a million buildings, issuing permits, licensing trades, and responding to structural emergencies.",
+  "sources": [
+    {"label": "New York City Department of Buildings - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Buildings"}
+  ]
+}

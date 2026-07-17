@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOP",
+  "service": "Monitor and enforce the conditions of probation.",
+  "oneLiner": "This exists because probation offers a court-supervised alternative to jail or prison, holding people accountable to conditions like curfews, treatment, or regular check-ins while letting them stay in their jobs, homes, and families.",
+  "summary": "Probation supervision is the mechanism that turns a judge's sentencing decision into an ongoing, monitored arrangement rather than incarceration. Probation officers track compliance with court-ordered conditions and respond when those conditions are violated, functioning as the enforcement layer that makes community-based sentencing possible instead of relying on jail or prison. Since the 2010s, NYC Probation has shifted this supervision toward a community justice model, moving officers into the neighborhoods where clients live in an effort to make compliance monitoring more effective and less purely punitive.",
+  "sources": [
+    {"label": "NYC Probation - Neighborhood Opportunity Network (NeON)", "url": "https://www.nyc.gov/site/probation/community/neon.page"},
+    {"label": "Vera Institute - Adult Probation and NeON", "url": "https://www.vera.org/publications/innovations-in-nyc-health-and-human-services-policy-adult-probation-and-neighborhood-opportunity-network-initiative-neon"}
+  ]
+}

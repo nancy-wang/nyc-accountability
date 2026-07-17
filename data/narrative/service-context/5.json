@@ -1,0 +1,10 @@
+{
+  "agencyCode": "BIC",
+  "service": "Regulate businesses in and around the City's public wholesale markets.",
+  "oneLiner": "This oversight exists because the Fulton Fish Market and other public wholesale markets were effectively controlled by organized crime for decades, with dealers and truckers facing extortion and intimidation, until the City consolidated regulation of these markets under what became the Business Integrity Commission.",
+  "summary": "From at least the 1930s through the 1990s, the Fulton Fish Market in Manhattan operated under heavy Mafia influence, with retailers and truckers subject to systematic extortion and threats. A 1988 federal racketeering suit installed a court-appointed trustee to run the market, but organized crime influence persisted. In 2001, a City Charter revision created the Organized Crime Control Commission to consolidate oversight of the public wholesale markets, trade waste, and shipboard gambling into a single regulatory body; it was renamed the Business Integrity Commission under Local Law 21 of 2002. BIC now licenses and monitors businesses operating in and around the City's public markets to keep organized crime and related corruption out.",
+  "sources": [
+    {"label": "About BIC - NYC Business Integrity Commission", "url": "https://www.nyc.gov/site/bic/about/about-bic.page"},
+    {"label": "Fulton Fish Market - Wikipedia", "url": "https://en.wikipedia.org/wiki/Fulton_Fish_Market"}
+  ]
+}

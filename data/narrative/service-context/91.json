@@ -1,0 +1,10 @@
+{
+  "agencyCode": "EDC",
+  "service": "Shape, grow, and strengthen neighborhoods where New Yorkers live, learn and work.",
+  "oneLiner": "This exists because EDC and its predecessor agencies have overseen major neighborhood redevelopment since the 1960s, from the Brooklyn Army Terminal to South Street Seaport, and newer efforts like its Economic Mobility Networks aim to connect that development to local jobs rather than just new buildings.",
+  "summary": "EDC's predecessor, the Public Development Corporation, was created in 1966 and led redevelopment of major sites like the Brooklyn Army Terminal, Jamaica Center, and South Street Seaport. Today EDC frames neighborhood work as building 'dynamic, resilient, livable communities' across the five boroughs. Between April and June 2025, it launched its first Economic Mobility Networks in Sunset Park and Hunts Point and a Workforce Development Fund in East New York, each providing $1.4 million to local organizations to connect residents to jobs, an approach meant to tie physical neighborhood development to economic opportunity for existing residents.",
+  "sources": [
+    {"label": "New York City Economic Development Corporation - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Economic_Development_Corporation"},
+    {"label": "EDC's 5 Equitable Economic Development Priorities - Association for Neighborhood and Housing Development", "url": "https://anhd.org/blog/edcs-5-equitable-economic-development-priorities"}
+  ]
+}

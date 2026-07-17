@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OCME",
+  "service": "Perform the processes necessary to certify deaths falling within the agency's jurisdiction.",
+  "oneLiner": "This work matters because New York City abolished its old elected-coroner system in 1918 precisely because coroners weren't required to be doctors, replacing it with medically trained examiners so that death certification is based on science rather than politics.",
+  "summary": "OCME was created on January 1, 1918 under a 1915 New York State law that abolished the office of Coroner of New York City, a position that did not require any medical training. Dr. Charles Norris became the city's first Chief Medical Examiner and built the office into a pioneer of forensic medicine and toxicology in America. Today OCME investigates and certifies deaths that are sudden, violent, unexplained, or otherwise fall within its legal jurisdiction, producing the official record used by families, courts, and insurers.",
+  "sources": [
+    {"label": "Wikipedia - Office of Chief Medical Examiner of the City of New York", "url": "https://en.wikipedia.org/wiki/Office_of_Chief_Medical_Examiner_of_the_City_of_New_York"},
+    {"label": "Wikipedia - Charles Norris (medical examiner)", "url": "https://en.wikipedia.org/wiki/Charles_Norris_(medical_examiner)"}
+  ]
+}

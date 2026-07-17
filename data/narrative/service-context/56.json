@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOHMH",
+  "service": "Prevent and address mental illness, developmental delays and disabilities, and harms related to substance use.",
+  "oneLiner": "This work has taken on new urgency as New York faces a fentanyl-driven overdose crisis that now kills someone in the city roughly every three hours, prompting the City to expand mental health and addiction services through initiatives like ThriveNYC and free naloxone distribution.",
+  "summary": "DOHMH oversees the City's response to overdose deaths, which have risen sharply as fentanyl -- powerful enough to be lethal in tiny, often undetected amounts -- has spread through the drug supply; a 2023 Health Department advisory found fentanyl present in 81% of NYC overdose deaths. The City's ThriveNYC initiative, launched in 2015 with roughly $850 million in planned funding, expanded access to mental health and substance-use services, and DOHMH-registered Opioid Overdose Prevention Programs have distributed well over 175,000 free naloxone kits. NYC Well, a 24/7 hotline, launched in 2016 as a single point of entry into these behavioral health services.",
+  "sources": [
+    {"label": "NYC Health - Commissioner's Advisory on Overdose Crisis", "url": "https://www.nyc.gov/site/doh/about/press/pr2023/commissioner-advisory-overdose-crisis-reaches-historic-levels.page"},
+    {"label": "NYC Independent Budget Office - Detailing the Expansion of Behavioral Health Services (ThriveNYC)", "url": "https://ibo.nyc.ny.us/iboreports/detailing-the-expansion-of-behavioral-health-services-city-funded-spending-drives-new-growing-programs-under-the-mayor%E2%80%99s-thivnyc-initiative.html"}
+  ]
+}

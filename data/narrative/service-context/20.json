@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCLA",
+  "service": "Provide financial support to the City's non-profit arts and cultural sector for operations, programs and activities.",
+  "oneLiner": "This work matters because DCLA is the largest public funder of arts and culture in the nation, and its Cultural Development Fund grants keep everything from small neighborhood arts groups to the City's largest institutions financially able to operate and stay open to the public.",
+  "summary": "The Department of Cultural Affairs, which grew out of the 1962 Office of Cultural Affairs and became its own city department in 1976, is the largest cultural funding agency in the country, with an annual expense budget of roughly $200 million and a capital budget exceeding $1 billion over a multi-year horizon. Its Program Services Unit administers the Cultural Development Fund, an annual grant-making process that supports both large institutions and smaller, neighborhood-based cultural organizations across all five boroughs. This direct financial support exists because many nonprofit cultural organizations, especially smaller and community-rooted ones, could not sustain their operations, programs, and public access on earned revenue and private donations alone.",
+  "sources": [
+    {"label": "New York City Department of Cultural Affairs - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Cultural_Affairs"},
+    {"label": "Cultural Funding - DCLA", "url": "https://www.nyc.gov/site/dcla/cultural-funding/cultural-funding.page"}
+  ]
+}

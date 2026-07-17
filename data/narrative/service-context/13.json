@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Help City agencies fulfill their workforce needs.",
+  "oneLiner": "This work matters because New York adopted one of the nation's first merit-based civil service systems back in 1883 specifically to replace political patronage hiring, and DCAS is the modern agency that runs the exams and hiring processes meant to keep city jobs open on merit rather than connections.",
+  "summary": "New York State enacted its first civil service law in 1883, becoming the first state in the nation to require competitive examinations for government hiring and promotion rather than political patronage, with Theodore Roosevelt an early champion of the reform. DCAS itself was created in 1996 when Mayor Rudolph Giuliani merged the Department of General Services and the Department of Personnel into a single agency. Today DCAS writes and administers the civil service exams and manages recruitment and hiring support that city agencies rely on to fill their workforce, a direct descendant of that 19th-century push to make government jobs a matter of merit and fitness rather than who you know.",
+  "sources": [
+    {"label": "New York City Department of Citywide Administrative Services - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Citywide_Administrative_Services"},
+    {"label": "NYS Department of Civil Service - Merit System Information", "url": "https://careermobilityoffice.cs.ny.gov/cmo/employee-services/merit-system.cfm"}
+  ]
+}

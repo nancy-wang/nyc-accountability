@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DFTA",
+  "service": "Provide community-based services to older New Yorkers.",
+  "oneLiner": "This work matters because the 1965 federal Older Americans Act recognized that seniors need dedicated local support to stay independent, leading NYC to create what became the Department for the Aging in 1968 to run senior centers, meals, and other community programs.",
+  "summary": "The federal Older Americans Act of 1965 established a nationwide aging network of federal, state and local agencies. New York City responded in 1968 by creating the Mayor's Office for the Aging as a federally funded demonstration project to plan, coordinate and fund services like nutrition and hot-meal programs for the elderly. In 1975, a charter amendment elevated the office into the Department for the Aging, and through the following decades its community-based offerings expanded to include senior centers, transportation, employment support, legal services and elder abuse services.",
+  "sources": [
+    {"label": "NYC Aging: History", "url": "https://www.nyc.gov/site/dfta/about/history.page"},
+    {"label": "New York City Department for the Aging - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_for_the_Aging"}
+  ]
+}

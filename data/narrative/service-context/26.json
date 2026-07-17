@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCWP",
+  "service": "Educate and empower New Yorkers with low and moderate incomes.",
+  "oneLiner": "This work matters because hundreds of thousands of NYC households have no bank account and are pushed toward costly check-cashers and predatory lenders, which is why the City created the nation's first municipal Office of Financial Empowerment in 2006 to offer free financial counseling instead.",
+  "summary": "The Office of Financial Empowerment, launched in 2006 within the Department of Consumer Affairs (now DCWP), was the first local-government initiative in the country dedicated to educating, empowering and protecting people with low incomes. Its Financial Empowerment Centers, which opened starting in 2008, provide free one-on-one financial counseling and have served tens of thousands of New Yorkers, helping clients reduce debt and build savings. The program responds to a persistent problem: DCWP's own research has repeatedly found hundreds of thousands of NYC households are unbanked or underbanked, concentrated in the city's lowest-income communities.",
+  "sources": [
+    {"label": "Q&A with Cathie Mahon, head of the Office of Financial Empowerment - Center for an Urban Future", "url": "https://nycfuture.org/research/qa-with-cathie-mahon-head-of-the-citys-office-of-financial-empowerment"},
+    {"label": "DCWP Releases Updated Research Brief: 238,900 Households in NYC Are Unbanked", "url": "https://www.nyc.gov/site/dca/news/027-25/dcwp-releases-updated-research-brief-238-900-households-nyc-unbanked"}
+  ]
+}

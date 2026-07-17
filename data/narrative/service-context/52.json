@@ -1,0 +1,9 @@
+{
+  "agencyCode": "DOF",
+  "service": "Help NYC taxpayers resolve tax issues",
+  "oneLiner": "This office exists as a check within DOF itself, giving a taxpayer who feels stuck, mistreated, or facing an unfair seizure of funds or property somewhere independent to turn once normal channels haven't worked.",
+  "summary": "The NYC Office of the Taxpayer Advocate operates independently within the Department of Finance and reports directly to the Commissioner, rather than through the ordinary chain that handles routine tax matters. It's meant for taxpayers who have already tried and failed to resolve an issue through normal DOF channels, believe DOF is applying tax rules unfairly, or face imminent harmful action like a seizure of funds for a debt they dispute. It cannot provide legal or tax-preparation advice, and it cannot intervene once a case is before the Tax Commission, Tax Appeals Tribunal, or a court.",
+  "sources": [
+    {"label": "NYC Department of Finance - Office of the Taxpayer Advocate", "url": "https://www.nyc.gov/site/finance/about/taxpayer-advocate.page"}
+  ]
+}

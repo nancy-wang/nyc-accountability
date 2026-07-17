@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DSNY",
+  "service": "Collect and dispose of waste.",
+  "oneLiner": "This work matters because organized municipal garbage collection is a relatively recent achievement - DSNY's predecessor, founded in 1881, only became reliable and citywide after reformer Colonel George Waring's 1890s overhaul, and without it disease and unmanageable filth would return quickly to a city this dense.",
+  "summary": "DSNY traces to the 1881 Department of Street Cleaning, one of the first sanitation agencies anywhere to clean streets and remove snow across every neighborhood regardless of class, rather than only in wealthier districts. Colonel George Waring's tenure in the 1890s built the organized, uniformed collection system that made citywide service actually work in practice. Since Fresh Kills, once the world's largest landfill, closed in 2001 after decades of community opposition, New York has had to export essentially all of its residential garbage out of state, making efficient, reliable collection and disposal an ongoing logistical and financial challenge, not just a historical one.",
+  "sources": [
+    {"label": "A History of Heroism - Sanitation Foundation", "url": "https://www.sanitationfoundation.org/blog/abriefhistoryofheroism"},
+    {"label": "Fresh Kills Landfill - Wikipedia", "url": "https://en.wikipedia.org/wiki/Fresh_Kills_Landfill"}
+  ]
+}

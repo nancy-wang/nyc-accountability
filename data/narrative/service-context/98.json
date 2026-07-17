@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HRA",
+  "service": "Agency-wide Management",
+  "oneLiner": "This category covers HRA's internal administration, the budgeting, technology, and compliance work behind an agency that is the largest local social-services agency in the country, serving more than 3 million New Yorkers a year through over a dozen public assistance programs.",
+  "summary": "HRA was created in 1966 as a 'super-agency' consolidating the city's welfare and social-service functions, and has grown into the largest local social services agency in the United States, with more than 14,000 employees and an operating budget of roughly $9.6 billion serving over 3 million New Yorkers annually through more than a dozen major public assistance programs. This service area covers the administrative backbone needed to run an operation of that scale, rather than a direct service delivered to the public.",
+  "sources": [
+    {"label": "History of Welfare & HRA - HRA", "url": "https://www.nyc.gov/site/hra/about/history-welfare-hra.page"},
+    {"label": "New York City Human Resources Administration - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Human_Resources_Administration"}
+  ]
+}

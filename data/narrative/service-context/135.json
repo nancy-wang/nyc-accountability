@@ -1,0 +1,10 @@
+{
+  "agencyCode": "SBS",
+  "service": "Help businesses start, operate, and expand in New York City.",
+  "oneLiner": "This work matters because navigating city permits, licenses, and financing is hard enough to sink a small business before it opens, so SBS runs no-cost NYC Business Solutions centers specifically to help owners get through that process and stay open.",
+  "summary": "The Department of Small Business Services provides free courses, legal assistance, financing connections, and help navigating government requirements to small business owners across the five boroughs through its NYC Business Solutions centers. The goal is to lower the practical barriers, paperwork, permitting, access to capital, that can otherwise keep entrepreneurs from starting a business or force existing ones to close, particularly in neighborhoods with less access to traditional business support.",
+  "sources": [
+    {"label": "NYC SBS - Businesses", "url": "https://www.nyc.gov/site/sbs/businesses/businesses.page"},
+    {"label": "NYPL - NYC SBS Small Business Services", "url": "https://www.nypl.org/smallbiz/services/item/156912"}
+  ]
+}

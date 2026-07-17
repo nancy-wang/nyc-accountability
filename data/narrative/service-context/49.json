@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOF",
+  "service": "Administer rent and property owner exemption programs",
+  "oneLiner": "Programs like SCRIE and DRIE exist because without them, ordinary rent increases could force fixed-income seniors and people with disabilities out of their homes, so the City freezes their rent and reimburses landlords through a property tax credit instead.",
+  "summary": "The City Council created the Senior Citizen Rent Increase Exemption (SCRIE) in 1970 to protect elderly tenants in rent-regulated apartments from being priced out by legal rent increases; the program was expanded in 2005 to cover people with disabilities through the Disability Rent Increase Exemption (DRIE). Eligible tenants have their rent frozen, and landlords are compensated for the foregone increase through a dollar-for-dollar property tax abatement credit -- which is why DOF, the property tax agency, ended up administering it. SCRIE and DRIE together are known as the NYC Rent Freeze Program.",
+  "sources": [
+    {"label": "Benefits Plus - SCRIE Overview", "url": "https://bplc.cssny.org/pbm/housing-programs-services/scrie/overview"},
+    {"label": "NYC Department of Finance - Senior Citizen Rent Increase Exemption (SCRIE)", "url": "https://www.nyc.gov/site/finance/property/landlords-scrie.page"}
+  ]
+}

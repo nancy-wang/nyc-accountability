@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOB",
+  "service": "Facilitate safe and compliant development.",
+  "oneLiner": "This work matters because DOB has to balance letting the city keep building the housing and infrastructure it needs against stopping unsafe or illegal construction before it hurts someone.",
+  "summary": "Beyond enforcing rules after the fact, DOB's plan-review and permitting functions are meant to catch safety and zoning problems before construction even starts, since fixing a badly built structure later is far costlier and more dangerous than reviewing plans up front. The agency describes its goal as striking a balance between safety and development, aggressively enforcing the Construction Codes, Zoning Resolution, and the state Multiple Dwelling Law to protect workers and the public while still allowing a dense, growing city to build.",
+  "sources": [
+    {"label": "NYC Department of Buildings - Building Applications & Permits", "url": "https://www.nyc.gov/site/buildings/dob/building-applications-permits.page"},
+    {"label": "NYC Mayor's Management Report - Department of Buildings", "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/dob.pdf"}
+  ]
+}

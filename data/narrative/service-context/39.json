@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DHS",
+  "service": "Help individuals experiencing chronic unsheltered homelessness find stable, safe living situations.",
+  "oneLiner": "This work matters because people living on the street are often the most service-resistant, having fallen through other safety nets, which is why the City launched HOME-STAT in 2015, a round-the-clock outreach effort, to build the trust it can take months of repeated contact to earn.",
+  "summary": "In 2015, Mayor de Blasio introduced HOME-STAT, described as the most comprehensive street homelessness outreach effort ever deployed in a major American city. Outreach teams from nonprofit providers canvass the five boroughs 24 hours a day, compiling a by-name list from 311 calls and street encounters to track and engage unsheltered individuals. DHS notes that many people living on the street have experienced trauma or face mental health or substance use challenges, and it can take months of persistent contact before someone accepts services like a Safe Haven, a transitional housing option designed specifically for the chronically street homeless.",
+  "sources": [
+    {"label": "DHS: Unsheltered Outreach", "url": "https://www.nyc.gov/site/dhs/about/unsheltered-outreach.page"},
+    {"label": "HOME-STAT 24/7/365 street outreach across all 5 boroughs", "url": "https://www.nyc.gov/assets/dhs/downloads/pdf/home-stat-one-pager.pdf"}
+  ]
+}

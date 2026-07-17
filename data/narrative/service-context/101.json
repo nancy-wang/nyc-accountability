@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HRA",
+  "service": "Provide support services for eligible vulnerable and/or frail children and adults and for children and adults with disabilities.",
+  "oneLiner": "HRA grew out of a 1966 consolidation of NYC's scattered welfare, youth, and social-service offices into one \"super-agency,\" built specifically so people who need multiple kinds of help don't have to navigate a maze of separate departments.",
+  "summary": "Mayor John Lindsay created HRA on August 15, 1966, merging the Department of Welfare with the Manpower and Career Development Agency, the Community Development Agency, the Youth Services Agency, and the Addiction Services Agency into a single administration. The goal was to unify the City's fragmented social-services bureaucracy. Two more specialized agencies were later split out of HRA — the Department of Homeless Services in 1993 and the Administration for Children's Services in 1996 — leaving HRA responsible for cash assistance, disability support, and services for vulnerable adults and families.",
+  "sources": [
+    { "label": "History of Welfare & HRA — nyc.gov", "url": "https://www.nyc.gov/site/hra/about/history-welfare-hra.page" },
+    { "label": "New York City Human Resources Administration — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Human_Resources_Administration" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOE",
+  "service": "Deliver early childhood education services.",
+  "oneLiner": "This work matters because NYC built the largest free universal pre-K program in the country starting in 2014, reflecting research showing that early learning narrows gaps in school readiness long before kindergarten begins.",
+  "summary": "Mayor Bill de Blasio launched Pre-K for All in 2014, guaranteeing free full-day pre-kindergarten to every four-year-old in the city, and grew enrollment to more than 60,000 children within two years. The City later extended the model to three-year-olds through 3-K for All, eventually serving more than 500,000 children across both programs by the end of de Blasio's term. NYC funded the expansion in part through a deal with the state legislature and, later, federal COVID-relief dollars, rather than through the tax on high earners de Blasio had originally proposed.",
+  "sources": [
+    {"label": "The Century Foundation - NYC Transformed Education with Pre-K For All", "url": "https://tcf.org/content/commentary/new-york-city-transformed-education-with-pre-k-for-all-school-integration-should-be-next/"},
+    {"label": "Chalkbeat - NYC promises preschool for 3-year-olds in every district", "url": "https://www.chalkbeat.org/newyork/2021/3/24/22348023/nyc-universal-preschool-3k/"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DPR",
+  "service": "Manage the City’s street, park, and forest trees.",
+  "oneLiner": "This work matters because NYC's street trees provide measurable public benefits - an estimated $150+ million a year in air quality, stormwater, and cooling value - which is why the City ran an eight-year campaign, MillionTreesNYC, to plant a million of them.",
+  "summary": "MillionTreesNYC, run from 2007 to 2015, spent about $400 million to plant one million trees across the five boroughs, expanding the city's tree canopy by roughly 20%. The initiative was informed by tree-census data showing street trees delivered over $150 million a year in quantifiable benefits, including pollution removal, stormwater absorption, and cooling city blocks by up to several degrees. Unlike earlier tree planting, which mostly responded to individual resident requests, MillionTreesNYC used block-by-block planting targeted at low-canopy areas and public-health need, and it became a widely cited model for other cities' urban forestry programs.",
+  "sources": [
+    {"label": "MillionTreesNYC - NYC Parks", "url": "https://www.nycgovparks.org/trees/milliontreesnyc"},
+    {"label": "MillionTreesNYC: planting and tending the urban forest - Centre for Public Impact", "url": "https://centreforpublicimpact.org/public-impact-fundamentals/milliontreesnyc-planting-and-tending-the-urban-forest/"}
+  ]
+}

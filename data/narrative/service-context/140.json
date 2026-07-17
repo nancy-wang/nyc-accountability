@@ -1,0 +1,10 @@
+{
+  "agencyCode": "VZ",
+  "service": "VZ Service 2 - DATA-DRIVEN SOLUTIONS",
+  "oneLiner": "This work matters because Vision Zero targets its street redesigns, enforcement, and speed cameras at the specific corridors where crash data shows New Yorkers are actually getting killed or seriously hurt, rather than spreading limited safety resources evenly and thinly citywide.",
+  "summary": "Since its 2014 launch under Mayor de Blasio, NYC's Vision Zero initiative has relied on tracking crash and injury data to identify dangerous \"priority\" corridors and intersections, then targeting engineering changes, enforcement, and public-awareness efforts where the data shows they will save the most lives. This mirrors the approach of Sweden's original Vision Zero program, which treated traffic deaths as a systemic, measurable problem rather than a series of isolated accidents, and used data to guide where infrastructure investment would have the biggest safety impact.",
+  "sources": [
+    {"label": "Wikipedia - Vision Zero (New York City)", "url": "https://en.wikipedia.org/wiki/Vision_Zero_(New_York_City)"},
+    {"label": "NYC Vision Zero Year One Report, April 2015", "url": "https://www.nyc.gov/html/visionzero/assets/downloads/pdf/vision-zero-1-year-report.pdf"}
+  ]
+}

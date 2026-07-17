@@ -1,0 +1,10 @@
+{
+  "agencyCode": "ACS",
+  "service": "Protect children from child abuse.",
+  "oneLiner": "This function exists because ACS itself was created in 1996 after six-year-old Elisa Izquierdo was beaten to death by her mother despite relatives, neighbors, and teachers having tried to warn officials she was in danger, a failure that forced the City to build a dedicated child-protection agency.",
+  "summary": "Mayor Rudolph Giuliani created ACS by executive order in January 1996 as a standalone agency, pulling child welfare functions out of the former Human Resources Administration, in direct response to public outrage over Elisa Izquierdo's death and reports that the warning signs had been missed or ignored. Nicholas Scoppetta, who had spent time in foster care himself, was named the first Commissioner. The agency's creation marked a shift toward a more protective, investigation-focused posture, in contrast to a prior system that had prioritized keeping families together even in cases involving risk.",
+  "sources": [
+    {"label": "NYC ACS - ACS Celebrates 25 Years of Keeping Children Safe & Families Supported", "url": "https://www.nyc.gov/site/acs/about/25years.page"},
+    {"label": "New York City Administration for Children's Services - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Administration_for_Children%27s_Services"}
+  ]
+}

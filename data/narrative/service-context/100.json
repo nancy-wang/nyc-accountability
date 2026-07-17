@@ -1,0 +1,11 @@
+{
+  "agencyCode": "HRA",
+  "service": "Increase financial independence and upward mobility out of poverty through employment, education, skills enhancement, job search, job placement, wellness services and other supports.",
+  "oneLiner": "This exists because federal welfare reform in 1996 replaced open-ended cash assistance with time-limited aid tied to work requirements, and HRA's employment and training services are the tools the city uses to help recipients meet those requirements and move off public assistance.",
+  "summary": "The federal Personal Responsibility and Work Opportunity Act of 1996 replaced Aid to Families with Dependent Children with Temporary Assistance for Needy Families, adding a five-year lifetime limit on benefits and work-participation requirements for adult recipients. New York City's HRA had already begun tightening work requirements for Home Relief recipients in 1995 under the Giuliani administration, ahead of the federal law, prioritizing assignment to the Work Experience Program. HRA's current career and employment services, including job readiness training, resume help, and job placement, exist largely to help cash-assistance recipients satisfy these federally mandated work requirements while working toward self-sufficiency.",
+  "sources": [
+    {"label": "Career Services - HRA", "url": "https://www.nyc.gov/site/hra/help/career-services.page"},
+    {"label": "TANF at 20: The 1996 \"Welfare Reform\" and its Impact, Part 1 - Empire Justice Center", "url": "https://empirejustice.org/news/tanf-at-20-the-1996-welfare-reform-and-its-impact-part-1/"},
+    {"label": "Welfare Reform in New York City: The Measure of Success - New York City Bar Association", "url": "https://www.nycbar.org/reports/welfare-reform-in-new-york-city-the-measure-of-success/"}
+  ]
+}

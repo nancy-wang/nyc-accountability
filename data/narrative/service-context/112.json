@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYCHH",
+  "service": "Provide medical, mental health and substance abuse services to New York City residents regardless of their ability to pay.",
+  "oneLiner": "NYC Health + Hospitals was created in 1969 as an independent public benefit corporation — deliberately separated from the city's own budget bureaucracy — specifically so it could keep serving uninsured and low-income patients without depending entirely on the City's own finances.",
+  "summary": "New York State created the Health and Hospitals Corporation in 1969 (Chapter 1016 of the Laws of 1969) to take over the city's public hospitals from the Department of Hospitals, which it did in June 1970. Structuring it as a quasi-independent public benefit corporation, rather than a standard city department, freed it from direct control by the City's budget agency and let it collect its own revenue and make its own purchasing decisions — while the City retained ownership of the facilities. That structure exists because the system's core mission — treating all New Yorkers regardless of ability to pay — depends on financial flexibility a typical city department doesn't have.",
+  "sources": [
+    { "label": "History of New York City Health and Hospitals Corporation — FundingUniverse", "url": "https://www.fundinguniverse.com/company-histories/new-york-city-health-and-hospitals-corporation-history/" },
+    { "label": "NYC Health + Hospitals — Wikipedia", "url": "https://en.wikipedia.org/wiki/NYC_Health_+_Hospitals" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "CCHR",
+  "service": "Enforce the NYC Human Rights Law.",
+  "oneLiner": "This work matters because the NYC Human Rights Law, passed in 1965 after decades of largely powerless race-relations bodies dating to the 1930s and 40s, only has teeth if a commission actually investigates and prosecutes the discrimination in housing, employment, and public accommodations that it prohibits.",
+  "summary": "New York City's civil-rights apparatus began with Mayor La Guardia's Mayor's Committee on Unity in the 1930s and 40s, a body formed amid racial unrest that had no enforcement authority. It became the Commission on Intergroup Relations in the mid-1950s and the Commission on Human Rights in 1962. The 1965 NYC Human Rights Law gave the Commission actual prosecutorial authority over discrimination in private housing, employment, public accommodations, and equal pay. Today the law is regarded as one of the most comprehensive civil rights laws in the nation, covering categories including race, gender identity, sexual orientation, disability, and immigration status, and CCHR's enforcement arm is what makes those protections actionable rather than aspirational.",
+  "sources": [
+    {"label": "Commission's History - NYC Commission on Human Rights", "url": "https://www.nyc.gov/site/cchr/about/commissions-history.page"},
+    {"label": "New York City Human Rights Law - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Human_Rights_Law"}
+  ]
+}

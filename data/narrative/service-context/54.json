@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOF",
+  "service": "Serve and execute legal processes and mandates",
+  "oneLiner": "This work is carried out by the NYC Sheriff's Office, which traces back to 1626 under Dutch colonial rule and is the oldest continuously operating law enforcement agency in the country, now housed inside DOF since a 1994 consolidation.",
+  "summary": "The Sheriff's Office predates the NYPD by more than two centuries, tracing its origins to New Amsterdam in 1626, and became a single citywide office covering all five boroughs in 1942. In 1994 it was folded into the Department of Finance to consolidate administrative functions, and today its deputy sheriffs serve as civil -- not criminal -- law enforcement officers who execute court judgments, serve legal papers, seize property, and enforce civil orders under New York's Civil Practice Law and Rules. That civil-enforcement role is what makes the office distinct from, and necessary alongside, the NYPD.",
+  "sources": [
+    {"label": "New York City Sheriff's Office - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Sheriff's_Office"},
+    {"label": "Gothamist - Pandemic Puts NYC's Obscure Law Enforcement Agency in the Spotlight", "url": "https://gothamist.com/news/pandemic-sheriff-office-explained-nyc-enforcement"}
+  ]
+}

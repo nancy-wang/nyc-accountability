@@ -1,0 +1,9 @@
+{
+  "agencyCode": "DOHMH",
+  "service": "Provide high-quality and timely service to the public.",
+  "oneLiner": "This exists because DOHMH interacts with millions of New Yorkers directly -- through clinics, inspections, vital records, and permits -- so how quickly and courteously the agency handles those interactions shapes whether people actually get the health services and answers they need.",
+  "summary": "Beyond its policy and inspection work, DOHMH runs many services that touch New Yorkers directly, including issuing birth and death certificates, operating sexual health clinics, and responding to public health inquiries. Because delays or poor service at these everyday touchpoints can mean someone doesn't get a needed document, referral, or answer in time, the agency treats responsiveness and service quality as a goal in its own right, alongside its broader public health mission.",
+  "sources": [
+    {"label": "NYC Health - About the Department of Health and Mental Hygiene", "url": "https://www.nyc.gov/site/doh/about/about-doh.page"}
+  ]
+}

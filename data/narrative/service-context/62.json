@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOP",
+  "service": "Contribute to improved outcomes in adult and family court proceedings.",
+  "oneLiner": "This work matters because probation officers' pre-sentence investigations and family court intake interviews give judges the individualized background information they need to decide on supervision, diversion, or sentencing, rather than acting on the charge alone.",
+  "summary": "When a judge in criminal court needs to decide a sentence, or a family court needs to decide whether a young person's case should be diverted or move forward, the Department of Probation is often required to investigate first. Probation officers interview the defendant or juvenile, along with family, victims, and other relevant parties, examining criminal, social, health, and employment history to produce reports and recommendations the court relies on. This function is meant to make court outcomes more informed and individualized than a purely charge-based process would allow.",
+  "sources": [
+    {"label": "NYC Probation - Adult Court", "url": "https://www.nyc.gov/site/probation/services/adult-court.page"},
+    {"label": "NYC Probation - Family Court", "url": "https://www.nyc.gov/site/probation/services/family-court.page"},
+    {"label": "New York City Department of Probation - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Probation"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DFTA",
+  "service": "Provide supportive services to homebound older New Yorkers and their caregivers.",
+  "oneLiner": "This work matters because many seniors who can no longer easily leave home still want to remain in their own apartments rather than move into institutional care, and NYC pioneered a model, the Naturally Occurring Retirement Community program, in the 1980s to bring services to them instead.",
+  "summary": "New York City is where the naturally occurring retirement community, or NORC, concept originated: dense apartment buildings where large numbers of original residents simply aged in place over decades. The first NORC program launched in 1986 with private funding, and state legislation in 1994 and city legislation in 1999 expanded the model, which now funds dozens of programs coordinating health and social services, including home-delivered meals, so homebound seniors and their caregivers can get support without leaving home.",
+  "sources": [
+    {"label": "NY State Office for the Aging: Naturally Occurring Retirement Community (NORC)", "url": "https://aging.ny.gov/naturally-occurring-retirement-community-norc"},
+    {"label": "NYC Aging: In-Home Services", "url": "https://www.nyc.gov/site/dfta/services/in-home-services.page"}
+  ]
+}

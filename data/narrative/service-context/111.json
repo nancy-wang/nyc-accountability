@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYCHA",
+  "service": "3 Engage residents and connect them to best-in-class social services.",
+  "oneLiner": "Because NYCHA houses hundreds of thousands of New Yorkers directly, it has taken on a social-services connector role beyond just being a landlord — a natural extension of its 1934 founding mission to address the Depression-era housing crisis holistically, not just with apartments.",
+  "summary": "As the first public housing authority in the country (created 1934), NYCHA houses a large share of New York's lowest-income residents in one place, which has made it a natural touchpoint for connecting tenants to other social services — employment programs, health resources, and community programs — beyond simply maintaining buildings. This resident-services role has grown alongside NYCHA's core landlord function as the needs of its tenant population have evolved.",
+  "sources": [
+    { "label": "New York City Housing Authority — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Housing_Authority" },
+    { "label": "About NYCHA — nyc.gov", "url": "https://www.nyc.gov/site/nycha/about/about-nycha.page" }
+  ]
+}

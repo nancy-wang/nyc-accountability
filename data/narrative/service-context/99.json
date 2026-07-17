@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HRA",
+  "service": "Improve access to assistance that provides economic stability to support the basic needs of all eligible children and adults.",
+  "oneLiner": "This work matters because HRA administers SNAP and cash assistance, the programs that stand between low-income New Yorkers and hunger or homelessness, tracing back to HRA's creation in 1966 as a 'super-agency' consolidating the city's welfare functions under Mayor Lindsay.",
+  "summary": "HRA was created on August 15, 1966, by Mayor John Lindsay, merging the Department of Welfare with several other city human-services agencies into a single 'super-agency.' Today HRA administers Supplemental Nutrition Assistance Program (SNAP) benefits and cash assistance, which research on these programs nationally links to improvements in food security, health, and stabilization for households during economic downturns. Rent burden and food insecurity are closely linked forms of hardship, which is part of why HRA administers both cash and food assistance alongside rental assistance programs.",
+  "sources": [
+    {"label": "History of Welfare & HRA - HRA", "url": "https://www.nyc.gov/site/hra/about/history-welfare-hra.page"},
+    {"label": "What You Need to Know About Cash Assistance & SNAP - The Legal Aid Society", "url": "https://legalaidnyc.org/get-help/government-benefits/what-you-need-to-know-about-cash-assistance-from-hra/"}
+  ]
+}

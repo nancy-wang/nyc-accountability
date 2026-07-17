@@ -1,0 +1,10 @@
+{
+  "agencyCode": "ACS",
+  "service": "Ensure access to safe early child care and education services in all communities.",
+  "oneLiner": "This work matters because child care is often unaffordable for low-income working families, so ACS administers vouchers and contracted programs like EarlyLearn that let parents work or attend school while their children get safe, quality care.",
+  "summary": "ACS historically ran EarlyLearn NYC, a program that merged subsidized child care and Head Start into one system aimed at improving quality and reaching the neediest communities, funded largely through the federal Child Care and Development Block Grant. Families qualifying at or below 300% of the federal poverty line, and who are working, in school, job-hunting, or in unstable housing situations, can receive vouchers or contracted slots. In July 2019 the City shifted administration of the contracted child care system to the Department of Education as part of the 3-K for All expansion, but ACS has continued to play a role in ensuring low-income families can access care.",
+  "sources": [
+    {"label": "ACS - Early Care & Education Programs for New York City Families", "url": "https://www.nyc.gov/site/acs/early-care/early-care-education-nyc-families.page"},
+    {"label": "NYC IBO - A System in Flux: New Programs, Administrative Changes Create Challenges for NYC's Subsidized Child Care Programs", "url": "https://www.ibo.nyc.ny.us/iboreports/a-system-in-flux-new-programs-administrative-changes-create-challenges-for-new-york-citys-traditional-subsidized-child-care-programs.html"}
+  ]
+}

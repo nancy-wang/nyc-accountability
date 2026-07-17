@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DSNY",
+  "service": "Clean streets, sidewalks, and vacant lots and address quality-of-life issues.",
+  "oneLiner": "This work matters because before organized street cleaning existed, 19th-century New York's streets were buried in manure, garbage, and waste that spread disease - a crisis reformer Colonel George Waring tackled in the 1890s, establishing the model of citywide, uniformed street cleaning DSNY still runs today.",
+  "summary": "Before the 1890s, New York's streets were littered with horse manure, garbage, and human waste, conditions that contributed to disease and were long tolerated under patronage-driven city government. When Colonel George E. Waring Jr. became Street Cleaning Commissioner in 1894 after a brief ouster of Tammany Hall, he built a disciplined, uniformed cleaning force (the \"White Wings\") and organized systematic street sweeping and garbage sorting, reforms that reshaped city sanitation practice. Today DSNY continues this mission through routine street and sidewalk cleaning, a dedicated Lot Cleaning Unit for vacant City-owned lots (which prevents them from becoming eyesores or pest habitats), and enforcement against illegal dumping and litter.",
+  "sources": [
+    {"label": "George Waring - Colonel, Sanitation & NYC - HISTORY", "url": "https://www.history.com/articles/george-waring"},
+    {"label": "How to Successfully Reform a Bureaucracy: George Waring & the Department of Street Cleaning", "url": "https://www.maximumnewyork.com/p/street-cleaning-george-waring"},
+    {"label": "Oversight of Street Cleanliness in NYC - NYC Council Data Team", "url": "https://council.nyc.gov/data/clean-streets/"}
+  ]
+}

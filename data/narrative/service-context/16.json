@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DCAS",
+  "service": "Manage the City's fleet and fuel resources.",
+  "oneLiner": "This work matters because the City operates thousands of vehicles, from police cars to garbage trucks, and DCAS manages that fleet's fuel use under a legal mandate, Local Law 140 of 2023, to fully electrify it by 2035 for light and medium-duty vehicles and 2038 for heavy-duty ones.",
+  "summary": "DCAS runs what it describes as the most sustainable municipal vehicle fleet in the country under the NYC Clean Fleet Plan, first issued in 2015 and updated since. The City has cut fossil fuel use in its fleet by 67% over roughly the past 13 years, saving nearly 20 million gallons of fuel annually, and surpassed its original target of 2,000 electric vehicles by 2025 a year early, with over 5,700 EVs now on the road and the largest public EV charging network in the state. Local Law 140 of 2023 sets a binding timeline requiring full electrification of the light- and medium-duty fleet by 2035 and the heavy-duty fleet by 2038, making DCAS's fleet management a matter of legal compliance as well as operations.",
+  "sources": [
+    {"label": "Fleet Sustainability - NYC Department of Citywide Administrative Services", "url": "https://www.nyc.gov/site/dcas/agencies/fleet-sustainability.page"},
+    {"label": "City of New York Announces Major Fleet Fossil Fuel Reduction", "url": "https://www.nyc.gov/site/dcas/news/020-25/city-new-york-major-fleet-fossil-fuel-reduction"}
+  ]
+}

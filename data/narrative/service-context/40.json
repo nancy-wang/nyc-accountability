@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DHS",
+  "service": "Provide temporary emergency housing to individuals and families experiencing homelessness.",
+  "oneLiner": "This work matters because a 1979 lawsuit, Callahan v. Carey, established that New York has a legal duty to shelter homeless people, making NYC's shelter system not just a service but a binding court-enforced right unique among major U.S. cities.",
+  "summary": "In Callahan v. Carey, a class action filed in 1979, a New York court ruled the state and city had a constitutional duty to shelter homeless men, citing New York's constitution. A consent decree finalized in 1981 formalized the City's obligation to provide food, shelter, supervision and security, and later cases, Eldredge v. Koch in 1982 and McCain v. Koch in 1986, extended that right to shelter to women and families. The Department of Homeless Services was created in 1993 to carry out this legal mandate and became an independent mayoral agency in 1999.",
+  "sources": [
+    {"label": "Callahan v. Carey - Wikipedia", "url": "https://en.wikipedia.org/wiki/Callahan_v._Carey"},
+    {"label": "The Callahan Legacy - Coalition For The Homeless", "url": "https://www.coalitionforthehomeless.org/our-programs/advocacy/legal-victories/the-callahan-legacy-callahan-v-carey-and-the-legal-right-to-shelter/"}
+  ]
+}

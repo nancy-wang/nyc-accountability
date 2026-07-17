@@ -1,0 +1,9 @@
+{
+  "agencyCode": "OTI",
+  "service": "Deliver City IT services including hardware, software, and technical support",
+  "oneLiner": "This work matters because nearly every city agency, from libraries to homeless services, depends on working computers, networks, and phone systems to actually deliver help to New Yorkers, and OTI is the utility that keeps that plumbing running.",
+  "summary": "OTI (formerly DoITT) provides the shared technology backbone that City agencies rely on to do their jobs, including hardware, software, networks, and technical support. The department is probably best known publicly for running 311, the City's non-emergency citizen hotline established in 2003, which depends on the same kind of IT infrastructure and support that OTI maintains citywide.",
+  "sources": [
+    {"label": "Wikipedia - New York City Office of Technology and Innovation", "url": "https://en.wikipedia.org/wiki/New_York_City_Office_of_Technology_and_Innovation"}
+  ]
+}

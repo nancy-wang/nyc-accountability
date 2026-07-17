@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OTI",
+  "service": "Regulate franchised cable services.",
+  "oneLiner": "This work matters because cable companies use public streets to run their wires, so the City grants and polices franchise agreements with providers like Charter and Verizon to make sure residents actually get the service, fees, and buildout those companies promised in exchange.",
+  "summary": "Cable providers cannot simply install lines under city streets; they operate under franchise agreements negotiated and enforced by OTI (formerly DoITT) that set obligations like citywide buildout, franchise fees, and service standards. These agreements have been contentious in practice: Verizon, for example, agreed in 2008 to wire the whole city with FiOS in exchange for its franchise but missed its 2014 deadline, and the City has separately accused providers of improper exclusive deals with landlords that limited competition for residents.",
+  "sources": [
+    {"label": "NYC OTI - Cable TV Franchises", "url": "https://www.nyc.gov/content/oti/pages/franchises/cable-tv-franchises"},
+    {"label": "Bruce Kushnick / Medium - Charter, Altice and Verizon's Cable TV Franchises Expired in NYC", "url": "https://kushnickbruce.medium.com/charter-spectrum-altice-optimum-and-verizons-fios-cable-tv-franchises-expired-in-new-york-187a6d68e4ec"}
+  ]
+}

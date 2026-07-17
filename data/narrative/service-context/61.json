@@ -1,0 +1,11 @@
+{
+  "agencyCode": "DOI",
+  "service": "Protect public resources from corruption, fraud, waste, and abuse and ensure that City employees and vendors act with integrity.",
+  "oneLiner": "This oversight exists because DOI traces back to 1873, when New York created an independent watchdog office in direct response to the Boss Tweed/Tammany Hall scandal, which had drained millions of dollars from city coffers.",
+  "summary": "DOI began as the Office of the Commissioners of Accounts in 1873, established after the corruption of the Tweed Ring exposed how easily city money could be looted without independent checks. It was renamed the Department of Investigation in a 1938 charter revision and remains one of the country's oldest municipal law-enforcement agencies. Today it investigates fraud, corruption, and misconduct by City employees, contractors, and anyone doing business with or receiving funds from the City, including running vendor integrity screening (VENDEX) and an Integrity Monitor Program for contractors with past compliance issues.",
+  "sources": [
+    {"label": "DOI Mission and History", "url": "https://www.nyc.gov/site/doi/about/mission.page"},
+    {"label": "New York City Department of Investigation - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Investigation"},
+    {"label": "DOI Vendor Integrity", "url": "https://www.nyc.gov/site/doi/offices/vendorIntegrity.page"}
+  ]
+}

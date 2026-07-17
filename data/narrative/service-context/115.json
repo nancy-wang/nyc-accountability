@@ -1,0 +1,10 @@
+{
+  "agencyCode": "NYPD",
+  "service": "Manage public safety programs related to quality-of-life.",
+  "oneLiner": "\"Quality-of-life\" policing became a distinct NYPD priority in 1994 under Commissioner Bill Bratton and Mayor Rudy Giuliani, built on \"broken windows\" theory — the idea that enforcing minor offenses helps prevent more serious crime from taking hold.",
+  "summary": "Broken windows theory holds that visible signs of disorder — vandalism, public drinking, aggressive panhandling — signal that no one is watching, inviting more serious crime. When Bill Bratton became NYPD Commissioner in 1994 under Mayor Giuliani, he applied the theory citywide, pairing systematic enforcement of minor \"quality-of-life\" offenses with a broader managerial overhaul of the department. The approach is credited by supporters, and disputed by critics, as a major factor in New York's sustained crime decline through the 1990s and 2000s, and it remains the basis for the NYPD tracking quality-of-life enforcement as its own distinct program area.",
+  "sources": [
+    { "label": "Broken Windows and Quality-of-Life Policing in New York City — William J. Bratton, nyc.gov", "url": "https://www.nyc.gov/html/nypd/downloads/pdf/analysis_and_planning/qol.pdf" },
+    { "label": "Broken Windows Policing and the Orderly City — Gotham Center for New York City History", "url": "https://www.gothamcenter.org/blog/broken-windows-policing-and-the-orderly-city-new-york-since-the-late-twentieth-century" }
+  ]
+}

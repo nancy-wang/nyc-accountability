@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DOE",
+  "service": "Coordinate with NYPD to maintain safe schools.",
+  "oneLiner": "This coordination exists because in 1998, amid concerns about rising youth crime, the City moved thousands of school safety agents out of the Board of Education and into the NYPD, making school safety a shared responsibility between the two agencies ever since.",
+  "summary": "In September 1998, under Mayor Giuliani, the Board of Education transferred its roughly 3,400 school safety agents to NYPD oversight, creating what became the NYPD School Safety Division. The move reflected the crime-focused politics of the era and has remained a source of ongoing debate, with critics arguing it over-polices students and supporters framing it as necessary for safety. Because safety agents are civilian NYPD employees stationed inside DOE buildings, the two agencies must continually coordinate policy, training, and incident response -- a structural link that traces directly back to that 1998 agreement.",
+  "sources": [
+    {"label": "NYPD School Safety Division - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Police_Department_School_Safety_Division"},
+    {"label": "Chalkbeat - A 1998 agreement that put NYPD in charge of school safety", "url": "https://www.chalkbeat.org/newyork/2017/10/6/21103526/a-1998-agreement-that-put-the-new-york-city-police-in-charge-of-school-safety-has-never-been-revised/"}
+  ]
+}

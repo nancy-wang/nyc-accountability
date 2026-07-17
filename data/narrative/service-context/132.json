@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OTI",
+  "service": "Regulate provisioning of public telecommunications services on City streets.",
+  "oneLiner": "This work matters because when the City retired its aging network of thousands of payphones in 2014, it had to negotiate a new franchise, the one that became LinkNYC, to make sure whoever wired the sidewalks next actually served the public rather than just running ads.",
+  "summary": "OTI oversees the franchise agreements that let companies install telecommunications infrastructure, like kiosks, cables, and antennas, in the public right-of-way along City streets. The best-known example is LinkNYC, launched after a 2014 competitive bid replaced the City's roughly 9,000 to 13,000 public payphones with free Wi-Fi kiosks; the winning CityBridge consortium builds and owns the infrastructure under a 12-year franchise rather than the City paying for it directly, funding the network in part through advertising.",
+  "sources": [
+    {"label": "Wikipedia - LinkNYC", "url": "https://en.wikipedia.org/wiki/LinkNYC"},
+    {"label": "NYC DoITT - LinkNYC Public Communications Structure Franchise Agreement", "url": "https://www.nyc.gov/assets/oti/downloads/pdf/linknyc-franchises/linknyc-public-communications-structure-franchise-agreement.pdf"}
+  ]
+}

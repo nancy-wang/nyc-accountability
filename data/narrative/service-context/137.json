@@ -1,0 +1,10 @@
+{
+  "agencyCode": "SCA",
+  "service": "Design and construct new schools, additions and capital improvement projects authorized by the Department of Education.",
+  "oneLiner": "This work matters because the Board of Education's own building division had become so dysfunctional and corrupt that the state legislature stripped it of construction authority in 1988 and created SCA specifically to build and fix schools competently instead.",
+  "summary": "The New York State Legislature created the School Construction Authority in 1988 after concluding that the Board of Education's Division of School Facilities had completely failed at building high-quality schools and keeping them in repair, citing what lawmakers called the \"deplorable condition\" of city schools and a lack of accountability. The new public-benefit corporation was designed to remove capital construction from the Board of Education and address structural obstacles like the state's Wicks Law, which had driven up costs and delays on public works projects. SCA now designs and builds new schools and capital improvement projects on the Department of Education's behalf.",
+  "sources": [
+    {"label": "New York City School Construction Authority - History", "url": "http://nycsca.org/quick-links-home/about-the-sca/history"},
+    {"label": "City Journal - Why New York Can't Build Schools", "url": "https://www.city-journal.org/article/why-new-york-cant-build-schools"}
+  ]
+}

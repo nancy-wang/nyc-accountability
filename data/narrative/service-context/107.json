@@ -1,0 +1,9 @@
+{
+  "agencyCode": "NYCEM",
+  "service": "Coordinate citywide emergency mitigation, response, and recovery efforts.",
+  "oneLiner": "NYC Emergency Management was created in 1996 to coordinate the City's response across every agency during a disaster — a role that took on new weight after its own headquarters, on the 23rd floor of 7 World Trade Center, was destroyed on September 11, 2001.",
+  "summary": "The Office of Emergency Management was formed in 1996 under Mayor Giuliani to coordinate citywide disaster response across the many separate agencies (police, fire, health, transportation) that need to work together in a crisis, and voters made it a permanent City Charter agency in 2001. Its own headquarters and Emergency Operations Center, located in 7 World Trade Center, was destroyed in the September 11, 2001 attacks, forcing the agency to relocate and rebuild while helping coordinate the City's response to the worst disaster in its history.",
+  "sources": [
+    { "label": "New York City Emergency Management — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Emergency_Management" }
+  ]
+}

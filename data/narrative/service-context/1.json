@@ -1,0 +1,10 @@
+{
+  "agencyCode": "3-1-1",
+  "service": "Provide public access to City government.",
+  "oneLiner": "This service exists because before 2003 New Yorkers had to know which of more than 40 separate agency phone lines to call to reach city government; 311 replaced that maze with one number, making it possible for anyone to reach the right service without first learning how the bureaucracy is organized.",
+  "summary": "Before NYC311 launched in March 2003 under Mayor Michael Bloomberg, city government phone numbers filled roughly 4,000 entries across 11 pages of the phone book, split across more than 40 separate agency call centers and hotlines, with no single place for residents to get help or report a problem. 311 consolidated all of it into one 24/7 number (paired with 911 for emergencies), and later added an online portal in 2009. It has since become both a public access point and a management tool the City uses to track service requests and hold agencies accountable for response times.",
+  "sources": [
+    {"label": "NYC Mayor's Office - Bloomberg Commemorates Ten Years of NYC311", "url": "https://www.nyc.gov/office-of-the-mayor/news/089-13/mayor-bloomberg-commemorates-ten-years-nyc311-nation-s-largest-most-comprehensive-311"},
+    {"label": "NYC311 - Wikipedia", "url": "https://en.wikipedia.org/wiki/NYC311"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "HRA",
+  "service": "Reduce homelessness among children and adults.",
+  "oneLiner": "HRA still runs homelessness-prevention programs even though the Department of Homeless Services split off as its own agency in 1993 — both trace back to HRA's 1966 founding as the City's unified social-services agency.",
+  "summary": "HRA was created in 1966 to consolidate New York's welfare and social-services offices into one administration. As homelessness grew into a distinct citywide crisis, the City spun off the Department of Homeless Services as a separate agency in 1993 to focus specifically on shelter operations, but HRA retained programs aimed at preventing homelessness before it happens — rental assistance, eviction prevention, and other supports for families at risk of losing housing.",
+  "sources": [
+    { "label": "History of Welfare & HRA — nyc.gov", "url": "https://www.nyc.gov/site/hra/about/history-welfare-hra.page" },
+    { "label": "New York City Human Resources Administration — Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Human_Resources_Administration" }
+  ]
+}

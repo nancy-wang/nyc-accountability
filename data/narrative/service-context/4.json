@@ -1,0 +1,10 @@
+{
+  "agencyCode": "ACS",
+  "service": "Provide custody and care of youth in secure and safe detention and placement facilities while providing casework services.",
+  "oneLiner": "This work matters because New York City youth in the justice system used to be sent to distant state-run youth prisons with documented histories of abuse and recidivism rates over 80%, until the 2012 Close to Home reform moved custody to ACS so kids could stay near their families and communities.",
+  "summary": "Before 2012, New York City youth adjudicated as juvenile delinquents who didn't require secure confinement were often placed in New York State youth prisons far from home, facilities that cost over $200,000 per youth per year to run and had documented histories of dangerous and abusive practices, with more than 80% of released youth re-offending. Governor Andrew Cuomo signed the Close to Home legislation in March 2012, transferring custody of these youth from the state to ACS, which began operating non-secure facilities that fall. The goal was to keep young people connected to family, school, and community supports while still providing supervision and casework services, rather than warehousing them upstate.",
+  "sources": [
+    {"label": "NYC Opportunity - The Close to Home Initiative and Related Reforms", "url": "https://www.nyc.gov/assets/opportunity/pdf/policybriefs/placement-brief.pdf"},
+    {"label": "NYS Office of Children and Family Services - Close to Home", "url": "https://ocfs.ny.gov/programs/rehab/close-to-home/"}
+  ]
+}

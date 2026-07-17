@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OATH",
+  "service": "Provide assistance to self-represented respondents who have cases at OATH.",
+  "oneLiner": "This work matters because most people who get a summons never hire a lawyer, so OATH's Help Centers and Ombudsperson exist to make sure someone facing a city fine or hearing alone still understands their rights and gets a fair shot.",
+  "summary": "OATH runs Help Centers at every hearing location specifically for unrepresented respondents, staff who explain the charges against them, their legal rights, how to prepare for and appeal a hearing, and where to find outside legal resources. A separate Ombudsperson position exists to field complaints and push for fairness and transparency in how OATH reaches decisions, since the vast majority of people who appear before the tribunal represent themselves rather than hiring an attorney.",
+  "sources": [
+    {"label": "OATH - Frequently Asked Questions", "url": "https://www.nyc.gov/site/oath/help-center/frequently-asked-questions.page"},
+    {"label": "OATH Hearings Division - What is OATH HD", "url": "https://www.nyc.gov/assets/oath/downloads/pdf/en-what-is-oathhd.pdf"}
+  ]
+}

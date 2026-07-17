@@ -1,0 +1,10 @@
+{
+  "agencyCode": "OCME",
+  "service": "Respond to disasters and emergencies when fatalities are involved.",
+  "oneLiner": "This work matters because after 9/11 left over 2,700 people dead and thousands of family members waiting for answers, OCME took on what became the largest, longest-running forensic identification effort in American history, and it still identifies WTC victims using new DNA technology today.",
+  "summary": "OCME maintains a dedicated division of specially trained experts who respond to mass-fatality events and disasters, work that goes beyond a single medical examiner's office because major emergencies can produce hundreds or thousands of victims at once. The agency's ongoing effort to identify remains from the September 11, 2001 World Trade Center attack, which killed 2,753 people, is considered the largest and most complex forensic investigation ever undertaken in the United States; as of recent years roughly 40 percent of victims remained unidentified, and OCME continues to make new identifications as DNA sequencing technology improves.",
+  "sources": [
+    {"label": "NYC.gov - OCME Announces Two New Identifications of World Trade Center Victims", "url": "https://www.nyc.gov/site/ocme/news/cm0121/nyc-office-chief-medical-examiner-two-new-identifications-world-trade-center-victims"},
+    {"label": "NIJ - Lessons Learned From 9/11: DNA Identification in Mass Fatality Incidents", "url": "https://www.ojp.gov/pdffiles1/nij/214781.pdf"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "agencyCode": "DEP",
+  "service": "Enforce City laws relating to air pollution, noise pollution and hazardous materials.",
+  "oneLiner": "This work matters because a 1966 Thanksgiving-weekend smog event trapped toxic air over the city and is estimated to have contributed to over 160 deaths, a disaster that helped spur the modern air pollution laws DEP now enforces.",
+  "summary": "Over Thanksgiving weekend in 1966, a thick smog of sulfur dioxide and carbon monoxide blanketed New York City for days; a 1967 statistical analysis attributed roughly 168 deaths to the episode, one of the worst air pollution disasters in U.S. history. The event galvanized the nascent environmental movement and helped push Congress toward the 1967 Air Quality Act and 1970 Clean Air Act. DEP now enforces the City's own Air Pollution Control Code and Noise Code and responds to thousands of hazardous materials incidents a year, including asbestos violations and lithium-ion battery fires, carrying that public-health mandate forward at the local level.",
+  "sources": [
+    {"label": "1966 New York City smog - Wikipedia", "url": "https://en.wikipedia.org/wiki/1966_New_York_City_smog"},
+    {"label": "DEP: Air Pollution & Regulations", "url": "https://www.nyc.gov/site/dep/environment/air-pollution-regulations.page"}
+  ]
+}

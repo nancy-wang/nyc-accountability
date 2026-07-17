@@ -1,0 +1,10 @@
+{
+  "agencyCode": "EDC",
+  "service": "Ensure businesses, investors, and employees have confidence in New York City.",
+  "oneLiner": "This work matters because NYCEDC traces back to the Public Development Corporation, created in 1966 to fight the city's mid-century economic decline by marketing city-owned land to employers, and this service continues that founding goal of convincing businesses NYC is a stable place to invest and hire.",
+  "summary": "NYCEDC was formed in 1991 through the merger of two predecessor entities: the Public Development Corporation, founded in 1966 to combat economic decline by redeveloping and marketing city-owned property (including projects like the Brooklyn Army Terminal and South Street Seaport), and the Financial Services Corporation, created in 1979 to finance business expansion with city-issued bonds. That original purpose, giving businesses confidence to locate and invest in the city, remains one of EDC's stated core services today, alongside growing industries, building neighborhoods, and delivering infrastructure.",
+  "sources": [
+    {"label": "New York City Economic Development Corporation - Wikipedia", "url": "https://en.wikipedia.org/wiki/New_York_City_Economic_Development_Corporation"},
+    {"label": "NYCEDC | Building Strong Neighborhoods. Creating Good Jobs.", "url": "https://edc.nyc/"}
+  ]
+}

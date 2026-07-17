@@ -60,3 +60,21 @@ export interface IndicatorResearchNote {
   /** A condensed (<15 word) version of summary's key finding, for the collapsed card view — e.g. "overall decreasing, but increase due to broadened definition." */
   oneLiner: string;
 }
+
+/**
+ * Real, sourced civic/historical context for why an agency's *service* (its
+ * functional area, e.g. "Regulate the trade waste industry in the City.")
+ * exists — not why a specific number moved (see IndicatorResearchNote), but
+ * why the underlying work matters at all. Keyed by (agencyCode, service)
+ * rather than per-indicator, since indicators sharing a service usually
+ * share the same origin story.
+ */
+export interface ServiceContext {
+  agencyCode: string;
+  service: string;
+  /** One sentence, plain language, meant to be appended directly after a data bullet. */
+  oneLiner: string;
+  /** 2-4 sentences with fuller context, for use elsewhere (e.g. a future agency "about" section). */
+  summary: string;
+  sources: Array<{ label: string; url: string }>;
+}
