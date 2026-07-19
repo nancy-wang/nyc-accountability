@@ -1,5 +1,9 @@
 {
   "intro": "Established in 1977 when the City consolidated its water supply, wastewater treatment, and pollution-control functions into a single agency, the Department of Environmental Protection now delivers roughly 1 billion gallons of drinking water a day to more than 9 million people through a system of 19 reservoirs, 3 controlled lakes, and about 6,600 miles of water mains, tunnels, and aqueducts. DEP also operates the city's 14 wastewater treatment plants and enforces its air, noise, and hazardous-materials codes, making it steward of one of the largest municipal water systems in the country.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://a860-collectionguides.nyc.gov/agents/corporate_entities/116"
+  "sourceUrl": "https://a860-collectionguides.nyc.gov/agents/corporate_entities/116",
+  "cardHighlights": {
+    "function": "Supplies drinking water and treats wastewater citywide",
+    "scale": "Delivers 1 billion gallons of water daily to over 9 million people"
+  }
 }

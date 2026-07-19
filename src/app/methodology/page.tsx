@@ -106,7 +106,7 @@ export default function MethodologyPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-8">
-      <h2 className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+      <h2 className="font-label text-lg font-medium" style={{ color: "var(--text-primary)" }}>
         {title}
       </h2>
       <div className="mt-2 text-base" style={{ color: "var(--text-secondary)" }}>

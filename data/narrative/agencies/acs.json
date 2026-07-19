@@ -1,5 +1,9 @@
 {
   "intro": "Created by mayoral executive order in January 1996 and made a permanent, independently chartered city agency in 2001, ACS was New York City's first agency devoted solely to children, youth, and families. It investigates roughly 50,000 allegations of child abuse and neglect each year and oversees the city's foster care and juvenile justice systems, which it has helped shrink dramatically: the foster care census fell from about 42,000 children in 1996 to fewer than 8,000 by 2021.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/acs/about/25years.page"
+  "sourceUrl": "https://www.nyc.gov/site/acs/about/25years.page",
+  "cardHighlights": {
+    "function": "Investigates child abuse and neglect, oversees foster care",
+    "scale": "Investigates roughly 50,000 allegations a year"
+  }
 }

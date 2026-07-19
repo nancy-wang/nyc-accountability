@@ -1,5 +1,10 @@
 {
   "intro": "Established by Executive Order 32, signed by Mayor Ed Koch in 1979, to move disciplinary and disability hearings out of the agencies bringing the cases and into a centralized, independent tribunal of Administrative Law Judges. Voters made OATH a formal Charter agency in 1988, and a 2008 Charter amendment moved the Environmental Control Board under its authority, turning a small trials office into the City's central administrative law court. OATH's Hearings Division now adjudicates summonses referred by more than 25 city agencies, including Sanitation, Buildings, and the Taxi and Limousine Commission.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/oath/about/about-oath.page"
+  "sourceUrl": "https://www.nyc.gov/site/oath/about/about-oath.page",
+  "cardHighlights": {
+    "function": "Runs the City's independent administrative trials and hearings",
+    "scale": "Adjudicates more than 600,000 cases a year",
+    "sourceUrl": "https://data.cityofnewyork.us/City-Government/OATH-Hearings-Division-Case-Status/jz4z-kudi"
+  }
 }

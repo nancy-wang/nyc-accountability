@@ -19,5 +19,6 @@
     }
   ],
   "researchedOn": "2026-07-15",
-  "oneLiner": "increasing, though this has swung for several distinct documented reasons each year"
+  "oneLiner": "increasing, though this has swung for several distinct documented reasons each year",
+  "excludeFromKeyDrivers": true
 }

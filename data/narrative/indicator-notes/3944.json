@@ -1,5 +1,5 @@
 {
-  "summary": "Murders and non-negligent manslaughter fell for four consecutive fiscal years through FY25, which NYPD's own reporting attributes to citywide crime-reduction efforts including neighborhood safety teams, community response teams, and coordination with regional law-enforcement partners. The much lower FY26 figure in this dataset is a partial-year total (NYPD reported murders down about 18 percent in just the first four months of FY26 versus the same period a year earlier), not a full fiscal year, so it isn't directly comparable to prior full-year totals.",
+  "summary": "NYPD attributes the four-year decline in murders to its \"precision policing\" strategy, which concentrates officers in Violence Reduction Zones — the small number of blocks that generate a disproportionate share of shootings — rather than spreading patrols evenly citywide; major crime in those zones has fallen sharply faster than the citywide rate. The department also credits aggressive illegal-gun recovery (more than 6,150 firearms taken off the street in 2024, including untraceable 3-D printed \"ghost guns\") and, starting in September 2025, Youth Violence Safety Zones targeting the commuter corridors and school routes where young people are most often victimized. National FBI data shows violent crime and murder falling sharply across the country over the same period, so part of the decline reflects a broader trend rather than NYPD action alone. The much lower FY26 figure in this dataset is a partial-year total, not a full fiscal year, so it isn't directly comparable to prior full-year totals.",
   "sources": [
     {
       "label": "NYPD, Fiscal 2025 Mayor's Management Report",
@@ -8,8 +8,12 @@
     {
       "label": "NYPD, Preliminary Fiscal 2026 Mayor's Management Report",
       "url": "https://www.nyc.gov/assets/operations/downloads/pdf/pmmr2026/nypd.pdf"
+    },
+    {
+      "label": "NYPD, \"Record Low Shootings and Murders for the First Five Months of 2025\"",
+      "url": "https://www.nyc.gov/site/nypd/news/pr010/nypd-record-low-shootings-murders-the-first-five-months-2025"
     }
   ],
-  "researchedOn": "2026-07-16",
-  "oneLiner": "decreasing over four straight years; FY26 figure is partial-year only"
+  "researchedOn": "2026-07-18",
+  "oneLiner": "decreasing as precision policing in Violence Reduction Zones and gun-removal efforts drive a fourth straight year of declines"
 }

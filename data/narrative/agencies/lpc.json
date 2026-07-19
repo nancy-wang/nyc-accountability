@@ -1,5 +1,9 @@
 {
   "intro": "The Landmarks Preservation Commission (LPC) was created in 1965 through legislation signed by Mayor Robert F. Wagner, prompted by public outcry over the 1963 demolition of Pennsylvania Station and other losses of historically significant buildings. It is the largest municipal preservation agency in the nation, responsible for granting landmark or historic district status to buildings and sites and regulating them after designation; it has since designated more than 38,000 properties citywide, including over 1,470 individual landmarks and 157 historic districts.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/lpc/about/about-lpc.page"
+  "sourceUrl": "https://www.nyc.gov/site/lpc/about/about-lpc.page",
+  "cardHighlights": {
+    "function": "Designates and regulates the city's historic landmarks",
+    "scale": "Has designated more than 38,000 landmarked properties citywide"
+  }
 }

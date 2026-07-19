@@ -1,0 +1,9 @@
+{
+  "summary": "CUNY's six-year graduation rate for associate degree students peaked at 39.8% in Fiscal 2023 before declining two years straight to 36.5% in Fiscal 2025. The decline follows a broader enrollment slide — CUNY community college enrollment sat at just 66% of pre-pandemic levels, per the City Comptroller's analysis — and comes as the City enacted $155 million in cuts across Fiscal 2023 alone (235 lost positions), plus a further $41 million in permanent annual cuts proposed for Fiscal 2024–2026, threatening completion programs like ASAP that have historically driven CUNY's graduation-rate gains.",
+  "sources": [
+    { "label": "NYC Comptroller, \"Cuts to CUNY\"", "url": "https://comptroller.nyc.gov/reports/cuts-to-cuny/" },
+    { "label": "Center for an Urban Future, \"Closing NYC's College Attainment Gap\"", "url": "https://nycfuture.org/research/closing-nycs-college-attainment-gap" }
+  ],
+  "researchedOn": "2026-07-17",
+  "oneLiner": "decreasing since FY23, alongside a steep enrollment slide and City budget cuts to CUNY"
+}

@@ -1,5 +1,10 @@
 {
   "intro": "The Department of Youth and Community Development was formed in 1996 through the merger of the Department of Youth Services and the Community Development Agency. DYCD invests in a citywide network of community-based organizations to alleviate the effects of poverty, funding programs such as afterschool care, Beacon and Cornerstone community centers, runaway and homeless youth services, and youth workforce development.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/dycd/about/about-dycd/history.page"
+  "sourceUrl": "https://www.nyc.gov/site/dycd/about/about-dycd/history.page",
+  "cardHighlights": {
+    "function": "Funds youth programs, afterschool care, and workforce development",
+    "scale": "Placed a record 97,444 young people in summer jobs in 2025",
+    "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani-kicks-off-summer-youth-employment-program--providi"
+  }
 }

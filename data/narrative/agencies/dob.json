@@ -1,5 +1,9 @@
 {
   "intro": "New York City has regulated construction since Dutch colonial rule, but rapid population growth and new building technologies led the City to establish a Department of Buildings in 1866, giving it an application-and-review process for new construction and alterations. Today DOB is the primary regulator of the city's construction and real estate industries, overseeing safety and code compliance in nearly 1.1 million buildings across the five boroughs.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.archives.nyc/department-of-buildings"
+  "sourceUrl": "https://www.archives.nyc/department-of-buildings",
+  "cardHighlights": {
+    "function": "Regulates construction and building safety citywide",
+    "scale": "Oversees code compliance in nearly 1.1 million buildings"
+  }
 }

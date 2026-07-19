@@ -1,0 +1,9 @@
+{
+  "summary": "CUNY's six-year graduation rate for baccalaureate students has declined in each of the past three years, from 62.0% in Fiscal 2022 to 57.9% in Fiscal 2025. As with CUNY's other completion metrics, the decline coincides with a steep enrollment drop — community college enrollment fell to 66% of pre-pandemic levels — and City budget cuts of $155 million in Fiscal 2023 alone (235 lost positions), with a further $41 million in permanent annual cuts proposed for Fiscal 2024–2026 that the City Comptroller's office warns will further reduce course offerings and student support.",
+  "sources": [
+    { "label": "NYC Comptroller, \"Cuts to CUNY\"", "url": "https://comptroller.nyc.gov/reports/cuts-to-cuny/" },
+    { "label": "Center for an Urban Future, \"Closing NYC's College Attainment Gap\"", "url": "https://nycfuture.org/research/closing-nycs-college-attainment-gap" }
+  ],
+  "researchedOn": "2026-07-17",
+  "oneLiner": "decreasing since FY22, alongside a steep enrollment slide and City budget cuts to CUNY"
+}

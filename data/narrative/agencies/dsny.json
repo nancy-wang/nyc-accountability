@@ -1,5 +1,9 @@
 {
   "intro": "The Department of Sanitation traces its lineage to the Department of Street Cleaning, created in 1881, and took its current name in 1929. DSNY now collects roughly 24 million pounds of trash, recycling, and compostable material every day, operating 59 district garages and a fleet of more than 2,000 collection trucks, and clears snow and ice from the city's approximately 19,000 lane-miles of streets.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/dsny/about/about-dsny.page"
+  "sourceUrl": "https://www.nyc.gov/site/dsny/about/about-dsny.page",
+  "cardHighlights": {
+    "function": "Collects trash, recycling, and compostable material citywide",
+    "scale": "Collects roughly 24 million pounds of waste every day"
+  }
 }

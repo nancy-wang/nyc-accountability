@@ -1,5 +1,9 @@
 {
   "intro": "The New York City Department of Education traces its roots to the Board of Education, created in 1842 and abolished in 2002 when the state legislature gave the mayor direct control of the school system. The DOE now administers the City School District of the City of New York, the largest public school district in the United States, teaching approximately 1.1 million students in more than 1,800 schools across the five boroughs.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Education"
+  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Education",
+  "cardHighlights": {
+    "function": "Runs the nation's largest public school district",
+    "scale": "Teaches approximately 1.1 million students citywide"
+  }
 }

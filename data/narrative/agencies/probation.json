@@ -1,5 +1,10 @@
 {
   "intro": "New York City probation traces to the New York State Probation Commission, created in 1907, and a State Division of Probation established within the Department of Correction in 1917; a 1974 statutory change made local probation directors accountable to their chief local officials rather than the judiciary, placing the New York City Department of Probation under the Mayor. DOP is today the second-largest probation department in the country after Los Angeles County, providing court-ordered supervision aimed at enhancing public safety and reducing recidivism.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/probation/about/history-of-probation.page"
+  "sourceUrl": "https://www.nyc.gov/site/probation/about/history-of-probation.page",
+  "cardHighlights": {
+    "function": "Supervises adults and juveniles on court-ordered probation",
+    "scale": "Supervises more than 11,000 New Yorkers citywide",
+    "sourceUrl": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani-expands-next-mile-nyc--connecting-new-yorkers-on-p"
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "summary": "The number of complaints CCHR formally files has risen every year, from 318 in Fiscal 2022 to 397 in Fiscal 2025, even as the commission's law-enforcement staff has shrunk roughly 70% since 2017 and its overall headcount fell from 128 in 2020 to 105 in 2024. In 2024 alone the agency logged 13,360 inquiries but converted only 366 into formal complaints and closed just 447 cases, leaving a backlog of open cases that predates that year. Advocates and the City Council have pushed for increased funding, including a call for at least $21 million for CCHR.",
+  "sources": [
+    { "label": "Documented NY, \"Complaints Pile Up at NYC Human Rights Commission\"", "url": "https://documentedny.com/2025/04/10/immigrant-labor-human-rights-commission-new-york/" },
+    { "label": "NYC Bar Association, \"Restoring Funding for NYC Commission on Human Rights (CCHR)\"", "url": "https://www.nycbar.org/reports/restoring-funding-for-nyc-commission-on-human-rights-cchr/" }
+  ],
+  "researchedOn": "2026-07-17",
+  "oneLiner": "increasing, as inquiry volume grows faster than the agency's shrunken enforcement staff",
+  "excludeFromKeyDrivers": true
+}

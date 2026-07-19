@@ -1,5 +1,10 @@
 {
   "intro": "A 1974 report from the Mayor's Committee on Cultural Policy recommended creating an independent city agency for the arts; Mayor Abraham Beame acted on it in 1976, establishing the Department of Cultural Affairs with Claude Shostal as its first Commissioner. DCLA now funds and supports nonprofit cultural organizations across the five boroughs, subsidizes the City-owned Cultural Institutions Group, and has commissioned more than 180 public artworks through its Percent for Art program.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/dcla/about/history.page"
+  "sourceUrl": "https://www.nyc.gov/site/dcla/about/history.page",
+  "cardHighlights": {
+    "function": "Funds and supports nonprofit cultural organizations citywide",
+    "scale": "Granted $74.3 million to 1,171 cultural organizations in FY26",
+    "sourceUrl": "https://www.nyc.gov/site/dcla/about/pressrelease/PR-2026-2-26-NYC-Department-of-Cultural-Affairs-Announces-74.3-Million-in-Grants-for-1171-Cultural-Organizations-Across-the-City.page"
+  }
 }

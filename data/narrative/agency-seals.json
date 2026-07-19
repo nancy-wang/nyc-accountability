@@ -16,11 +16,339 @@
     }
   },
   "bic": {
-    "sealPath": "/seals/_nyc-generic.svg",
-    "isFallback": true,
+    "sealPath": "/seals/bic.png",
+    "isFallback": false,
     "source": {
-      "label": "Seal of New York City — Wikimedia Commons (public domain)",
-      "url": "https://commons.wikimedia.org/wiki/File:Seal_of_New_York_City.svg"
+      "label": "NYC Business Integrity Commission seal — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/bic/index.page"
+    }
+  },
+  "nycem": {
+    "sealPath": "/seals/nycem.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Emergency Management logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYCEM_logo.png"
+    }
+  },
+  "oath": {
+    "sealPath": "/seals/oath.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Office of Administrative Trials and Hearings logo — Wikimedia Commons (CC0)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_OATH.png"
+    }
+  },
+  "dcla": {
+    "sealPath": "/seals/dcla.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Cultural Affairs logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_Cultural_Affairs_Logo.svg"
+    }
+  },
+  "311": {
+    "sealPath": "/seals/311.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC 311 logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_311_logo.png"
+    }
+  },
+  "tlc": {
+    "sealPath": "/seals/tlc.webp",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Taxi and Limousine Commission logo — Wikimedia Commons (CC BY-SA 4.0)",
+      "url": "https://commons.wikimedia.org/wiki/File:Nyctlc_logo.webp"
+    }
+  },
+  "dohmh": {
+    "sealPath": "/seals/dohmh.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Health and Mental Hygiene logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_Health.svg"
+    }
+  },
+  "health-hospitals": {
+    "sealPath": "/seals/health-hospitals.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Health + Hospitals logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_Health_+_Hospitals_logo.svg"
+    }
+  },
+  "acs": {
+    "sealPath": "/seals/acs.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Administration for Children's Services logo — Wikimedia Commons (public domain)",
+      "url": "https://en.wikipedia.org/wiki/File:New_York_City_Administration_for_Children%27s_Services_logo.png"
+    }
+  },
+  "dhs": {
+    "sealPath": "/seals/dhs.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Homeless Services logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:DHS-1.jpg"
+    }
+  },
+  "doe": {
+    "sealPath": "/seals/doe.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Education logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_DOE_Logo.png"
+    }
+  },
+  "dycd": {
+    "sealPath": "/seals/dycd.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Youth and Community Development logo — Wikimedia Commons (CC0)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC-DYCD.png"
+    }
+  },
+  "cuny": {
+    "sealPath": "/seals/cuny.svg",
+    "isFallback": false,
+    "source": {
+      "label": "City University of New York wordmark — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:CUNY_New_Logo.svg"
+    }
+  },
+  "sbs": {
+    "sealPath": "/seals/sbs.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Small Business Services logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_SBS.png"
+    }
+  },
+  "dvs": {
+    "sealPath": "/seals/dvs.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Veterans' Services logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_DVS.png"
+    }
+  },
+  "dot": {
+    "sealPath": "/seals/dot.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Transportation logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYCDOT.svg"
+    }
+  },
+  "dcp": {
+    "sealPath": "/seals/dcp.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of City Planning logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYCdcplogo.svg"
+    }
+  },
+  "hpd": {
+    "sealPath": "/seals/hpd.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Housing Preservation and Development logo — Wikimedia Commons (CC0)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC-HPD.jpg"
+    }
+  },
+  "lpc": {
+    "sealPath": "/seals/lpc.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Landmarks Preservation Commission logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC-LPC.png"
+    }
+  },
+  "dcas": {
+    "sealPath": "/seals/dcas.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Citywide Administrative Services logo — Wikimedia Commons (CC BY-SA 4.0)",
+      "url": "https://commons.wikimedia.org/wiki/File:New_DCAS_Logo_Final_2018-HZCombo2C.jpg"
+    }
+  },
+  "doris": {
+    "sealPath": "/seals/doris.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Records and Information Services logo — Wikimedia Commons (CC0)",
+      "url": "https://commons.wikimedia.org/wiki/File:Records_logo.png"
+    }
+  },
+  "dof": {
+    "sealPath": "/seals/dof.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Finance logo — Wikimedia Commons (CC BY-SA 4.0)",
+      "url": "https://commons.wikimedia.org/wiki/File:Nyc_finance_logo_website.png"
+    }
+  },
+  "oti": {
+    "sealPath": "/seals/oti.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Office of Technology and Innovation logo — Wikimedia Commons (public domain)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYC_OTI.png"
+    }
+  },
+  "ccrb": {
+    "sealPath": "/seals/ccrb.svg",
+    "isFallback": false,
+    "source": {
+      "label": "Civilian Complaint Review Board seal — Wikipedia (non-free, used for agency identification)",
+      "url": "https://en.wikipedia.org/wiki/File:New_York_City_Civilian_Complaint_Review_Board_logo.svg"
+    }
+  },
+  "doc": {
+    "sealPath": "/seals/doc.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Correction Department shield — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/doc/index.page"
+    }
+  },
+  "probation": {
+    "sealPath": "/seals/probation.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Probation Department patch — Wikipedia (non-free, used for agency identification)",
+      "url": "https://en.wikipedia.org/wiki/File:NYC_Probation_patch.jpg"
+    }
+  },
+  "law": {
+    "sealPath": "/seals/law.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Law Department seal — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/law/index.page"
+    }
+  },
+  "public-libraries": {
+    "sealPath": "/seals/public-libraries.png",
+    "isFallback": false,
+    "source": {
+      "label": "New York Public Library lion mark — nypl.org (trademarked, used for agency identification)",
+      "url": "https://www.nypl.org"
+    }
+  },
+  "doi": {
+    "sealPath": "/seals/doi.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Investigation seal — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/doi/index.page"
+    }
+  },
+  "cchr": {
+    "sealPath": "/seals/cchr.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Commission on Human Rights logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/cchr/index.page"
+    }
+  },
+  "dsny": {
+    "sealPath": "/seals/dsny.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Sanitation logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/dsny/index.page"
+    }
+  },
+  "dpr": {
+    "sealPath": "/seals/dpr.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Parks logo — Wikipedia (non-free, used for agency identification)",
+      "url": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Parks_and_Recreation"
+    }
+  },
+  "dcwp": {
+    "sealPath": "/seals/dcwp.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Consumer and Worker Protection logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/dca/index.page"
+    }
+  },
+  "ocme": {
+    "sealPath": "/seals/ocme.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Office of Chief Medical Examiner logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/ocme/index.page"
+    }
+  },
+  "hra": {
+    "sealPath": "/seals/hra.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Human Resources Administration logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/hra/index.page"
+    }
+  },
+  "dfta": {
+    "sealPath": "/seals/dfta.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department for the Aging logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/dfta/index.page"
+    }
+  },
+  "sca": {
+    "sealPath": "/seals/sca.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC School Construction Authority logo — nycsca.org (agency-published, used for agency identification)",
+      "url": "https://www.nycsca.org"
+    }
+  },
+  "dep": {
+    "sealPath": "/seals/dep.svg",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Environmental Protection logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/dep/index.page"
+    }
+  },
+  "dob": {
+    "sealPath": "/seals/dob.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Buildings logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/buildings/index.page"
+    }
+  },
+  "ddc": {
+    "sealPath": "/seals/ddc.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Department of Design and Construction logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/ddc/index.page"
+    }
+  },
+  "edc": {
+    "sealPath": "/seals/edc.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYCEDC logo — Wikimedia Commons (CC BY-SA 4.0)",
+      "url": "https://commons.wikimedia.org/wiki/File:NYCEDC-Blue-Logo.png"
+    }
+  },
+  "nycha": {
+    "sealPath": "/seals/nycha.png",
+    "isFallback": false,
+    "source": {
+      "label": "NYC Housing Authority logo — nyc.gov (agency-published, used for agency identification)",
+      "url": "https://www.nyc.gov/site/nycha/index.page"
     }
   }
 }

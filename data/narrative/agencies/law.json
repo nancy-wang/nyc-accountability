@@ -1,5 +1,10 @@
 {
   "intro": "The Law Department's origins trace to 1683, when New York's colonial governor created the Office of Recorder of New York City to serve as legal counsel to city government; the modern Office of the Corporation Counsel was established when the City Charter was amended in 1849, ending a system of hired outside attorneys. Today it is the country's largest municipal law office, representing the City, the Mayor, the City Council, and City agencies in civil litigation and legislative matters, and acting as the presentment agency in juvenile prosecutions in Family Court.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Law_Department"
+  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Law_Department",
+  "cardHighlights": {
+    "function": "Represents the City, Mayor, and agencies in litigation",
+    "scale": "Handles more than 70,000 active legal cases",
+    "sourceUrl": "https://www.nyc.gov/site/law/about/about-the-law-department.page"
+  }
 }

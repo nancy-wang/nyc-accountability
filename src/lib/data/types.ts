@@ -59,6 +59,15 @@ export interface IndicatorResearchNote {
   researchedOn: string;
   /** A condensed (<15 word) version of summary's key finding, for the collapsed card view — e.g. "overall decreasing, but increase due to broadened definition." */
   oneLiner: string;
+  /**
+   * True when the real, honest story behind this indicator isn't a positive
+   * one (e.g. a metric that got worse — slower, backlogged — even though it
+   * stayed within a loose target), so it shouldn't be surfaced as a trading
+   * card "Key Driver" even though it's technically on-target. The note stays
+   * fully intact for the indicator's own detail view either way — this only
+   * opts it out of the positive-drivers card section.
+   */
+  excludeFromKeyDrivers?: boolean;
 }
 
 /**
@@ -83,6 +92,20 @@ export interface AgencyNarrative {
   intro: string;
   noteworthyChanges: string[];
   sourceUrl?: string;
+  /**
+   * Real, sourced facts for the trading card's two Data Summary bullets —
+   * kept separate from `intro` (which leads with founding history,
+   * appropriate for the full agency page's opening paragraph but not for a
+   * compact card bullet, which should read as current function + scale).
+   */
+  cardHighlights?: {
+    /** Concise phrase, no subject repetition, no founding date — the agency's core function today. */
+    function: string;
+    /** Concise phrase with a real, sourced number describing reach/impact/scale. */
+    scale: string;
+    /** Cited only when different from the file's own top-level sourceUrl. */
+    sourceUrl?: string;
+  };
 }
 
 /** Real seal/logo art for an agency's trading card, keyed by agency slug. Falls back to the generic NYC seal when no distinct one could be found and verified. */

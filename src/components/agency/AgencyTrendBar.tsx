@@ -23,7 +23,7 @@ export function AgencyTrendBar({ trend, compact = false }: { trend: TrendRollup;
   const pct = (n: number) => (n / total) * 100;
 
   return (
-    <div className={`mt-2 flex items-center ${compact ? "gap-1.5" : "gap-2.5"}`}>
+    <div className={`flex items-center ${compact ? "mt-1 gap-1.5" : "mt-2 gap-2.5"}`}>
       <div className={`flex flex-1 overflow-hidden rounded-full ${compact ? "h-1.5" : "h-2.5"}`} style={{ background: "var(--gridline)" }}>
         {improving > 0 && <div style={{ width: `${pct(improving)}%`, background: "var(--trend-improving)" }} />}
         {worsening > 0 && <div style={{ width: `${pct(worsening)}%`, background: "var(--trend-worsening)" }} />}

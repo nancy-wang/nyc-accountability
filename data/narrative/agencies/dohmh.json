@@ -1,5 +1,10 @@
 {
   "intro": "Established in 1805 as the New York City Board of Health to combat yellow fever, and reorganized into the modern Department of Health in 1870, the agency took its current name in 2002 when it merged with the city's mental hygiene services. With an annual budget of $2.5 billion and more than 7,000 employees, DOHMH is the nation's oldest municipal public health agency and one of the largest public health agencies in the world, working to protect and promote the health of more than 8 million New Yorkers.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/doh/about/about-doh.page"
+  "sourceUrl": "https://www.nyc.gov/site/doh/about/about-doh.page",
+  "cardHighlights": {
+    "function": "Protects and promotes public health citywide, including restaurant inspections",
+    "scale": "Inspects roughly 29,000 restaurants at least once a year",
+    "sourceUrl": "https://www.nyc.gov/site/doh/services/restaurant-grades.page"
+  }
 }

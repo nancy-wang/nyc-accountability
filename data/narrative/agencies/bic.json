@@ -1,5 +1,10 @@
 {
   "intro": "Created in 2001–2002 to consolidate oversight of three industries with a documented history of organized-crime influence: private trade waste (trash) hauling, the City's public wholesale markets like the Fulton Fish Market, and shipboard gambling. Its predecessor, the Trade Waste Commission, was created by Local Law 42 of 1996 after a 114-count Manhattan DA indictment exposed a mob-run cartel controlling the carting industry. BIC now licenses and monitors businesses in these industries to keep that kind of corruption out.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/bic/about/about-bic.page"
+  "sourceUrl": "https://www.nyc.gov/site/bic/about/about-bic.page",
+  "cardHighlights": {
+    "function": "Licenses and monitors the trade waste and wholesale market industries",
+    "scale": "Oversees more than 1,850 active carting industry companies",
+    "sourceUrl": "https://comptroller.nyc.gov/reports/audit-of-the-monitoring-of-the-citys-trade-waste-carting-industry-by-the-business-integrity-commission/"
+  }
 }

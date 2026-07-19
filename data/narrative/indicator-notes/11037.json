@@ -1,0 +1,9 @@
+{
+  "summary": "CUNY's ASAP three-year graduation rate fell from 44.0% in Fiscal 2022 to 36.2% in Fiscal 2024 before recovering somewhat to 38.5% in Fiscal 2025. The Fiscal 2024 low matches ASAP's own documented decline for its fall 2020 entering cohort, which graduated at a three-year rate of 36.2% compared to 39.3% for the fall 2019 cohort — a drop tied to pandemic-era enrollment disruption. ASAP remains one of CUNY's most effective programs, roughly doubling graduation rates versus similar students outside it, but the City's proposed $41 million in permanent annual cuts for Fiscal 2024–2026 threatens the program's further expansion.",
+  "sources": [
+    { "label": "NYC Comptroller, \"Cuts to CUNY\"", "url": "https://comptroller.nyc.gov/reports/cuts-to-cuny/" },
+    { "label": "CUNY ASAP & ACE Fast Facts, April 2024", "url": "https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/student-success-initiatives/asap/evaluation/CUNY-ASAP-and-ACE-Fast-Facts_April-2024_WebFinal.pdf" }
+  ],
+  "researchedOn": "2026-07-17",
+  "oneLiner": "decreasing overall since FY22, though FY25 shows a partial recovery tied to cohort mix"
+}

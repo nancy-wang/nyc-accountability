@@ -1,5 +1,9 @@
 {
   "intro": "The Department of Transportation was established in 1977 to take charge of the city's streets and is responsible for the safe, efficient, and sustainable movement of people and goods across the five boroughs. DOT manages roughly 6,300 miles of streets and highways, about 800 bridges and tunnels, more than 13,500 signalized intersections, and the Staten Island Ferry, which carries about 16 million riders a year, overseeing one of the most complex urban transportation networks in the world.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://a860-collectionguides.nyc.gov/agents/corporate_entities/127"
+  "sourceUrl": "https://a860-collectionguides.nyc.gov/agents/corporate_entities/127",
+  "cardHighlights": {
+    "function": "Maintains streets, bridges, and traffic signals citywide",
+    "scale": "Maintains 6,300 miles of streets and about 800 bridges"
+  }
 }

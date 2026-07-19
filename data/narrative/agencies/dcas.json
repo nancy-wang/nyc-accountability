@@ -1,5 +1,9 @@
 {
   "intro": "The Department of Citywide Administrative Services (DCAS) was created in 1996 when Mayor Rudolph Giuliani merged the Department of General Services and the Department of Personnel into a single agency. DCAS now handles the internal machinery of city government: recruiting, hiring, and training municipal employees; managing 55 public buildings; buying, selling, and leasing city property; and purchasing over $1 billion a year in goods and services for other agencies.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Citywide_Administrative_Services"
+  "sourceUrl": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Citywide_Administrative_Services",
+  "cardHighlights": {
+    "function": "Handles hiring, real estate, and procurement for city agencies",
+    "scale": "Purchases more than $1 billion a year in goods and services"
+  }
 }

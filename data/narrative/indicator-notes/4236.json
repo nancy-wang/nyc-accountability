@@ -1,0 +1,15 @@
+{
+  "summary": "The share of parking and camera summonses paid within 90 days has climbed steadily, from 66.2% in FY22 to 69.6% in FY25, comfortably ahead of the City's 65% target. DOF attributes continued gains in collections to its payment-plan options — including a standard installment plan and a moderate-income plan for motorists below a set income threshold — and to its Stipulated Fine Program, which collected $52.8 million in FY25, up nearly 15% from FY24.",
+  "sources": [
+    {
+      "label": "NYC Comptroller, \"Selected Aspects of Parking Violations Operations to Collect Fines and Fees\" (follow-up)",
+      "url": "https://www.osc.ny.gov/state-agencies/audits/2022/01/06/selected-aspects-parking-violations-operations-collect-fines-and-fees-follow"
+    },
+    {
+      "label": "NYC Department of Finance, Parking Ticket Payment Plans",
+      "url": "https://www.nyc.gov/site/finance/vehicles/services-payment-plans.page"
+    }
+  ],
+  "researchedOn": "2026-07-18",
+  "oneLiner": "increasing as DOF's payment plans and Stipulated Fine Program drive higher on-time collection"
+}

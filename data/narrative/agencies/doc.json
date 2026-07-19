@@ -1,5 +1,10 @@
 {
   "intro": "The New York City Department of Correction dates to 1895, when the state legislature split the old Department of Public Charities and Correction into two separate agencies, giving DOC jurisdiction over the City's penal institutions, including the Penitentiary and Workhouse on what is now Roosevelt Island and the Tombs in Manhattan. Its operations moved to Rikers Island — purchased by the City in 1884 for $180,000 and later expanded by landfill to its current 415 acres — after the original Roosevelt Island jail facilities were abandoned in the mid-1930s.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/doc/about/history-doc.page"
+  "sourceUrl": "https://www.nyc.gov/site/doc/about/history-doc.page",
+  "cardHighlights": {
+    "function": "Operates the City's jail system, including Rikers Island",
+    "scale": "Held roughly 7,100 people in custody as of April 2025",
+    "sourceUrl": "https://www.nyc.gov/site/doc/about/average-daily-population-2021.page"
+  }
 }

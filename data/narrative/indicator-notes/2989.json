@@ -11,5 +11,6 @@
     }
   ],
   "researchedOn": "2026-07-15",
-  "oneLiner": "increasing, driven by rising hearing volume and a shortage of judges"
+  "oneLiner": "increasing, driven by rising hearing volume and a shortage of judges",
+  "excludeFromKeyDrivers": true
 }

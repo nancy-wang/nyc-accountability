@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { IndicatorTrendChart } from "@/components/charts/IndicatorTrendChart";
 import { IndicatorSparkline } from "@/components/charts/IndicatorSparkline";
 import { TargetGapBadge } from "@/components/charts/TargetGapBadge";
@@ -60,9 +59,6 @@ export function IndicatorCard({ indicator }: { indicator: Indicator }) {
         <IndicatorTrendChart indicator={indicator} />
         <div className="mt-4">{note ? <IndicatorResearchNote note={note} /> : volatile ? <VolatileNotice /> : <AccountabilitySummary indicator={indicator} />}</div>
         {serviceContext && <ServiceContextNote context={serviceContext} />}
-        <Link href={`/indicators/${indicator.id}`} className="mt-3 inline-block text-sm underline" style={{ color: "var(--accent-heading)" }}>
-          Open full page ↗
-        </Link>
       </div>
     </details>
   );

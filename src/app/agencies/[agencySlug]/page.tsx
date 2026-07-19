@@ -40,13 +40,13 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
 
       <AgencySummary indicators={indicators} narrative={narrative} />
 
-      <h2 className="mt-8 text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+      <h2 className="font-label mt-8 text-lg font-medium" style={{ color: "var(--text-primary)" }}>
         Critical indicators
       </h2>
 
       {withTarget.length > 0 && (
         <>
-          <h3 className="mt-5 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
+          <h3 className="font-label mt-5 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
             With a numeric target
           </h3>
           <div className="mt-3 flex flex-col gap-3">
@@ -59,7 +59,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
 
       {withoutTarget.length > 0 && (
         <>
-          <h3 className="mt-6 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
+          <h3 className="font-label mt-6 text-sm font-semibold" style={{ color: "var(--text-secondary)" }}>
             Without a numeric target
           </h3>
           <div className="mt-3 flex flex-col gap-3">
@@ -72,7 +72,7 @@ export default async function AgencyPage({ params }: { params: Promise<{ agencyS
 
       {narrative && narrative.noteworthyChanges.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
+          <h2 className="font-label text-lg font-medium" style={{ color: "var(--text-primary)" }}>
             Noteworthy changes to this data
           </h2>
           <ul className="mt-3 list-disc pl-5 text-sm" style={{ color: "var(--text-secondary)" }}>

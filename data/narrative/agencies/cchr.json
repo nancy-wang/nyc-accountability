@@ -1,5 +1,10 @@
 {
   "intro": "The Commission on Human Rights traces its origin to 1944, when Mayor Fiorello La Guardia created the Mayor's Committee on Unity by executive order to address racial tension after unrest in Harlem; lacking enforcement power, the committee was reorganized in the mid-1950s into the Commission on Intergroup Relations, with authority to investigate complaints and hold hearings. It was renamed the Commission on Human Rights in 1962, and passage of the New York City Human Rights Law in 1965 extended its jurisdiction to prosecute discrimination in employment, housing, and public spaces.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/cchr/about/commissions-history.page"
+  "sourceUrl": "https://www.nyc.gov/site/cchr/about/commissions-history.page",
+  "cardHighlights": {
+    "function": "Enforces the City's Human Rights Law against discrimination",
+    "scale": "Fielded a record 15,507 public inquiries in FY2025",
+    "sourceUrl": "https://www.littler.com/news-analysis/asap/new-york-city-commission-human-rights-2025-annual-report-reveals-operational"
+  }
 }

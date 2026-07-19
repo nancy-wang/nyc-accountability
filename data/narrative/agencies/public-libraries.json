@@ -1,5 +1,10 @@
 {
   "intro": "New York City is served by three separate, independent public library systems rather than one citywide agency: the New York Public Library, formed in 1895 from the consolidation of the Astor and Lenox libraries with the Tilden Trust and serving Manhattan, the Bronx, and Staten Island; the Brooklyn Public Library, established in 1896; and the Queens Public Library, whose network of neighborhood libraries formally united in 1901. Together the three systems operate well over a hundred branches and remain among the most heavily used civic institutions in the city, offering free books, programming, and digital access in every neighborhood.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nypl.org/about/history"
+  "sourceUrl": "https://www.nypl.org/about/history",
+  "cardHighlights": {
+    "function": "Provides free books, programming, and digital access citywide",
+    "scale": "Draws more than 37 million visits a year across 200+ branches",
+    "sourceUrl": "https://nycfuture.org/data/nyc-libraries-by-the-numbers"
+  }
 }

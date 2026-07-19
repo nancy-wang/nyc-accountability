@@ -75,7 +75,7 @@ function Section({ title, indicators, emptyText }: { title: string; indicators: 
 
   return (
     <div>
-      <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
+      <h3 className="font-label text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
         {title}
       </h3>
       {indicators.length === 0 ? (

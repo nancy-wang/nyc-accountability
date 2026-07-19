@@ -5,5 +5,10 @@
     "Fiscal 2023-2025 figures for 'Youth arrests for major felonies' were corrected after being unintentionally duplicated from a different indicator in the same goal.",
     "The indicator '311 calls' was renamed '311 service requests.'"
   ],
-  "sourceUrl": "https://www.nyc.gov/site/nypd/stats/reports-analysis/reports-analysis-landing.page"
+  "sourceUrl": "https://www.nyc.gov/site/nypd/stats/reports-analysis/reports-analysis-landing.page",
+  "cardHighlights": {
+    "function": "Polices an 8.8-million-person city across 78 precincts",
+    "scale": "Responds to almost 3.7 million 911 calls a year",
+    "sourceUrl": "https://www.thecity.nyc/2026/03/11/911-calls-non-crime-nypd-mamdani/"
+  }
 }

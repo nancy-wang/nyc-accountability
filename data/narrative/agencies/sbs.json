@@ -1,5 +1,10 @@
 {
   "intro": "The Department of Small Business Services connects New Yorkers to jobs and helps small businesses start, operate, and grow, organizing its work around careers, businesses, and neighborhoods. It runs the city's Workforce1 Career Centers and NYC Business Solutions Centers, and also issues waterfront construction permits under its NYC Charter authority.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/sbs/about/about.page"
+  "sourceUrl": "https://www.nyc.gov/site/sbs/about/about.page",
+  "cardHighlights": {
+    "function": "Connects New Yorkers to jobs and helps small businesses grow",
+    "scale": "Connected 45,000 New Yorkers to jobs and training",
+    "sourceUrl": "https://www.nyc.gov/site/sbs/about/pr20241220-sbswrapped.page"
+  }
 }

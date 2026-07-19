@@ -11,5 +11,6 @@
     }
   ],
   "researchedOn": "2026-07-15",
-  "oneLiner": "increasing, driven by budget constraints in the elevator unit; still within target"
+  "oneLiner": "increasing, driven by budget constraints in the elevator unit; still within target",
+  "excludeFromKeyDrivers": true
 }

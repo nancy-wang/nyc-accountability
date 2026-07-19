@@ -7,5 +7,6 @@
     }
   ],
   "researchedOn": "2026-07-15",
-  "oneLiner": "increasing, driven by a 49% surge in license applications that year"
+  "oneLiner": "increasing, driven by a 49% surge in license applications that year",
+  "excludeFromKeyDrivers": true
 }

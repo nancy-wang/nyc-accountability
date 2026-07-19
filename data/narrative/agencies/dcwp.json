@@ -1,5 +1,9 @@
 {
   "intro": "Created on April 29, 1969, when the City Council's Consumer Protection Law merged the Department of Markets (including its Weights and Measures division) with the Department of Licensing into the Department of Consumer Affairs — the first municipal consumer-protection agency of its kind in the country. Its mandate expanded over the decades, adding financial-empowerment services in 2006 and a labor-standards office in 2016, and it was renamed the Department of Consumer and Worker Protection in 2019 to reflect that broader worker-protection role; DCWP now licenses more than 45,000 businesses across over 45 industries.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/dca/about/overview.page"
+  "sourceUrl": "https://www.nyc.gov/site/dca/about/overview.page",
+  "cardHighlights": {
+    "function": "Enforces consumer protection and labor standards laws",
+    "scale": "Licenses more than 45,000 businesses citywide"
+  }
 }

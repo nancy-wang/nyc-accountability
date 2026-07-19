@@ -1,5 +1,9 @@
 {
   "intro": "The New York City School Construction Authority was created by the New York State Legislature in December 1988 to take capital construction out of the hands of the Board of Education and consolidate it under a single public-benefit corporation, in response to concerns about mismanagement and cost overruns in school building projects. The SCA now plans, designs, and builds new schools and manages capital improvements across more than 1,400 public school buildings, and has delivered over 333,000 new school seats since its founding.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nycsca.org/quick-links-home/about-the-sca/history"
+  "sourceUrl": "https://www.nycsca.org/quick-links-home/about-the-sca/history",
+  "cardHighlights": {
+    "function": "Builds and manages capital projects for public schools",
+    "scale": "Has delivered more than 333,000 new school seats"
+  }
 }

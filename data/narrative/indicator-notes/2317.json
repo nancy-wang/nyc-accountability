@@ -1,0 +1,10 @@
+{
+  "summary": "The average age of CCHR's open complaint caseload has grown every year, reaching 614 days in Fiscal 2025 — in 2024 the commission took an average of 593 days to close a case, the longest in five years, and housing discrimination cases alone averaged 883 days to reach a determination. State Comptroller Thomas DiNapoli's office found housing discrimination complaints in particular languishing for years. The commission's law-enforcement staff has shrunk roughly 70% since 2017, and its overall headcount fell from 128 in 2020 to 105 in 2024, even as inquiry volume has grown.",
+  "sources": [
+    { "label": "Documented NY, \"Complaints Pile Up at NYC Human Rights Commission\"", "url": "https://documentedny.com/2025/04/10/immigrant-labor-human-rights-commission-new-york/" },
+    { "label": "NYS Comptroller, \"DiNapoli: Housing Discrimination Complaints Languish at NYC Commission on Human Rights\"", "url": "https://www.osc.ny.gov/press/releases/2025/12/dinapoli-housing-discrimination-complaints-languish-nyc-commission-human-rights" }
+  ],
+  "researchedOn": "2026-07-17",
+  "oneLiner": "increasing, as case backlogs grow faster than the agency's shrunken staff can resolve them",
+  "excludeFromKeyDrivers": true
+}

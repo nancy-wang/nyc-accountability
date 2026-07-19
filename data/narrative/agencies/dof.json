@@ -1,5 +1,9 @@
 {
   "intro": "New York City's Department of Finance traces to 1801, when the City Council first appointed a Comptroller, and was formally established as a department in 1831 with the Comptroller at its head. Today DOF administers the city's tax and revenue laws, collecting roughly $49 billion annually and valuing more than 1.1 million taxable properties with a combined market value exceeding $1.6 trillion, while also managing the city's treasury and adjudicating parking violations through its Sheriff's Office.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://comptroller.nyc.gov/about/office-history/"
+  "sourceUrl": "https://comptroller.nyc.gov/about/office-history/",
+  "cardHighlights": {
+    "function": "Administers the city's tax and property valuation system",
+    "scale": "Collects roughly $49 billion in revenue annually"
+  }
 }

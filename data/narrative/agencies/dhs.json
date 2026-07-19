@@ -1,5 +1,10 @@
 {
   "intro": "Established as an independent mayoral agency in 1993 after having been part of the Human Resources Administration, DHS traces its mandate to the 1981 Callahan v. Carey consent decree that established a right to shelter for homeless single adults in New York City. Today it is one of the largest homeless services agencies in the world, providing shelter and support services to a system that houses more than 17,000 single adults on any given night, alongside thousands of families.",
   "noteworthyChanges": [],
-  "sourceUrl": "https://www.nyc.gov/site/dhs/about/history.page"
+  "sourceUrl": "https://www.nyc.gov/site/dhs/about/history.page",
+  "cardHighlights": {
+    "function": "Provides shelter and support services to homeless New Yorkers",
+    "scale": "Housed more than 86,400 people on an average day in FY2025",
+    "sourceUrl": "https://comptroller.nyc.gov/services/for-the-public/charting-homelessness-in-nyc/overview/"
+  }
 }
