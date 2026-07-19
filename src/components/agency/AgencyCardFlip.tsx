@@ -167,7 +167,14 @@ export function AgencyCardFlip({
             toggled off when flipped for a separate reason:
             backface-visibility only stops painting, not hit-testing, so a
             hidden face can still win elementFromPoint/wheel-target
-            resolution over the visible one at the same screen position. */}
+            resolution over the visible one at the same screen position.
+            Firefox has its own separate quirk (Mozilla bug 1201471):
+            backface-visibility is ignored on a child of a preserve-3d
+            parent if that child has no transform of its own — unlike the
+            back face (which already carries its own rotateY(180deg)), this
+            front face never had one, so Firefox painted it mirrored on top
+            of the back face on every flip. The explicit no-op rotateY(0deg)
+            below gives it a transform so Firefox honors backface-visibility. */}
         <div
           className="absolute inset-0 flex flex-col overflow-hidden transition-shadow duration-300"
           style={{
@@ -176,6 +183,8 @@ export function AgencyCardFlip({
             background: BACK_COBALT,
             boxShadow: `0 0 0 4px ${BACK_BRICK}, ${shadow}`,
             pointerEvents: flipped ? "none" : "auto",
+            transform: "rotateY(0deg)",
+            WebkitTransform: "rotateY(0deg)",
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
