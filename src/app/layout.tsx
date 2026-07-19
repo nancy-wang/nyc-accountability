@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Barlow_Condensed, Bungee, Geist, Geist_Mono, JetBrains_Mono, Lora } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
