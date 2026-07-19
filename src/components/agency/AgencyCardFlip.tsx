@@ -386,7 +386,7 @@ export function AgencyCardFlip({
 
             {/* Percent of target */}
             <div className="mt-2.5 flex items-baseline justify-between">
-              <BackSectionLabel>Percent of Target</BackSectionLabel>
+              <BackSectionLabel>Target Scorecard</BackSectionLabel>
             </div>
             {topIndicators.length > 0 ? (
               <div className="mt-1.5 shrink-0 overflow-hidden rounded-md" style={{ border: `2px solid ${BACK_INK}` }}>
